@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Ugrás a főoldalra"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Fel"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"További lehetőségek"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Kész"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Az összes megtekintése"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Válasszon alkalmazást"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"KI"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"BE"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"Delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"Szóköz"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Keresés…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Lekérdezés törlése"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Keresési lekérdezés"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Keresés"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Lekérdezés küldése"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Hangalapú keresés"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Megosztás a következővel:"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Megosztás a következő alkalmazással: <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Összecsukás"</string>
+    <string msgid="233061162317617848" name="back_button_content_description">"vissza"</string>
+    <string msgid="2401572676578172896" name="cancel_button">"Mégse"</string>
+    <string msgid="2482357845034618478" name="dialog_button_got_it">"RENDBEN"</string>
+    <string msgid="4505853433204459373" name="dialog_button_open_help_center">"SÚGÓ MEGNYITÁSA"</string>
+    <string msgid="4028688231551615655" name="dialog_message_incompatible_phone">"Daydream-kompatibilis telefonra van szükség. További információért keresse fel a Daydream Súgót."</string>
+    <string msgid="3560856374975640601" name="dialog_message_no_cardboard">"Szemüvege konfigurálásához töltse le a Cardboard alkalmazást."</string>
+    <string msgid="7887077605817014784" name="dialog_title">"Konfigurálás"</string>
+    <string msgid="4515090705573059650" name="dialog_title_incompatible_phone">"Nem kompatibilis telefon"</string>
+    <string msgid="2594928940370730859" name="dialog_title_vr_core_not_enabled">"Beállítás szükséges"</string>
+    <string msgid="6322165810291059770" name="dialog_title_vr_core_not_installed">"Telepítés szükséges"</string>
+    <string msgid="455961049302726493" name="dialog_title_warning">"Figyelmeztetés"</string>
+    <string msgid="1966424794507569244" name="dialog_vr_core_not_enabled">"Előfordulhat, hogy ez az alkalmazás nem működik megfelelően a Google VR-szolgáltatások engedélyezése nélkül. A folytatás előtt engedélyezze a telefon Beállítások alkalmazásában."</string>
+    <string msgid="7122144659930752678" name="dialog_vr_core_not_installed">"Előfordulhat, hogy ez az alkalmazás nem működik megfelelően a Google VR-szolgáltatások nélkül. A folytatás előtt telepítse a Google VR-szolgáltatásokat a Play Áruházból."</string>
+    <string name="exo_controls_fastforward_description">Előretekerés</string>
+    <string name="exo_controls_fullscreen_description">Teljes képernyős mód</string>
+    <string name="exo_controls_next_description">Következő szám</string>
+    <string name="exo_controls_pause_description">Szüneteltetés</string>
+    <string name="exo_controls_play_description">Lejátszás</string>
+    <string name="exo_controls_previous_description">Előző szám</string>
+    <string name="exo_controls_repeat_all_description">Összes szám ismétlése</string>
+    <string name="exo_controls_repeat_off_description">Nincs ismétlés</string>
+    <string name="exo_controls_repeat_one_description">Egy szám ismétlése</string>
+    <string name="exo_controls_rewind_description">Visszatekerés</string>
+    <string name="exo_controls_shuffle_description">Keverés</string>
+    <string name="exo_controls_stop_description">Leállítás</string>
+    <string name="exo_download_completed">A letöltés befejeződött</string>
+    <string name="exo_download_description">Letöltés</string>
+    <string name="exo_download_downloading">Letöltés folyamatban</string>
+    <string name="exo_download_failed">Nem sikerült a letöltés</string>
+    <string name="exo_download_notification_channel_name">Letöltések</string>
+    <string name="exo_download_removing">Letöltések törlése folyamatban</string>
+    <string name="exo_item_list">%1$s, %2$s</string>
+    <string name="exo_track_bitrate">%1$.2f Mbps</string>
+    <string name="exo_track_mono">Monó</string>
+    <string name="exo_track_resolution">%1$d × %2$d</string>
+    <string name="exo_track_selection_auto">Automatikus</string>
+    <string name="exo_track_selection_none">Nincs</string>
+    <string name="exo_track_selection_title_audio">Hang</string>
+    <string name="exo_track_selection_title_text">Szöveg</string>
+    <string name="exo_track_selection_title_video">Videó</string>
+    <string name="exo_track_stereo">Sztereó</string>
+    <string name="exo_track_surround">Térhatású hangzás</string>
+    <string name="exo_track_surround_5_point_1">5.1-es térhatású hangzás</string>
+    <string name="exo_track_surround_7_point_1">7.1-es térhatású hangzás</string>
+    <string name="exo_track_unknown">Ismeretlen</string>
+    <string msgid="6145412853379876634" name="go_to_playstore_button">"A Play Áruház megnyitása"</string>
+    <string msgid="6878752668266068283" name="go_to_vr_listeners_settings_button">"Beállítások megnyitása"</string>
+    <string msgid="5324772199357788720" name="no_browser_text">"Nem található böngésző a webhely megnyitásához"</string>
+    <string msgid="2306297166333705530" name="place_your_phone_into_cardboard">"Helyezze a telefont a Cardboard szemüvegbe"</string>
+    <string msgid="5433369525545709510" name="place_your_viewer_into_viewer_format">"Helyezze telefonját a(z) <ns1:g id="VIEWER_NAME">%s</ns1:g> szemüvegbe"</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Keresés"</string>
+    <string msgid="3719682527828378500" name="settings_button_content_description">"beállítások"</string>
+    <string msgid="20964482303479393" name="setup_button">"Beállítás"</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="7856245902137004584" name="switch_viewer_action">"Váltás"</string>
+    <string msgid="816514297101696447" name="switch_viewer_prompt">"Másik szemüveget használ?"</string>
+</resources>

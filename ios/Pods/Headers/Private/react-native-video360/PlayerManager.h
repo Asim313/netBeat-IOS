@@ -1,0 +1,1 @@
+../../../../../node_modules/react-native-video360plugin/ios/PlayerManager.h

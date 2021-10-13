@@ -1,0 +1,1163 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* NetbeatLiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NetbeatLiveTests.m */; };
+		00F84034C69A4CAEB93601C1 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C21EF81E089B400C81D41E11 /* Montserrat-Regular.ttf */; };
+		029AF9923EA74D978EBDB9AC /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1440CA0788354299BA3AFAA2 /* Montserrat-Medium.ttf */; };
+		0F83A362712F47F28C902694 /* Montserrat Regular 400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8783C2B87D0A43C7829F8409 /* Montserrat Regular 400.ttf */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		189E3C0E25A45E5C00F01474 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E3C0D25A45E5C00F01474 /* WebRTC.framework */; };
+		1D06176A3A53416E9E07A861 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70D559C6916B415D99DC60F8 /* Montserrat-Bold.ttf */; };
+		1EE0920CCA524CD497A77B67 /* Montserrat Thin Italic 250.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23AD3E742B1D4552BDC96444 /* Montserrat Thin Italic 250.ttf */; };
+		22A421E1893297DCC0B84BEC /* libPods-NetbeatLiveTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F171AF7A18563EFCF5F882C7 /* libPods-NetbeatLiveTests.a */; };
+		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* NetbeatLiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NetbeatLiveTests.m */; };
+		3DB76CDDDE43407FB9904F71 /* Montserrat Light Italic 300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7CFAC7E8745C4922F72E2 /* Montserrat Light Italic 300.ttf */; };
+		479AEEEFCBE76D51E14483F5 /* libPods-NetbeatLive-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A151BF278556CA63437FDF /* libPods-NetbeatLive-tvOSTests.a */; };
+		4AF277E5743E42A89269E7D9 /* Montserrat Italic 400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7ABA2D1A36AF424A98E8888F /* Montserrat Italic 400.ttf */; };
+		4DE348606C774BAF9CFA5062 /* Montserrat ExtraBold Italic 800.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B76058BD23014ACA86A0B455 /* Montserrat ExtraBold Italic 800.ttf */; };
+		5274BF515D03489D9D6C7421 /* Montserrat SemiBold 600.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C69887A5C89D41BDA3AAD0FC /* Montserrat SemiBold 600.ttf */; };
+		53E5823CE67B436CA88C769F /* Montserrat Light 300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4A562E70BEF4ECCBBFAE0B0 /* Montserrat Light 300.ttf */; };
+		5B881930928149EFB29BDAA1 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61B4917ABCB24F0A8C271242 /* Montserrat-Black.ttf */; };
+		5D6E44F05727427B86FFAF45 /* Montserrat Thin 250.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 670BDEA4B5C3407DBDDA6655 /* Montserrat Thin 250.ttf */; };
+		643AD768270F0416007909B6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643AD767270F0416007909B6 /* File.swift */; };
+		643AD769270F0416007909B6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643AD767270F0416007909B6 /* File.swift */; };
+		6D52B1FE73D2B10F9C4146C6 /* libPods-NetbeatLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0F3275F34CDC10B6D17614 /* libPods-NetbeatLive.a */; };
+		9834D7CC2DCB4E1499F4A286 /* Montserrat Black 900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A719A9DFEA78408EB68F1F98 /* Montserrat Black 900.ttf */; };
+		9B6028DFA313A0843849346E /* libPods-NetbeatLive-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0792D84629B66E485FA800 /* libPods-NetbeatLive-tvOS.a */; };
+		A2441EE6A99C48B98E6EC59A /* Montserrat Bold 700.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0101037028341D6ABE8B8C6 /* Montserrat Bold 700.ttf */; };
+		A2716237CB3C453DBBD33A8F /* Montserrat ExtraBold 800.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D84C0F5EDBF4AB789AD7C2D /* Montserrat ExtraBold 800.ttf */; };
+		AB0E532E9D9F458CA63B837A /* Montserrat SemiBold Italic 600.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9DF32315D6C4DB7985E44C9 /* Montserrat SemiBold Italic 600.ttf */; };
+		AF9C952A151E4D5BA4C2AB3F /* Montserrat Bold Italic 700.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0112F8F777C84DB8BE2ABE0F /* Montserrat Bold Italic 700.ttf */; };
+		B5DDBED923D2476B88168918 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF768DFB0F99477DBD37A30C /* Montserrat-SemiBold.ttf */; };
+		BF5E16F657E349E9A4245899 /* Montserrat Medium 500.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C987C66A78C4EDD891FC36B /* Montserrat Medium 500.ttf */; };
+		D9DD227670C04256A3EF5F81 /* Montserrat Black Italic 900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77866D73A46949359511DCC4 /* Montserrat Black Italic 900.ttf */; };
+		E0B2A1FD0EA5404C8C6EEC71 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4826CC137C3B422FBAE49470 /* Montserrat-Light.ttf */; };
+		E616BF5FB086473D87FABFAB /* Montserrat ExtraLight Italic 275.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30556525969D406FA59834BC /* Montserrat ExtraLight Italic 275.ttf */; };
+		E6687E0CF1F54F0E97B4E44E /* Montserrat Medium Italic 500.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 634F501F53B548D9ACB1B3FD /* Montserrat Medium Italic 500.ttf */; };
+		F81BBEE560DA44D8AE9989AE /* Montserrat ExtraLight 275.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D58CA3B2E4A540FC924F3EA8 /* Montserrat ExtraLight 275.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = NetbeatLive;
+		};
+		189E3C0625A45E2A00F01474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189E3C0225A45E2900F01474 /* RCTWebRTC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35A2221F1CB493700015FD5C;
+			remoteInfo = RCTWebRTC;
+		};
+		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
+			remoteInfo = "NetbeatLive-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* NetbeatLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetbeatLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* NetbeatLiveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetbeatLiveTests.m; sourceTree = "<group>"; };
+		0112F8F777C84DB8BE2ABE0F /* Montserrat Bold Italic 700.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat Bold Italic 700.ttf"; path = "../assets/fonts/Montserrat Bold Italic 700.ttf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* NetbeatLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetbeatLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = NetbeatLive/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = NetbeatLive/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NetbeatLive/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NetbeatLive/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NetbeatLive/main.m; sourceTree = "<group>"; };
+		1440CA0788354299BA3AFAA2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		189E3C0225A45E2900F01474 /* RCTWebRTC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebRTC.xcodeproj; path = "../node_modules/openvidu-browser/node_modules/react-native-webrtc/ios/RCTWebRTC.xcodeproj"; sourceTree = "<group>"; };
+		189E3C0D25A45E5C00F01474 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = "../node_modules/openvidu-browser/node_modules/react-native-webrtc/ios/WebRTC.framework"; sourceTree = "<group>"; };
+		23AD3E742B1D4552BDC96444 /* Montserrat Thin Italic 250.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat Thin Italic 250.ttf"; path = "../assets/fonts/Montserrat Thin Italic 250.ttf"; sourceTree = "<group>"; };
+		269480AC0824A9A7E0AF261A /* Pods-NetbeatLive-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetbeatLive-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-NetbeatLive-tvOSTests/Pods-NetbeatLive-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* NetbeatLive-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NetbeatLive-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* NetbeatLive-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NetbeatLive-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D84C0F5EDBF4AB789AD7C2D /* Montserrat ExtraBold 800.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat ExtraBold 800.ttf"; path = "../assets/fonts/Montserrat ExtraBold 800.ttf"; sourceTree = "<group>"; };
+		30556525969D406FA59834BC /* Montserrat ExtraLight Italic 275.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat ExtraLight Italic 275.ttf"; path = "../assets/fonts/Montserrat ExtraLight Italic 275.ttf"; sourceTree = "<group>"; };
+		46A151BF278556CA63437FDF /* libPods-NetbeatLive-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetbeatLive-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4826CC137C3B422FBAE49470 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Light.ttf"; path = "../assets/fonts/Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		4C987C66A78C4EDD891FC36B /* Montserrat Medium 500.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat Medium 500.ttf"; path = "../assets/fonts/Montserrat Medium 500.ttf"; sourceTree = "<group>"; };
+		5E4AD7B742C24D07CCC1C2C5 /* Pods-NetbeatLiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetbeatLiveTests.debug.xcconfig"; path = "Target Support Files/Pods-NetbeatLiveTests/Pods-NetbeatLiveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		61B4917ABCB24F0A8C271242 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Black.ttf"; path = "../assets/fonts/Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		634F501F53B548D9ACB1B3FD /* Montserrat Medium Italic 500.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat Medium Italic 500.ttf"; path = "../assets/fonts/Montserrat Medium Italic 500.ttf"; sourceTree = "<group>"; };
+		63EB7D2A156C4B2E94EE95BC /* Pods-NetbeatLive-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetbeatLive-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-NetbeatLive-tvOSTests/Pods-NetbeatLive-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		643AD765270F0416007909B6 /* NetbeatLive-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetbeatLive-Bridging-Header.h"; sourceTree = "<group>"; };
+		643AD766270F0416007909B6 /* NetbeatLive-tvOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetbeatLive-tvOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		643AD767270F0416007909B6 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		670BDEA4B5C3407DBDDA6655 /* Montserrat Thin 250.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat Thin 250.ttf"; path = "../assets/fonts/Montserrat Thin 250.ttf"; sourceTree = "<group>"; };
+		70D559C6916B415D99DC60F8 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		7414ED0345F574F995484E90 /* Pods-NetbeatLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetbeatLiveTests.release.xcconfig"; path = "Target Support Files/Pods-NetbeatLiveTests/Pods-NetbeatLiveTests.release.xcconfig"; sourceTree = "<group>"; };
+		77242CCD0C649EDD585B894B /* Pods-NetbeatLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetbeatLive.release.xcconfig"; path = "Target Support Files/Pods-NetbeatLive/Pods-NetbeatLive.release.xcconfig"; sourceTree = "<group>"; };
+		77866D73A46949359511DCC4 /* Montserrat Black Italic 900.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat Black Italic 900.ttf"; path = "../assets/fonts/Montserrat Black Italic 900.ttf"; sourceTree = "<group>"; };
+		7ABA2D1A36AF424A98E8888F /* Montserrat Italic 400.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat Italic 400.ttf"; path = "../assets/fonts/Montserrat Italic 400.ttf"; sourceTree = "<group>"; };
+		7B0F3275F34CDC10B6D17614 /* libPods-NetbeatLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetbeatLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8783C2B87D0A43C7829F8409 /* Montserrat Regular 400.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat Regular 400.ttf"; path = "../assets/fonts/Montserrat Regular 400.ttf"; sourceTree = "<group>"; };
+		9CB7CFAC7E8745C4922F72E2 /* Montserrat Light Italic 300.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat Light Italic 300.ttf"; path = "../assets/fonts/Montserrat Light Italic 300.ttf"; sourceTree = "<group>"; };
+		A719A9DFEA78408EB68F1F98 /* Montserrat Black 900.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat Black 900.ttf"; path = "../assets/fonts/Montserrat Black 900.ttf"; sourceTree = "<group>"; };
+		B76058BD23014ACA86A0B455 /* Montserrat ExtraBold Italic 800.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat ExtraBold Italic 800.ttf"; path = "../assets/fonts/Montserrat ExtraBold Italic 800.ttf"; sourceTree = "<group>"; };
+		C21EF81E089B400C81D41E11 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		C540012FE20999C575C99930 /* Pods-NetbeatLive-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetbeatLive-tvOS.release.xcconfig"; path = "Target Support Files/Pods-NetbeatLive-tvOS/Pods-NetbeatLive-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		C6410B701FAB21D567901A04 /* Pods-NetbeatLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetbeatLive.debug.xcconfig"; path = "Target Support Files/Pods-NetbeatLive/Pods-NetbeatLive.debug.xcconfig"; sourceTree = "<group>"; };
+		C69887A5C89D41BDA3AAD0FC /* Montserrat SemiBold 600.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat SemiBold 600.ttf"; path = "../assets/fonts/Montserrat SemiBold 600.ttf"; sourceTree = "<group>"; };
+		D58CA3B2E4A540FC924F3EA8 /* Montserrat ExtraLight 275.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat ExtraLight 275.ttf"; path = "../assets/fonts/Montserrat ExtraLight 275.ttf"; sourceTree = "<group>"; };
+		D9DF32315D6C4DB7985E44C9 /* Montserrat SemiBold Italic 600.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat SemiBold Italic 600.ttf"; path = "../assets/fonts/Montserrat SemiBold Italic 600.ttf"; sourceTree = "<group>"; };
+		E4A562E70BEF4ECCBBFAE0B0 /* Montserrat Light 300.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat Light 300.ttf"; path = "../assets/fonts/Montserrat Light 300.ttf"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F0101037028341D6ABE8B8C6 /* Montserrat Bold 700.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat Bold 700.ttf"; path = "../assets/fonts/Montserrat Bold 700.ttf"; sourceTree = "<group>"; };
+		F171AF7A18563EFCF5F882C7 /* libPods-NetbeatLiveTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetbeatLiveTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA37B69CD0BBAB1E7E1A66C7 /* Pods-NetbeatLive-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetbeatLive-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-NetbeatLive-tvOS/Pods-NetbeatLive-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FF0792D84629B66E485FA800 /* libPods-NetbeatLive-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetbeatLive-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF768DFB0F99477DBD37A30C /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A421E1893297DCC0B84BEC /* libPods-NetbeatLiveTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D52B1FE73D2B10F9C4146C6 /* libPods-NetbeatLive.a in Frameworks */,
+				189E3C0E25A45E5C00F01474 /* WebRTC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6028DFA313A0843849346E /* libPods-NetbeatLive-tvOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				479AEEEFCBE76D51E14483F5 /* libPods-NetbeatLive-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* NetbeatLiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* NetbeatLiveTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = NetbeatLiveTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* NetbeatLive */ = {
+			isa = PBXGroup;
+			children = (
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				643AD767270F0416007909B6 /* File.swift */,
+				643AD765270F0416007909B6 /* NetbeatLive-Bridging-Header.h */,
+				643AD766270F0416007909B6 /* NetbeatLive-tvOS-Bridging-Header.h */,
+			);
+			name = NetbeatLive;
+			sourceTree = "<group>";
+		};
+		189E3C0325A45E2900F01474 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				189E3C0725A45E2A00F01474 /* libRCTWebRTC.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B39834F59F3FCE90433A888 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6410B701FAB21D567901A04 /* Pods-NetbeatLive.debug.xcconfig */,
+				77242CCD0C649EDD585B894B /* Pods-NetbeatLive.release.xcconfig */,
+				FA37B69CD0BBAB1E7E1A66C7 /* Pods-NetbeatLive-tvOS.debug.xcconfig */,
+				C540012FE20999C575C99930 /* Pods-NetbeatLive-tvOS.release.xcconfig */,
+				63EB7D2A156C4B2E94EE95BC /* Pods-NetbeatLive-tvOSTests.debug.xcconfig */,
+				269480AC0824A9A7E0AF261A /* Pods-NetbeatLive-tvOSTests.release.xcconfig */,
+				5E4AD7B742C24D07CCC1C2C5 /* Pods-NetbeatLiveTests.debug.xcconfig */,
+				7414ED0345F574F995484E90 /* Pods-NetbeatLiveTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189E3C0D25A45E5C00F01474 /* WebRTC.framework */,
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				7B0F3275F34CDC10B6D17614 /* libPods-NetbeatLive.a */,
+				FF0792D84629B66E485FA800 /* libPods-NetbeatLive-tvOS.a */,
+				46A151BF278556CA63437FDF /* libPods-NetbeatLive-tvOSTests.a */,
+				F171AF7A18563EFCF5F882C7 /* libPods-NetbeatLiveTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FFA6CE1DEA24AE1A1BC2FFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A719A9DFEA78408EB68F1F98 /* Montserrat Black 900.ttf */,
+				77866D73A46949359511DCC4 /* Montserrat Black Italic 900.ttf */,
+				F0101037028341D6ABE8B8C6 /* Montserrat Bold 700.ttf */,
+				0112F8F777C84DB8BE2ABE0F /* Montserrat Bold Italic 700.ttf */,
+				2D84C0F5EDBF4AB789AD7C2D /* Montserrat ExtraBold 800.ttf */,
+				B76058BD23014ACA86A0B455 /* Montserrat ExtraBold Italic 800.ttf */,
+				D58CA3B2E4A540FC924F3EA8 /* Montserrat ExtraLight 275.ttf */,
+				30556525969D406FA59834BC /* Montserrat ExtraLight Italic 275.ttf */,
+				7ABA2D1A36AF424A98E8888F /* Montserrat Italic 400.ttf */,
+				E4A562E70BEF4ECCBBFAE0B0 /* Montserrat Light 300.ttf */,
+				9CB7CFAC7E8745C4922F72E2 /* Montserrat Light Italic 300.ttf */,
+				4C987C66A78C4EDD891FC36B /* Montserrat Medium 500.ttf */,
+				634F501F53B548D9ACB1B3FD /* Montserrat Medium Italic 500.ttf */,
+				8783C2B87D0A43C7829F8409 /* Montserrat Regular 400.ttf */,
+				C69887A5C89D41BDA3AAD0FC /* Montserrat SemiBold 600.ttf */,
+				D9DF32315D6C4DB7985E44C9 /* Montserrat SemiBold Italic 600.ttf */,
+				670BDEA4B5C3407DBDDA6655 /* Montserrat Thin 250.ttf */,
+				23AD3E742B1D4552BDC96444 /* Montserrat Thin Italic 250.ttf */,
+				61B4917ABCB24F0A8C271242 /* Montserrat-Black.ttf */,
+				70D559C6916B415D99DC60F8 /* Montserrat-Bold.ttf */,
+				4826CC137C3B422FBAE49470 /* Montserrat-Light.ttf */,
+				1440CA0788354299BA3AFAA2 /* Montserrat-Medium.ttf */,
+				C21EF81E089B400C81D41E11 /* Montserrat-Regular.ttf */,
+				FF768DFB0F99477DBD37A30C /* Montserrat-SemiBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				189E3C0225A45E2900F01474 /* RCTWebRTC.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* NetbeatLive */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* NetbeatLiveTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				1B39834F59F3FCE90433A888 /* Pods */,
+				6FFA6CE1DEA24AE1A1BC2FFC /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* NetbeatLive.app */,
+				00E356EE1AD99517003FC87E /* NetbeatLiveTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* NetbeatLive-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* NetbeatLive-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* NetbeatLiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "NetbeatLiveTests" */;
+			buildPhases = (
+				F27C51ABB594F80552A802E1 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = NetbeatLiveTests;
+			productName = NetbeatLiveTests;
+			productReference = 00E356EE1AD99517003FC87E /* NetbeatLiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* NetbeatLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "NetbeatLive" */;
+			buildPhases = (
+				D4FE70DFE3A65835622C8D32 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				698F5E2CDD0D03915AD5FEDA /* [CP] Copy Pods Resources */,
+				33172EA6CE9436A2ADDD7BC4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetbeatLive;
+			productName = NetbeatLive;
+			productReference = 13B07F961A680F5B00A75B9A /* NetbeatLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E47A1E0B4A5D006451C7 /* NetbeatLive-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NetbeatLive-tvOS" */;
+			buildPhases = (
+				0D2C418AE83817491DFCC11E /* [CP] Check Pods Manifest.lock */,
+				FD10A7F122414F3F0027D42C /* Start Packager */,
+				2D02E4771E0B4A5D006451C7 /* Sources */,
+				2D02E4781E0B4A5D006451C7 /* Frameworks */,
+				2D02E4791E0B4A5D006451C7 /* Resources */,
+				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NetbeatLive-tvOS";
+			productName = "NetbeatLive-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* NetbeatLive-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E48F1E0B4A5D006451C7 /* NetbeatLive-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NetbeatLive-tvOSTests" */;
+			buildPhases = (
+				1184CA8A99D3A6CB3D0BBDC0 /* [CP] Check Pods Manifest.lock */,
+				2D02E48C1E0B4A5D006451C7 /* Sources */,
+				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
+				2D02E48E1E0B4A5D006451C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
+			);
+			name = "NetbeatLive-tvOSTests";
+			productName = "NetbeatLive-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* NetbeatLive-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 940;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = M8KTF38424;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 63Z273YZH9;
+						LastSwiftMigration = 1300;
+					};
+					2D02E47A1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1300;
+						ProvisioningStyle = Automatic;
+					};
+					2D02E48F1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "NetbeatLive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 189E3C0325A45E2900F01474 /* Products */;
+					ProjectRef = 189E3C0225A45E2900F01474 /* RCTWebRTC.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* NetbeatLive */,
+				00E356ED1AD99517003FC87E /* NetbeatLiveTests */,
+				2D02E47A1E0B4A5D006451C7 /* NetbeatLive-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* NetbeatLive-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		189E3C0725A45E2A00F01474 /* libRCTWebRTC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTWebRTC.a;
+			remoteRef = 189E3C0625A45E2A00F01474 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				9834D7CC2DCB4E1499F4A286 /* Montserrat Black 900.ttf in Resources */,
+				D9DD227670C04256A3EF5F81 /* Montserrat Black Italic 900.ttf in Resources */,
+				A2441EE6A99C48B98E6EC59A /* Montserrat Bold 700.ttf in Resources */,
+				AF9C952A151E4D5BA4C2AB3F /* Montserrat Bold Italic 700.ttf in Resources */,
+				A2716237CB3C453DBBD33A8F /* Montserrat ExtraBold 800.ttf in Resources */,
+				4DE348606C774BAF9CFA5062 /* Montserrat ExtraBold Italic 800.ttf in Resources */,
+				F81BBEE560DA44D8AE9989AE /* Montserrat ExtraLight 275.ttf in Resources */,
+				E616BF5FB086473D87FABFAB /* Montserrat ExtraLight Italic 275.ttf in Resources */,
+				4AF277E5743E42A89269E7D9 /* Montserrat Italic 400.ttf in Resources */,
+				53E5823CE67B436CA88C769F /* Montserrat Light 300.ttf in Resources */,
+				3DB76CDDDE43407FB9904F71 /* Montserrat Light Italic 300.ttf in Resources */,
+				BF5E16F657E349E9A4245899 /* Montserrat Medium 500.ttf in Resources */,
+				E6687E0CF1F54F0E97B4E44E /* Montserrat Medium Italic 500.ttf in Resources */,
+				0F83A362712F47F28C902694 /* Montserrat Regular 400.ttf in Resources */,
+				5274BF515D03489D9D6C7421 /* Montserrat SemiBold 600.ttf in Resources */,
+				AB0E532E9D9F458CA63B837A /* Montserrat SemiBold Italic 600.ttf in Resources */,
+				5D6E44F05727427B86FFAF45 /* Montserrat Thin 250.ttf in Resources */,
+				1EE0920CCA524CD497A77B67 /* Montserrat Thin Italic 250.ttf in Resources */,
+				5B881930928149EFB29BDAA1 /* Montserrat-Black.ttf in Resources */,
+				1D06176A3A53416E9E07A861 /* Montserrat-Bold.ttf in Resources */,
+				E0B2A1FD0EA5404C8C6EEC71 /* Montserrat-Light.ttf in Resources */,
+				029AF9923EA74D978EBDB9AC /* Montserrat-Medium.ttf in Resources */,
+				00F84034C69A4CAEB93601C1 /* Montserrat-Regular.ttf in Resources */,
+				B5DDBED923D2476B88168918 /* Montserrat-SemiBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4791E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		0D2C418AE83817491DFCC11E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetbeatLive-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1184CA8A99D3A6CB3D0BBDC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetbeatLive-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		33172EA6CE9436A2ADDD7BC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetbeatLive/Pods-NetbeatLive-frameworks.sh",
+				"${PODS_ROOT}/../../node_modules/openvidu-browser/node_modules/react-native-webrtc/ios/WebRTC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetbeatLive/Pods-NetbeatLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		698F5E2CDD0D03915AD5FEDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetbeatLive/Pods-NetbeatLive-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+				"${PODS_ROOT}/libksygpulive/resource/KSYGPUResource.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-video360plugin/ios/PlayerViewController.xib",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KSYGPUResource.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PlayerViewController.nib",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetbeatLive/Pods-NetbeatLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4FE70DFE3A65835622C8D32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetbeatLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F27C51ABB594F80552A802E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetbeatLiveTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F122414F3F0027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* NetbeatLiveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				643AD768270F0416007909B6 /* File.swift in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4771E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				643AD769270F0416007909B6 /* File.swift in Sources */,
+				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD954D1E0B4F2C00145EB5 /* NetbeatLiveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* NetbeatLive */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02E47A1E0B4A5D006451C7 /* NetbeatLive-tvOS */;
+			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B07FB21A68108700A75B9A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = NetbeatLive;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E4AD7B742C24D07CCC1C2C5 /* Pods-NetbeatLiveTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M8KTF38424;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NetbeatLiveTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetbeatLive.app/NetbeatLive";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7414ED0345F574F995484E90 /* Pods-NetbeatLiveTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = M8KTF38424;
+				INFOPLIST_FILE = NetbeatLiveTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetbeatLive.app/NetbeatLive";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6410B701FAB21D567901A04 /* Pods-NetbeatLive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 63Z273YZH9;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = NetbeatLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.57;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VRMusic.Vaxune;
+				PRODUCT_NAME = NetbeatLive;
+				SWIFT_OBJC_BRIDGING_HEADER = "NetbeatLive-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77242CCD0C649EDD585B894B /* Pods-NetbeatLive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 63Z273YZH9;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = NetbeatLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.57;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VRMusic.Vaxune;
+				PRODUCT_NAME = NetbeatLive;
+				SWIFT_OBJC_BRIDGING_HEADER = "NetbeatLive-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2D02E4971E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA37B69CD0BBAB1E7E1A66C7 /* Pods-NetbeatLive-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "NetbeatLive-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NetbeatLive-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "NetbeatLive-tvOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		2D02E4981E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C540012FE20999C575C99930 /* Pods-NetbeatLive-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "NetbeatLive-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NetbeatLive-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "NetbeatLive-tvOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		2D02E4991E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63EB7D2A156C4B2E94EE95BC /* Pods-NetbeatLive-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "NetbeatLive-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NetbeatLive-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetbeatLive-tvOS.app/NetbeatLive-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		2D02E49A1E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 269480AC0824A9A7E0AF261A /* Pods-NetbeatLive-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "NetbeatLive-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NetbeatLive-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetbeatLive-tvOS.app/NetbeatLive-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "NetbeatLiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "NetbeatLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NetbeatLive-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4971E0B4A5E006451C7 /* Debug */,
+				2D02E4981E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NetbeatLive-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4991E0B4A5E006451C7 /* Debug */,
+				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "NetbeatLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

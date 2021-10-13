@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Revenir à l\'accueil"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Revenir en arrière"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Autres options"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Terminé"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Tout afficher"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Sélectionner une application"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"DÉSACTIVER"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"ACTIVER"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"supprimer"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"entrée"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Fonction+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Méta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Maj+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"espace"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Rechercher…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Effacer la requête"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Requête de recherche"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Rechercher"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Envoyer la requête"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Recherche vocale"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Partager avec"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Partager avec <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Réduire"</string>
+    <string msgid="233061162317617848" name="back_button_content_description">"précédent"</string>
+    <string msgid="2401572676578172896" name="cancel_button">"Annuler"</string>
+    <string msgid="2482357845034618478" name="dialog_button_got_it">"OK"</string>
+    <string msgid="4505853433204459373" name="dialog_button_open_help_center">"OUVRIR LE CENTRE D\'AIDE"</string>
+    <string msgid="4028688231551615655" name="dialog_message_incompatible_phone">"Un téléphone compatible avec Daydream est requis. Consultez le Centre d\'aide Daydream pour en savoir plus."</string>
+    <string msgid="3560856374975640601" name="dialog_message_no_cardboard">"Téléchargez l\'application Cardboard pour configurer votre visionneuse."</string>
+    <string msgid="7887077605817014784" name="dialog_title">"Configurer"</string>
+    <string msgid="4515090705573059650" name="dialog_title_incompatible_phone">"Téléphone incompatible"</string>
+    <string msgid="2594928940370730859" name="dialog_title_vr_core_not_enabled">"Configuration requise"</string>
+    <string msgid="6322165810291059770" name="dialog_title_vr_core_not_installed">"Installation requise"</string>
+    <string msgid="455961049302726493" name="dialog_title_warning">"Avertissement"</string>
+    <string msgid="1966424794507569244" name="dialog_vr_core_not_enabled">"Il se peut que cette application ne fonctionne pas correctement si les services RV Google ne sont pas activés. Veuillez les activer dans les paramètres du téléphone avant de continuer."</string>
+    <string msgid="7122144659930752678" name="dialog_vr_core_not_installed">"Il se peut que cette application ne fonctionne pas correctement sans les services RV Google. Veuillez installer les services RV Google à partir de la boutique Play Store avant de continuer."</string>
+    <string name="exo_controls_fastforward_description">Avance rapide</string>
+    <string name="exo_controls_fullscreen_description">Mode Plein écran</string>
+    <string name="exo_controls_next_description">Chanson suivante</string>
+    <string name="exo_controls_pause_description">Pause</string>
+    <string name="exo_controls_play_description">Lire</string>
+    <string name="exo_controls_previous_description">Chanson précédente</string>
+    <string name="exo_controls_repeat_all_description">Tout lire en boucle</string>
+    <string name="exo_controls_repeat_off_description">Ne rien lire en boucle</string>
+    <string name="exo_controls_repeat_one_description">Lire une chanson en boucle</string>
+    <string name="exo_controls_rewind_description">Retour arrière</string>
+    <string name="exo_controls_shuffle_description">Lecture aléatoire</string>
+    <string name="exo_controls_stop_description">Arrêter</string>
+    <string name="exo_download_completed">Téléchargement terminé</string>
+    <string name="exo_download_description">Télécharger</string>
+    <string name="exo_download_downloading">Téléchargement en cours…</string>
+    <string name="exo_download_failed">Échec du téléchargement</string>
+    <string name="exo_download_notification_channel_name">Téléchargements</string>
+    <string name="exo_download_removing">Suppression des téléchargements en cours…</string>
+    <string name="exo_item_list">%1$s, %2$s</string>
+    <string name="exo_track_bitrate">%1$.2f Mb/s</string>
+    <string name="exo_track_mono">Mono</string>
+    <string name="exo_track_resolution">%1$d × %2$d</string>
+    <string name="exo_track_selection_auto">Auto</string>
+    <string name="exo_track_selection_none">Aucun</string>
+    <string name="exo_track_selection_title_audio">Audio</string>
+    <string name="exo_track_selection_title_text">Texte</string>
+    <string name="exo_track_selection_title_video">Vidéo</string>
+    <string name="exo_track_stereo">Stéréo</string>
+    <string name="exo_track_surround">Son ambiophonique</string>
+    <string name="exo_track_surround_5_point_1">Son ambiophonique 5.1</string>
+    <string name="exo_track_surround_7_point_1">Son ambiophonique 7.1</string>
+    <string name="exo_track_unknown">Inconnu</string>
+    <string msgid="6145412853379876634" name="go_to_playstore_button">"Acc. à la boutique Play Store"</string>
+    <string msgid="6878752668266068283" name="go_to_vr_listeners_settings_button">"Accéder aux paramètres"</string>
+    <string msgid="5324772199357788720" name="no_browser_text">"Aucun navigateur pour ouvrir le site Web"</string>
+    <string msgid="2306297166333705530" name="place_your_phone_into_cardboard">"Placez le téléphone dans la visionneuse Cardboard"</string>
+    <string msgid="5433369525545709510" name="place_your_viewer_into_viewer_format">"Placez le téléphone dans la visionneuse <ns1:g id="VIEWER_NAME">%s</ns1:g>"</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Rechercher"</string>
+    <string msgid="3719682527828378500" name="settings_button_content_description">"paramètres"</string>
+    <string msgid="20964482303479393" name="setup_button">"Configurer"</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="7856245902137004584" name="switch_viewer_action">"Changer"</string>
+    <string msgid="816514297101696447" name="switch_viewer_prompt">"Changer de visionneuse?"</string>
+</resources>

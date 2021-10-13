@@ -1,0 +1,1 @@
+../../../../../node_modules/react-native-rtmpview/ios/RNRtmpEventManager.h

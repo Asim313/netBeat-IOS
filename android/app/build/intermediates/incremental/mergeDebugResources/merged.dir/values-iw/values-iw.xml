@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"ניווט לדף הבית"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"ניווט למעלה"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"עוד אפשרויות"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"סיום"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"הצגת הכול"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"בחירת אפליקציה"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"כבוי"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"מופעל"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+‎"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"מחיקה"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"רווח"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"תפריט+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"חיפוש…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"מחיקת השאילתה"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"שאילתת חיפוש"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"חיפוש"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"שליחת שאילתה"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"חיפוש קולי"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"שיתוף עם"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"שיתוף עם <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"כיווץ"</string>
+    <string msgid="233061162317617848" name="back_button_content_description">"הקודם"</string>
+    <string msgid="2401572676578172896" name="cancel_button">"ביטול"</string>
+    <string msgid="2482357845034618478" name="dialog_button_got_it">"הבנתי"</string>
+    <string msgid="4505853433204459373" name="dialog_button_open_help_center">"פתח את מרכז העזרה"</string>
+    <string msgid="4028688231551615655" name="dialog_message_incompatible_phone">"נדרש טלפון שתומך ב-Daydream. מידע נוסף זמין במרכז העזרה של Daydream."</string>
+    <string msgid="3560856374975640601" name="dialog_message_no_cardboard">"עליך להוריד את אפליקציית Cardboard כדי להגדיר את מכשיר הצפייה."</string>
+    <string msgid="7887077605817014784" name="dialog_title">"הגדרה"</string>
+    <string msgid="4515090705573059650" name="dialog_title_incompatible_phone">"טלפון לא תואם"</string>
+    <string msgid="2594928940370730859" name="dialog_title_vr_core_not_enabled">"נדרשת הגדרה"</string>
+    <string msgid="6322165810291059770" name="dialog_title_vr_core_not_installed">"נדרשת התקנה"</string>
+    <string msgid="455961049302726493" name="dialog_title_warning">"אזהרה"</string>
+    <string msgid="1966424794507569244" name="dialog_vr_core_not_enabled">"ייתכן שהאפליקציה לא תפעל כהלכה ללא שירותי VR של Google. כדי להמשיך, הפעל אותם בהגדרות הטלפון."</string>
+    <string msgid="7122144659930752678" name="dialog_vr_core_not_installed">"ייתכן שהאפליקציה לא תפעל כהלכה ללא שירותי VR של Google. כדי להמשיך, התקן את שירותי VR של Google מחנות Play."</string>
+    <string name="exo_controls_fastforward_description">הרצה קדימה</string>
+    <string name="exo_controls_fullscreen_description">מצב מסך מלא</string>
+    <string name="exo_controls_next_description">הרצועה הבאה</string>
+    <string name="exo_controls_pause_description">השהיה</string>
+    <string name="exo_controls_play_description">הפעלה</string>
+    <string name="exo_controls_previous_description">הרצועה הקודמת</string>
+    <string name="exo_controls_repeat_all_description">חזור על הכול</string>
+    <string name="exo_controls_repeat_off_description">אל תחזור על אף פריט</string>
+    <string name="exo_controls_repeat_one_description">חזור על פריט אחד</string>
+    <string name="exo_controls_rewind_description">הרצה אחורה</string>
+    <string name="exo_controls_shuffle_description">ערבוב</string>
+    <string name="exo_controls_stop_description">הפסקה</string>
+    <string name="exo_download_completed">ההורדה הושלמה</string>
+    <string name="exo_download_description">הורדה</string>
+    <string name="exo_download_downloading">ההורדה מתבצעת</string>
+    <string name="exo_download_failed">ההורדה לא הושלמה</string>
+    <string name="exo_download_notification_channel_name">הורדות</string>
+    <string name="exo_download_removing">מסיר הורדות</string>
+    <string name="exo_item_list">%1$s‏, %2$s</string>
+    <string name="exo_track_bitrate">%1$.2f מגה סיביות לשנייה</string>
+    <string name="exo_track_mono">מונו</string>
+    <string name="exo_track_resolution">%1$d × %2$d</string>
+    <string name="exo_track_selection_auto">אוטומטי</string>
+    <string name="exo_track_selection_none">ללא</string>
+    <string name="exo_track_selection_title_audio">אודיו</string>
+    <string name="exo_track_selection_title_text">טקסט</string>
+    <string name="exo_track_selection_title_video">סרטון</string>
+    <string name="exo_track_stereo">סטריאו</string>
+    <string name="exo_track_surround">סראונד</string>
+    <string name="exo_track_surround_5_point_1">סראונד 5.1</string>
+    <string name="exo_track_surround_7_point_1">סראונד 7.1</string>
+    <string name="exo_track_unknown">לא ידוע</string>
+    <string msgid="6145412853379876634" name="go_to_playstore_button">"עבור לחנות Play"</string>
+    <string msgid="6878752668266068283" name="go_to_vr_listeners_settings_button">"עבור ל\'הגדרות\'"</string>
+    <string msgid="5324772199357788720" name="no_browser_text">"לא נמצא דפדפן שיכול לפתוח את האתר"</string>
+    <string msgid="2306297166333705530" name="place_your_phone_into_cardboard">"הנח את הטלפון במכשיר Cardboard שלך"</string>
+    <string msgid="5433369525545709510" name="place_your_viewer_into_viewer_format">"הנח את הטלפון במכשיר הצפייה <ns1:g id="VIEWER_NAME">%s</ns1:g>"</string>
+    <string msgid="730395136688082741" name="search_menu_title">"חיפוש"</string>
+    <string msgid="3719682527828378500" name="settings_button_content_description">"הגדרות"</string>
+    <string msgid="20964482303479393" name="setup_button">"הגדר"</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="7856245902137004584" name="switch_viewer_action">"החלף"</string>
+    <string msgid="816514297101696447" name="switch_viewer_prompt">"משתמש במכשיר צפייה שונה?"</string>
+</resources>

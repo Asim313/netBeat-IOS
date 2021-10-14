@@ -15,6 +15,7 @@ target 'NetbeatLive' do
   pod 'React-RCTAnimation', :path => '../node_modules/react-native/Libraries/NativeAnimation'
   pod 'React-RCTBlob', :path => '../node_modules/react-native/Libraries/Blob'
   pod 'React-RCTImage', :path => '../node_modules/react-native/Libraries/Image'
+
   pod 'React-RCTLinking', :path => '../node_modules/react-native/Libraries/LinkingIOS'
   pod 'React-RCTNetwork', :path => '../node_modules/react-native/Libraries/Network'
   pod 'React-RCTSettings', :path => '../node_modules/react-native/Libraries/Settings'
@@ -38,6 +39,8 @@ target 'NetbeatLive' do
 
 
   pod 'react-native-simple-toast', :path => '../node_modules/react-native-simple-toast'
+
+  pod 'react-native-video360', :path => '../node_modules/react-native-video360plugin'
 
   target 'NetbeatLiveTests' do
     inherit! :search_paths

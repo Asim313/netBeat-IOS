@@ -78,10 +78,6 @@ const Event = (props) => {
            </TouchableOpacity>
         </View>
 
-         
-
-
-
 
         <View style = {styles.bottomTapContainer}>
              <View style = {[styles.videoButtonContainer, {backgroundColor : DARK? Colors.base : Colors.white}]}>

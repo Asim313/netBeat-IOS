@@ -12,7 +12,7 @@ import { _retrieveData } from '../../asyncStorage/AsyncFuncs';
 import { OpenVidu } from 'openvidu-browser';
  // import InCallManager from 'react-native-incall-manager';  
 import axios from 'axios'
-import { empty } from "@apollo/client"
+import Orientation from 'react-native-orientation';
 
  
  const OPENVIDU_SERVER_URL = 'https://alessandro.quickver.com';
@@ -30,7 +30,7 @@ const BroadCast = (props) => {
   let temp = []
 
   const { lang } = useSelector(state => state.language)
-  const [mode, setMode] = useState('360')
+  const [mode, setMode] = useState(3)
   const [mic, setMic] = useState(true)
   const [vol, setVol] = useState(true)
   const [peoples, setPeoples] = useState(false)
@@ -280,12 +280,12 @@ const BroadCast = (props) => {
                   
                   
                   if(temp.length == 5){
-                    temp.shift()
-                    temp.push(event.data)
+                    temp.pop()
+                    temp.unshift(event.data)
                     setMsgs([...temp])
                     
                   }else{
-                    temp.push(event.data)
+                    temp.unshift(event.data)
                     setMsgs([...temp])
                     // txtFeldRef.clear() 
                   }
@@ -326,13 +326,9 @@ const sendMsg = () => {
 
 return (
   <View style = {styles.mainContainer}>
-    {console.log("ref=>>",ref)}
-    <StatusBar hidden = {sheight>sWidth ? false : true}/>
-
+    {console.log(event)}
+    <StatusBar hidden = {sheight > sWidth ? false : true}/>
     <View style = {styles.bgImage}>
-
-
-
     {!loader ? 
     <LivePlayer 
       // ref={(ref) => {
@@ -340,7 +336,7 @@ return (
       // }}  
       urlVideo={selectedURI} 
       volume={1} 
-      modeVideo={3} 
+      modeVideo={mode} 
       enableInfoButton={false}
       enableFullscreenButton={false}
       enableCardboardButton={false}
@@ -365,21 +361,64 @@ return (
       </TouchableOpacity>   
 
       <View style = {sheight > sWidth ? styles.modesContainer : styles.modesContainerLand}>
+
+      {/* {event?.concert_streams?.map((i) =>
+             i.type == '360' ? <TouchableOpacity
+             style = {[styles.mode, {backgroundColor : mode == '360' ? Colors.base1 : '#ffffff15'}]}
+             >
+             <Image source = {Images.degree_w}/>  
+             </TouchableOpacity> :
+             i.type == 'flat' ?  <TouchableOpacity
+             style = {[styles.mode, {backgroundColor : mode == 'video' ? Colors.base1 : '#ffffff15'}]}
+             >
+             <Image source = {Images.video_w}/>  
+             </TouchableOpacity> :
+             <TouchableOpacity
+             style = {[styles.mode, {backgroundColor : mode == 'vr' ? Colors.base1 : '#ffffff15'}]}
+             >
+             <Image source = {Images.vr_w}/>  
+             </TouchableOpacity> 
+             )}   */}
         
         <TouchableOpacity
-        style = {[styles.mode, {backgroundColor : mode == '360' ? Colors.base1 : '#ffffff15'}]}
+        disabled = {!event?.concert_streams?.some(x => x.type == '360')}
+        onPress = {() => {
+          Orientation.lockToLandscapeRight()
+          setMode(1)
+        }}
+        style = {[ styles.mode, 
+          {backgroundColor : mode == 1 ? Colors.base1 : '#ffffff15',
+           opacity : event?.concert_streams?.some(x => x.type == '360') ? 1 : 0.5
+          }
+        ]}
         >
         <Image source = {Images.degree_w}/>  
         </TouchableOpacity>
       
         <TouchableOpacity
-        style = {[styles.mode, {backgroundColor : mode == 'vr' ? Colors.base1 : '#ffffff15'}]}
+        disabled = {!event?.concert_streams?.some(x => x.type == 'vr')}
+        onPress = {() => {
+          Orientation.lockToLandscapeRight()
+          setMode(2)
+        }}
+        style = {[styles.mode, 
+          {backgroundColor : mode == 2 ? Colors.base1 : '#ffffff15',
+          opacity : event?.concert_streams?.some(x => x.type == 'vr') ? 1 : 0.5
+         }]}
         >
         <Image source = {Images.vr_w}/>  
         </TouchableOpacity>
       
         <TouchableOpacity
-        style = {[styles.mode, {backgroundColor : mode == 'video' ? Colors.base1 : '#ffffff15'}]}
+        disabled = {!event?.concert_streams?.some(x => x.type == 'flat')}
+        onPress = {() => {
+          Orientation.lockToPortrait()
+          setMode(3)
+        }}
+        style = {[styles.mode, 
+          {backgroundColor : mode == 3 ? Colors.base1 : '#ffffff15',
+          opacity : event?.concert_streams?.some(x => x.type == 'flat') ? 1 : 0.5
+        }]}
         >
         <Image source = {Images.video_w}/>  
         </TouchableOpacity>
@@ -387,12 +426,6 @@ return (
 
 
       <Image source = {Images.middile} style = {styles.middle}/>
-
-        
-
-      
-
-
 
       {!comments &&
       <>
@@ -477,10 +510,11 @@ return (
           
           <FlatList
           data = {msgs}
-          //inverted
+          //style = {{minHeight: hps(20), borderWidth:1, borderColor:'red'}}
+          inverted
           //containerStyle={{ flex: 1 }}
           renderItem = {({item, index}) => 
-            <View style = {styles.comment}>
+            <View style = {sheight > sWidth ? styles.comment : styles.commentLand}>
              <Image style = {styles.user} source = {Images.user}/>
              <Text style = {styles.text}>{item}</Text>
            </View>

@@ -21,7 +21,8 @@ import { BaseUrl } from '../graphql/baseUrl';
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 import { ApolloProvider } from '@apollo/react-hooks';
 import Register from '../views/register_ ';
-
+import Orientation from 'react-native-orientation';
+import messaging from '@react-native-firebase/messaging';
 
 const client = new ApolloClient({
   uri: `${BaseUrl}/graphql`,
@@ -31,6 +32,25 @@ const client = new ApolloClient({
 const Stack7 = createStackNavigator();
 
 export default class App extends React.Component {
+
+
+  async requestUserPermission(){
+    const authStatus = await messaging().requestPermission();
+    const enabled =
+      authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
+      authStatus === messaging.AuthorizationStatus.PROVISIONAL;
+  
+    if (enabled) {
+      console.log('Authorization status:', authStatus);
+    }
+  }
+
+  componentDidMount(){
+    Orientation.lockToPortrait()
+    this.requestUserPermission()
+  }
+
+  
 
   render() {
     return  <View style={{flex : 1}}>     

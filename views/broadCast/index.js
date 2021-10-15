@@ -1,6 +1,6 @@
 import React,{Component ,useEffect,useRef,useState } from "react"
-import { SafeAreaView , View, ImageBackground, Image, TouchableOpacity, Text, TextInput, Dimensions,StatusBar, AppState, BackHandler, FlatList,Animated, ActivityIndicator, Keyboard} from "react-native"
-import { Colors, hps, Images, wp, wps } from "../../assets"
+import { SafeAreaView , View, ImageBackground, Image, TouchableOpacity, Text, TextInput, Dimensions,StatusBar, AppState, BackHandler, FlatList,Animated, ActivityIndicator} from "react-native"
+import { Colors, hp, hps, Images, wp, wps } from "../../assets"
 import styles from "./styles"
 import LinearGradient from 'react-native-linear-gradient'
 import { useSelector } from "react-redux"
@@ -13,6 +13,7 @@ import { OpenVidu } from 'openvidu-browser';
  // import InCallManager from 'react-native-incall-manager';  
 import axios from 'axios'
 import Orientation from 'react-native-orientation';
+import * as Animatable from 'react-native-animatable';
 
  
  const OPENVIDU_SERVER_URL = 'https://alessandro.quickver.com';
@@ -67,15 +68,45 @@ const BroadCast = (props) => {
   const [msg, setMsg] = useState('')
   const [msgs, setMsgs] = useState([])  
   const [ref, setRef] = useState(null)  
+  const [fade, setFade] = useState(false)
+
+
+  const fadeAnim = useRef(new Animated.Value(0)).current  // Initial value for opacity: 0
+  
+
+  const fadeIn = () => {
+    Animated.timing(fadeAnim, {
+      toValue : 1,
+      duration : 1000,
+      useNativeDriver : true
+    }).start()
+  }
+
+  const fadeOut = () => {
+    Animated.timing(fadeAnim, {
+      toValue : 0,
+      duration : 1000,
+      useNativeDriver : true
+    }).start()
+  }
+
+
+  useEffect(()=>{
+    setInterval(() => {
+      setVolBar(false)
+      setFade(true)
+    },5000)
+  },[])
+
   
 
 
  
   const getScreenSize = () => {  
-  const screenWidth = Math.round(Dimensions.get('window').width);  
-  const screenHeight = Math.round(Dimensions.get('window').height);  
-  setSWidth(screenWidth)
-  setSHeight(screenHeight) 
+    const screenWidth = Math.round(Dimensions.get('window').width);  
+    const screenHeight = Math.round(Dimensions.get('window').height);  
+    setSWidth(screenWidth)
+    setSHeight(screenHeight) 
   } 
 
   useEffect(()=>{
@@ -90,7 +121,6 @@ const BroadCast = (props) => {
 
 
   const leaveSession = async(data) => {
-
     const mySession = session;
     await  mySession.disconnect()
     setTimeout(() => {
@@ -107,6 +137,7 @@ const BroadCast = (props) => {
 
 
   const _handleAppStateChange = (nextAppState) => {
+    console.log('here', nextAppState)
     var a = null;
     var loading = null;
     if (
@@ -128,11 +159,13 @@ const BroadCast = (props) => {
 
 
 
+
   const componentDidMount = () => {
     vrheadset = (vrheadset == 'yes') ? true : false;
-    //AppState.addEventListener('change', _handleAppStateChange());
+    console.log('here...')
+    AppState.addEventListener('change', _handleAppStateChange);
     joinSession()
-    // BackHandler.addEventListener('hardwareBackPress', this.handleBackButtonClick);
+  // BackHandler.addEventListener('hardwareBackPress', this.handleBackButtonClick);
     //alert(JSON.stringify(selectedURI));
     // console.warn(this.props.route.params.list[0].stream_url)
    //    InCallManager.start();
@@ -231,7 +264,7 @@ const BroadCast = (props) => {
             })
             .catch((error) => reject(error));
     });
-}
+  }
 
 
   const getToken = () => {
@@ -257,22 +290,21 @@ const BroadCast = (props) => {
             mySession
             .connect(token, { clientData: myUserName,group_id : a?.group?.id })
             .then(() => {
-
-            let txtFieldRef = ref;
+               let txtFieldRef = ref;
                 if (Platform.OS == 'android') {
-                    this.checkAndroidPermissions();
+                    //checkAndroidPermissions();
                 }
-                const properties = {
+                const properties = {  
                     audioSource: true, // The source of audio. If undefined default microphone
-                    videoSource: undefined, // The source of video. If undefined default webcam
+                    videoSource: true, // The source of video. If undefined default webcam
                     publishAudio: true, // Whether you want to start publishing with your audio unmuted or not
-                    publishVideo: undefined, // Whether you want to start publishing with your video enabled or not
+                    publishVideo: true, // Whether you want to start publishing with your video enabled or not
                     resolution: '640x480', // The resolution of your video
                     frameRate: 30, // The frame rate of your video
                     insertMode: 'APPEND', // How the video is inserted in the target element 'video-container'
                 };
                 let publisher = OV.initPublisher(undefined, properties);
-                //console.log("publisher=>", publisher)
+                console.log("publisher=>", publisher)
                 setMainStreamManager(publisher)
                 mySession.publish(publisher);
                 mySession.on('signal:my-chat', (event) => {
@@ -323,26 +355,49 @@ const sendMsg = () => {
   ref.clear();
 }
 
-
 return (
   <View style = {styles.mainContainer}>
-    {console.log(event)}
     <StatusBar hidden = {sheight > sWidth ? false : true}/>
-    <View style = {styles.bgImage}>
+    <TouchableOpacity 
+    activeOpacity = {1}
+    onPress = {() => {
+      setFade(false)
+    }}
+    style = {styles.bgImage}>
     {!loader ? 
-    <LivePlayer 
-      // ref={(ref) => {
-      //     this.player = ref
-      // }}  
-      urlVideo={selectedURI} 
-      volume={1} 
-      modeVideo={mode} 
+    <>
+     {mode == 1 && <LivePlayer 
+      urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == '360')[0]?.stream_ios} 
+      //volume={0.0} 
+      modeVideo={1} 
       enableInfoButton={false}
       enableFullscreenButton={false}
       enableCardboardButton={false}
       enableTouchTracking={false}
       hidesTransitionView={false}
-      style={{ flex: 1}} />
+      style={{ flex: 1}} />}
+      {mode == 2 && <LivePlayer 
+      urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'vr')[0]?.stream_ios} 
+      //volume={0.0} 
+      modeVideo={2} 
+      enableInfoButton={false}
+      enableFullscreenButton={false}
+      enableCardboardButton={false}
+      enableTouchTracking={false}
+      hidesTransitionView={false}
+      style={{ flex: 1}} />}
+      {mode == 3 && <LivePlayer 
+      //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
+      urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
+      //volume = {0.0} 
+      modeVideo={3} 
+      enableInfoButton={false}
+      enableFullscreenButton={false}
+      enableCardboardButton={false}
+      enableTouchTracking={false}
+      hidesTransitionView={false}
+      style={{ flex: 1}} />}
+      </>
       :
       <View style={{alignItems : 'center', justifyContent : 'center', flex : 1}}>
           <ActivityIndicator size='large'></ActivityIndicator>
@@ -353,33 +408,40 @@ return (
     style = {styles.bgImage}
     > */}
     <View style = {styles.bgImage}>
-      <TouchableOpacity 
-      onPress = {() => {props.navigation.goBack()}}
+
+      {fade ? <Animatable.View
+      animation = 'fadeOutLeft'
       style = {sheight > sWidth? styles.back : styles.backLand}
       >
+      <TouchableOpacity 
+      onPress = {() => {
+        props.navigation.goBack()
+        Orientation.lockToPortrait()
+      }}
+      >
        <Image source = {Images.arrow} style = {styles.arrow}/>
-      </TouchableOpacity>   
+      </TouchableOpacity> 
+      </Animatable.View>  
+      :
+      <Animatable.View
+      animation = 'fadeInLeft'
+      style = {sheight > sWidth? styles.back : styles.backLand}
+      >
+      <TouchableOpacity 
+      onPress = {() => {
+        props.navigation.goBack()
+        Orientation.lockToPortrait()
+      }}
+      >
+       <Image source = {Images.arrow} style = {styles.arrow}/>
+      </TouchableOpacity> 
+      </Animatable.View>}
+      
 
-      <View style = {sheight > sWidth ? styles.modesContainer : styles.modesContainerLand}>
-
-      {/* {event?.concert_streams?.map((i) =>
-             i.type == '360' ? <TouchableOpacity
-             style = {[styles.mode, {backgroundColor : mode == '360' ? Colors.base1 : '#ffffff15'}]}
-             >
-             <Image source = {Images.degree_w}/>  
-             </TouchableOpacity> :
-             i.type == 'flat' ?  <TouchableOpacity
-             style = {[styles.mode, {backgroundColor : mode == 'video' ? Colors.base1 : '#ffffff15'}]}
-             >
-             <Image source = {Images.video_w}/>  
-             </TouchableOpacity> :
-             <TouchableOpacity
-             style = {[styles.mode, {backgroundColor : mode == 'vr' ? Colors.base1 : '#ffffff15'}]}
-             >
-             <Image source = {Images.vr_w}/>  
-             </TouchableOpacity> 
-             )}   */}
-        
+      {fade? 
+      <Animatable.View 
+      animation = 'fadeOutRight'
+      style = {sheight > sWidth ? [styles.modesContainer, {transform : [{translateX : fadeAnim}]}] : styles.modesContainerLand}>
         <TouchableOpacity
         disabled = {!event?.concert_streams?.some(x => x.type == '360')}
         onPress = {() => {
@@ -412,6 +474,7 @@ return (
         <TouchableOpacity
         disabled = {!event?.concert_streams?.some(x => x.type == 'flat')}
         onPress = {() => {
+          Orientation.unlockAllOrientations()
           Orientation.lockToPortrait()
           setMode(3)
         }}
@@ -422,46 +485,177 @@ return (
         >
         <Image source = {Images.video_w}/>  
         </TouchableOpacity>
-      </View>
+      </Animatable.View>
+
+      :
+
+      <Animatable.View 
+      animation = 'fadeInRight'
+      style = {sheight > sWidth ? [styles.modesContainer, {transform : [{translateX : fadeAnim}]}] : styles.modesContainerLand}>
+        <TouchableOpacity
+        disabled = {!event?.concert_streams?.some(x => x.type == '360')}
+        onPress = {() => {
+          Orientation.lockToLandscapeRight()
+          setMode(1)
+        }}
+        style = {[ styles.mode, 
+          {backgroundColor : mode == 1 ? Colors.base1 : '#ffffff15',
+           opacity : event?.concert_streams?.some(x => x.type == '360') ? 1 : 0.5
+          }
+        ]}
+        >
+        <Image source = {Images.degree_w}/>  
+        </TouchableOpacity>
+      
+        <TouchableOpacity
+        disabled = {!event?.concert_streams?.some(x => x.type == 'vr')}
+        onPress = {() => {
+          Orientation.lockToLandscapeRight()
+          setMode(2)
+        }}
+        style = {[styles.mode, 
+          {backgroundColor : mode == 2 ? Colors.base1 : '#ffffff15',
+          opacity : event?.concert_streams?.some(x => x.type == 'vr') ? 1 : 0.5
+         }]}
+        >
+        <Image source = {Images.vr_w}/>  
+        </TouchableOpacity>
+      
+        <TouchableOpacity
+        disabled = {!event?.concert_streams?.some(x => x.type == 'flat')}
+        onPress = {() => {
+          Orientation.unlockAllOrientations()
+          Orientation.lockToPortrait()
+          setMode(3)
+        }}
+        style = {[styles.mode, 
+          {backgroundColor : mode == 3 ? Colors.base1 : '#ffffff15',
+          opacity : event?.concert_streams?.some(x => x.type == 'flat') ? 1 : 0.5
+        }]}
+        >
+        <Image source = {Images.video_w}/>  
+        </TouchableOpacity>
+      </Animatable.View>}
 
 
-      <Image source = {Images.middile} style = {styles.middle}/>
+      {fade?
+      <Animatable.View 
+      animation = "fadeOut"
+      style = {styles.middle}>
+        <Image source = {Images.middile}/>
+      </Animatable.View>
+      :
+      <Animatable.View 
+      animation = "fadeIn"
+      style = {styles.middle}>
+        <Image source = {Images.middile}/>
+      </Animatable.View>}
+
+
 
       {!comments &&
       <>
-      <TouchableOpacity
-      onPress = {() => {setVolBar(!volBar)}}
+      {fade?
+      <Animatable.View
+      animation = "fadeOutRight"
       style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, { bottom:sheight>sWidth? hps(104) : wps(20), right:sheight>sWidth? wps(16) : hps(16) }]}
       >
-      <Image source = {value !== 0 ? Images.speaker : Images.speaker_off}/>  
-      </TouchableOpacity>
-
-      <TouchableOpacity
-      onPress = {() => {setPeoples(!peoples)}}
-      style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, {bottom: sheight>sWidth? hps(104) : wps(20), right:null, left:sheight>sWidth? wps(16) : hps(16)}]}
-      >
-      <Image source = {peoples ? Images.peoples_white : Images.peoples_grey}/>  
-      </TouchableOpacity>
-
-      <TouchableOpacity
-      //onPress = {() => {setPeoples(!peoples)}}
-      style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, {bottom:sheight>sWidth? hps(162) : hps(80),right:null,left:wps(16)}]}
-      >
-      <Image source = {Images.clap}/>
-      </TouchableOpacity>
-
-      <TouchableOpacity
-      onPress = {() => {setMic(!mic)}}
-      style = {sheight>sWidth ? styles.micMainButton : styles.micMainButtonLand}
-      >
-        <LinearGradient
-        colors = {['#EBA0EF','#27E4E5']}
-        onPress = {() => {console.log('clicked')}}
-        style = {[styles.micMainButton,{position:'relative', bottom:null}]}
+        <TouchableOpacity
+        onPress = {() => {setVolBar(!volBar)}}
         >
-        <Image style = {styles.mic} source = {mic? Images.mic_on : Images.mic_off}/>  
-        </LinearGradient>
-      </TouchableOpacity>
+        <Image source = {value !== 0 ? Images.speaker : Images.speaker_off}/>  
+        </TouchableOpacity>
+      </Animatable.View>
+      :
+      <Animatable.View
+      animation = "fadeInRight"
+      style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, { bottom:sheight>sWidth? hps(104) : wps(20), right:sheight>sWidth? wps(16) : hps(16) }]}
+      >
+        <TouchableOpacity
+        onPress = {() => {setVolBar(!volBar)}}
+        >
+        <Image source = {value !== 0 ? Images.speaker : Images.speaker_off}/>  
+        </TouchableOpacity>
+      </Animatable.View>}
+
+      {fade?
+      <Animatable.View
+      animation = "fadeOutLeft"
+      style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, {bottom: sheight>sWidth? hps(104) : wps(20), right:null, left:sheight>sWidth? wps(16) : hps(16)}]}
+      > 
+        <TouchableOpacity
+        onPress = {() => {setPeoples(!peoples)}}
+        >
+        <Image source = {peoples ? Images.peoples_white : Images.peoples_grey}/>  
+        </TouchableOpacity>
+      </Animatable.View>
+      :
+      <Animatable.View
+      animation = "fadeInLeft"
+      style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, {bottom: sheight>sWidth? hps(104) : wps(20), right:null, left:sheight>sWidth? wps(16) : hps(16)}]}
+      > 
+        <TouchableOpacity
+        onPress = {() => {setPeoples(!peoples)}}
+        >
+        <Image source = {peoples ? Images.peoples_white : Images.peoples_grey}/>  
+        </TouchableOpacity>
+      </Animatable.View>}
+      
+      {fade?
+      <Animatable.View
+      animation = "fadeOutLeft"
+      style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, {bottom:sheight>sWidth? hps(162) : hps(80),right:null,left:wps(16)}]}>
+        <TouchableOpacity
+        onPress = {() => {}}
+        >
+        <Image source = {Images.clap}/>
+        </TouchableOpacity>
+      </Animatable.View>
+      :
+      <Animatable.View
+      animation = "fadeInLeft"
+      style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, {bottom:sheight>sWidth? hps(162) : hps(80),right:null,left:wps(16)}]}>
+        <TouchableOpacity
+        onPress = {() => {}}
+        >
+        <Image source = {Images.clap}/>
+        </TouchableOpacity>
+      </Animatable.View>}
+
+      {fade?
+      <Animatable.View
+       animation = 'fadeOutDown'
+       style = {sheight>sWidth ? styles.micMainButton : styles.micMainButtonLand}
+      >
+        <TouchableOpacity
+        onPress = {() => {setMic(!mic)}}
+        >
+          <LinearGradient
+          colors = {['#EBA0EF','#27E4E5']}
+          onPress = {() => {console.log('clicked')}}
+          style = {[styles.micMainButton,{position:'relative', bottom:null}]}
+          >
+          <Image style = {styles.mic} source = {mic? Images.mic_on : Images.mic_off}/>  
+          </LinearGradient>
+        </TouchableOpacity>
+      </Animatable.View>
+      :
+      <Animatable.View
+       animation = 'fadeInUp'
+       style = {sheight>sWidth ? styles.micMainButton : styles.micMainButtonLand}
+      >
+        <TouchableOpacity
+        onPress = {() => {setMic(!mic)}}
+        >
+          <LinearGradient
+          colors = {['#EBA0EF','#27E4E5']}
+          onPress = {() => {console.log('clicked')}}
+          style = {[styles.micMainButton,{position:'relative', bottom:null}]}
+          >
+          <Image style = {styles.mic} source = {mic? Images.mic_on : Images.mic_off}/>  
+          </LinearGradient>
+        </TouchableOpacity>
+      </Animatable.View>}
 
       {volBar && <View style = {sheight>sWidth ? styles.volSlider: styles.volSliderLand}>
         <RnVerticalSlider
@@ -506,13 +700,9 @@ return (
         </View>
 
         <View style = {styles.commentsContainer}>
-
-          
           <FlatList
           data = {msgs}
-          //style = {{minHeight: hps(20), borderWidth:1, borderColor:'red'}}
           inverted
-          //containerStyle={{ flex: 1 }}
           renderItem = {({item, index}) => 
             <View style = {sheight > sWidth ? styles.comment : styles.commentLand}>
              <Image style = {styles.user} source = {Images.user}/>
@@ -521,29 +711,6 @@ return (
           }
           keyExtractor={item => item}
           />
-          
-
-          {/* {msgs.map((i) => 
-          <View style = {styles.comment}>
-            <Image style = {styles.user} source = {Images.user}/>
-            <Text style = {styles.text}>{i}</Text>
-          </View>
-          )} */}
-
-          {/* <View style = {styles.comment}>
-            <Image style = {styles.user} source = {Images.user}/>
-            <Text style = {styles.text}>very cool!!!</Text>
-          </View>
-
-          <View style = {styles.comment}>
-            <Image style = {styles.user} source = {Images.user}/>
-            <Text style = {styles.text}>Bravooooo! Encore!!!</Text>
-          </View>
-
-          <View style = {styles.comment}>
-            <Image style = {styles.user} source = {Images.user}/>
-            <Text style = {styles.text}>It is excellent</Text>
-          </View> */}
         </View>
 
         <View style = {sheight > sWidth ? styles.textInputMainContainer : styles.textInputMainContainerLand}>
@@ -585,7 +752,7 @@ return (
       </View>
 
       {/* </ImageBackground> */}
-      </View>
+      </TouchableOpacity>
   </View>
 )}
 

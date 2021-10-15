@@ -75,7 +75,14 @@ export default StyleSheet.create ({
       alignSelf : 'center',
       backgroundColor : Colors.base1,
       justifyContent:'center',
-      alignItems:'center'
+      alignItems:'center',
+      shadowColor: Colors.base1,
+      shadowOffset: {
+        width: 0,
+        height: 0,
+      },
+      shadowOpacity: 0.58,
+      shadowRadius: 16.00,
     },
     buttonText: {
       fontSize : hps(16),

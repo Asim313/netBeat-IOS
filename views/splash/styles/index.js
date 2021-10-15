@@ -44,11 +44,29 @@ export default StyleSheet.create ({
       height: hps(42),
       width: hps(42),
       borderRadius:hps(42/2),
-      marginTop:hps(105),
+      top: hps(626),
       alignSelf:'center',
       justifyContent:'center',
       alignItems:'center',
       backgroundColor : '#707070',
+      position:'absolute'
+    },
+    clapContainerGlow: {
+      height: hps(42),
+      width: hps(42),
+      borderRadius:hps(42/2),
+      marginTop:hps(105),
+      alignSelf:'center',
+      justifyContent:'center',
+      alignItems:'center',
+      backgroundColor : Colors.base1,
+      shadowColor: Colors.base1,
+      shadowOffset: {
+        width: 0,
+        height: 0,
+      },
+      shadowOpacity: 1,
+      shadowRadius: 16,
     },
     clap: {
       height :hps(18),
@@ -66,6 +84,11 @@ export default StyleSheet.create ({
       fontFamily:Fonts.medium,
       alignSelf:'center',
       color:'#CB65C750'
+    },
+    textGlowing: {
+      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+      textShadowOffset: {width: -1, height: 1},
+      textShadowRadius: 15
     }
       
 })

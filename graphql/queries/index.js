@@ -64,3 +64,19 @@ query{
   }
 }`
 
+export const GETUSERBYID = gql`
+query user($id : ID!){
+  user(id : $id){
+    id
+    username
+    email
+    id
+    profile{
+      url
+    }
+    artist_volume
+    audience_volume
+    notification
+  }
+}`
+

@@ -23,6 +23,8 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import Register from '../views/register_ ';
 import Orientation from 'react-native-orientation';
 import messaging from '@react-native-firebase/messaging';
+import Notifications from '../views/notifications';
+import Profile from '../views/profile';
 
 const client = new ApolloClient({
   uri: `${BaseUrl}/graphql`,
@@ -76,8 +78,16 @@ export default class App extends React.Component {
         component={Register}
       />
       <Stack7.Screen
+        name="profile"
+        component={Profile}
+      />
+      <Stack7.Screen
         name="setting"
         component={Setting}
+      />
+      <Stack7.Screen
+        name="notification"
+        component={Notifications}
       />
       <Stack7.Screen
         name="event"

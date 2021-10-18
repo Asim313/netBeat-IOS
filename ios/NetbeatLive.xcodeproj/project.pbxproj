@@ -32,7 +32,7 @@
 		643AD768270F0416007909B6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643AD767270F0416007909B6 /* File.swift */; };
 		643AD769270F0416007909B6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643AD767270F0416007909B6 /* File.swift */; };
 		647030572717101800B9E7EB /* ios in Frameworks */ = {isa = PBXBuildFile; fileRef = 645CDB5B2716C88500AE5245 /* ios */; };
-		64A6523527197CCD00B37DB5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64A6523427197CCC00B37DB5 /* GoogleService-Info.plist */; };
+		64E19CAD271D3353002D3838 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64E19CAC271D3353002D3838 /* GoogleService-Info.plist */; };
 		9834D7CC2DCB4E1499F4A286 /* Montserrat Black 900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A719A9DFEA78408EB68F1F98 /* Montserrat Black 900.ttf */; };
 		A2441EE6A99C48B98E6EC59A /* Montserrat Bold 700.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0101037028341D6ABE8B8C6 /* Montserrat Bold 700.ttf */; };
 		A2716237CB3C453DBBD33A8F /* Montserrat ExtraBold 800.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D84C0F5EDBF4AB789AD7C2D /* Montserrat ExtraBold 800.ttf */; };
@@ -107,7 +107,7 @@
 		643AD767270F0416007909B6 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		645CDB5B2716C88500AE5245 /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ios; path = "../node_modules/react-native-video360plugin/ios"; sourceTree = "<group>"; };
 		64A6522E271966DE00B37DB5 /* NetbeatLive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = NetbeatLive.entitlements; path = NetbeatLive/NetbeatLive.entitlements; sourceTree = "<group>"; };
-		64A6523427197CCC00B37DB5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		64E19CAC271D3353002D3838 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		670BDEA4B5C3407DBDDA6655 /* Montserrat Thin 250.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat Thin 250.ttf"; path = "../assets/fonts/Montserrat Thin 250.ttf"; sourceTree = "<group>"; };
 		70D559C6916B415D99DC60F8 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		712EA9DC38D330A27DE16D34 /* libPods-NetbeatLiveTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetbeatLiveTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,7 +195,7 @@
 		13B07FAE1A68108700A75B9A /* NetbeatLive */ = {
 			isa = PBXGroup;
 			children = (
-				64A6523427197CCC00B37DB5 /* GoogleService-Info.plist */,
+				64E19CAC271D3353002D3838 /* GoogleService-Info.plist */,
 				64A6522E271966DE00B37DB5 /* NetbeatLive.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -490,7 +490,7 @@
 				F81BBEE560DA44D8AE9989AE /* Montserrat ExtraLight 275.ttf in Resources */,
 				E616BF5FB086473D87FABFAB /* Montserrat ExtraLight Italic 275.ttf in Resources */,
 				4AF277E5743E42A89269E7D9 /* Montserrat Italic 400.ttf in Resources */,
-				64A6523527197CCD00B37DB5 /* GoogleService-Info.plist in Resources */,
+				64E19CAD271D3353002D3838 /* GoogleService-Info.plist in Resources */,
 				53E5823CE67B436CA88C769F /* Montserrat Light 300.ttf in Resources */,
 				3DB76CDDDE43407FB9904F71 /* Montserrat Light Italic 300.ttf in Resources */,
 				BF5E16F657E349E9A4245899 /* Montserrat Medium 500.ttf in Resources */,

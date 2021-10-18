@@ -1,14 +1,15 @@
-import { useMutation } from '@apollo/client';
+import { useLazyQuery, useMutation } from '@apollo/client';
 import React, { useEffect, useState } from 'react';
-import { Image, ScrollView, Text, TextInput, TouchableOpacity, View , ActivityIndicator} from 'react-native';
+import { Image, ScrollView, Text, TextInput, TouchableOpacity, View , ActivityIndicator, KeyboardAvoidingView} from 'react-native';
 import { useSelector } from 'react-redux';
-import { Images } from '../../assets/index';
+import { hp, Images } from '../../assets/index';
 import { handleFormValidation, validateEmail } from '../../utils/handleLogic';
 import Toast from 'react-native-simple-toast';
 import { _retrieveData, _storeData } from '../../asyncStorage/AsyncFuncs';
 import { LOGIN } from '../../graphql/mutations';
 import styles from './styles';
 import { Colors } from '../../assets/colors';
+import { GETUSERBYID } from '../../graphql/queries';
 
 
 
@@ -16,8 +17,8 @@ const Login = (props) => {
 
     const { lang, selectedLangVal } = useSelector(state => state.language);
     const { DARK } = useSelector(state => state.dark);
-    const [email, setEmail] = useState('hasnain@excelorithm.com');
-    const [password, setPassword] = useState('husni123**');
+    const [email, setEmail] = useState('abc@netBeat.com');
+    const [password, setPassword] = useState('123456');
     const [notFound, setNotFound] = useState(undefined);
     const [loader, setLoader] = useState(false);
 
@@ -36,6 +37,22 @@ const Login = (props) => {
 
 
     const [login] = useMutation(LOGIN)
+
+    const [user] = useLazyQuery(GETUSERBYID, {
+      fetchPolicy : 'network-only',
+      onCompleted: res => {
+        if(!notFound)
+        props.navigation.replace('home')
+        else
+        props.navigation.replace('walkThrough')
+        _storeData('user',res?.user)  
+        setLoader(false)
+      },
+      onError: err => {
+          console.log(err)
+      } 
+
+    })
 
 
 
@@ -72,13 +89,9 @@ const Login = (props) => {
             setLoader(true)    
             login({ variables: { email: email.trim(), password: password } })
             .then(res => {
-                if(!notFound)
-                props.navigation.replace('home')
-                else
-                props.navigation.replace('walkThrough')
-                _storeData('user',res.login?.user)
-                setLoader(false)
-                })
+                //console.log("user=>",res?.data?.login?.user?.id)
+                user({variables : { id : res?.data?.login?.user?.id }})
+            })
             .catch(i => {
                 setLoader(false)
                 if (i?.graphQLErrors[0].extensions?.exception?.data?.message[0]?.messages[0]?.message == 'Identifier or password invalid.')
@@ -98,7 +111,11 @@ const Login = (props) => {
 
 
    return(
-       <View style = {styles.mainContainer}>
+    //    <View style = {styles.mainContainer}>
+         <KeyboardAvoidingView
+           behavior={Platform.OS === "ios" ? "padding" : "height"}
+           style = {styles.mainContainer}
+           >
           <ScrollView style = {styles.scroll}>
            <View style = {styles.logoContainer}>
                <Image source = {Images.logo} style = {styles.logo}/>
@@ -145,9 +162,10 @@ const Login = (props) => {
            style = {styles.bottomText}>{lang?.without_reg}</Text>
            <Text 
            onPress = {() => {props.navigation.navigate('register')}}
-           style = {styles.bottomText}>{lang?.dont_have_account}</Text>
+           style = {[styles.bottomText, {marginBottom : hp(3)}]}>{lang?.dont_have_account}</Text>
            </ScrollView>
-       </View>
+           </KeyboardAvoidingView>
+    //    </View>
    ) 
 }
 

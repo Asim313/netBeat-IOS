@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Image, StatusBar, Text, TouchableOpacity, View } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { Image, StatusBar, Text, TouchableOpacity, View , Alert} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useDispatch, useSelector } from 'react-redux';
 import ToggleSwitch from 'toggle-switch-react-native';
@@ -8,12 +8,69 @@ import { dark } from './../../redux/actions/dark';
 import { selectLanguage } from './../../redux/actions/language';
 import { languages } from './../../redux/languages';
 import styles from './styles';
+import { _retrieveData, _storeData } from '../../asyncStorage/AsyncFuncs';
+import { useLazyQuery, useMutation } from '@apollo/client';
+import { UPDATEUSER } from '../../graphql/mutations';
 
 const Setting = (props) => {
    const dispatch = useDispatch();
    const { lang, selectedLangVal } = useSelector(state => state.language)
    const { DARK } = useSelector(state => state.dark)
-   const [selected, setSelected] = useState('concert')
+   const [ selected, setSelected ] = useState('concert')
+   const [user, setUser] = useState({})
+   const [noti, setNoti] = useState(false)
+   const [artist_vol, setArtist_vol] = useState(50)
+   const [audience_vol, setAudience_vol] = useState(50)
+
+
+   const [updateUser] = useMutation(UPDATEUSER)
+   
+
+
+
+   useEffect(() => {
+       const getUser = async() => {
+         const user = await _retrieveData('user')
+         setUser(user)
+         setNoti(user.notification)
+         setArtist_vol(user.artist_volume)
+         setAudience_vol(user.audience_volume)
+       }
+       getUser()
+   },[])
+
+
+   const buttonAlert = (title, msg, status, type) =>
+    Alert.alert(
+      title,
+      msg,
+      [
+        {
+          text: "Cancel",
+          onPress: () => console.log("Cancel Pressed"),
+          style: "cancel"
+        },
+        { text: "OK", onPress: () => {
+            if(type == 'lang'){
+                dispatch(selectLanguage({
+                    lang: selectedLangVal == 'en'? languages.franch : languages.english,
+                    selectedLangVal: selectedLangVal == 'en'? 'fr' : 'en'
+                }))
+            }else if(type == 'noti'){    
+                setNoti(status)
+                updateUser({variables : {
+                    id : user?.id,
+                    notification : status
+                }})
+                .then((res) => {
+                    console.log('res', res?.data?.updateUser?.user)
+                    _storeData('user', res?.data?.updateUser?.user)
+                })
+                .catch((err) => console.log('err=>>', err))
+            }
+        }}
+      ]
+    );
 
 
 
@@ -29,7 +86,7 @@ const Setting = (props) => {
           onPress = {() => {
             //props.navigation.navigate('setting')
           }}>
-          <Image source = {Images.background} 
+          <Image source = {Images.dp} 
           style = {[styles.user, {top: 0}]} 
           />
              </TouchableOpacity>
@@ -38,16 +95,20 @@ const Setting = (props) => {
          <View style = {styles.settingContainer}>
             <Text style = {[styles.title, {color : DARK? Colors.white : '#19202B'}]}>{lang?.setting_panel}</Text> 
 
-            <View style = {[styles.settingOptionContainer, {borderColor : DARK ? '#ffffff05' : '#19202B20'}]}>
+            <TouchableOpacity 
+            onPress = { () => props.navigation.navigate('profile', {user : user})}
+            style = {[styles.settingOptionContainer, {borderColor : DARK ? '#ffffff05' : '#19202B20'}]}>
                 <Text style = {[styles.settingTitle, {color : DARK? Colors.white : '#19202B'}]}>{lang?.profile}</Text>
                 <Image source = {!DARK? Images.rightg : Images.rightw} style = {styles.right}/>
-                <Text style = {styles.settingStatus}>Josh Byrne</Text>
-            </View>
-            <View style = {[styles.settingOptionContainer, {borderColor : DARK ? '#ffffff05' : '#19202B20'}]}>
+                <Text style = {styles.settingStatus}>{user?.username}</Text>
+            </TouchableOpacity>
+            <TouchableOpacity 
+            onPress = { () => { buttonAlert('Notifications', `Are you sure to ${noti ? 'disable' : 'enable'} notifications?`, noti ? false : true , 'noti') }}
+            style = {[styles.settingOptionContainer, {borderColor : DARK ? '#ffffff05' : '#19202B20'}]}>
                 <Text style = {[styles.settingTitle, {color : DARK? Colors.white : '#19202B'}]}>{lang?.notification}</Text>
                 <Image source = {!DARK? Images.rightg : Images.rightw} style = {styles.right}/>
-                <Text style = {styles.settingStatus}>{lang?.on}</Text>
-            </View>
+                <Text style = {styles.settingStatus}>{noti? lang?.on : lang.off}</Text>
+            </TouchableOpacity>
             <View style = {[styles.settingOptionContainer, {borderColor : DARK ? '#ffffff05' : '#19202B20'}]}>
                 <Text style = {[styles.settingTitle, {color : DARK? Colors.white : '#19202B'}]}>{lang?.artist_vol}</Text>
                 <Image source = {!DARK? Images.rightg : Images.rightw} style = {styles.right}/>
@@ -78,18 +139,13 @@ const Setting = (props) => {
                 />
                 </View>
             </View>
-            <View style = {[styles.settingOptionContainer, {borderColor : DARK ? '#ffffff05' : '#19202B20'}]}>
+            <TouchableOpacity 
+            onPress = { () => { buttonAlert('Language', `Are you sure to change language in to ${selectedLangVal == 'en' ? 'French' : 'English'}`, selectedLangVal == 'en' ? 'French' : 'English', 'lang')}}
+            style = {[styles.settingOptionContainer, {borderColor : DARK ? '#ffffff05' : '#19202B20'}]}>
                 <Text style = {[styles.settingTitle, {color : DARK? Colors.white : '#19202B'}]}>{lang?.language}</Text>
                 <Image source = {!DARK? Images.rightg : Images.rightw} style = {styles.right}/>
-                <Text 
-                onPress = {() => {
-                    dispatch(selectLanguage({
-                        lang: selectedLangVal == 'en'? languages.franch : languages.english,
-                        selectedLangVal: selectedLangVal == 'en'? 'fr' : 'en'
-                    }))
-                }}
-                style = {styles.settingStatus}>English</Text>
-            </View>
+                <Text style = {styles.settingStatus}>{selectedLangVal == 'en' ? 'English' : 'French'}</Text>
+            </TouchableOpacity>
             <View style = {[styles.settingOptionContainer, {borderColor : DARK ? '#ffffff05' : '#19202B20'}]}>
                 <Text style = {[styles.settingTitle, {color : DARK? Colors.white : '#19202B'}]}>{lang?.privacy}</Text>
                 <Image source = {!DARK? Images.rightg : Images.rightw} style = {styles.right}/>

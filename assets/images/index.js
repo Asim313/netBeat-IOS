@@ -49,4 +49,6 @@ export const Images = {
     peoples_grey: require('./peoples-grey.png'),
     cancel_w: require('./cancel_white.png'),
     cancel_p: require('./cancel_prp.png'),
+    dp : require('./dp.jpeg'),
+    edit_profile : require('./edit_profile.png')
 }

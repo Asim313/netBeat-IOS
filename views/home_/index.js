@@ -7,6 +7,7 @@ import { EVENTS, SEARCHEVENTS, TYPES } from '../../graphql/queries';
 import styles from './styles';
 import { BaseUrl } from '../../graphql/baseUrl';
 import Orientation from 'react-native-orientation';
+import { _retrieveData } from '../../asyncStorage/AsyncFuncs';
 
 const Home = (props) => {
 
@@ -17,10 +18,16 @@ const Home = (props) => {
    const [searchFilter, setSearchFilter] = useState(false)
    const [loading, setLoading] = useState(true)
    const [ref, setRef] = useState(null)
+   const [user, setUser] = useState({})
 
 
    useEffect(()=> {
       Orientation.lockToPortrait();
+      const getUser = async() => {
+        const usr = await _retrieveData('user')
+        setUser(usr)
+      }
+      getUser()
    },[])
 
 
@@ -55,14 +62,20 @@ const Home = (props) => {
        <SafeAreaView style = {[styles.mainContainer, {backgroundColor : DARK? Colors.base : Colors.white}]}>
          <StatusBar barStyle = { DARK? 'light-content' : 'dark-content'}/>
          <View style = {styles.header}>
-          <Image source = {DARK? Images.notiWd : Images.notiGd} style = {styles.noti}/>
+          <TouchableOpacity 
+          onPress = {() => {
+            props.navigation.navigate('notification')
+          }}
+            style = {styles.noti}>  
+            <Image source = {DARK? Images.notiWd : Images.notiGd} />
+          </TouchableOpacity>
           <Image source = {Images.logoh} style = {styles.logo}/>
           <TouchableOpacity
           style = {styles.user}
           onPress = {() => {
             props.navigation.navigate('setting')
           }}>
-          <Image source = {Images.background} 
+          <Image source = {Images.dp} 
           style = {[styles.user, {top: 0}]} 
           />
              </TouchableOpacity>

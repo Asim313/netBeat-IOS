@@ -1,5 +1,5 @@
 import React,{Component ,useEffect,useRef,useState } from "react"
-import { SafeAreaView , View, ImageBackground, Image, TouchableOpacity, Text, TextInput, Dimensions,StatusBar, AppState, BackHandler, FlatList,Animated, ActivityIndicator} from "react-native"
+import { SafeAreaView , View, ImageBackground, Image, TouchableOpacity, Text, TextInput, Dimensions,StatusBar, AppState, BackHandler, FlatList,Animated, ActivityIndicator, Keyboard, KeyboardAvoidingView} from "react-native"
 import { Colors, hp, hps, Images, wp, wps } from "../../assets"
 import styles from "./styles"
 import LinearGradient from 'react-native-linear-gradient'
@@ -69,26 +69,11 @@ const BroadCast = (props) => {
   const [msgs, setMsgs] = useState([])  
   const [ref, setRef] = useState(null)  
   const [fade, setFade] = useState(false)
+  const [isKeyboardVisible, setKeyboardVisible] = useState(false);
 
 
   const fadeAnim = useRef(new Animated.Value(0)).current  // Initial value for opacity: 0
   
-
-  const fadeIn = () => {
-    Animated.timing(fadeAnim, {
-      toValue : 1,
-      duration : 1000,
-      useNativeDriver : true
-    }).start()
-  }
-
-  const fadeOut = () => {
-    Animated.timing(fadeAnim, {
-      toValue : 0,
-      duration : 1000,
-      useNativeDriver : true
-    }).start()
-  }
 
 
   useEffect(()=>{
@@ -97,6 +82,27 @@ const BroadCast = (props) => {
       setFade(true)
     },5000)
   },[])
+
+
+  useEffect(() => {
+    const keyboardDidShowListener = Keyboard.addListener(
+      'keyboardDidShow',
+      () => {
+        setKeyboardVisible(true); // or some other action
+      }
+    );
+    const keyboardDidHideListener = Keyboard.addListener(
+      'keyboardDidHide',
+      () => {
+        setKeyboardVisible(false); // or some other action
+      }
+    );
+
+    return () => {
+      keyboardDidHideListener.remove();
+      keyboardDidShowListener.remove();
+    };
+    }, []);
 
   
 
@@ -135,6 +141,17 @@ const BroadCast = (props) => {
     props.navigation.pop()
   }
 
+  const handleBackButtonClick = () => {
+    // Registered function to handle the Back Press
+    // We are generating an alert to show the back button pressed
+    // alert('You clicked back. Now Screen will move to ThirdPage');
+    // We can move to any screen. If we want
+    leaveSession(true)
+    // Returning true means we have handled the backpress
+    // Returning false means we haven't handled the backpress
+    return true;
+  }
+
 
   const _handleAppStateChange = (nextAppState) => {
     console.log('here', nextAppState)
@@ -165,7 +182,7 @@ const BroadCast = (props) => {
     console.log('here...')
     AppState.addEventListener('change', _handleAppStateChange);
     joinSession()
-  // BackHandler.addEventListener('hardwareBackPress', this.handleBackButtonClick);
+   BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
     //alert(JSON.stringify(selectedURI));
     // console.warn(this.props.route.params.list[0].stream_url)
    //    InCallManager.start();
@@ -358,6 +375,10 @@ const sendMsg = () => {
 return (
   <View style = {styles.mainContainer}>
     <StatusBar hidden = {sheight > sWidth ? false : true}/>
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      style={{ flex : 1 }}
+    >
     <TouchableOpacity 
     activeOpacity = {1}
     onPress = {() => {
@@ -387,8 +408,8 @@ return (
       hidesTransitionView={false}
       style={{ flex: 1}} />}
       {mode == 3 && <LivePlayer 
-      //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
-      urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
+      urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
+      //urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
       //volume = {0.0} 
       modeVideo={3} 
       enableInfoButton={false}
@@ -751,8 +772,10 @@ return (
       </View>}
       </View>
 
+      {/* {isKeyboardVisible && <View style = {{height:hp(8), width:wp(100), borderWidth:1, backgroundColor:'red'}}></View>} */}
       {/* </ImageBackground> */}
       </TouchableOpacity>
+      </KeyboardAvoidingView>
   </View>
 )}
 

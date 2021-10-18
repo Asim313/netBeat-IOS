@@ -45,8 +45,9 @@ export const languages = {
         register_done: 'Your account has been created',
         login_fail: 'Email or password is invalid',
         no_events: 'No events found of this type!',
-        no_types: 'No event types found!'
-        
+        no_types: 'No event types found!',
+        notifications: 'Notifications', 
+        userNameEmpty: 'Username can not be empty',
     },
     franch: {
         hello: 'hello',
@@ -95,5 +96,7 @@ export const languages = {
         login_fail: `L'email ou le mot de passe est invalide`,
         no_events: 'Aucun événement trouvé de ce type !',
         no_types: `Aucun type d'événement trouvé !`,
+        notifications: 'Avis', 
+        userNameEmpty: `Le nom d'utilisateur ne peut pas être vide`,
     }
 }

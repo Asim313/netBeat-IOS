@@ -1,8 +1,8 @@
 import { useMutation } from '@apollo/client';
 import React, { useState } from 'react';
-import { ActivityIndicator, Image, SafeAreaView, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, Image, SafeAreaView, ScrollView, Text, TextInput, TouchableOpacity, View, KeyboardAvoidingView } from 'react-native';
 import { useSelector } from 'react-redux';
-import { Colors, Images } from '../../assets/index';
+import { Colors, hp, Images } from '../../assets/index';
 import { REGISTER } from '../../graphql/mutations';
 import styles from './styles';
 import { handleFormValidation, validateEmail } from '../../utils/handleLogic';
@@ -71,7 +71,11 @@ const Register = (props) => {
 
 
     return(
-       <View style = {styles.mainContainer}>
+    //    <View style = {styles.mainContainer}>
+        <KeyboardAvoidingView
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
+        style={styles.mainContainer}
+        >
           <ScrollView style = {styles.scroll}>
            <View style = {styles.logoContainer}>
                <Image source = {Images.logo} style = {styles.logo}/>
@@ -122,9 +126,10 @@ const Register = (props) => {
            </TouchableOpacity>
            <Text 
            onPress = {() => {props.navigation.pop()}}
-           style = {styles.bottomText}>{lang?.have_account}</Text>
+           style = {[styles.bottomText, {marginBottom : hp(3)}]}>{lang?.have_account}</Text>
            </ScrollView>
-       </View>
+           </KeyboardAvoidingView>
+    //    </View>
     ) 
 }
 

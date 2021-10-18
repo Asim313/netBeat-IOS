@@ -6,6 +6,9 @@ import { selectLanguage } from './../../redux/actions/language';
 import { languages } from './../../redux/languages';
 import styles from './styles';
 import * as Animatable from 'react-native-animatable'
+import { BaseUrl } from '../../graphql/baseUrl';
+
+
 
 
 
@@ -15,6 +18,8 @@ const Splash = (props) => {
     const opacity = useState(new Animated.Value(0.25))[0]
     const spring = useState(new Animated.Value(0))[0]
     const [glow, setGlow] = useState(false)
+
+
 
 
    let fadeInAndOut = Animated.sequence([
@@ -31,6 +36,7 @@ const Splash = (props) => {
   ]);
 
    useEffect(()=>{
+    global.default_dp = `${BaseUrl}/uploads/default_dp_049916d48d.png` 
     dispatch(selectLanguage({
         lang: languages.english,
         selectedLangVal: 'en'

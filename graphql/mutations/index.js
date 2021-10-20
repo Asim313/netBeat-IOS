@@ -32,13 +32,15 @@ mutation login($email: String!, $password: String!){
   }`
 
 export const UPDATEUSER = gql`
-mutation user($id : ID! , $notification : Boolean, $profile : ID, @username : String){
+mutation user($id : ID! , $notification : Boolean, $profile : ID, $username : String, $artist_volume : Int, $audience_volume : Int){
   updateUser(input : {
-    where : {id : $id}
+    where : { id : $id }
     data : {
       notification : $notification,
-      profile : @profile,
-      username : @username
+      profile : $profile,
+      username : $username,
+      artist_volume : $artist_volume,
+      audience_volume : $audience_volume
     }
   }){
    user{
@@ -54,6 +56,24 @@ mutation user($id : ID! , $notification : Boolean, $profile : ID, @username : St
   } 
   }
 }`  
+
+
+export const SAVEDEVICETOKEN = gql`
+mutation saveToken($token : String!, $id : ID!) {
+  createDeviceToken(
+  input : {
+    data :{
+      token : $token,
+      user_id : $id
+    }
+  }
+  )
+  {
+     deviceToken {
+        id
+    }
+  }
+}`
 
 
 

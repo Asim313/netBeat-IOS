@@ -12,6 +12,7 @@ const Event = (props) => {
    const { DARK } = useSelector(state => state.dark)
    const [selected, setSelected] = useState('concert')
    const [event, setEvent] = useState(props.route.params.data)
+   const [user , setUser] = useState(props.route.params.user)
 
 
    return(
@@ -27,9 +28,16 @@ const Event = (props) => {
                 onPress = {() => {
                     props.navigation.navigate('setting')
                 }}>
-                <Image source = {Images.background} 
-                style = {[styles.user, {top: 0}]} 
-                />
+               
+          {user?.profile?
+         <Image source = {{uri : BaseUrl + user?.profile?.url}} 
+          style = {[styles.user, {top: 0}]} 
+          />
+        :
+        <Image source = {Images.default_dp} 
+          style = {[styles.user, {top: 0}]} 
+          /> 
+          }
              </TouchableOpacity>
         </View>
 
@@ -42,11 +50,14 @@ const Event = (props) => {
                 ['#ffffff00','#ffffff']
             } 
             style = {styles.eventTitleContainer}>
-                {event?.isLive && 
+                {event?.isLive ?
                 <View style = {styles.statusContainer}>
                    <Image source = {Images.dot} style = {styles.dot}/>
                    <Text style = {[styles.live, {color : DARK ? Colors.white : Colors.base}]}>{lang?.live}</Text>
-                </View>}
+                </View>
+                :
+                <View style = {styles.statusContainer}></View>
+                }
                 <Text style = {[styles.eventTitle, {color : DARK ? Colors.white : Colors.base}]}>{event?.ArtistName}</Text>  
             </LinearGradient> 
             

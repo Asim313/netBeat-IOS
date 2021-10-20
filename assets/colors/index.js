@@ -6,9 +6,11 @@ export const Colors = {
    darkBlack : '#33879D',
    lightGrey : '#DEDEDE',
    white : '#FFFFFF',
+   white_light : '#FFFFFF50',
    middleGray : '#6A6A6A',
    red : '#C73A3A',
    lightestGrey : '#F2F2F2',
    base : '#19202B',
+   base_light : '#19202B50',
    base1 : '#CB65C7',
 }

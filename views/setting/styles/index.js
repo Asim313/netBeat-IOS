@@ -53,6 +53,16 @@ export default StyleSheet.create ({
       alignItems:'center',
       justifyContent:'space-between'
     },
+    settingVolumeContainer: {
+      height:hps(35),
+      width:wps(335.48),
+      borderBottomWidth:1,
+      borderColor:'#ffffff08',
+      flexDirection:'row',
+      alignSelf:'center',
+      alignItems:'center',
+      justifyContent:'space-between'
+    },
     settingTitle: {
       fontSize: hps(16),
       fontFamily:Fonts.medium,

@@ -28,6 +28,34 @@ query events($id: ID!){
 }`
 
 
+export const LIVEEVENT = gql`
+query{
+  concerts(where : {
+    isLive : true
+  }){
+    concert_type{
+      name
+      name_fr
+    }
+    id
+    isLive
+    ArtistName
+    Location
+    LocationInfo
+    published_at
+    Description
+    concert_streams{
+      stream_ios
+      stream_android
+      type
+    }
+    Cover{
+      url
+    }
+  }
+}`
+
+
 export const SEARCHEVENTS = gql`
 query events($name: String!){
   concerts(where : {
@@ -77,6 +105,15 @@ query user($id : ID!){
     artist_volume
     audience_volume
     notification
+  }
+}`
+
+export const NOTIFICATIONS = gql`
+query noti($id : ID!){
+  queuedNotifications(where : {receiver_id : $id}, sort : "created_at:DESC" ){
+    content
+    created_at
+    id
   }
 }`
 

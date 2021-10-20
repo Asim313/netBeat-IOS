@@ -1,5 +1,6 @@
 import { useMutation } from '@apollo/client';
 import React, { useEffect, useState } from 'react';
+import { useIsFocused } from '@react-navigation/core';
 import { ActivityIndicator, Image, SafeAreaView, ScrollView, Text, TextInput, TouchableOpacity, View, KeyboardAvoidingView } from 'react-native';
 import { useSelector } from 'react-redux';
 import { Colors, hp, Images } from '../../assets/index';
@@ -23,6 +24,8 @@ const Profile = (props) => {
         quality: 1,
         saveToPhotos: true,
       };
+
+    let isFocus = useIsFocused()  
 
     const { lang, selectedLangVal } = useSelector(state => state.language);
     const { DARK } = useSelector(state => state.dark);
@@ -48,7 +51,7 @@ const Profile = (props) => {
           setImageSource(usr?.profile != null ? { uri: usr?.profile?.url } : { uri: '' })
         }
         getUser()
-     },[])
+     },[isFocus])
 
 
     const selectImage = () => {
@@ -58,14 +61,16 @@ const Profile = (props) => {
         } else if (response.errorCode) {
           console.error('ImagePicker Error Code: ', response.errorCode, response.errorMessage);
         } else {
-        //   setImageModalStatus(!imageModalStatus)
-          response['path'] = response.uri
-          response['name'] = response.fileName
-          response['size'] = response.fileSize
-          response['mimeType'] = response.type
+           //   setImageModalStatus(!imageModalStatus)
+          let imageData = {} 
+          imageData['uri'] = response.assets[0].uri
+          imageData['path'] = response.assets[0].uri
+          imageData['name'] = response.assets[0].fileName
+          imageData['size'] = response.assets[0].fileSize
+          imageData['mimeType'] = response.assets[0].type
 
-          console.log(response.assets[0]?.uri)  
-          setImageSource(response)
+          console.log("response=>",imageData)  
+          setImageSource(imageData)
         }
       });
     }
@@ -83,25 +88,29 @@ const Profile = (props) => {
         handleFormValidation(
             rules,
             () => {
-                if (!imageSource?.assets[0]?.uri?.includes('/uploads/')) {
+                if (!imageSource?.uri?.includes('/uploads/')) {
                     const formData = new FormData()
                     formData.append('files', imageSource)
-                    setLoading(true)
+                    setLoader(true)
                     Axios.post(`upload`, formData)
                     .then(res => {
-                     console.log('res=>>', res)   
                       updateUser({
                         variables: {
                           id : user?.id,  
-                          profile_image: res?.data[0]?.id,
+                          profile : res?.data[0]?.id,
                           username : username,
                         }
-                      }).then(resResponse => {
-                          console.log('res>>', resResponse)
                       })
+                      .then(resResponse => {
+                          //console.log('res of userData>>', JSON.stringify(resResponse))
+                          _storeData('user', resResponse?.data?.updateUser?.user)
+                          setLoader(false)
+                          props.navigation.pop()
+                      })
+                      .catch((err) => console.log("err=>", err))
                     })
                     .catch(err => {
-                    setLoading(false)
+                    setLoader(false)
                     console.log("err.response : ", err.response)
                     return 0
                     })
@@ -113,7 +122,10 @@ const Profile = (props) => {
                       }
                     })
                     .then(resResponse => {
-                     
+                         // console.log('res of userData>>', JSON.stringify(resResponse))
+                          _storeData('user', resResponse?.data?.updateUser?.user)
+                          setLoader(false)
+                          props.navigation.pop()
                     })
                     .catch(err => {
                       console.log("GraphQL Error Msg: ", JSON.stringify(err));
@@ -145,8 +157,8 @@ const Profile = (props) => {
            <View style = {styles.logoContainer}>
                <View style = {styles.dpContainer}>
                  <Image 
-                 source = {!imageSource?.uri?.includes('/uploads/') ? { uri: imageSource?.assets[0]?.uri } : { uri: BaseUrl + imageSource?.uri }} 
-                 style = { styles.dp }/>  
+                 source = {!imageSource?.uri?.includes('/uploads/') ? imageSource?.uri !== ''? { uri: imageSource?.uri } : Images.default_dp : { uri: BaseUrl + imageSource?.uri }} 
+                 style = { styles.dp }/>
 
                  <TouchableOpacity 
                  onPress = {() => {selectImage()}}

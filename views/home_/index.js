@@ -1,15 +1,18 @@
 import { useLazyQuery, useQuery } from '@apollo/react-hooks';
 import React, { useEffect, useRef, useState } from 'react';
+import { useIsFocused } from '@react-navigation/core';
 import { Image, ImageBackground, SafeAreaView, ScrollView, StatusBar, Text, TextInput, TouchableOpacity, View , FlatList, ActivityIndicator} from 'react-native';
 import { useSelector } from 'react-redux';
 import { Colors, Images } from '../../assets/index';
-import { EVENTS, SEARCHEVENTS, TYPES } from '../../graphql/queries';
+import { EVENTS, LIVEEVENT, SEARCHEVENTS, TYPES } from '../../graphql/queries';
 import styles from './styles';
 import { BaseUrl } from '../../graphql/baseUrl';
 import Orientation from 'react-native-orientation';
 import { _retrieveData } from '../../asyncStorage/AsyncFuncs';
 
 const Home = (props) => {
+
+   let isFocus = useIsFocused()
 
    const { lang, selectedLangVal } = useSelector(state => state.language)
    const { DARK } = useSelector(state => state.dark)
@@ -19,16 +22,26 @@ const Home = (props) => {
    const [loading, setLoading] = useState(true)
    const [ref, setRef] = useState(null)
    const [user, setUser] = useState({})
+   const [loader, setLoader] = useState(true)
+
+
+   useEffect(()=>{
+      Orientation.lockToPortrait();
+   },[])
 
 
    useEffect(()=> {
-      Orientation.lockToPortrait();
       const getUser = async() => {
         const usr = await _retrieveData('user')
         setUser(usr)
+        setLoader(false)
       }
       getUser()
-   },[])
+   },[isFocus])
+
+   const {data : live , loading : loading_live} = useQuery(LIVEEVENT, {
+      fetchPolicy : 'network-only',
+   })
 
 
    const { data : types , loading : loading_types} = useQuery(TYPES, {
@@ -52,7 +65,7 @@ const Home = (props) => {
    const [search, {data : searchResult , loading : loading_search}] = useLazyQuery(SEARCHEVENTS, {
       fetchPolicy : 'network-only',
       onCompleted : res => {
-         console.log("res=>", res)
+         //console.log("res=>", res)
       }
    })
 
@@ -64,7 +77,7 @@ const Home = (props) => {
          <View style = {styles.header}>
           <TouchableOpacity 
           onPress = {() => {
-            props.navigation.navigate('notification')
+            props.navigation.navigate('notification', {user : user})
           }}
             style = {styles.noti}>  
             <Image source = {DARK? Images.notiWd : Images.notiGd} />
@@ -75,9 +88,18 @@ const Home = (props) => {
           onPress = {() => {
             props.navigation.navigate('setting')
           }}>
-          <Image source = {Images.dp} 
+          {loader?
+          <ActivityIndicator size = 'small' color = {Colors.white}/>
+          : 
+          user?.profile?
+          <Image source = {{uri : BaseUrl + user?.profile?.url}} 
           style = {[styles.user, {top: 0}]} 
           />
+          :
+          <Image source = {Images.default_dp} 
+          style = {[styles.user, {top: 0}]} 
+          /> 
+          }
              </TouchableOpacity>
          </View>
 
@@ -117,6 +139,7 @@ const Home = (props) => {
          <View style = {styles.optionsBar}>
          {!loading_types? 
          <FlatList
+         
          data = {types && types?.types}
          horizontal
          showsHorizontalScrollIndicator = {false}
@@ -151,13 +174,15 @@ const Home = (props) => {
           <View style = {styles.eventsContainer}>
            {!loading && !loading_events && !loading_search ?
            <FlatList
+           horizontal
+           showsHorizontalScrollIndicator = {false}
            data = {searchFilter? searchResult && searchResult.concerts : events && events.concerts}
            ListEmptyComponent = {() => 
             !loading && !loading_events && !loading_search && <Text style = {styles.notFoundText}>{lang?.no_events}</Text>
             }
            renderItem = {({item, index}) => 
            <TouchableOpacity 
-           onPress = {() => props.navigation.navigate('event', {data : item})}
+           onPress = {() => props.navigation.navigate('event', {data : item, user : user})}
            style = {styles.event}>
               <ImageBackground source={{ uri: BaseUrl + item?.Cover[0]?.url }} style = {styles.eventImage}>
                {item.isLive && <View style = {styles.statusContainer}>
@@ -184,7 +209,16 @@ const Home = (props) => {
           <View style = {styles.bottomTapContainer}>
              <View style = {[styles.videoButtonContainer, {backgroundColor : DARK? Colors.base : Colors.white}]}>
                <TouchableOpacity 
-               //onPress = {() => setDark(!DARK)}
+               disabled = {loading_live}
+               onPress = {() => {
+                  if(live?.concerts?.length < 1){
+                    alert("There is no stream live at the moment!")
+                  }
+                  else{
+                     //console.log(live?.concerts[0])
+                    props.navigation.navigate('event', {data : live?.concerts[0] , user : user})
+                  }
+               }}
                style = {styles.videoButton}>
                <Image source = {Images.video} style = {styles.video}/>   
                </TouchableOpacity>

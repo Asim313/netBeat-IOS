@@ -39,6 +39,7 @@
     "react-native-slider": "^0.11.0",
     "react-native-swiper": "^1.6.0",
     "react-native-video360plugin": "^1.0.6",
+    "react-native-webview": "^11.14.1",
     "react-redux": "^7.2.5",
     "redux": "^4.1.1",
     "redux-logger": "^3.0.6",

@@ -35,7 +35,7 @@ export default StyleSheet.create ({
       borderRadius:hps(36.5/2),
       position:'absolute',
       right:0,
-      //top:3
+      top:hps(14)
     },
     eventImageContainer: {
       height:hps(410),

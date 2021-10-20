@@ -299,6 +299,8 @@ PODS:
     - React
   - react-native-webrtc (1.75.3):
     - React
+  - react-native-webview (11.14.1):
+    - React-Core
   - React-RCTActionSheet (0.61.0):
     - React-Core/RCTActionSheetHeaders (= 0.61.0)
   - React-RCTAnimation (0.61.0):
@@ -380,6 +382,7 @@ DEPENDENCIES:
   - react-native-simple-toast (from `../node_modules/react-native-simple-toast`)
   - react-native-video360 (from `../node_modules/react-native-video360plugin`)
   - react-native-webrtc (from `../node_modules/openvidu-browser/node_modules/react-native-webrtc`)
+  - react-native-webview (from `../node_modules/react-native-webview`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -461,6 +464,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-video360plugin"
   react-native-webrtc:
     :path: "../node_modules/openvidu-browser/node_modules/react-native-webrtc"
+  react-native-webview:
+    :path: "../node_modules/react-native-webview"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -531,8 +536,9 @@ SPEC CHECKSUMS:
   react-native-orientation: f1caf84d65f1a4fd4511a18f2b924e634ad7a628
   react-native-safe-area-context: b6e0e284002381d2ff29fa4fff42b4d8282e3c94
   react-native-simple-toast: bf002828cf816775a6809f7a9ec3907509bce11f
-  react-native-video360: e90b34666d4b12de4507972608b12e753d19dfee
+  react-native-video360: 5a88125cf6f63180ccdcf5e8df121dcd4004d521
   react-native-webrtc: 86d841823e66d68cc1f86712db1c2956056bf0c2
+  react-native-webview: db22ab831b8c5f7697957a67f7a7ac1cecfed18d
   React-RCTActionSheet: 5f9a1733ec8e380aae8a97877f1166cb058733ae
   React-RCTAnimation: 3e0a55305b70b1eb5a5e34230ed8198d4a782da9
   React-RCTBlob: a6ff2220ed7ef4b06e559ec61a0b0f4e80a3716a

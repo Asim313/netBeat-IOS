@@ -6,10 +6,11 @@ import { hp, Images } from '../../assets/index';
 import { handleFormValidation, validateEmail } from '../../utils/handleLogic';
 import Toast from 'react-native-simple-toast';
 import { _retrieveData, _storeData } from '../../asyncStorage/AsyncFuncs';
-import { LOGIN } from '../../graphql/mutations';
+import { LOGIN, SAVEDEVICETOKEN } from '../../graphql/mutations';
 import styles from './styles';
 import { Colors } from '../../assets/colors';
 import { GETUSERBYID } from '../../graphql/queries';
+import { push } from './../../Services'
 
 
 
@@ -21,6 +22,19 @@ const Login = (props) => {
     const [password, setPassword] = useState('123456');
     const [notFound, setNotFound] = useState(undefined);
     const [loader, setLoader] = useState(false);
+
+    const [saveDeviceToken] = useMutation(SAVEDEVICETOKEN, {
+        fetchPolicy: 'no-cache'
+    });
+
+
+    const getToken = async( id ) => {
+        const token = await push.init()
+        console.log(token)
+        saveDeviceToken({ variables: { token : token , id : id } }).then(res => {
+            //global.deviceToken = token
+        })
+    }
 
 
     useEffect(() => {
@@ -90,7 +104,9 @@ const Login = (props) => {
             login({ variables: { email: email.trim(), password: password } })
             .then(res => {
                 //console.log("user=>",res?.data?.login?.user?.id)
+                getToken(res?.data?.login?.user?.id)
                 user({variables : { id : res?.data?.login?.user?.id }})
+                
             })
             .catch(i => {
                 setLoader(false)

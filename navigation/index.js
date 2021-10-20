@@ -25,6 +25,8 @@ import Orientation from 'react-native-orientation';
 import messaging from '@react-native-firebase/messaging';
 import Notifications from '../views/notifications';
 import Profile from '../views/profile';
+import Privacy from '../views/privacy';
+import Help from '../views/help';
 
 const client = new ApolloClient({
   uri: `${BaseUrl}/graphql`,
@@ -84,6 +86,14 @@ export default class App extends React.Component {
       <Stack7.Screen
         name="setting"
         component={Setting}
+      />
+      <Stack7.Screen
+        name="privacy"
+        component={Privacy}
+      />
+      <Stack7.Screen
+        name="help"
+        component={Help}
       />
       <Stack7.Screen
         name="notification"

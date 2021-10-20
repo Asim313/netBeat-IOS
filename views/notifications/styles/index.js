@@ -135,7 +135,36 @@ export default StyleSheet.create ({
       width:wps(30),
       backgroundColor:Colors.base,
       borderRadius:hps(16)
-    }
+    },
+    notificationCard: {
+      minHeight : hp(5),
+      width : wp(90),
+      borderWidth:1,
+      borderColor:'red',
+      alignSelf:'center',
+      marginBottom : hp(1.5),
+      borderRadius : wp(4),
+      paddingVertical : hp(2),
+      paddingHorizontal : wp(3)
+    },
+    notificationText : {
+      fontFamily : Fonts.regular,
+      color : Colors.white,
+      //fontSize : hps(16),
+    },
+    notificationDate : {
+      fontFamily : Fonts.regular,
+      color : Colors.white,
+      fontSize : hps(9),
+      position:'absolute',
+      bottom : hp(0.5),
+      right : wp(3)
+    },
+    notFoundText: {
+      fontSize : hps(14),
+      fontFamily: Fonts.medium,
+      color : Colors.base1
+    },
 
     
       

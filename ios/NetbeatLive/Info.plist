@@ -43,6 +43,8 @@
 	<string></string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Netbeat.live want to access the microphone</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Netbeat.live want to access the library</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Montserrat Black 900.ttf</string>

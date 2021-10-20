@@ -1,19 +1,45 @@
+import { useQuery } from '@apollo/client';
 import React, { useState } from 'react';
-import { Image, StatusBar, Text, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator } from 'react-native';
+import { Image, StatusBar, Text, TouchableOpacity, View , FlatList} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useDispatch, useSelector } from 'react-redux';
 import ToggleSwitch from 'toggle-switch-react-native';
 import { Colors, Images } from '../../assets/index';
+import { NOTIFICATIONS } from '../../graphql/queries';
 import { dark } from './../../redux/actions/dark';
 import { selectLanguage } from './../../redux/actions/language';
 import { languages } from './../../redux/languages';
 import styles from './styles';
+import moment from 'moment'
 
 const Notifications = (props) => {
    const dispatch = useDispatch();
    const { lang, selectedLangVal } = useSelector(state => state.language)
    const { DARK } = useSelector(state => state.dark)
    const [selected, setSelected] = useState('concert')
+   const [user , setUser] = useState(props.route.params.user)
+   const [notifications, setNotifications] = useState([])
+
+
+   const {loading : loading} = useQuery(NOTIFICATIONS , {
+      skip : !user,
+      fetchPolicy : 'network-only',
+      variables : {
+        id : user?.id
+      },
+      onCompleted: res => {
+         console.log(res?.queuedNotifications)
+         setNotifications(res?.queuedNotifications)
+      },
+      onError: err => {
+         console.log("err=", err)
+      }
+   })
+
+   
+
+
 
 
 
@@ -26,51 +52,31 @@ const Notifications = (props) => {
           <TouchableOpacity 
           onPress = {() => {props.navigation.pop()}}
           style = {styles.noti}>
-              <Image source = {Images.arrow}/>
+              <Image source = {DARK? Images.arrow : Images.arrow_dark}/>
           </TouchableOpacity>
           <Image source = {Images.logoh} style = {styles.logo}/>
-          {/* <TouchableOpacity
-          style = {styles.user}
-          onPress = {() => {
-            //props.navigation.navigate('setting')
-          }}>
-          <Image source = {Images.background} 
-          style = {[styles.user, {top: 0}]} 
-          />
-             </TouchableOpacity> */}
          </View>
 
          <View style = {styles.settingContainer}>
             <Text style = {[styles.title, {color : DARK? Colors.white : '#19202B'}]}>{lang?.notifications}</Text> 
-
-            
-            
-
-         </View>
-
-
-
-
-         {/* <View style = {styles.bottomTapContainer}>
-             <View style = {[styles.videoButtonContainer, {backgroundColor : DARK? Colors.base : Colors.white}]}>
-               <TouchableOpacity 
-               style = {styles.videoButton}>
-               <Image source = {Images.video} style = {styles.video}/>   
-               </TouchableOpacity>
+            {!loading? 
+            <FlatList
+            data = {notifications}
+            ListEmptyComponent = {() => 
+            !loading && <Text style = {styles.notFoundText}>No Notifications Founf Yet!</Text>
+            }
+            renderItem = {({item , index}) => 
+             <View style = {[styles.notificationCard , { borderColor : DARK? Colors.white_light : Colors.base_light}]}>
+                <Text style = {[styles.notificationText, { color : DARK? Colors.white : Colors.base}]}>{item.content}</Text>
+                <Text style = {[styles.notificationDate, { color :  DARK? Colors.white_light : Colors.base_light}]}>{moment(item.created_at).fromNow()}</Text>
              </View>
-             <View style = {[styles.bottomTap , { backgroundColor : DARK ? '#293140' : '#F3F3F3'}]}>
-                <TouchableOpacity 
-                 onPress = {() => {props.navigation.navigate('home')}}
-                 style = {styles.homeButton}> 
-                 <Image source = {DARK? Images.home : Images.homelight}/>
-                </TouchableOpacity>
-                <TouchableOpacity 
-                onPress = {() => {props.navigation.navigate('setting')}}
-                style = {styles.settingButton}>
-                <Image source = {DARK? Images.setting : Images.settinglight}/>
-                </TouchableOpacity>
-             </View> 
-          </View> */}
+             }
+             keyExtractor={item => item.id}
+            />
+            :
+            <ActivityIndicator size = {'large'} color = {Colors.base1}/>
+            }
+         </View>
        </SafeAreaView>
 )}
 

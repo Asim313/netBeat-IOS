@@ -31,7 +31,7 @@ export const Images = {
     clip2 : require('./clip2.png'),
     dot : require('./dot.png'),
     rightw : require('./right-arrow-white.png'),
-    rightg : require('./right-arrow-grey.png'),
+    rightg : require('./right-arrow-dark.png'),
     degree_g : require('./360-degree-grey.png'),
     degree_w : require('./360-degree.png'),
     vr_w : require('./vr.png'),
@@ -50,5 +50,7 @@ export const Images = {
     cancel_w: require('./cancel_white.png'),
     cancel_p: require('./cancel_prp.png'),
     dp : require('./dp.jpeg'),
-    edit_profile : require('./edit_profile.png')
+    edit_profile : require('./edit_profile.png'),
+    default_dp : require('./default_dp.png'),
+    arrow_dark : require('./arrow_dark.png')
 }

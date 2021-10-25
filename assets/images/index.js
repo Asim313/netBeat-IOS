@@ -32,12 +32,12 @@ export const Images = {
     dot : require('./dot.png'),
     rightw : require('./right-arrow-white.png'),
     rightg : require('./right-arrow-dark.png'),
-    degree_g : require('./360-degree-grey.png'),
+    degree_g : require('./360-degree-dark.png'),
     degree_w : require('./360-degree.png'),
     vr_w : require('./vr.png'),
-    vr_g : require('./vr-grey.png'),
+    vr_g : require('./vr-dark.png'),
     video_w : require('./video.png'),
-    video_g : require('./video-grey.png'),
+    video_g : require('./video-dark.png'),
     arrow : require('./arrow.png'),
     middile : require('./swtch-btw-cam.png'),
     send : require('./paper-plane.png'),
@@ -52,5 +52,6 @@ export const Images = {
     dp : require('./dp.jpeg'),
     edit_profile : require('./edit_profile.png'),
     default_dp : require('./default_dp.png'),
-    arrow_dark : require('./arrow_dark.png')
+    arrow_dark : require('./arrow_dark.png'),
+    comment : require('./comment-white.png'),
 }

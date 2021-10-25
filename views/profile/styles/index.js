@@ -29,13 +29,15 @@ export default StyleSheet.create ({
       width : hp(17),
       borderRadius: hp(17/2),
       backgroundColor:'#fff',
-      alignSelf:'center'       
+      alignSelf:'center',
+      justifyContent:'center',
+      alignItems:'center'       
     },
     dp: {
       height : hp(17),
       width : hp(17),
       borderRadius: hp(17/2),
-
+      position:'absolute'
     },
     editDpContainer: {
       height: hp(4),

@@ -35,7 +35,7 @@ const Profile = (props) => {
     const [errorMessage, setErrorMessage] = useState('');
     const [user, setUser] = useState(props.route.params.user) 
     const [imageSource, setImageSource] = useState(null);
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     
     const [createUser, {data : data }] = useMutation(REGISTER)
@@ -49,6 +49,7 @@ const Profile = (props) => {
           setUsername(usr.username)
           setEmail(usr.email)
           setImageSource(usr?.profile != null ? { uri: usr?.profile?.url } : { uri: '' })
+          setLoading(false)
         }
         getUser()
      },[isFocus])
@@ -152,11 +153,15 @@ const Profile = (props) => {
            onPress = { () => props.navigation.pop()}
            style = {styles.back}
            >
-           <Image source = {Images.arrow}/>
+           <Image source = {DARK ? Images.arrow : Images.arrow_dark}/>
            </TouchableOpacity>   
            <View style = {styles.logoContainer}>
-               <View style = {styles.dpContainer}>
-                 <Image 
+               <View style = {[styles.dpContainer, {backgroundColor : DARK ? Colors.base : Colors.white}]}>
+
+                
+                <ActivityIndicator size = {'large'} color = {DARK ? Colors.white : Colors.base}/>
+                  
+                <Image 
                  source = {!imageSource?.uri?.includes('/uploads/') ? imageSource?.uri !== ''? { uri: imageSource?.uri } : Images.default_dp : { uri: BaseUrl + imageSource?.uri }} 
                  style = { styles.dp }/>
 

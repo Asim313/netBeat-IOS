@@ -89,6 +89,7 @@ export default StyleSheet.create ({
       fontFamily: Fonts.regular,
       color : Colors.white,
       lineHeight :hps(28),
+      //marginBottom:hp(3)
     },
     videoInfoContainer: {
       height:hps(50.1),

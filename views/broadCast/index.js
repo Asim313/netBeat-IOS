@@ -53,6 +53,7 @@ const BroadCast = (props) => {
   const [videoSource, setVideoSource] = useState(undefined)
   const [video, setVideo] = useState(true)
   const [audio, setAudio] = useState(true)
+  const [mainPublisher, setMAinPublisher] = useState()
   const [publisherId, setPublisherId] =  useState('')
   const [indicator, setIndicator] =  useState(true)
   const [record, setRecord] = useState(false)
@@ -70,6 +71,7 @@ const BroadCast = (props) => {
   const [ref, setRef] = useState(null)  
   const [fade, setFade] = useState(false)
   const [isKeyboardVisible, setKeyboardVisible] = useState(false);
+  const [clap, setClap] = useState(false)
 
 
   const fadeAnim = useRef(new Animated.Value(0)).current  // Initial value for opacity: 0
@@ -80,6 +82,12 @@ const BroadCast = (props) => {
     setInterval(() => {
       setVolBar(false)
       setFade(true)
+    },5000)
+  },[])
+
+  useEffect(()=>{
+    setInterval(() => {
+      setClap(false)
     },5000)
   },[])
 
@@ -127,8 +135,11 @@ const BroadCast = (props) => {
 
 
   const leaveSession = async(data) => {
+    console.log('disconnected...')
     const mySession = session;
-    await  mySession.disconnect()
+    console.log(mySession)
+    const res = await  session.disconnect()
+    console.log("res=>", res)
     setTimeout(() => {
         OV = null;
         setSession(undefined);
@@ -154,9 +165,11 @@ const BroadCast = (props) => {
 
 
   const _handleAppStateChange = (nextAppState) => {
+
+    //console.log('appState========================================================>>>>>>>>>>>>>>>>>>>>>>>')
     console.log('here', nextAppState)
-    var a = null;
-    var loading = null;
+     var a = null;
+     var loading = null;
     if (
       appState.match(/inactive|background/) &&
       nextAppState === 'active'
@@ -169,9 +182,9 @@ const BroadCast = (props) => {
         leaveSession(false);
         console.log('You left the session!');
     }
-    // console.log(a,loading)
-    setAppState(nextAppState)
-    setLoader(loading)
+    // // console.log(a,loading)
+     setAppState(nextAppState)
+     setLoader(loading)
   };
 
 
@@ -182,7 +195,7 @@ const BroadCast = (props) => {
     console.log('here...')
     AppState.addEventListener('change', _handleAppStateChange);
     joinSession()
-   BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
+    BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
     //alert(JSON.stringify(selectedURI));
     // console.warn(this.props.route.params.list[0].stream_url)
    //    InCallManager.start();
@@ -307,6 +320,7 @@ const BroadCast = (props) => {
             mySession
             .connect(token, { clientData: myUserName,group_id : a?.group?.id })
             .then(() => {
+             setSession(mySession)
                let txtFieldRef = ref;
                 if (Platform.OS == 'android') {
                     //checkAndroidPermissions();
@@ -315,12 +329,13 @@ const BroadCast = (props) => {
                     audioSource: true, // The source of audio. If undefined default microphone
                     videoSource: true, // The source of video. If undefined default webcam
                     publishAudio: true, // Whether you want to start publishing with your audio unmuted or not
-                    publishVideo: true, // Whether you want to start publishing with your video enabled or not
+                    publishVideo: false, // Whether you want to start publishing with your video enabled or not
                     resolution: '640x480', // The resolution of your video
                     frameRate: 30, // The frame rate of your video
                     insertMode: 'APPEND', // How the video is inserted in the target element 'video-container'
                 };
                 let publisher = OV.initPublisher(undefined, properties);
+                //setMAinPublisher(publisher)
                 console.log("publisher=>", publisher)
                 setMainStreamManager(publisher)
                 mySession.publish(publisher);
@@ -347,7 +362,12 @@ const BroadCast = (props) => {
                     // setTimeout(()=>{
                     //     setLoaderState(false)
                     // },3500)
-                });     
+                })
+                mySession.on('signal:clap' , (event) => {
+                  //alert('clap=>', event.data)
+                  setFade(false)
+                  setClap(true)
+                }) 
             })
             .catch((error) => {
                 console.warn('There was an error connecting to the session:', error.code, error.message);
@@ -435,8 +455,10 @@ return (
       style = {sheight > sWidth? styles.back : styles.backLand}
       >
       <TouchableOpacity 
+      style = {styles.backTouch}
       onPress = {() => {
-        props.navigation.goBack()
+        leaveSession(true)
+        //props.navigation.goBack()
         Orientation.lockToPortrait()
       }}
       >
@@ -449,8 +471,10 @@ return (
       style = {sheight > sWidth? styles.back : styles.backLand}
       >
       <TouchableOpacity 
+      style = {styles.backTouch}
       onPress = {() => {
-        props.navigation.goBack()
+        leaveSession(true)
+        //props.navigation.goBack()
         Orientation.lockToPortrait()
       }}
       >
@@ -559,7 +583,11 @@ return (
       </Animatable.View>}
 
 
-      {fade?
+      {
+      mode == 1 &&  
+      <>
+      {
+      fade?
       <Animatable.View 
       animation = "fadeOut"
       style = {styles.middle}>
@@ -570,7 +598,10 @@ return (
       animation = "fadeIn"
       style = {styles.middle}>
         <Image source = {Images.middile}/>
-      </Animatable.View>}
+      </Animatable.View>
+       }
+      </>
+      }
 
 
 
@@ -605,9 +636,9 @@ return (
       style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, {bottom: sheight>sWidth? hps(104) : wps(20), right:null, left:sheight>sWidth? wps(16) : hps(16)}]}
       > 
         <TouchableOpacity
-        onPress = {() => {setPeoples(!peoples)}}
+        onPress = {() => {setComments(true)}}
         >
-        <Image source = {peoples ? Images.peoples_white : Images.peoples_grey}/>  
+        <Image source = {Images.comment} style = {{height:hps(18), width:wps(20)}}/>  
         </TouchableOpacity>
       </Animatable.View>
       :
@@ -616,21 +647,76 @@ return (
       style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, {bottom: sheight>sWidth? hps(104) : wps(20), right:null, left:sheight>sWidth? wps(16) : hps(16)}]}
       > 
         <TouchableOpacity
-        onPress = {() => {setPeoples(!peoples)}}
+        onPress = {() => {setComments(true)}}
         >
-        <Image source = {peoples ? Images.peoples_white : Images.peoples_grey}/>  
+        <Image source = {Images.comment} style = {{height:hps(18), width:wps(20)}}/>  
         </TouchableOpacity>
       </Animatable.View>}
-      
-      {fade?
+
+
+      {clap? 
+       <>
+       {fade?
       <Animatable.View
       animation = "fadeOutLeft"
-      style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, {bottom:sheight>sWidth? hps(162) : hps(80),right:null,left:wps(16)}]}>
+      style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, {bottom:sheight>sWidth? hps(162) : hps(80),right:null,left:wps(16), backgroundColor:Colors.base1}]}>
+        <Animatable.View
+        animation='pulse'
+        easing='ease-out' 
+        delay = {1500}
+        iterationCount="infinite"
+        >
         <TouchableOpacity
+        style = {{height:hps(38),
+          width:hps(38),
+          borderRadius:hps(38/2),
+          justifyContent:'center',
+          alignItems:'center',
+          backgroundColor:Colors.base
+        }}
         onPress = {() => {}}
         >
         <Image source = {Images.clap}/>
         </TouchableOpacity>
+        </Animatable.View>
+      </Animatable.View>
+      :
+      <Animatable.View
+      animation = "fadeInLeft"
+      style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, {bottom:sheight>sWidth? hps(162) : hps(80),right:null,left:wps(16), backgroundColor:Colors.base1}]}>
+        <Animatable.View
+        animation='pulse'
+        easing='ease-out' 
+        delay = {1500}
+        iterationCount="infinite"
+        
+        >
+        <TouchableOpacity
+        style = {{height:hps(38),
+          width:hps(38),
+          borderRadius:hps(38/2),
+          justifyContent:'center',
+          alignItems:'center',
+          backgroundColor:Colors.base
+        }}
+        onPress = {() => {}}
+        >
+        <Image source = {Images.clap}/>
+        </TouchableOpacity>
+        </Animatable.View>
+      </Animatable.View>}
+       </>
+       :
+       <>
+       {fade?
+      <Animatable.View
+      animation = "fadeOutLeft"
+      style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, {bottom:sheight>sWidth? hps(162) : hps(80),right:null,left:wps(16)}]}>
+      <TouchableOpacity
+      onPress = {() => {}}
+      >
+      <Image source = {Images.clap}/>
+      </TouchableOpacity>
       </Animatable.View>
       :
       <Animatable.View
@@ -642,6 +728,12 @@ return (
         <Image source = {Images.clap}/>
         </TouchableOpacity>
       </Animatable.View>}
+       </>
+       }
+      
+      
+
+      
 
       {fade?
       <Animatable.View
@@ -649,7 +741,10 @@ return (
        style = {sheight>sWidth ? styles.micMainButton : styles.micMainButtonLand}
       >
         <TouchableOpacity
-        onPress = {() => {setMic(!mic)}}
+        onPress = {() => {
+          setMic(!mic)
+          mainStreamManager.publishAudio(!mic)
+        }}
         >
           <LinearGradient
           colors = {['#EBA0EF','#27E4E5']}
@@ -666,7 +761,10 @@ return (
        style = {sheight>sWidth ? styles.micMainButton : styles.micMainButtonLand}
       >
         <TouchableOpacity
-        onPress = {() => {setMic(!mic)}}
+        onPress = {() => {
+          setMic(!mic)
+          mainStreamManager.publishAudio(!mic)
+        }}
         >
           <LinearGradient
           colors = {['#EBA0EF','#27E4E5']}
@@ -677,6 +775,8 @@ return (
           </LinearGradient>
         </TouchableOpacity>
       </Animatable.View>}
+
+      
 
       {volBar && <View style = {sheight>sWidth ? styles.volSlider: styles.volSliderLand}>
         <RnVerticalSlider

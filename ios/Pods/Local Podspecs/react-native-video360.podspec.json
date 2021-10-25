@@ -22,8 +22,8 @@
       "VideoToolbox"
     ],
     "vendored_frameworks": [
-      "Frameworks/arm/SGPlayer.framework",
-      "Frameworks/arm/SGPlatform.framework"
+      "Frameworks/SGPlayer.framework",
+      "Frameworks/SGPlatform.framework"
     ],
     "libraries": [
       "bz2.1.0",

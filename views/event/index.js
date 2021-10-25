@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Image, ImageBackground, ScrollView, StatusBar, Text, TouchableOpacity, View } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { useSelector } from 'react-redux';
-import { Colors, Images, wps } from '../../assets/index';
+import { Colors, hp, hps, Images, wps } from '../../assets/index';
 import { BaseUrl } from '../../graphql/baseUrl';
 import styles from './styles';
 
@@ -65,9 +65,12 @@ const Event = (props) => {
         </View>
 
         <View style = {styles.eventInfoContainer}>
-          <ScrollView style = {{ flex : 1 }}>  
+          <ScrollView 
+          //contentContainerStyle = {{marginBottom:hp(3)}}
+          style = {{ flex : 1 }}>  
             <Text style = {[styles.info, { color : DARK ? Colors.white : Colors.base}]}>{event?.Description}</Text>
             </ScrollView>
+            <View style = {{height:hp(1.5)}}></View>
         </View>
 
         <View style = {styles.videoInfoContainer}>

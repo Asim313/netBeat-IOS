@@ -3258,6 +3258,7 @@
 		6E6C252B245BCD94D650EA6553BC02FF /* RCTInputAccessoryViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTInputAccessoryViewManager.h; sourceTree = "<group>"; };
 		6E96FA5962553775E0A0962127874660 /* RCTBundleURLProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTBundleURLProvider.m; sourceTree = "<group>"; };
 		6ED4B9E447B154824434245C65AD3FA5 /* RTCVideoDecoderVP9.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RTCVideoDecoderVP9.h; sourceTree = "<group>"; };
+		6F190E7FF3006F04738C47BB4F8F8936 /* SGPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SGPlayer.framework; path = Frameworks/SGPlayer.framework; sourceTree = "<group>"; };
 		6F31879FD0B0E7956262FB1EB9D9B42A /* Pods-NetbeatLive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NetbeatLive-dummy.m"; sourceTree = "<group>"; };
 		6F4C676448306EC2510B5D8070B4CA9E /* RCTMultilineTextInputView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMultilineTextInputView.m; sourceTree = "<group>"; };
 		6FFB7B2992BB53405E6B771A5BA1E97D /* DoubleConversion */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = DoubleConversion; path = libDoubleConversion.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3299,7 +3300,6 @@
 		76B0915C0B72E712F7F99A0FBC83A54C /* JSIDynamic.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = JSIDynamic.cpp; sourceTree = "<group>"; };
 		76E2DB1B2F68D7A846003D7504E1FDF3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		7702CAF8584767D7034767B7BFC8FE5A /* RTCVideoEncoderSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RTCVideoEncoderSettings.h; sourceTree = "<group>"; };
-		7712826517591657164BB3457FF49BA4 /* SGPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SGPlatform.framework; path = Frameworks/arm/SGPlatform.framework; sourceTree = "<group>"; };
 		77444250961637A576FCE1CCDB62427B /* Pods-NetbeatLive-tvOSTests */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-NetbeatLive-tvOSTests"; path = "libPods-NetbeatLive-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		778E3A4193BE1FEE5673FB7A8758CB3F /* RTCRtpReceiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RTCRtpReceiver.h; sourceTree = "<group>"; };
 		77F414A65265B47EE0487008B87FCB51 /* React-RCTImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "React-RCTImage.debug.xcconfig"; sourceTree = "<group>"; };
@@ -3831,7 +3831,6 @@
 		CDD7A9F3D1270A7EC872EF3978A6209A /* RCTCxxModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTCxxModule.h; sourceTree = "<group>"; };
 		CDEB7173BB81AFD62045091CBA85D54C /* RCTLocalAssetImageLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTLocalAssetImageLoader.h; path = Libraries/Image/RCTLocalAssetImageLoader.h; sourceTree = "<group>"; };
 		CE192886D0F66519030D3AA89E9B545B /* react-native-orientation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-orientation.release.xcconfig"; sourceTree = "<group>"; };
-		CE3BFE0E4E2BDB0DAAC305DEA028AF49 /* SGPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SGPlayer.framework; path = Frameworks/arm/SGPlayer.framework; sourceTree = "<group>"; };
 		CE50DB54C22590C60A939F3CE765580D /* NSURLSession+GULPromises.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+GULPromises.h"; path = "GoogleUtilities/Environment/Public/GoogleUtilities/NSURLSession+GULPromises.h"; sourceTree = "<group>"; };
 		CE576C37CA206D1162E39AE50AA7543C /* FBLPromise+Then.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Then.h"; path = "Sources/FBLPromises/include/FBLPromise+Then.h"; sourceTree = "<group>"; };
 		CE612827D0772ADCAA6454A659129D75 /* RNCSafeAreaViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaViewManager.h; path = ios/SafeAreaView/RNCSafeAreaViewManager.h; sourceTree = "<group>"; };
@@ -3933,6 +3932,7 @@
 		DDD86D63AC9D93B28A60B7003AD83289 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		DDE6566788959E8E5D8BCF00A248FD89 /* NSTextStorage+FontScaling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSTextStorage+FontScaling.h"; sourceTree = "<group>"; };
 		DDEE39DFE81B050573143C6DE46E39E7 /* RNGestureHandlerState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNGestureHandlerState.h; path = ios/RNGestureHandlerState.h; sourceTree = "<group>"; };
+		DE012A1FE437BA5DAF24071EC78A9CDA /* SGPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SGPlatform.framework; path = Frameworks/SGPlatform.framework; sourceTree = "<group>"; };
 		DE0C144987B05D834CE60203BF4285EA /* RCTAnimationUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTAnimationUtils.h; path = Libraries/NativeAnimation/RCTAnimationUtils.h; sourceTree = "<group>"; };
 		DE2F073351273A594C491FD604C4ADCE /* utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utils.h; path = "double-conversion/utils.h"; sourceTree = "<group>"; };
 		DE4FB55DDF52AEA0B63B87488FFC1C72 /* RNCSafeAreaViewLocalData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaViewLocalData.m; path = ios/SafeAreaView/RNCSafeAreaViewLocalData.m; sourceTree = "<group>"; };
@@ -5397,6 +5397,15 @@
 			name = decode;
 			sourceTree = "<group>";
 		};
+		4268B0F22D3FEBEE2911DA168E218800 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE012A1FE437BA5DAF24071EC78A9CDA /* SGPlatform.framework */,
+				6F190E7FF3006F04738C47BB4F8F8936 /* SGPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		42A4DFE82263B239ED09B4C0E58237E0 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -5668,7 +5677,7 @@
 				B281E1D6E65BD485E2DCA0BA6A87ACEA /* PlayerViewController.xib */,
 				F1D4B694D4ABDE27D70E9255021C7012 /* Video360.h */,
 				54DE50CCCAD700F5B462A0E60A417A79 /* Video360.m */,
-				65EEE81484F5E7C8822A01F7D8C7F46D /* Frameworks */,
+				4268B0F22D3FEBEE2911DA168E218800 /* Frameworks */,
 				8C12182EA5FF2548E9EF89AE9D3873B1 /* Pod */,
 				8EBCCEB24657E9338F00D0CE5D52A87C /* Support Files */,
 			);
@@ -6131,15 +6140,6 @@
 				5B8DAAA0156D0BCED11ED0E5BB175ED4 /* GULNetworkURLSession.m */,
 			);
 			name = Network;
-			sourceTree = "<group>";
-		};
-		65EEE81484F5E7C8822A01F7D8C7F46D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7712826517591657164BB3457FF49BA4 /* SGPlatform.framework */,
-				CE3BFE0E4E2BDB0DAAC305DEA028AF49 /* SGPlayer.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		66BC7E1D3B9E354110233E4B1E27D003 /* UIUtils */ = {

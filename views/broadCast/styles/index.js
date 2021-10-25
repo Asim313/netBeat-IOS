@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { Colors, hps, wp, wps } from "../../../assets";
+import { Colors, hp, hps, wp, wps } from "../../../assets";
 import {Fonts} from './../../../assets/fonts/index'
 
 export default StyleSheet.create({
@@ -17,11 +17,22 @@ export default StyleSheet.create({
         position:'absolute',
         top:hps(45),
         left:wps(17),
+        height:hps(25),
+        width:hps(25),
+        borderRadius:hps(12.5)
     },
     backLand: {
         position:'absolute',
         top:wps(21),
         left:hps(23),
+        height:wps(25),
+        width:wps(25),
+        borderRadius:wps(12.5)
+    },
+    backTouch: {
+        flex:1 , 
+        justifyContent:'center',
+        alignItems:'center',
     },
     modesContainer: {
         height:hps(155),

@@ -57,7 +57,7 @@ const Home = (props) => {
       },
       onCompleted : res => {
          setLoading(false)
-         console.log(JSON.stringify(res))
+         //console.log(JSON.stringify(res))
       }
    })
 

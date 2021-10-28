@@ -5415,6 +5415,11 @@
   dependencies:
     "prop-types" "^15.7.2"
 
+"react-native-dbb-rtmp@^1.0.1":
+  "integrity" "sha512-a+jDUxatF3T2McQq4DspIL+PcHRoG6sDJvyybeFziJe8tiiUZRUA5t2R8h8L96RB2sOoeDT2SFycb2cPTzYnPw=="
+  "resolved" "https://registry.npmjs.org/react-native-dbb-rtmp/-/react-native-dbb-rtmp-1.0.1.tgz"
+  "version" "1.0.1"
+
 "react-native-extra-dimensions-android@^1.2.5":
   "integrity" "sha512-eorFo9X1vEqAWUkgcZ300yKBG1wtgNeE7tdWAH2CE+P50FGTniJg5Sr6l1iPWG8ZskQOuF+KeiSTFlDa4vLfMw=="
   "resolved" "https://registry.npmjs.org/react-native-extra-dimensions-android/-/react-native-extra-dimensions-android-1.2.5.tgz"

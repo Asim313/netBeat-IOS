@@ -11,7 +11,7 @@ import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import com.oney.WebRTCModule.WebRTCModulePackage;
-import com.perrystreetsoftware.RNRtmpViewPackage;
+// import com.perrystreetsoftware.RNRtmpViewPackage;
 
 
 
@@ -31,7 +31,7 @@ public class MainApplication extends Application implements ReactApplication {
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
           packages.add(new WebRTCModulePackage()); // <-- Add this line
-          packages.add(new RNRtmpViewPackage());
+          // packages.add(new RNRtmpViewPackage());
 
           return packages;
         }

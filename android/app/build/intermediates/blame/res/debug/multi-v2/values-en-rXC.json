@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/asim/Documents/office/netBeat_IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "/Users/asim/Documents/office/netBeat-IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
                     "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/42fec678f4d5ce8fd0dae90855a53e1a/res/values-en-rXC/values-en-rXC.xml",
@@ -14,20 +14,20 @@
                     }
                 },
                 {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/f086c151043501b3dee03de2db0f70aa/res/values-en-rXC/values-en-rXC.xml",
+                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/9ad9421f03446e37ef1a6044cdd6dd53/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endColumns": "202",
-                        "endOffsets": "253"
+                        "endColumns": "203",
+                        "endOffsets": "254"
                     },
                     "to": {
                         "startLines": "30",
                         "startColumns": "4",
                         "startOffsets": "5682",
-                        "endColumns": "202",
-                        "endOffsets": "5880"
+                        "endColumns": "203",
+                        "endOffsets": "5881"
                     }
                 }
             ]

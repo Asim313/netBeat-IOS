@@ -192,7 +192,7 @@ android {
 dependencies {
     implementation project(':react-native-video360plugin')
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation project(':react-native-rtmpview')
+    // implementation project(':react-native-rtmpview')
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation project(':WebRTCModule')
 

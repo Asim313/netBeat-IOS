@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/asim/Documents/office/netBeat_IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/Users/asim/Documents/office/netBeat-IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/a6910579a2eb03854b80b7dfbff72f62/res/values-v23/values-v23.xml",

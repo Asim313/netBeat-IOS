@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/asim/Documents/office/netBeat_IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/Users/asim/Documents/office/netBeat-IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/f086c151043501b3dee03de2db0f70aa/res/values-v16/values-v16.xml",
+                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/9ad9421f03446e37ef1a6044cdd6dd53/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

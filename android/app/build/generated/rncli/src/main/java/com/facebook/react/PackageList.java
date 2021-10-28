@@ -14,30 +14,38 @@ import java.util.ArrayList;
 import com.netbeatlive.BuildConfig;
 import com.netbeatlive.R;
 
+// react-native-dbb-rtmp
+import org.wonday.live.RNLiveStreamPackage;
 // @react-native-community/async-storage
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// @react-native-firebase/app
+import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
+// @react-native-firebase/messaging
+import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
 // @sayem314/react-native-keep-awake
 import com.sayem.keepawake.KCKeepAwakePackage;
 // react-native-extra-dimensions-android
 import ca.jaysoo.extradimensions.ExtraDimensionsPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+// react-native-image-picker
+import com.imagepicker.ImagePickerPackage;
 // react-native-linear-gradient
 import com.BV.LinearGradient.LinearGradientPackage;
 // react-native-orientation
 import com.github.yamill.orientation.OrientationPackage;
 // react-native-reanimated
 import com.swmansion.reanimated.ReanimatedPackage;
-// react-native-rtmpview
-import com.perrystreetsoftware.RNRtmpViewPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
 import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-video360plugin
 import com.reactlibrary.Video360Package;
+// react-native-webview
+import com.reactnativecommunity.webview.RNCWebViewPackage;
 
 public class PackageList {
   private Application application;
@@ -83,18 +91,22 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new RNLiveStreamPackage(),
       new AsyncStoragePackage(),
       new RNCMaskedViewPackage(),
+      new ReactNativeFirebaseAppPackage(),
+      new ReactNativeFirebaseMessagingPackage(),
       new KCKeepAwakePackage(),
       new ExtraDimensionsPackage(),
       new RNGestureHandlerPackage(),
+      new ImagePickerPackage(),
       new LinearGradientPackage(),
       new OrientationPackage(),
       new ReanimatedPackage(),
-      new RNRtmpViewPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
-      new Video360Package()
+      new Video360Package(),
+      new RNCWebViewPackage()
     ));
   }
 }

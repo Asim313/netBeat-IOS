@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/asim/Documents/office/netBeat_IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "/Users/asim/Documents/office/netBeat-IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/f086c151043501b3dee03de2db0f70aa/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/9ad9421f03446e37ef1a6044cdd6dd53/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -7,7 +7,11 @@ import { useSelector } from "react-redux"
 import RnVerticalSlider from 'rn-vertical-slider-gradient'
 import ToggleSwitch from 'toggle-switch-react-native'
 import { BaseUrl } from "../../graphql/baseUrl"
-import LivePlayer from "react-native-video360plugin";
+
+import LivePlayerr from "react-native-video360plugin";
+import {LivePlayer} from "react-native-dbb-rtmp";
+import {Platform} from 'react-native';
+
 import { _retrieveData } from '../../asyncStorage/AsyncFuncs';
 import { OpenVidu } from 'openvidu-browser';
  // import InCallManager from 'react-native-incall-manager';  
@@ -407,7 +411,7 @@ return (
     style = {styles.bgImage}>
     {!loader ? 
     <>
-     {mode == 1 && <LivePlayer 
+     {mode == 1 && <LivePlayerr 
       urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == '360')[0]?.stream_ios} 
       //volume={0.0} 
       modeVideo={1} 
@@ -417,7 +421,7 @@ return (
       enableTouchTracking={false}
       hidesTransitionView={false}
       style={{ flex: 1}} />}
-      {mode == 2 && <LivePlayer 
+      {mode == 2 && <LivePlayerr
       urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'vr')[0]?.stream_ios} 
       //volume={0.0} 
       modeVideo={2} 
@@ -427,8 +431,9 @@ return (
       enableTouchTracking={false}
       hidesTransitionView={false}
       style={{ flex: 1}} />}
-      {mode == 3 && <LivePlayer 
-      urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
+      {mode == 3 && Platform.OS == 'ios' && <LivePlayerr 
+      urlVideo = {'rtmp://49.12.106.146:1935/live/origin1'}
+      //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
       //urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
       //volume = {0.0} 
       modeVideo={3} 
@@ -438,6 +443,17 @@ return (
       enableTouchTracking={false}
       hidesTransitionView={false}
       style={{ flex: 1}} />}
+      {mode == 3 && Platform.OS == 'android' && <LivePlayer source={{uri:"rtmp://49.12.106.146:1935/live/origin1"}}
+        paused={false}
+        style={{flex: 1, backgroundColor: 'red'}}
+        muted={false}
+        bufferTime={300}
+        maxBufferTime={1000}
+        resizeMode={"contain"}
+        onLoading={()=>{}}
+        onLoad={()=>{}}
+        onEnd={()=>{}}
+      />}
       </>
       :
       <View style={{alignItems : 'center', justifyContent : 'center', flex : 1}}>

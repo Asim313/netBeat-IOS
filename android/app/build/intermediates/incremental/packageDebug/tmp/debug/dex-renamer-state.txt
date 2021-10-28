@@ -1,9 +1,9 @@
-#Tue Oct 12 10:56:43 PKT 2021
-base.2=/Users/asim/Documents/office/netBeat_IOS/android/app/build/intermediates/transforms/dexMerger/debug/0
-path.2=classes3.dex
-base.1=/Users/asim/Documents/office/netBeat_IOS/android/app/build/intermediates/transforms/dexMerger/debug/0
-path.1=classes2.dex
-base.0=/Users/asim/Documents/office/netBeat_IOS/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Thu Oct 28 18:28:47 PKT 2021
+base.2=/Users/asim/Documents/office/netBeat-IOS/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.2=classes2.dex
+base.1=/Users/asim/Documents/office/netBeat-IOS/android/app/build/intermediates/transforms/dexMerger/debug/1
+path.1=classes.dex
+base.0=/Users/asim/Documents/office/netBeat-IOS/android/app/build/intermediates/transforms/dexMerger/debug/0
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex

@@ -12,7 +12,7 @@ import { selectLanguage } from './../../redux/actions/language';
 import { languages } from './../../redux/languages';
 import styles from './styles';
 import moment from 'moment'
-
+import { SVGS } from '../../assets/images/config';
 const Notifications = (props) => {
    const dispatch = useDispatch();
    const { lang, selectedLangVal } = useSelector(state => state.language)
@@ -54,7 +54,7 @@ const Notifications = (props) => {
           style = {styles.noti}>
               <Image source = {DARK? Images.arrow : Images.arrow_dark}/>
           </TouchableOpacity>
-          <Image source = {Images.logoh} style = {styles.logo}/>
+          <SVGS.logo_home/>
          </View>
 
          <View style = {styles.settingContainer}>

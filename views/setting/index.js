@@ -16,7 +16,7 @@ import { BaseUrl } from '../../graphql/baseUrl';
 import Slider from 'react-native-slider';
 import * as Animatable from 'react-native-animatable';
 import { LIVEEVENT } from '../../graphql/queries';
-
+import { SVGS } from '../../assets/images/config';
 const Setting = (props) => {
 
    let isFocus = useIsFocused()
@@ -106,9 +106,9 @@ const Setting = (props) => {
             props.navigation.navigate('notification',{user : user})
           }}
             style = {styles.noti}>  
-            <Image source = {DARK? Images.notiWd : Images.notiGd} />
+            {DARK? <SVGS.bell_w_on/> :  <SVGS.bell_g_on/> }
           </TouchableOpacity>
-          <Image source = {Images.logoh} style = {styles.logo}/>
+          <SVGS.logo_home/>
           <TouchableOpacity
           style = {styles.user}
           onPress = {() => {

@@ -10,6 +10,7 @@ import styles from './styles';
 import { BaseUrl } from '../../graphql/baseUrl';
 import Orientation from 'react-native-orientation';
 import { _retrieveData } from '../../asyncStorage/AsyncFuncs';
+import { SVGS } from '../../assets/images/config';
 
 const Home = (props) => {
 
@@ -98,14 +99,26 @@ const Home = (props) => {
        <SafeAreaView style = {[styles.mainContainer, {backgroundColor : DARK? Colors.base : Colors.white}]}>
          <StatusBar barStyle = { DARK? 'light-content' : 'dark-content'}/>
          <View style = {[styles.header , { marginTop : Platform.OS == 'ios' ? -IOS : 20}]}>
-          <TouchableOpacity 
+          {/* <TouchableOpacity 
           onPress = {() => {
             props.navigation.navigate('notification', {user : user})
           }}
             style = {styles.noti}>  
-            <Image source = {DARK? Images.notiWd : Images.notiGd} />
-          </TouchableOpacity>
-          <Image source = {Images.logoh} style = {styles.logo}/>
+            
+          </TouchableOpacity> */}
+          {DARK? 
+          <SVGS.bell_w_on  
+          style = {styles.noti} 
+           onPress = {() => { 
+            props.navigation.navigate('notification', {user : user}) 
+            }}/>
+              :  
+          <SVGS.bell_g_on 
+          onPress = {() => { 
+            props.navigation.navigate('notification', {user : user}) 
+            }}
+          style = {styles.noti}/>}
+          <SVGS.logo_home/>
           <TouchableOpacity
           style = {styles.user}
           onPress = {() => {

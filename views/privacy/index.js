@@ -9,7 +9,7 @@ import { selectLanguage } from './../../redux/actions/language';
 import { languages } from './../../redux/languages';
 import styles from './styles';
 import { WebView } from 'react-native-webview';
-
+import { SVGS } from '../../assets/images/config';
 const Privacy = (props) => {
    const dispatch = useDispatch();
    const { lang, selectedLangVal } = useSelector(state => state.language)
@@ -29,7 +29,7 @@ const Privacy = (props) => {
           style = {styles.noti}>
               <Image source = {DARK? Images.arrow : Images.arrow_dark}/>
           </TouchableOpacity>
-          <Image source = {Images.logoh} style = {styles.logo}/>
+          <SVGS.logo_home/>
          </View>
 
          <View style = {styles.settingContainer}>

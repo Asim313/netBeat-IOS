@@ -8,6 +8,7 @@ import styles from './styles';
 import * as Animatable from 'react-native-animatable'
 import { BaseUrl } from '../../graphql/baseUrl';
 import { Shadow } from 'react-native-shadow-2';
+import { SVGS } from '../../assets/images/config'
 
 
 
@@ -21,6 +22,7 @@ const Splash = (props) => {
     const opacity = useState(new Animated.Value(0.25))[0]
     const spring = useState(new Animated.Value(0))[0]
     const [glow, setGlow] = useState(false)
+    const [svg, setSvg] = useState(true)
 
 
 
@@ -69,7 +71,12 @@ const Splash = (props) => {
           source = {Images.bg}
           >
           <View style = {styles.logoContainer}>
+           {!svg?
            <Image source = {Images.logol} style = {styles.logo}/>  
+           :
+           <View>
+             <SVGS.logo_large style = {styles.logo}/>
+           </View>}
           
            <View style = {styles.logoTitleContainer}>
                 <View style = {{ flexDirection : 'row' , alignItems : 'flex-end'}}>
@@ -101,6 +108,7 @@ const Splash = (props) => {
 
           <TouchableOpacity 
           onPress = {() => {
+           // setSvg(!svg)
              props.navigation.navigate('login')
             }}
           style = {styles.clapContainer}>

@@ -8,6 +8,7 @@ import styles from './styles';
 import { handleFormValidation, validateEmail } from '../../utils/handleLogic';
 import Toast from 'react-native-simple-toast';
 import { _retrieveData, _storeData } from '../../asyncStorage/AsyncFuncs';
+import { SVGS } from '../../assets/images/config';
 
 
 
@@ -78,7 +79,10 @@ const Register = (props) => {
         >
           <ScrollView style = {styles.scroll}>
            <View style = {styles.logoContainer}>
-               <Image source = {Images.logo} style = {styles.logo}/>
+               {/* <Image source = {Images.logo} style = {styles.logo}/> */}
+               <View style = {styles.logo}>
+                 <SVGS.logo_small />
+               </View>
                <View style = {styles.logoTitleContainer}>
                    <View style = {{ flexDirection : 'row' , alignItems : 'flex-end'}}>
                     <Text style = {styles.netbeat}>netbeat</Text>

@@ -12,6 +12,7 @@ import { Colors } from '../../assets/colors';
 import { GETUSERBYID } from '../../graphql/queries';
 import { push } from './../../Services'
 import { Shadow } from 'react-native-shadow-2';
+import { SVGS } from '../../assets/images/config';
 
 
 
@@ -136,7 +137,11 @@ const Login = (props) => {
            >
           <ScrollView style = {styles.scroll}>
            <View style = {styles.logoContainer}>
-               <Image source = {Images.logo} style = {styles.logo}/>
+               {/* <Image source = {Images.logo} style = {styles.logo}/> */}
+               <View style = {styles.logo}>
+                 <SVGS.logo_small />
+               </View>
+               
                <View style = {styles.logoTitleContainer}>
                    <View style = {{ flexDirection : 'row' , alignItems : 'flex-end'}}>
                     <Text style = {styles.netbeat}>netbeat</Text>

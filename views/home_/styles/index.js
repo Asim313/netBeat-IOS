@@ -24,7 +24,9 @@ export default StyleSheet.create ({
     noti: {
       position :'absolute',
       left:0,
-      top:hps(12)
+      top:hps(12),
+      height : hps(20),
+      width : wps(18)
     },
     logo: {
       //  height:hps(52),

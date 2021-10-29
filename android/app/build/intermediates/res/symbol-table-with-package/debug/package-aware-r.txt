@@ -1,4 +1,4 @@
-com.netbeatlive
+com.excelorithm.Netbeat
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -2117,9 +2117,19 @@ layout ui_layer
 layout ui_layer_with_portrait_support
 layout ui_view_embed
 mipmap ic_launcher
-mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw app
+raw node_modules_cssselect_lib_procedure
+raw node_modules_csstree_data_patch
+raw node_modules_csstree_package
+raw node_modules_domserializer_foreignnames
+raw node_modules_entities_lib_maps_decode
+raw node_modules_entities_lib_maps_entities
+raw node_modules_entities_lib_maps_legacy
+raw node_modules_entities_lib_maps_xml
+raw node_modules_mdndata_css_atrules
+raw node_modules_mdndata_css_properties
+raw node_modules_mdndata_css_syntaxes
 raw node_modules_openvidubrowser_node_modules_freeice_stun
 raw node_modules_openvidubrowser_node_modules_freeice_turn
 raw node_modules_openvidubrowser_package
@@ -2208,6 +2218,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string default_web_client_id
 string dialog_button_got_it
 string dialog_button_open_help_center
 string dialog_message_incompatible_phone
@@ -2224,8 +2235,13 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string fcm_fallback_notification_channel_label
+string gcm_defaultSenderId
 string go_to_playstore_button
 string go_to_vr_listeners_settings_button
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string gvr_vr_mode_component
 string header_description
 string hide_bottom_view_on_scroll_behavior
@@ -2279,6 +2295,7 @@ string path_password_strike_through
 string place_your_phone_into_cardboard
 string place_your_viewer_into_viewer_format
 string progressbar_description
+string project_id
 string radiogroup_description
 string rn_tab_description
 string scrollbar_description

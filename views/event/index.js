@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Image, ImageBackground, ScrollView, StatusBar, Text, TouchableOpacity, View } from 'react-native';
+import { Image, ImageBackground, ScrollView, StatusBar, Text, TouchableOpacity, View, PermissionsAndroid } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { useSelector } from 'react-redux';
 import { Colors, hp, hps, Images, wps } from '../../assets/index';
@@ -13,6 +13,51 @@ const Event = (props) => {
    const [selected, setSelected] = useState('concert')
    const [event, setEvent] = useState(props.route.params.data)
    const [user , setUser] = useState(props.route.params.user)
+
+
+
+   const checkAndroidPermissions = async() => {
+      try {
+          const camera = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.CAMERA, {
+              title: 'Camera Permission',
+              message: 'OpenVidu needs access to your camera',
+              buttonNeutral: 'Ask Me Later',
+              buttonNegative: 'Cancel',
+              buttonPositive: 'OK',
+          });
+          const audio = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.RECORD_AUDIO, {
+              title: 'Audio Permission',
+              message: 'OpenVidu needs access to your microphone',
+              buttonNeutral: 'Ask Me Later',
+              buttonNegative: 'Cancel',
+              buttonPositive: 'OK',
+          });
+          const storage = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE, {
+              title: 'STORAGE',
+              message: 'OpenVidu  needs access to your storage ',
+              buttonNeutral: 'Ask Me Later',
+              buttonNegative: 'Cancel',
+              buttonPositive: 'OK',
+          });
+          if (camera === PermissionsAndroid.RESULTS.GRANTED) {
+              console.log('You can use the camera');
+          } else {
+              console.log('Camera permission denied');
+          }
+          if (audio === PermissionsAndroid.RESULTS.GRANTED) {
+              console.log('You can use the audio');
+          } else {
+              console.log('audio permission denied');
+          }
+          if (storage === PermissionsAndroid.RESULTS.GRANTED) {
+              console.log('You can use the storage');
+          } else {
+              console.log('storage permission denied');
+          }
+      } catch (err) {
+          console.warn(err);
+      }
+     }
 
 
    return(
@@ -85,7 +130,10 @@ const Event = (props) => {
            </View>
 
            <TouchableOpacity
-           onPress = {() => {props.navigation.navigate('broadcast', {event : event})}}
+           onPress = {() => {
+              //checkAndroidPermissions()
+              props.navigation.navigate('broadcast', {event : event})
+            }}
            style = {styles.watchButton}
            >
            <Text style = {[styles.watchButtonText, {paddingHorizontal:selectedLangVal == 'fr'? wps(26) : null}]}>{lang?.watch_now}</Text>    

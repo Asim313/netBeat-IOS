@@ -127,28 +127,26 @@ export default class Login extends Component{
                     <View style={{flex : .025}}></View>
                     <View style={{flex : .065,justifyContent : "center", alignItems : 'center'}}>
                     {this.state.email != '' && this.state.password != '' ?
-                     <TouchableOpacity onPress={()=>{this.signIn()}} style={{height : hp(5.5),borderRadius : wp(2), width : wp(78), backgroundColor :'#007AFF', flexDirection : 'row', alignSelf : 'center'}}>
-                     {/* <View style={{flex : .2, justifyContent : 'center', alignItems : 'center', position : 'absolute',alignSelf : 'center', marginHorizontal : wp(5) }}>
-                         <Image resizeMode ='contain' source={Images.save} style={{height : hp(2.5), width : wp(4)}}></Image>
-                     </View> */}
+                     <TouchableOpacity 
+                     onPress={()=>{this.signIn()}} 
+                     style={{height : hp(5.5),borderRadius : wp(2), width : wp(78), backgroundColor :'#007AFF', flexDirection : 'row', alignSelf : 'center'}}>
                      <View style={{flex : 1, justifyContent : 'center', alignItems : 'center'}}>
-                         {this.state.loader ? 
+                        {this.state.loader ? 
                         <ActivityIndicator color='#fff' size='large'></ActivityIndicator> 
                         :
-                        
-                         <Text style={{color : '#fff', fontSize : Size(2)}}>Login</Text>
-    }
+                        <Text style={{color : '#fff', fontSize : Size(2)}}>Login</Text>
+                        }
                      </View>
                      </TouchableOpacity>                    
-            :
-            <View style={{height : hp(5.5),borderRadius : wp(2), width : wp(78), backgroundColor : '#007AFF', flexDirection : 'row', alignSelf : 'center'}}>
-            {/* <View style={{flex : .2, justifyContent : 'center', alignItems : 'center', position : 'absolute',alignSelf : 'center', marginHorizontal : wp(5) }}>
-                <Image resizeMode ='contain' source={Images.save} style={{height : hp(2.5), width : wp(4)}}></Image>
-            </View> */}
-            <View style={{flex : 1, justifyContent : 'center', alignItems : 'center'}}>
-                <Text style={{color : '#fff', fontSize : Size(2)}}>Login</Text>
-            </View>
-</View>                  
+                    :
+                    <View style={{height : hp(5.5),borderRadius : wp(2), width : wp(78), backgroundColor : '#007AFF', flexDirection : 'row', alignSelf : 'center'}}>
+                    {/* <View style={{flex : .2, justifyContent : 'center', alignItems : 'center', position : 'absolute',alignSelf : 'center', marginHorizontal : wp(5) }}>
+                        <Image resizeMode ='contain' source={Images.save} style={{height : hp(2.5), width : wp(4)}}></Image>
+                    </View> */}
+                    <View style={{flex : 1, justifyContent : 'center', alignItems : 'center'}}>
+                        <Text style={{color : '#fff', fontSize : Size(2)}}>Login</Text>
+                    </View>
+                    </View>                  
                                 }
                     </View>
                     <View style={{flex : .035}}></View>

@@ -1,5 +1,7 @@
 apply plugin: "com.android.application"
 
+apply plugin: 'com.google.gms.google-services'
+
 import com.android.build.OutputFile
 
 /**
@@ -128,7 +130,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.netbeatlive"
+        applicationId "com.excelorithm.Netbeat"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -190,6 +192,15 @@ android {
 }
 
 dependencies {
+    // Import the Firebase BoM
+  implementation platform('com.google.firebase:firebase-bom:28.4.2')
+
+
+  // Add the dependency for the Firebase SDK for Google Analytics
+  // When using the BoM, don't specify versions in Firebase dependencies
+  implementation 'com.google.firebase:firebase-analytics'
+
+
     implementation project(':react-native-video360plugin')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     // implementation project(':react-native-rtmpview')

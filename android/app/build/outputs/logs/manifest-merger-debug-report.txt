@@ -5,13 +5,14 @@ INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/Andr
 INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:1:1-39:12
 INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:1:1-39:12
 MERGED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:1:1-39:12
+MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-45:12
+MERGED from [:react-native-firebase_app] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-29:12
+MERGED from [com.google.firebase:firebase-analytics:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/c8f7f379b46aa4b01b9aa4d3f836987f/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-video360plugin] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-video360plugin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:WebRTCModule] /Users/asim/Documents/office/netBeat-IOS/node_modules/openvidu-browser/node_modules/react-native-webrtc/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-dbb-rtmp] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-dbb-rtmp/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_async-storage] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_masked-view] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-45:12
-MERGED from [:react-native-firebase_app] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-29:12
 MERGED from [:sayem314_react-native-keep-awake] /Users/asim/Documents/office/netBeat-IOS/node_modules/@sayem314/react-native-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-extra-dimensions-android] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-extra-dimensions-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-gesture-handler] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -20,85 +21,93 @@ MERGED from [:react-native-orientation] /Users/asim/Documents/office/netBeat-IOS
 MERGED from [:react-native-reanimated] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-svg] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-webview] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
-MERGED from [com.facebook.react:react-native:0.61.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7676c1fcf80b68088841dbd6e0b3032f/AndroidManifest.xml:2:1-13:12
-MERGED from [org.webkit:android-jsc:r245459] /Users/asim/.gradle/caches/transforms-2/files-2.1/67326d19317e8f1c3dc81f7cb13d0f32/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.multidex:multidex:2.0.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/50f1bd6d9bb988abf9f12b0c6951da5a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.react:react-native:0.61.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/2eb4958c163ccf944c72522bcafd01b5/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/asim/.gradle/caches/transforms-2/files-2.1/c0d2c02904ac843bfcc852b31bdff6bd/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/7cd10e2b68f0786640c672a3190bd0ad/AndroidManifest.xml:17:1-22:12
 MERGED from [:react-native-linear-gradient] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.vr:sdk-videowidget:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b12fd71e2faaa384fa4d61f722482bd9/AndroidManifest.xml:2:1-4:12
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:17:1-58:12
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3198634a9364285c92e8eced70e7ff18/AndroidManifest.xml:15:1-34:12
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:15:1-38:12
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:15:1-41:12
-MERGED from [com.github.NodeMedia:NodeMediaClient-Android:2.4.4] /Users/asim/.gradle/caches/transforms-2/files-2.1/ff2c0daa89adcfb51cbcc4c96d48a7e0/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.material:material:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a6910579a2eb03854b80b7dfbff72f62/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/42fec678f4d5ce8fd0dae90855a53e1a/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a29969161c13172005f3ccd39cfa5609/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0dfe304250f69afe409e4793e3d00f23/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3165f9327290525dbe5cd9641950ee7b/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f3af407b21d01b69bf6a859df9dac9a3/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cffb08a31c8357c3c7277c2b9bc19b69/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a864e0b8891bc4a391059e68aaedc583/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4bfc8429485ba08730b5f93d97e3baf1/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c484d292a3839395f6de9605d49b3483/AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:2:1-24:12
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:15:1-40:12
-MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0d0e520e2c85f6d73c8e9f5793685fbf/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8601100e710a9ce8f244410ce32ee861/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a22e8d4c218ca5dde01c3d7bc5b5aec0/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8fdee1efd7b9ef7942cf162a5b7b87ee/AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/75ff59a40da1c7114656decbaed280e2/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a37afaca2283d436c1585749380c0c9a/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9655db31487c9b1f20b208e0588003f7/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/1e5a0f6a6b472bda9ce0ab1b59017e4e/AndroidManifest.xml:15:1-23:12
-MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/944b1b706af629553096ecc7326721d9/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/63fdf36f2fb28621db53e584cbcec2b2/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f17fdad728437d83fd1dbd57c8d62f5e/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/793dbaaf3787f3741e7678c5c0af174a/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0fc933a34629a21fa8282a3eaa526c6/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4ee8c4c9caeea3eb0f240be0061b865f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.webkit:webkit:1.4.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8e98422627f2064dadfaeb6694235c11/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/88507e92ebcad8687ecb2b0787d82c8a/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2120b840f706f7a7336f02cbc5769ce/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b47a39ac19362d93925bb4d0d91d32c3/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b158eeafddae79782922ee79a98587d1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/61cd8e8c801c8e287d742502dc9b1ae3/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/70a627deea7539c9c7dd2d414f154ab1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f77ad181ddd1955c3776934bf82316b9/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e9f07a3a63e0521d1c3b8eea6cb04f2c/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/adb3e3c59756e9b23f2f63cf3d82d9c4/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/aa23cfa05b91bc0ef1e8e0ade7d8865b/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f8d908f7bcd34196469c5a3ac21544c1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ad9421f03446e37ef1a6044cdd6dd53/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.exifinterface:exifinterface:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/09659f69a312debbeb25f28f54aaef0b/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.vr:sdk-commonwidget:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/91d0229c1b2127701974c04bea0246ad/AndroidManifest.xml:2:1-4:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/46b21f73e11db7bb961636b6379109d0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/12ff8772104c2d871971f1e7ceca223a/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/bb68fcfcf16f47452f28f5726898ac12/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/2ba0cd1f18a756511e2584145e8ba7f9/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/848ce17211975c662ba9d8479c617a15/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0efaf076b0c85c62829e6583125a870d/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0839d7d12c01c7b5762ac68979a925a0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e6ba7f682a518122ca798476c0155146/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4fbfaf578ca4d6e78e04b453bbad4dff/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3348443c9fa003367c0fa4d4626dc3ca/AndroidManifest.xml:15:1-22:12
-MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/de8f2b6449bbff96ea54c271f2a804fb/AndroidManifest.xml:15:1-23:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/16ae8d423f7ba554a1dd478ecd90688c/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/265175782520f08dcd7075467f645891/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/609a83622cd16134d77c32dc619a0e6f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/1d2dd1296b3df9f8630a21ff77e80846/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/98e79aa192739495fe076fc7f88e74df/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cc1e30f5432c14ebddbc986e17910153/AndroidManifest.xml:15:1-23:12
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0b3f67994b1bb3b82acf2590108b5b5b/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.vr:sdk-common:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6215be1d53759d7e4b3dfa78c7ae9bdb/AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:17:1-58:12
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/20fb36540163f03dcbb1ee80a9286447/AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e541b639d00e98d5e80890b0746cd910/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:15:1-40:12
+MERGED from [com.google.vr:sdk-videowidget:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/328b74123a531f7fbf9ee3a881e8469c/AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:15:1-41:12
+MERGED from [com.github.NodeMedia:NodeMediaClient-Android:2.4.4] /Users/asim/.gradle/caches/transforms-2/files-2.1/6de5bce3befd80b516c7c22b70f99ad1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.material:material:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9fbff816dac6f8689157addece196fd7/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4a4b5cd198109dc0fd66fa3dec511624/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b68cde38a8895798b32728fa5e0f8986/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/91d0400890f576c267f7783f849c125e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/345bc1d51461d7fc354dbd9115b01465/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/af07301538092f01159bdd28070aa8b6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/5a963fc72870949448b4b52650b4621d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4b6432ad80b88348677f06ed64d214d9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/605e692dc41a428606fb07d8f652bf93/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/5da511c678356e6938d3f000ecfdb3ea/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/598a0f143d02b341dba771edc26ec933/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/901fcce6a2ff7a167c592223cc76b8ab/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/419b3e181d92a385c8cb0fe76e40c806/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/5f09e2b5bd5c6ba39a3c8f350b7ca043/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4c8bc2c059aa1d46233b4b2be188f8cc/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f47489fe3b5b806625f40f085fc337ae/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3f458884c798f7007a067a2693926ed3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/866aa139e1111d796179c4ec07053fa4/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0119c7427b0cf99c096447c550f1019f/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b5cc6e4c3e09dc607e9a37e49b4a5e14/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/bc6e796b8ad65007198478f632f5cdef/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/98523ddb806584eea1648a914d0094f4/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/015ec381524696bef17a14d61335640b/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/10415f4f6b9a68211439330143807a05/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/43aaecddc93a87b458013ddb6abb2a16/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9bb353b6272effee64100d2dd4cf94e8/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/be9738e266bb291995ebd834d18e22c7/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/694bdefb7f63b1c06aa75a92c56df1bf/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/100e5ecddca516f75a66ad691ca6908a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.webkit:webkit:1.4.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/ca0794632a81e5c9ee078a4e026a7e1f/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/abfed26057ca63d9f63c96d1072a6a92/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/329fa45d78dd1677e43cbd88c69875de/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c150d59bbf55148846710a75ba7ed32b/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/571c4ac0c561dbe8505ab4453022afd7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/86a4313557a0a3542771c452493c95cf/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/267688e23a2a5a38bcdb2a3f27cbf8f8/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7f8d17ca6daad56ba1165d34b60f3abd/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0f3dcf8d32733aebaec77b78d2734a2a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b5e387231ed6baebef59fc1598998026/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a4fb2fd3270a176a7b06693b3940c000/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/94bdb07ff1de54ac5f5b68aaf7b81800/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/91187bcf7fd80e6d5e28d0ffae6d99d1/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/ead54d55470c8f9754167f92f2efbfa4/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.vr:sdk-commonwidget:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8430f825a81d4573c95c9047da9ef9f9/AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/1bb7dac58908cda5e147746862fe57f4/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f2aadb4d9b5663c4b55a13fc796b8c1a/AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/76d3038b50587cd5b0a8ae852503f765/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f6d6e927b513b995a9d6c07b5b41991a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a38e3e0566d2ee42b2705e101e92ecd6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/528cb4ed9cd41080b8abb4f57a3783c4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/fd903d1fb61f8af2c79af1efb6cec8f0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a8176d074fee5649dcc586a3802039bd/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c16527726612e0a288cb472bdea18399/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6e3709ea2c459358a1d37f41e549e1ba/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/287149d27acceb11a37405684e0420be/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6ee0bfe2a72cd9fdb53c108bd3083233/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c859e8d2e468cbb5ddaed53b78db1793/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e693a2d2126e7d1d0aac5ad50bf0182f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c4afdd5b07cb64ca864225fbd9093b6e/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0487ff83bca74c2a38911d1921cef051/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/248af4429000acce7a5e009512d6382e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.vr:sdk-common:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7df3221ada32877d0a86a6fc006dbb47/AndroidManifest.xml:2:1-4:12
 INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 	package
-		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:3:1-26
+		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:3:1-34
 		INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:3:1-26
+		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:3:1-34
 		INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml
@@ -116,12 +125,20 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
 MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:26:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:26:5-67
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8fdee1efd7b9ef7942cf162a5b7b87ee/AndroidManifest.xml:8:5-67
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8fdee1efd7b9ef7942cf162a5b7b87ee/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4c8bc2c059aa1d46233b4b2be188f8cc/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4c8bc2c059aa1d46233b4b2be188f8cc/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f47489fe3b5b806625f40f085fc337ae/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f47489fe3b5b806625f40f085fc337ae/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/bc6e796b8ad65007198478f632f5cdef/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/bc6e796b8ad65007198478f632f5cdef/AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.CAMERA
@@ -140,16 +157,24 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:10:5-78
 MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
 MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:10:5-79
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8fdee1efd7b9ef7942cf162a5b7b87ee/AndroidManifest.xml:7:5-79
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8fdee1efd7b9ef7942cf162a5b7b87ee/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4c8bc2c059aa1d46233b4b2be188f8cc/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4c8bc2c059aa1d46233b4b2be188f8cc/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f47489fe3b5b806625f40f085fc337ae/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f47489fe3b5b806625f40f085fc337ae/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/bc6e796b8ad65007198478f632f5cdef/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/bc6e796b8ad65007198478f632f5cdef/AndroidManifest.xml:24:5-79
 	android:name
 		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:10:22-76
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
@@ -164,10 +189,18 @@ uses-permission#android.permission.WAKE_LOCK
 ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:13:5-68
 MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
 MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:23:5-68
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:23:5-68
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8fdee1efd7b9ef7942cf162a5b7b87ee/AndroidManifest.xml:9:5-68
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8fdee1efd7b9ef7942cf162a5b7b87ee/AndroidManifest.xml:9:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:23:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:23:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4c8bc2c059aa1d46233b4b2be188f8cc/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4c8bc2c059aa1d46233b4b2be188f8cc/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f47489fe3b5b806625f40f085fc337ae/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f47489fe3b5b806625f40f085fc337ae/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/bc6e796b8ad65007198478f632f5cdef/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/bc6e796b8ad65007198478f632f5cdef/AndroidManifest.xml:25:5-68
 	android:name
 		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:13:22-65
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -175,68 +208,79 @@ ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/Android
 	android:name
 		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:14:22-78
 application
-ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:15:5-37:19
-MERGED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:15:5-37:19
-MERGED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:15:5-37:19
+ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:16:5-37:19
+MERGED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:16:5-37:19
+MERGED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:16:5-37:19
 MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-43:19
 MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-43:19
 MERGED from [:react-native-firebase_app] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-27:19
 MERGED from [:react-native-firebase_app] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-27:19
+MERGED from [com.google.firebase:firebase-analytics:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/c8f7f379b46aa4b01b9aa4d3f836987f/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/c8f7f379b46aa4b01b9aa4d3f836987f/AndroidManifest.xml:7:5-20
 MERGED from [:react-native-image-picker] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-image-picker] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-webview] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-webview] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.61.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7676c1fcf80b68088841dbd6e0b3032f/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.61.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7676c1fcf80b68088841dbd6e0b3032f/AndroidManifest.xml:11:5-20
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:27:5-56:19
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:27:5-56:19
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3198634a9364285c92e8eced70e7ff18/AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3198634a9364285c92e8eced70e7ff18/AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:25:5-39:19
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:25:5-39:19
-MERGED from [com.google.android.material:material:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a6910579a2eb03854b80b7dfbff72f62/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a6910579a2eb03854b80b7dfbff72f62/AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c484d292a3839395f6de9605d49b3483/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c484d292a3839395f6de9605d49b3483/AndroidManifest.xml:11:5-20
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:14:5-22:19
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:14:5-22:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:25:5-38:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:25:5-38:19
-MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a22e8d4c218ca5dde01c3d7bc5b5aec0/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a22e8d4c218ca5dde01c3d7bc5b5aec0/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/75ff59a40da1c7114656decbaed280e2/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/75ff59a40da1c7114656decbaed280e2/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a37afaca2283d436c1585749380c0c9a/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a37afaca2283d436c1585749380c0c9a/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9655db31487c9b1f20b208e0588003f7/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9655db31487c9b1f20b208e0588003f7/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/944b1b706af629553096ecc7326721d9/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/944b1b706af629553096ecc7326721d9/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/63fdf36f2fb28621db53e584cbcec2b2/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/63fdf36f2fb28621db53e584cbcec2b2/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ad9421f03446e37ef1a6044cdd6dd53/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ad9421f03446e37ef1a6044cdd6dd53/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/46b21f73e11db7bb961636b6379109d0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/46b21f73e11db7bb961636b6379109d0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.facebook.react:react-native:0.61.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/2eb4958c163ccf944c72522bcafd01b5/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/2eb4958c163ccf944c72522bcafd01b5/AndroidManifest.xml:11:5-20
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/20fb36540163f03dcbb1ee80a9286447/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/20fb36540163f03dcbb1ee80a9286447/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.material:material:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9fbff816dac6f8689157addece196fd7/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9fbff816dac6f8689157addece196fd7/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/5da511c678356e6938d3f000ecfdb3ea/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/5da511c678356e6938d3f000ecfdb3ea/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/419b3e181d92a385c8cb0fe76e40c806/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/419b3e181d92a385c8cb0fe76e40c806/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/5f09e2b5bd5c6ba39a3c8f350b7ca043/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/5f09e2b5bd5c6ba39a3c8f350b7ca043/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f47489fe3b5b806625f40f085fc337ae/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f47489fe3b5b806625f40f085fc337ae/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3f458884c798f7007a067a2693926ed3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3f458884c798f7007a067a2693926ed3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/866aa139e1111d796179c4ec07053fa4/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/866aa139e1111d796179c4ec07053fa4/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0119c7427b0cf99c096447c550f1019f/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0119c7427b0cf99c096447c550f1019f/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b5cc6e4c3e09dc607e9a37e49b4a5e14/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b5cc6e4c3e09dc607e9a37e49b4a5e14/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/98523ddb806584eea1648a914d0094f4/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/98523ddb806584eea1648a914d0094f4/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/10415f4f6b9a68211439330143807a05/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/10415f4f6b9a68211439330143807a05/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/43aaecddc93a87b458013ddb6abb2a16/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/43aaecddc93a87b458013ddb6abb2a16/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/91187bcf7fd80e6d5e28d0ffae6d99d1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/91187bcf7fd80e6d5e28d0ffae6d99d1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/76d3038b50587cd5b0a8ae852503f765/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/76d3038b50587cd5b0a8ae852503f765/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ad9421f03446e37ef1a6044cdd6dd53/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/91187bcf7fd80e6d5e28d0ffae6d99d1/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:17:7-39
-		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:17:7-39
+		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:18:7-39
+		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:18:7-39
 	tools:ignore
 		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/debug/AndroidManifest.xml:7:75-114
-	android:roundIcon
-		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:19:7-52
-		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:19:7-52
 	tools:targetApi
 		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:22:7-27
 	android:icon
-		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:18:7-41
-		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:18:7-41
+		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:19:7-41
+		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:19:7-41
 	android:allowBackup
 		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:20:7-34
 		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:20:7-34
@@ -246,9 +290,9 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asim
 	android:usesCleartextTraffic
 		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:21:7-42
 	android:name
-		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:16:7-38
-		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:16:7-38
-activity#com.netbeatlive.MainActivity
+		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:17:7-38
+		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:17:7-38
+activity#com.excelorithm.Netbeat.MainActivity
 ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:24:7-35:18
 	android:label
 		ADDED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:26:9-41
@@ -276,6 +320,12 @@ uses-sdk
 INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_app] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_app] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-analytics:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/c8f7f379b46aa4b01b9aa4d3f836987f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/c8f7f379b46aa4b01b9aa4d3f836987f/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-video360plugin] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-video360plugin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-video360plugin] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-video360plugin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:WebRTCModule] /Users/asim/Documents/office/netBeat-IOS/node_modules/openvidu-browser/node_modules/react-native-webrtc/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
@@ -286,10 +336,6 @@ MERGED from [:react-native-community_async-storage] /Users/asim/Documents/office
 MERGED from [:react-native-community_async-storage] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-firebase_messaging] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-firebase_app] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-firebase_app] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:sayem314_react-native-keep-awake] /Users/asim/Documents/office/netBeat-IOS/node_modules/@sayem314/react-native-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:sayem314_react-native-keep-awake] /Users/asim/Documents/office/netBeat-IOS/node_modules/@sayem314/react-native-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-extra-dimensions-android] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-extra-dimensions-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
@@ -306,150 +352,166 @@ MERGED from [:react-native-safe-area-context] /Users/asim/Documents/office/netBe
 MERGED from [:react-native-safe-area-context] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-webview] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-webview] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.61.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7676c1fcf80b68088841dbd6e0b3032f/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.61.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7676c1fcf80b68088841dbd6e0b3032f/AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] /Users/asim/.gradle/caches/transforms-2/files-2.1/67326d19317e8f1c3dc81f7cb13d0f32/AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] /Users/asim/.gradle/caches/transforms-2/files-2.1/67326d19317e8f1c3dc81f7cb13d0f32/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.multidex:multidex:2.0.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/50f1bd6d9bb988abf9f12b0c6951da5a/AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/50f1bd6d9bb988abf9f12b0c6951da5a/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.react:react-native:0.61.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/2eb4958c163ccf944c72522bcafd01b5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/2eb4958c163ccf944c72522bcafd01b5/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/asim/.gradle/caches/transforms-2/files-2.1/c0d2c02904ac843bfcc852b31bdff6bd/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/asim/.gradle/caches/transforms-2/files-2.1/c0d2c02904ac843bfcc852b31bdff6bd/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/7cd10e2b68f0786640c672a3190bd0ad/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/7cd10e2b68f0786640c672a3190bd0ad/AndroidManifest.xml:20:5-43
 MERGED from [:react-native-linear-gradient] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-linear-gradient] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.vr:sdk-videowidget:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b12fd71e2faaa384fa4d61f722482bd9/AndroidManifest.xml:3:5-73
-MERGED from [com.google.vr:sdk-videowidget:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b12fd71e2faaa384fa4d61f722482bd9/AndroidManifest.xml:3:5-73
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3198634a9364285c92e8eced70e7ff18/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3198634a9364285c92e8eced70e7ff18/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:18:5-20:41
-MERGED from [com.github.NodeMedia:NodeMediaClient-Android:2.4.4] /Users/asim/.gradle/caches/transforms-2/files-2.1/ff2c0daa89adcfb51cbcc4c96d48a7e0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.NodeMedia:NodeMediaClient-Android:2.4.4] /Users/asim/.gradle/caches/transforms-2/files-2.1/ff2c0daa89adcfb51cbcc4c96d48a7e0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.material:material:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a6910579a2eb03854b80b7dfbff72f62/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a6910579a2eb03854b80b7dfbff72f62/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/42fec678f4d5ce8fd0dae90855a53e1a/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/42fec678f4d5ce8fd0dae90855a53e1a/AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a29969161c13172005f3ccd39cfa5609/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a29969161c13172005f3ccd39cfa5609/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0dfe304250f69afe409e4793e3d00f23/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0dfe304250f69afe409e4793e3d00f23/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3165f9327290525dbe5cd9641950ee7b/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3165f9327290525dbe5cd9641950ee7b/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f3af407b21d01b69bf6a859df9dac9a3/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f3af407b21d01b69bf6a859df9dac9a3/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cffb08a31c8357c3c7277c2b9bc19b69/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cffb08a31c8357c3c7277c2b9bc19b69/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a864e0b8891bc4a391059e68aaedc583/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a864e0b8891bc4a391059e68aaedc583/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4bfc8429485ba08730b5f93d97e3baf1/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4bfc8429485ba08730b5f93d97e3baf1/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c484d292a3839395f6de9605d49b3483/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c484d292a3839395f6de9605d49b3483/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0d0e520e2c85f6d73c8e9f5793685fbf/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0d0e520e2c85f6d73c8e9f5793685fbf/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8601100e710a9ce8f244410ce32ee861/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8601100e710a9ce8f244410ce32ee861/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a22e8d4c218ca5dde01c3d7bc5b5aec0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a22e8d4c218ca5dde01c3d7bc5b5aec0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8fdee1efd7b9ef7942cf162a5b7b87ee/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8fdee1efd7b9ef7942cf162a5b7b87ee/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/75ff59a40da1c7114656decbaed280e2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/75ff59a40da1c7114656decbaed280e2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a37afaca2283d436c1585749380c0c9a/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a37afaca2283d436c1585749380c0c9a/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9655db31487c9b1f20b208e0588003f7/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9655db31487c9b1f20b208e0588003f7/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/1e5a0f6a6b472bda9ce0ab1b59017e4e/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/1e5a0f6a6b472bda9ce0ab1b59017e4e/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/944b1b706af629553096ecc7326721d9/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/944b1b706af629553096ecc7326721d9/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/63fdf36f2fb28621db53e584cbcec2b2/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/63fdf36f2fb28621db53e584cbcec2b2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f17fdad728437d83fd1dbd57c8d62f5e/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f17fdad728437d83fd1dbd57c8d62f5e/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/793dbaaf3787f3741e7678c5c0af174a/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/793dbaaf3787f3741e7678c5c0af174a/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0fc933a34629a21fa8282a3eaa526c6/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0fc933a34629a21fa8282a3eaa526c6/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4ee8c4c9caeea3eb0f240be0061b865f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4ee8c4c9caeea3eb0f240be0061b865f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.webkit:webkit:1.4.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8e98422627f2064dadfaeb6694235c11/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.webkit:webkit:1.4.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8e98422627f2064dadfaeb6694235c11/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/88507e92ebcad8687ecb2b0787d82c8a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/88507e92ebcad8687ecb2b0787d82c8a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2120b840f706f7a7336f02cbc5769ce/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2120b840f706f7a7336f02cbc5769ce/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b47a39ac19362d93925bb4d0d91d32c3/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b47a39ac19362d93925bb4d0d91d32c3/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b158eeafddae79782922ee79a98587d1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b158eeafddae79782922ee79a98587d1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/61cd8e8c801c8e287d742502dc9b1ae3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/61cd8e8c801c8e287d742502dc9b1ae3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/70a627deea7539c9c7dd2d414f154ab1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/70a627deea7539c9c7dd2d414f154ab1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f77ad181ddd1955c3776934bf82316b9/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f77ad181ddd1955c3776934bf82316b9/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e9f07a3a63e0521d1c3b8eea6cb04f2c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e9f07a3a63e0521d1c3b8eea6cb04f2c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/adb3e3c59756e9b23f2f63cf3d82d9c4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/adb3e3c59756e9b23f2f63cf3d82d9c4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/aa23cfa05b91bc0ef1e8e0ade7d8865b/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/aa23cfa05b91bc0ef1e8e0ade7d8865b/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f8d908f7bcd34196469c5a3ac21544c1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f8d908f7bcd34196469c5a3ac21544c1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ad9421f03446e37ef1a6044cdd6dd53/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ad9421f03446e37ef1a6044cdd6dd53/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.exifinterface:exifinterface:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/09659f69a312debbeb25f28f54aaef0b/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.exifinterface:exifinterface:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/09659f69a312debbeb25f28f54aaef0b/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.vr:sdk-commonwidget:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/91d0229c1b2127701974c04bea0246ad/AndroidManifest.xml:3:5-73
-MERGED from [com.google.vr:sdk-commonwidget:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/91d0229c1b2127701974c04bea0246ad/AndroidManifest.xml:3:5-73
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/46b21f73e11db7bb961636b6379109d0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/46b21f73e11db7bb961636b6379109d0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/12ff8772104c2d871971f1e7ceca223a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/12ff8772104c2d871971f1e7ceca223a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/bb68fcfcf16f47452f28f5726898ac12/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/bb68fcfcf16f47452f28f5726898ac12/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/2ba0cd1f18a756511e2584145e8ba7f9/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/2ba0cd1f18a756511e2584145e8ba7f9/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/848ce17211975c662ba9d8479c617a15/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/848ce17211975c662ba9d8479c617a15/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0efaf076b0c85c62829e6583125a870d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0efaf076b0c85c62829e6583125a870d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0839d7d12c01c7b5762ac68979a925a0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0839d7d12c01c7b5762ac68979a925a0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e6ba7f682a518122ca798476c0155146/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e6ba7f682a518122ca798476c0155146/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4fbfaf578ca4d6e78e04b453bbad4dff/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4fbfaf578ca4d6e78e04b453bbad4dff/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3348443c9fa003367c0fa4d4626dc3ca/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3348443c9fa003367c0fa4d4626dc3ca/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/de8f2b6449bbff96ea54c271f2a804fb/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/de8f2b6449bbff96ea54c271f2a804fb/AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/16ae8d423f7ba554a1dd478ecd90688c/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/16ae8d423f7ba554a1dd478ecd90688c/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/265175782520f08dcd7075467f645891/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/265175782520f08dcd7075467f645891/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/609a83622cd16134d77c32dc619a0e6f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/609a83622cd16134d77c32dc619a0e6f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/1d2dd1296b3df9f8630a21ff77e80846/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/1d2dd1296b3df9f8630a21ff77e80846/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/98e79aa192739495fe076fc7f88e74df/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/98e79aa192739495fe076fc7f88e74df/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cc1e30f5432c14ebddbc986e17910153/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cc1e30f5432c14ebddbc986e17910153/AndroidManifest.xml:19:5-21:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0b3f67994b1bb3b82acf2590108b5b5b/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0b3f67994b1bb3b82acf2590108b5b5b/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.vr:sdk-common:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6215be1d53759d7e4b3dfa78c7ae9bdb/AndroidManifest.xml:3:5-73
-MERGED from [com.google.vr:sdk-common:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6215be1d53759d7e4b3dfa78c7ae9bdb/AndroidManifest.xml:3:5-73
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/20fb36540163f03dcbb1ee80a9286447/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/20fb36540163f03dcbb1ee80a9286447/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e541b639d00e98d5e80890b0746cd910/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e541b639d00e98d5e80890b0746cd910/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.vr:sdk-videowidget:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/328b74123a531f7fbf9ee3a881e8469c/AndroidManifest.xml:3:5-73
+MERGED from [com.google.vr:sdk-videowidget:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/328b74123a531f7fbf9ee3a881e8469c/AndroidManifest.xml:3:5-73
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:18:5-20:41
+MERGED from [com.github.NodeMedia:NodeMediaClient-Android:2.4.4] /Users/asim/.gradle/caches/transforms-2/files-2.1/6de5bce3befd80b516c7c22b70f99ad1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.NodeMedia:NodeMediaClient-Android:2.4.4] /Users/asim/.gradle/caches/transforms-2/files-2.1/6de5bce3befd80b516c7c22b70f99ad1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9fbff816dac6f8689157addece196fd7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9fbff816dac6f8689157addece196fd7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4a4b5cd198109dc0fd66fa3dec511624/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4a4b5cd198109dc0fd66fa3dec511624/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b68cde38a8895798b32728fa5e0f8986/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b68cde38a8895798b32728fa5e0f8986/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/91d0400890f576c267f7783f849c125e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/91d0400890f576c267f7783f849c125e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/345bc1d51461d7fc354dbd9115b01465/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/345bc1d51461d7fc354dbd9115b01465/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/af07301538092f01159bdd28070aa8b6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/af07301538092f01159bdd28070aa8b6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/5a963fc72870949448b4b52650b4621d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/5a963fc72870949448b4b52650b4621d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4b6432ad80b88348677f06ed64d214d9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4b6432ad80b88348677f06ed64d214d9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/605e692dc41a428606fb07d8f652bf93/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/605e692dc41a428606fb07d8f652bf93/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/5da511c678356e6938d3f000ecfdb3ea/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/5da511c678356e6938d3f000ecfdb3ea/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/598a0f143d02b341dba771edc26ec933/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/598a0f143d02b341dba771edc26ec933/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/901fcce6a2ff7a167c592223cc76b8ab/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/901fcce6a2ff7a167c592223cc76b8ab/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/419b3e181d92a385c8cb0fe76e40c806/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/419b3e181d92a385c8cb0fe76e40c806/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/5f09e2b5bd5c6ba39a3c8f350b7ca043/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/5f09e2b5bd5c6ba39a3c8f350b7ca043/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4c8bc2c059aa1d46233b4b2be188f8cc/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4c8bc2c059aa1d46233b4b2be188f8cc/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f47489fe3b5b806625f40f085fc337ae/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f47489fe3b5b806625f40f085fc337ae/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3f458884c798f7007a067a2693926ed3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3f458884c798f7007a067a2693926ed3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/866aa139e1111d796179c4ec07053fa4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/866aa139e1111d796179c4ec07053fa4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0119c7427b0cf99c096447c550f1019f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0119c7427b0cf99c096447c550f1019f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b5cc6e4c3e09dc607e9a37e49b4a5e14/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b5cc6e4c3e09dc607e9a37e49b4a5e14/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/bc6e796b8ad65007198478f632f5cdef/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/bc6e796b8ad65007198478f632f5cdef/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/98523ddb806584eea1648a914d0094f4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/98523ddb806584eea1648a914d0094f4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/015ec381524696bef17a14d61335640b/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/015ec381524696bef17a14d61335640b/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/10415f4f6b9a68211439330143807a05/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/10415f4f6b9a68211439330143807a05/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/43aaecddc93a87b458013ddb6abb2a16/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/43aaecddc93a87b458013ddb6abb2a16/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9bb353b6272effee64100d2dd4cf94e8/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9bb353b6272effee64100d2dd4cf94e8/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/be9738e266bb291995ebd834d18e22c7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/be9738e266bb291995ebd834d18e22c7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/694bdefb7f63b1c06aa75a92c56df1bf/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/694bdefb7f63b1c06aa75a92c56df1bf/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/100e5ecddca516f75a66ad691ca6908a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/100e5ecddca516f75a66ad691ca6908a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.4.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/ca0794632a81e5c9ee078a4e026a7e1f/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.4.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/ca0794632a81e5c9ee078a4e026a7e1f/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/abfed26057ca63d9f63c96d1072a6a92/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/abfed26057ca63d9f63c96d1072a6a92/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/329fa45d78dd1677e43cbd88c69875de/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/329fa45d78dd1677e43cbd88c69875de/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c150d59bbf55148846710a75ba7ed32b/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c150d59bbf55148846710a75ba7ed32b/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/571c4ac0c561dbe8505ab4453022afd7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/571c4ac0c561dbe8505ab4453022afd7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/86a4313557a0a3542771c452493c95cf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/86a4313557a0a3542771c452493c95cf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/267688e23a2a5a38bcdb2a3f27cbf8f8/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/267688e23a2a5a38bcdb2a3f27cbf8f8/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7f8d17ca6daad56ba1165d34b60f3abd/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7f8d17ca6daad56ba1165d34b60f3abd/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0f3dcf8d32733aebaec77b78d2734a2a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0f3dcf8d32733aebaec77b78d2734a2a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b5e387231ed6baebef59fc1598998026/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b5e387231ed6baebef59fc1598998026/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a4fb2fd3270a176a7b06693b3940c000/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a4fb2fd3270a176a7b06693b3940c000/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/94bdb07ff1de54ac5f5b68aaf7b81800/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/94bdb07ff1de54ac5f5b68aaf7b81800/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/91187bcf7fd80e6d5e28d0ffae6d99d1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/91187bcf7fd80e6d5e28d0ffae6d99d1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/ead54d55470c8f9754167f92f2efbfa4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.1] /Users/asim/.gradle/caches/transforms-2/files-2.1/ead54d55470c8f9754167f92f2efbfa4/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.vr:sdk-commonwidget:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8430f825a81d4573c95c9047da9ef9f9/AndroidManifest.xml:3:5-73
+MERGED from [com.google.vr:sdk-commonwidget:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8430f825a81d4573c95c9047da9ef9f9/AndroidManifest.xml:3:5-73
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/1bb7dac58908cda5e147746862fe57f4/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/1bb7dac58908cda5e147746862fe57f4/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f2aadb4d9b5663c4b55a13fc796b8c1a/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f2aadb4d9b5663c4b55a13fc796b8c1a/AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/76d3038b50587cd5b0a8ae852503f765/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/76d3038b50587cd5b0a8ae852503f765/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f6d6e927b513b995a9d6c07b5b41991a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/f6d6e927b513b995a9d6c07b5b41991a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a38e3e0566d2ee42b2705e101e92ecd6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a38e3e0566d2ee42b2705e101e92ecd6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/528cb4ed9cd41080b8abb4f57a3783c4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/528cb4ed9cd41080b8abb4f57a3783c4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/fd903d1fb61f8af2c79af1efb6cec8f0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/fd903d1fb61f8af2c79af1efb6cec8f0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a8176d074fee5649dcc586a3802039bd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a8176d074fee5649dcc586a3802039bd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c16527726612e0a288cb472bdea18399/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c16527726612e0a288cb472bdea18399/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6e3709ea2c459358a1d37f41e549e1ba/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6e3709ea2c459358a1d37f41e549e1ba/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/287149d27acceb11a37405684e0420be/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/287149d27acceb11a37405684e0420be/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6ee0bfe2a72cd9fdb53c108bd3083233/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6ee0bfe2a72cd9fdb53c108bd3083233/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c859e8d2e468cbb5ddaed53b78db1793/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c859e8d2e468cbb5ddaed53b78db1793/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e693a2d2126e7d1d0aac5ad50bf0182f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e693a2d2126e7d1d0aac5ad50bf0182f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c4afdd5b07cb64ca864225fbd9093b6e/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/c4afdd5b07cb64ca864225fbd9093b6e/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0487ff83bca74c2a38911d1921cef051/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/0487ff83bca74c2a38911d1921cef051/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/248af4429000acce7a5e009512d6382e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/248af4429000acce7a5e009512d6382e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.vr:sdk-common:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7df3221ada32877d0a86a6fc006dbb47/AndroidManifest.xml:3:5-73
+MERGED from [com.google.vr:sdk-common:1.80.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7df3221ada32877d0a86a6fc006dbb47/AndroidManifest.xml:3:5-73
 INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/asim/Documents/office/netBeat-IOS/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -518,20 +580,22 @@ ADDED from [:react-native-firebase_app] /Users/asim/Documents/office/netBeat-IOS
 		ADDED from [:react-native-firebase_app] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:react-native-firebase_app] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:19
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:49:9-55:19
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:49:9-55:19
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3198634a9364285c92e8eced70e7ff18/AndroidManifest.xml:25:9-31:19
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3198634a9364285c92e8eced70e7ff18/AndroidManifest.xml:25:9-31:19
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:15:9-21:19
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:15:9-21:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:33:9-37:35
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/20fb36540163f03dcbb1ee80a9286447/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/20fb36540163f03dcbb1ee80a9286447/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:33:9-37:35
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:51:13-37
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:51:13-37
 	tools:targetApi
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:37:13-32
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:37:13-32
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:35:13-43
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:35:13-43
 	android:name
 		ADDED from [:react-native-firebase_app] /Users/asim/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-89
 meta-data#com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar
@@ -577,116 +641,154 @@ ADDED from [:react-native-webview] /Users/asim/Documents/office/netBeat-IOS/node
 	android:name
 		ADDED from [:react-native-webview] /Users/asim/Documents/office/netBeat-IOS/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:25:5-82
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8fdee1efd7b9ef7942cf162a5b7b87ee/AndroidManifest.xml:11:5-82
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/8fdee1efd7b9ef7942cf162a5b7b87ee/AndroidManifest.xml:11:5-82
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:25:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4c8bc2c059aa1d46233b4b2be188f8cc/AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/4c8bc2c059aa1d46233b4b2be188f8cc/AndroidManifest.xml:11:5-82
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:25:22-79
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:25:22-79
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:28:9-35:20
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:28:9-35:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:30:13-36
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:30:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:31:13-73
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:31:13-73
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:29:13-78
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:29:13-78
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:41:9-48:19
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:41:9-48:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:44:13-37
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:44:13-37
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:43:13-43
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:43:13-43
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:42:13-82
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:42:13-82
 meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:52:13-54:85
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:52:13-54:85
 	android:value
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:54:17-82
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:54:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/AndroidManifest.xml:53:17-119
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/AndroidManifest.xml:53:17-119
 meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
-ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3198634a9364285c92e8eced70e7ff18/AndroidManifest.xml:28:13-30:85
+ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/20fb36540163f03dcbb1ee80a9286447/AndroidManifest.xml:28:13-30:85
 	android:value
-		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3198634a9364285c92e8eced70e7ff18/AndroidManifest.xml:30:17-82
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/20fb36540163f03dcbb1ee80a9286447/AndroidManifest.xml:30:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/3198634a9364285c92e8eced70e7ff18/AndroidManifest.xml:29:17-115
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/20fb36540163f03dcbb1ee80a9286447/AndroidManifest.xml:29:17-115
 service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
-ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:36:9-38:40
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:36:9-38:40
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:31:13-37
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:30:13-103
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:30:13-103
 meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
-ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:32:13-34:39
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:32:13-34:39
 	android:value
-		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:34:17-36
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:34:17-36
 	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/9dca9d5b5b9fd8dc46dd5ea0c775ba89/AndroidManifest.xml:33:17-94
-service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
-ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:26:9-30:19
-	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:28:13-37
-	android:permission
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:29:13-69
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/e0c7efd90802bba720dd71ebd41f2bae/AndroidManifest.xml:33:17-94
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:32:17-82
 	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:27:13-117
-receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
-ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:32:9-34:40
-	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:34:13-37
-	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/7237adbb08f0e91ea6e05c4788ac9d65/AndroidManifest.xml:33:13-132
+		ADDED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f23c4f5140e3a891e86446ea3f4259b2/AndroidManifest.xml:31:17-139
 meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
-ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:18:13-20:85
+ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:18:13-20:85
 	android:value
-		ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:20:17-82
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:20:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/71ac3f53261608fa0f7ed500b9c8e7c8/AndroidManifest.xml:19:17-127
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/cee5ec4095ccd4ab854abcfa16839fee/AndroidManifest.xml:19:17-127
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:26:9-31:39
+ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:26:9-31:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:28:13-72
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:28:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:30:13-37
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:30:13-37
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:29:13-43
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:29:13-43
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:31:13-36
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:31:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/6290416275f857f6bb15833944ccc458/AndroidManifest.xml:27:13-77
-activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:23:9-27:75
-	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:25:13-46
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/32fc8a3d109934797c882c93296aa01f/AndroidManifest.xml:27:13-77
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:26:9-30:19
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:26:13-37
-	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:27:13-72
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:24:13-93
-service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:33:9-37:51
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:35:13-36
-	android:visibleToInstantApps
-		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:37:13-48
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:28:13-37
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:36:13-107
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:29:13-69
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a2f0d29bbf0201e9de826f36d73f271d/AndroidManifest.xml:34:13-89
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a22e8d4c218ca5dde01c3d7bc5b5aec0/AndroidManifest.xml:23:9-26:75
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:32:9-34:40
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a22e8d4c218ca5dde01c3d7bc5b5aec0/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/b550c7f417ba3775348fc7559d47c526/AndroidManifest.xml:33:13-132
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:26:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a22e8d4c218ca5dde01c3d7bc5b5aec0/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:27:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/a22e8d4c218ca5dde01c3d7bc5b5aec0/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/09c90f29c47f1c84cf58a26cda411f2b/AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/419b3e181d92a385c8cb0fe76e40c806/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/419b3e181d92a385c8cb0fe76e40c806/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/419b3e181d92a385c8cb0fe76e40c806/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/419b3e181d92a385c8cb0fe76e40c806/AndroidManifest.xml:24:13-79
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f47489fe3b5b806625f40f085fc337ae/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/f47489fe3b5b806625f40f085fc337ae/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim/.gradle/caches/transforms-2/files-2.1/9ea51f0b6d40440158cecb59f695931e/AndroidManifest.xml:40:13-87
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/63fdf36f2fb28621db53e584cbcec2b2/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/43aaecddc93a87b458013ddb6abb2a16/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/63fdf36f2fb28621db53e584cbcec2b2/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/43aaecddc93a87b458013ddb6abb2a16/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/63fdf36f2fb28621db53e584cbcec2b2/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asim/.gradle/caches/transforms-2/files-2.1/43aaecddc93a87b458013ddb6abb2a16/AndroidManifest.xml:24:13-58

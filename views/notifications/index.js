@@ -1,11 +1,11 @@
 import { useQuery } from '@apollo/client';
 import React, { useState } from 'react';
 import { ActivityIndicator } from 'react-native';
-import { Image, StatusBar, Text, TouchableOpacity, View , FlatList} from 'react-native';
+import { Image, StatusBar, Text, TouchableOpacity, View , FlatList, Platform} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useDispatch, useSelector } from 'react-redux';
 import ToggleSwitch from 'toggle-switch-react-native';
-import { Colors, Images } from '../../assets/index';
+import { Colors, Images, IOS } from '../../assets/index';
 import { NOTIFICATIONS } from '../../graphql/queries';
 import { dark } from './../../redux/actions/dark';
 import { selectLanguage } from './../../redux/actions/language';
@@ -47,7 +47,7 @@ const Notifications = (props) => {
    return(
        <SafeAreaView style = {[styles.mainContainer, {backgroundColor : DARK? Colors.base : Colors.white}]}>
         <StatusBar/>
-         <View style = {styles.header}>
+        <View style = {[styles.header , { marginTop : Platform.OS == 'ios' ? -IOS : 20}]}>
           {/* <Image source = {DARK? Images.notiWd : Images.notiGd} style = {styles.noti}/> */}
           <TouchableOpacity 
           onPress = {() => {props.navigation.pop()}}

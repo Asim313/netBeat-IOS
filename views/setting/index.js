@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useIsFocused } from '@react-navigation/core';
-import { Image, StatusBar, Text, TouchableOpacity, View , Alert, ActivityIndicator} from 'react-native';
+import { Image, StatusBar, Text, TouchableOpacity, View , Alert, ActivityIndicator, Platform} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useDispatch, useSelector } from 'react-redux';
 import ToggleSwitch from 'toggle-switch-react-native';
-import { Colors, Images } from '../../assets/index';
+import { Colors, Images, IOS } from '../../assets/index';
 import { dark } from './../../redux/actions/dark';
 import { selectLanguage } from './../../redux/actions/language';
 import { languages } from './../../redux/languages';
@@ -100,7 +100,7 @@ const Setting = (props) => {
    return(
        <SafeAreaView style = {[styles.mainContainer, {backgroundColor : DARK? Colors.base : Colors.white}]}>
         <StatusBar/>
-         <View style = {styles.header}>
+        <View style = {[styles.header , { marginTop : Platform.OS == 'ios' ? -IOS : 20}]}>
           <TouchableOpacity 
           onPress = {() => {
             props.navigation.navigate('notification',{user : user})

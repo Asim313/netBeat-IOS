@@ -11,8 +11,8 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-import com.netbeatlive.BuildConfig;
-import com.netbeatlive.R;
+import com.excelorithm.Netbeat.BuildConfig;
+import com.excelorithm.Netbeat.R;
 
 // react-native-dbb-rtmp
 import org.wonday.live.RNLiveStreamPackage;
@@ -42,6 +42,8 @@ import com.swmansion.reanimated.ReanimatedPackage;
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
 import com.swmansion.rnscreens.RNScreensPackage;
+// react-native-svg
+import com.horcrux.svg.SvgPackage;
 // react-native-video360plugin
 import com.reactlibrary.Video360Package;
 // react-native-webview
@@ -105,6 +107,7 @@ public class PackageList {
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
+      new SvgPackage(),
       new Video360Package(),
       new RNCWebViewPackage()
     ));

@@ -5,13 +5,14 @@ import {Fonts} from './../../../assets/fonts/index'
 export default StyleSheet.create({
     mainContainer : {
         flex : 1,
-        backgroundColor : Colors.base,
+        backgroundColor : '#000',
     },
     bgImage: {
         height:'100%',
         width : '100%',
         justifyContent:'center',
-        position:'absolute'
+        position:'absolute',
+        zIndex:1
     },
     back: {
         position:'absolute',

@@ -1,6 +1,6 @@
 import react from 'react';
 import { Platform, StyleSheet } from 'react-native';
-import { Colors, hp, hps, wp, wps } from '../../../assets';
+import { Colors, hp, hps, IOS, wp, wps } from '../../../assets';
 import { Fonts } from '../../../assets/fonts';
 
 
@@ -19,7 +19,7 @@ export default StyleSheet.create ({
       //borderWidth:1,
       flexDirection:'row',
       justifyContent:'center',
-      alignItems:'center'
+      alignItems:'center',
     },
     noti: {
       position :'absolute',

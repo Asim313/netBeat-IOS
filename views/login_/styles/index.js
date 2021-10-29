@@ -76,13 +76,13 @@ export default StyleSheet.create ({
       backgroundColor : Colors.base1,
       justifyContent:'center',
       alignItems:'center',
-      shadowColor: Colors.base1,
-      shadowOffset: {
-        width: 0,
-        height: 0,
-      },
-      shadowOpacity: 0.58,
-      shadowRadius: 16.00,
+      // shadowColor: Colors.base1,
+      // shadowOffset: {
+      //   width: 0,
+      //   height: 0,
+      // },
+      // shadowOpacity: 0.58,
+      // shadowRadius: 16.00,
     },
     buttonText: {
       fontSize : hps(16),

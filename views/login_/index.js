@@ -11,6 +11,7 @@ import styles from './styles';
 import { Colors } from '../../assets/colors';
 import { GETUSERBYID } from '../../graphql/queries';
 import { push } from './../../Services'
+import { Shadow } from 'react-native-shadow-2';
 
 
 
@@ -31,7 +32,8 @@ const Login = (props) => {
     const getToken = async( id ) => {
         const token = await push.init()
         console.log(token)
-        saveDeviceToken({ variables: { token : token , id : id } }).then(res => {
+        saveDeviceToken({ variables: { token : token , id : id } })
+        .then( res => {
             //global.deviceToken = token
         })
     }
@@ -162,6 +164,7 @@ const Login = (props) => {
            onChangeText = {(txt) => setPassword(txt)}
            placeholderTextColor = {'#ffffff73'}
            />
+           
            <TouchableOpacity
            onPress = {() => {
                signInRequest()

@@ -4,7 +4,7 @@
             "outputFile": "/Users/asim/Documents/office/netBeat-IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml",
             "map": [
                 {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/42fec678f4d5ce8fd0dae90855a53e1a/res/values-uk/values-uk.xml",
+                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/4a4b5cd198109dc0fd66fa3dec511624/res/values-uk/values-uk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/63fdf36f2fb28621db53e584cbcec2b2/res/values-uk/values.xml",
+                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/43aaecddc93a87b458013ddb6abb2a16/res/values-uk/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/237f166306d3783cdf9460be990725f1/res/values-uk/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "68",
-                        "endOffsets": "275"
-                    },
-                    "to": {
-                        "startLines": "60",
-                        "startColumns": "4",
-                        "startOffsets": "7180",
-                        "endColumns": "72",
-                        "endOffsets": "7248"
-                    }
-                },
-                {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/9ad9421f03446e37ef1a6044cdd6dd53/res/values-uk/values-uk.xml",
+                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/91187bcf7fd80e6d5e28d0ffae6d99d1/res/values-uk/values-uk.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -72,24 +55,7 @@
                     }
                 },
                 {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/6215be1d53759d7e4b3dfa78c7ae9bdb/res/values-uk/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "258,349,427,505,616,805,942,1021,1126,1232,1340,1427,1645,1842,1941,2052,2168,2292,2450,2553,2630,2713",
-                        "endColumns": "90,77,77,110,188,136,78,104,105,107,86,217,196,98,110,115,123,157,102,76,82,93",
-                        "endOffsets": "348,426,504,615,804,941,1020,1125,1231,1339,1426,1644,1841,1940,2051,2167,2291,2449,2552,2629,2712,2806"
-                    },
-                    "to": {
-                        "startLines": "29,30,49,50,51,52,53,54,55,56,57,58,59,61,62,63,64,65,67,68,70,71",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2829,2924,5721,5803,5918,6111,6252,6335,6444,6554,6666,6757,6979,7253,7356,7471,7591,7719,7958,8065,8247,8334",
-                        "endColumns": "94,81,81,114,192,140,82,108,109,111,90,221,200,102,114,119,127,157,106,80,86,97",
-                        "endOffsets": "2919,3001,5798,5913,6106,6247,6330,6439,6549,6661,6752,6974,7175,7351,7466,7586,7714,7872,8060,8141,8329,8427"
-                    }
-                },
-                {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/a22e8d4c218ca5dde01c3d7bc5b5aec0/res/values-uk/values.xml",
+                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/419b3e181d92a385c8cb0fe76e40c806/res/values-uk/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -103,6 +69,40 @@
                         "startOffsets": "3006,3116,3311,3440,3552,3765,3896,4041,4380,4607,4715,4908,5035,5241,5413,5513,5604",
                         "endColumns": "109,194,128,111,212,130,144,133,226,107,192,126,205,171,99,90,116",
                         "endOffsets": "3111,3306,3435,3547,3760,3891,4036,4170,4602,4710,4903,5030,5236,5408,5508,5599,5716"
+                    }
+                },
+                {
+                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/efb82a88c953c07fd291a7c697af6d8b/res/values-uk/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "68",
+                        "endOffsets": "275"
+                    },
+                    "to": {
+                        "startLines": "60",
+                        "startColumns": "4",
+                        "startOffsets": "7180",
+                        "endColumns": "72",
+                        "endOffsets": "7248"
+                    }
+                },
+                {
+                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/7df3221ada32877d0a86a6fc006dbb47/res/values-uk/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "258,349,427,505,616,805,942,1021,1126,1232,1340,1427,1645,1842,1941,2052,2168,2292,2450,2553,2630,2713",
+                        "endColumns": "90,77,77,110,188,136,78,104,105,107,86,217,196,98,110,115,123,157,102,76,82,93",
+                        "endOffsets": "348,426,504,615,804,941,1020,1125,1231,1339,1426,1644,1841,1940,2051,2167,2291,2449,2552,2629,2712,2806"
+                    },
+                    "to": {
+                        "startLines": "29,30,49,50,51,52,53,54,55,56,57,58,59,61,62,63,64,65,67,68,70,71",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2829,2924,5721,5803,5918,6111,6252,6335,6444,6554,6666,6757,6979,7253,7356,7471,7591,7719,7958,8065,8247,8334",
+                        "endColumns": "94,81,81,114,192,140,82,108,109,111,90,221,200,102,114,119,127,157,106,80,86,97",
+                        "endOffsets": "2919,3001,5798,5913,6106,6247,6330,6439,6549,6661,6752,6974,7175,7351,7466,7586,7714,7872,8060,8141,8329,8427"
                     }
                 }
             ]

@@ -1,4 +1,4 @@
-package com.netbeatlive;
+package com.excelorithm.Netbeat;
 
 import com.facebook.react.ReactActivity;
 

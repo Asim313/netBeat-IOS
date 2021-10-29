@@ -49,7 +49,8 @@ export default StyleSheet.create ({
       justifyContent:'center',
       alignItems:'center',
       backgroundColor : '#707070',
-      position:'absolute'
+      position:'absolute',
+      //elevation:1
     },
     clapContainerGlow: {
       height: hps(42),
@@ -59,14 +60,31 @@ export default StyleSheet.create ({
       alignSelf:'center',
       justifyContent:'center',
       alignItems:'center',
+      //backgroundColor : Colors.base1,
+      // shadowColor: Colors.base1,
+      // shadowOffset: {
+      //   width: 0,
+      //   height: 0,
+      // },
+      // shadowOpacity: 1,
+      // shadowRadius: 16,
+    },
+    clapContainerGlowShadow: {
+      height: hps(42),
+      width: hps(42),
+      borderRadius:hps(42/2),
+      //marginTop:hps(105),
+      alignSelf:'center',
+      justifyContent:'center',
+      alignItems:'center',
       backgroundColor : Colors.base1,
-      shadowColor: Colors.base1,
-      shadowOffset: {
-        width: 0,
-        height: 0,
-      },
-      shadowOpacity: 1,
-      shadowRadius: 16,
+      // shadowColor: Colors.base1,
+      // shadowOffset: {
+      //   width: 0,
+      //   height: 0,
+      // },
+      // shadowOpacity: 1,
+      // shadowRadius: 16,
     },
     clap: {
       height :hps(18),

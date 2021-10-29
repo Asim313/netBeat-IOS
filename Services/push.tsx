@@ -5,15 +5,16 @@ import messaging from '@react-native-firebase/messaging';
 class PushNotificationService {
 
     init() {
-        return new Promise(async (resolve, reject) => {
+        return new Promise( async (resolve, reject) => {
 
             // Get the device token
             messaging()
                 .getToken()
-                .then(async (token:any) => {
+                .then( async (token:any) => {
                     resolve(token);
                     // return saveTokenToDatabase(token);
-                });
+                })
+                .catch((err) => console.log("err=>>", err))
 
 
             // const unsubscribe = messaging().onMessage(async (remoteMessage:any) => {

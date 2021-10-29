@@ -1,4 +1,4 @@
-package com.netbeatlive;
+package com.excelorithm.Netbeat;
 
 import android.app.Application;
 import android.content.Context;

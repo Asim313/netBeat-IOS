@@ -474,7 +474,7 @@
          }).start()
          return (
            <View style={{flex : 1}}>
-                                     <KeepAwake />
+             <KeepAwake />
              <View style={{height : '100%', width: '100%'}}>
            {/* <LivePlayer source={{uri:this.state.selectedURI}}
           ref={(ref) => {

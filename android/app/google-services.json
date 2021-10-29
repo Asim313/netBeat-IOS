@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "436748293131",
+    "project_id": "netbeat-b3375",
+    "storage_bucket": "netbeat-b3375.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436748293131:android:9d689247ace51e96caa30e",
+        "android_client_info": {
+          "package_name": "com.excelorithm.Netbeat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436748293131-cbhgmmmk1kabtj5kk475ofqlfr9j3hfk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.excelorithm.Netbeat",
+            "certificate_hash": "5462245f19ca7e918d3d23517b65421548e01099"
+          }
+        },
+        {
+          "client_id": "436748293131-381lv4q05a8b2ll7llvgk8i98mp2uu6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDbe1TlnOOozMO2JdlVD-EdzhjUdTtAFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436748293131-381lv4q05a8b2ll7llvgk8i98mp2uu6n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436748293131-6eenhojl672ju3mj0krmnqgir8ld2la7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.excelorithm.Netbeat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

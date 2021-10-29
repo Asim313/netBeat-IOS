@@ -7,6 +7,9 @@ import { languages } from './../../redux/languages';
 import styles from './styles';
 import * as Animatable from 'react-native-animatable'
 import { BaseUrl } from '../../graphql/baseUrl';
+import { Shadow } from 'react-native-shadow-2';
+
+
 
 
 
@@ -25,12 +28,12 @@ const Splash = (props) => {
    let fadeInAndOut = Animated.sequence([
     Animated.timing(opacity, {
         toValue : 1,
-        duration : 1500,
+        duration : 1600,
         useNativeDriver : true
     }),
     Animated.timing(opacity, {
         toValue : 0.25,
-        duration : 1500,
+        duration : 1600,
         useNativeDriver : true
     }),
   ]);
@@ -52,7 +55,7 @@ const Splash = (props) => {
             toValue: 1,
             friction: 3,
             tension: 40,
-            duration: 1500,
+            duration: 1600,
           }),
         ]),
       ).start()
@@ -67,6 +70,7 @@ const Splash = (props) => {
           >
           <View style = {styles.logoContainer}>
            <Image source = {Images.logol} style = {styles.logo}/>  
+          
            <View style = {styles.logoTitleContainer}>
                 <View style = {{ flexDirection : 'row' , alignItems : 'flex-end'}}>
                     <Text style = {styles.netbeat}>netbeat</Text>
@@ -78,7 +82,7 @@ const Splash = (props) => {
           {/* <Animatable.View 
           animation='pulse'
           easing='ease-out' 
-          delay = {1000}
+          delay = {1500}
           iterationCount="infinite"
           style = {[styles.clapContainerGlow]}
           >
@@ -86,7 +90,14 @@ const Splash = (props) => {
 
           <Animated.View
           style = {[styles.clapContainerGlow, { opacity : opacity }]}
-          ></Animated.View>
+          >
+            <Shadow distance = {12} startColor = {Colors.base1} finalColor = {'#CB65C700'}>
+               <View style = {styles.clapContainerGlowShadow}></View>
+             </Shadow> 
+           
+          </Animated.View>
+
+             
 
           <TouchableOpacity 
           onPress = {() => {

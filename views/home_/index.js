@@ -1,9 +1,10 @@
 import { useLazyQuery, useQuery } from '@apollo/react-hooks';
 import React, { useEffect, useRef, useState } from 'react';
 import { useIsFocused } from '@react-navigation/core';
-import { Image, ImageBackground, SafeAreaView, ScrollView, StatusBar, Text, TextInput, TouchableOpacity, View , FlatList, ActivityIndicator} from 'react-native';
+import { Image, ImageBackground, ScrollView, StatusBar, Text, TextInput, TouchableOpacity, View , FlatList, ActivityIndicator, Platform, Keyboard} from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { useSelector } from 'react-redux';
-import { Colors, Images } from '../../assets/index';
+import { Colors, hps, Images, IOS } from '../../assets/index';
 import { EVENTS, LIVEEVENT, SEARCHEVENTS, TYPES } from '../../graphql/queries';
 import styles from './styles';
 import { BaseUrl } from '../../graphql/baseUrl';
@@ -23,11 +24,33 @@ const Home = (props) => {
    const [ref, setRef] = useState(null)
    const [user, setUser] = useState({})
    const [loader, setLoader] = useState(true)
+   const [isKeyboardVisible, setKeyboardVisible] = useState(false);
 
 
    useEffect(()=>{
       Orientation.lockToPortrait();
    },[])
+
+
+   useEffect(() => {
+      const keyboardDidShowListener = Keyboard.addListener(
+        'keyboardDidShow',
+        () => {
+          setKeyboardVisible(true); // or some other action
+        }
+      );
+      const keyboardDidHideListener = Keyboard.addListener(
+        'keyboardDidHide',
+        () => {
+          setKeyboardVisible(false); // or some other action
+        }
+      );
+  
+      return () => {
+        keyboardDidHideListener.remove();
+        keyboardDidShowListener.remove();
+      };
+      }, []);
 
 
    useEffect(()=> {
@@ -74,7 +97,7 @@ const Home = (props) => {
    return(
        <SafeAreaView style = {[styles.mainContainer, {backgroundColor : DARK? Colors.base : Colors.white}]}>
          <StatusBar barStyle = { DARK? 'light-content' : 'dark-content'}/>
-         <View style = {styles.header}>
+         <View style = {[styles.header , { marginTop : Platform.OS == 'ios' ? -IOS : 20}]}>
           <TouchableOpacity 
           onPress = {() => {
             props.navigation.navigate('notification', {user : user})
@@ -206,7 +229,7 @@ const Home = (props) => {
 
 
 
-          <View style = {styles.bottomTapContainer}>
+          {true && <View style = {styles.bottomTapContainer}>
              <View style = {[styles.videoButtonContainer, {backgroundColor : DARK? Colors.base : Colors.white}]}>
                <TouchableOpacity 
                disabled = {loading_live}
@@ -235,7 +258,8 @@ const Home = (props) => {
                 <Image source = {DARK? Images.setting : Images.settinglight}/>
                 </TouchableOpacity>
              </View> 
-          </View>
+          </View>}
+
        </SafeAreaView>
    ) 
 }

@@ -47,19 +47,19 @@ const Privacy = (props) => {
              <View style = {[styles.videoButtonContainer, {backgroundColor : DARK? Colors.base : Colors.white}]}>
                <TouchableOpacity 
                style = {styles.videoButton}>
-               <Image source = {Images.video} style = {styles.video}/>   
+               <SVGS.video height = {hps(13)} width = {wps(21)}/>  
                </TouchableOpacity>
              </View>
              <View style = {[styles.bottomTap , { backgroundColor : DARK ? '#293140' : '#F3F3F3'}]}>
                 <TouchableOpacity 
                  onPress = {() => {props.navigation.navigate('home')}}
                  style = {styles.homeButton}> 
-                 <Image source = {DARK? Images.home : Images.homelight}/>
+                 {DARK? <SVGS.homeDark /> :  <SVGS.homeLite /> }
                 </TouchableOpacity>
                 <TouchableOpacity 
                 onPress = {() => {props.navigation.navigate('setting')}}
                 style = {styles.settingButton}>
-                <Image source = {DARK? Images.setting : Images.settinglight}/>
+                {DARK? <SVGS.settingDark /> :  <SVGS.settingLite /> }
                 </TouchableOpacity>
              </View> 
           </View> */}

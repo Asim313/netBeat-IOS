@@ -541,7 +541,7 @@ SPEC CHECKSUMS:
   react-native-orientation: f1caf84d65f1a4fd4511a18f2b924e634ad7a628
   react-native-safe-area-context: b6e0e284002381d2ff29fa4fff42b4d8282e3c94
   react-native-simple-toast: bf002828cf816775a6809f7a9ec3907509bce11f
-  react-native-video360: e90b34666d4b12de4507972608b12e753d19dfee
+  react-native-video360: 5a88125cf6f63180ccdcf5e8df121dcd4004d521
   react-native-webrtc: 86d841823e66d68cc1f86712db1c2956056bf0c2
   react-native-webview: db22ab831b8c5f7697957a67f7a7ac1cecfed18d
   React-RCTActionSheet: 5f9a1733ec8e380aae8a97877f1166cb058733ae

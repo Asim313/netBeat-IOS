@@ -4,7 +4,7 @@ import { useIsFocused } from '@react-navigation/core';
 import { Image, ImageBackground, ScrollView, StatusBar, Text, TextInput, TouchableOpacity, View , FlatList, ActivityIndicator, Platform, Keyboard} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useSelector } from 'react-redux';
-import { Colors, hps, Images, IOS } from '../../assets/index';
+import { Colors, hps, Images, IOS, wps } from '../../assets/index';
 import { EVENTS, LIVEEVENT, SEARCHEVENTS, TYPES } from '../../graphql/queries';
 import styles from './styles';
 import { BaseUrl } from '../../graphql/baseUrl';
@@ -165,7 +165,9 @@ const Home = (props) => {
               {searchFilter?
               <Image source = {DARK? Images.cancel_w : Images.cancel_p} style = {styles.cancel}/>
               :
-              <Image source = {DARK? Images.searchW : Images.search}/>}
+            //   <Image source = {DARK? Images.searchW : Images.search}/>
+              DARK? <SVGS.searchDark/> : <SVGS.searchLite/>
+              }
             </TouchableOpacity>
          </View>
 
@@ -222,7 +224,8 @@ const Home = (props) => {
            style = {styles.event}>
               <ImageBackground source={{ uri: BaseUrl + item?.Cover[0]?.url }} style = {styles.eventImage}>
                {item.isLive && <View style = {styles.statusContainer}>
-                   <Image source = {Images.dot} style = {styles.dot}/>
+                   {/* <Image source = {Images.dot} style = {styles.dot}/> */}
+                   <SVGS.dot style = {styles.dot}/>
                    <Text style = {styles.live}>{lang?.live}</Text>
                 </View>}
                 <View style = {styles.titleContainer}>
@@ -256,19 +259,19 @@ const Home = (props) => {
                   }
                }}
                style = {styles.videoButton}>
-               <Image source = {Images.video} style = {styles.video}/>   
+               <SVGS.video height = {hps(13)} width = {wps(21)}/>  
                </TouchableOpacity>
              </View>
              <View style = {[styles.bottomTap , { backgroundColor : DARK ? '#293140' : '#F3F3F3'}]}>
                 <TouchableOpacity 
                  onPress = {() => {props.navigation.navigate('home')}}
                  style = {styles.homeButton}> 
-                 <Image source = {DARK? Images.home : Images.homelight}/>
+                 {DARK? <SVGS.homeDark /> :  <SVGS.homeLite /> }
                 </TouchableOpacity>
                 <TouchableOpacity 
                 onPress = {() => {props.navigation.navigate('setting')}}
                 style = {styles.settingButton}>
-                <Image source = {DARK? Images.setting : Images.settinglight}/>
+                {DARK? <SVGS.settingDark /> :  <SVGS.settingLite /> }
                 </TouchableOpacity>
              </View> 
           </View>}

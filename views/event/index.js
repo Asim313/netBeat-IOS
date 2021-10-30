@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import { Colors, hp, hps, Images, wps } from '../../assets/index';
 import { BaseUrl } from '../../graphql/baseUrl';
 import styles from './styles';
+import { SVGS } from '../../assets/images/config';
 
 const Event = (props) => {
 
@@ -97,7 +98,8 @@ const Event = (props) => {
             style = {styles.eventTitleContainer}>
                 {event?.isLive ?
                 <View style = {styles.statusContainer}>
-                   <Image source = {Images.dot} style = {styles.dot}/>
+                   {/* <Image source = {Images.dot} style = {styles.dot}/> */}
+                   <SVGS.dot style = {styles.dot}/>
                    <Text style = {[styles.live, {color : DARK ? Colors.white : Colors.base}]}>{lang?.live}</Text>
                 </View>
                 :
@@ -122,9 +124,9 @@ const Event = (props) => {
            <Text style = {[styles.formatTitle, {color : DARK? '#ffffff27' : '#19202B70'}]}>{`${lang?.video_formats} ${event?.concert_streams?.length} ${lang?.video_formats1}`}</Text> 
            <View style = {[styles.formatContainer, {width : event?.concert_streams?.length == 2 ? wps(70) : wps(130)}]}>
             {event?.concert_streams?.map((i) =>
-             i.type == '360' ? <Image source = {DARK ? Images.degree_w : Images.degree_g}/> :
+             i.type == '360' ? DARK ? <SVGS.degreeDark height = {hps(25)} width = {wps(29)}/> : <SVGS.degreeLite height = {hps(25)} width = {wps(29)}/> :
              i.type == 'flat' ? <Image source = {DARK ? Images.video_w : Images.video_g}/> :
-             <Image source = {DARK ? Images.vr_w : Images.vr_g}/> 
+             DARK ? <SVGS.vrDark height = {hps(24)} width = {wps(24)}/> : <SVGS.vrLite height = {hps(24)} width = {wps(24)}/> 
              )}  
             
            </View>
@@ -146,19 +148,19 @@ const Event = (props) => {
                <TouchableOpacity 
                //onPress = {() => setDark(!DARK)}
                style = {styles.videoButton}>
-               <Image source = {Images.video} style = {styles.video}/>   
+               <SVGS.video height = {hps(13)} width = {wps(21)}/>  
                </TouchableOpacity>
              </View>
              <View style = {[styles.bottomTap , { backgroundColor : DARK ? '#293140' : '#F3F3F3'}]}>
                 <TouchableOpacity 
                  onPress = {() => {props.navigation.navigate('home')}}
                  style = {styles.homeButton}> 
-                 <Image source = {DARK? Images.home : Images.homelight}/>
+                 {DARK? <SVGS.homeDark /> :  <SVGS.homeLite /> }
                 </TouchableOpacity>
                 <TouchableOpacity 
                 onPress = {() => {props.navigation.navigate('setting')}}
                 style = {styles.settingButton}>
-                <Image source = {DARK? Images.setting : Images.settinglight}/>
+                {DARK? <SVGS.settingDark /> :  <SVGS.settingLite /> }
                 </TouchableOpacity>
              </View> 
           </View>

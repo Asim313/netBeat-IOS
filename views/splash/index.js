@@ -112,7 +112,8 @@ const Splash = (props) => {
              props.navigation.navigate('login')
             }}
           style = {styles.clapContainer}>
-           <Image source = {Images.clap} style = {styles.clap}/>   
+           {/* <Image source = {Images.clap} style = {styles.clap}/>    */}
+           <SVGS.clap/>
           </TouchableOpacity>
 
           <View style = {styles.bottomTxtContainer}>

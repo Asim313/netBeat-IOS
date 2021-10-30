@@ -4,7 +4,7 @@ import { Image, StatusBar, Text, TouchableOpacity, View , Alert, ActivityIndicat
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useDispatch, useSelector } from 'react-redux';
 import ToggleSwitch from 'toggle-switch-react-native';
-import { Colors, Images, IOS } from '../../assets/index';
+import { Colors, hps, Images, IOS, wps } from '../../assets/index';
 import { dark } from './../../redux/actions/dark';
 import { selectLanguage } from './../../redux/actions/language';
 import { languages } from './../../redux/languages';
@@ -101,13 +101,18 @@ const Setting = (props) => {
        <SafeAreaView style = {[styles.mainContainer, {backgroundColor : DARK? Colors.base : Colors.white}]}>
         <StatusBar/>
         <View style = {[styles.header , { marginTop : Platform.OS == 'ios' ? -IOS : 20}]}>
-          <TouchableOpacity 
-          onPress = {() => {
-            props.navigation.navigate('notification',{user : user})
-          }}
-            style = {styles.noti}>  
-            {DARK? <SVGS.bell_w_on/> :  <SVGS.bell_g_on/> }
-          </TouchableOpacity>
+        {DARK? 
+          <SVGS.bell_w_on  
+          style = {styles.noti} 
+           onPress = {() => { 
+            props.navigation.navigate('notification', {user : user}) 
+            }}/>
+              :  
+          <SVGS.bell_g_on 
+          onPress = {() => { 
+            props.navigation.navigate('notification', {user : user}) 
+            }}
+          style = {styles.noti}/>}
           <SVGS.logo_home/>
           <TouchableOpacity
           style = {styles.user}
@@ -270,19 +275,19 @@ const Setting = (props) => {
                   }
                }}
                style = {styles.videoButton}>
-               <Image source = {Images.video} style = {styles.video}/>   
+               <SVGS.video height = {hps(13)} width = {wps(21)}/>  
                </TouchableOpacity>
              </View>
              <View style = {[styles.bottomTap , { backgroundColor : DARK ? '#293140' : '#F3F3F3'}]}>
                 <TouchableOpacity 
                  onPress = {() => {props.navigation.navigate('home')}}
                  style = {styles.homeButton}> 
-                 <Image source = {DARK? Images.home : Images.homelight}/>
+                 {DARK? <SVGS.homeDark /> :  <SVGS.homeLite /> }
                 </TouchableOpacity>
                 <TouchableOpacity 
                 onPress = {() => {props.navigation.navigate('setting')}}
                 style = {styles.settingButton}>
-                <Image source = {DARK? Images.setting : Images.settinglight}/>
+                {DARK? <SVGS.settingDark /> :  <SVGS.settingLite /> }
                 </TouchableOpacity>
              </View> 
           </View>

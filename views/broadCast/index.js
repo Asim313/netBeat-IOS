@@ -31,7 +31,8 @@ import ToggleSwitch from 'toggle-switch-react-native'
 import { Colors, hps, Images, wp, wps } from "../../assets"
 import { _retrieveData } from '../../asyncStorage/AsyncFuncs'
 import KeepAwake from '@sayem314/react-native-keep-awake';
-import styles from "./styles"
+import styles from "./styles";
+import { SVGS } from '../../assets/images/config'
 
 
  
@@ -594,7 +595,8 @@ return (
           }
         ]}
         >
-        <Image source = {Images.degree_w}/>  
+        {/* <Image source = {Images.degree_w}/>   */}
+        <SVGS.degreeDark height = {hps(25)} width = {wps(29)}/>
         </TouchableOpacity>
       
         <TouchableOpacity
@@ -608,7 +610,8 @@ return (
           opacity : event?.concert_streams?.some(x => x.type == 'vr') ? 1 : 0.5
          }]}
         >
-        <Image source = {Images.vr_w}/>  
+        {/* <Image source = {Images.vr_w}/>   */}
+        <SVGS.vrDark height = {hps(24)} width = {wps(24)}/>
         </TouchableOpacity>
       
         <TouchableOpacity
@@ -623,7 +626,8 @@ return (
           opacity : event?.concert_streams?.some(x => x.type == 'flat') ? 1 : 0.5
         }]}
         >
-        <Image source = {Images.video_w}/>  
+        {/* <Image source = {Images.video_w}/>   */}
+        <SVGS.videoDark/>
         </TouchableOpacity>
       </Animatable.View>
 
@@ -644,7 +648,7 @@ return (
           }
         ]}
         >
-        <Image source = {Images.degree_w}/>  
+       <SVGS.degreeDark height = {hps(25)} width = {wps(29)}/>
         </TouchableOpacity>
       
         <TouchableOpacity
@@ -658,7 +662,7 @@ return (
           opacity : event?.concert_streams?.some(x => x.type == 'vr') ? 1 : 0.5
          }]}
         >
-        <Image source = {Images.vr_w}/>  
+        <SVGS.vrDark height = {hps(24)} width = {wps(24)}/>
         </TouchableOpacity>
       
         <TouchableOpacity
@@ -673,7 +677,7 @@ return (
           opacity : event?.concert_streams?.some(x => x.type == 'flat') ? 1 : 0.5
         }]}
         >
-        <Image source = {Images.video_w}/>  
+        <SVGS.videoDark/>
         </TouchableOpacity>
       </Animatable.View>}
 

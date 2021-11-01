@@ -17,6 +17,7 @@ import Slider from 'react-native-slider';
 import * as Animatable from 'react-native-animatable';
 import { LIVEEVENT } from '../../graphql/queries';
 import { SVGS } from '../../assets/images/config';
+
 const Setting = (props) => {
 
    let isFocus = useIsFocused()
@@ -32,6 +33,7 @@ const Setting = (props) => {
    const [audience_vol, setAudience_vol] = useState(50)
    const [audience_vol_bar, setAudience_vol_bar] = useState(false)
    const [loader, setLoader] = useState(true)
+   const [guest, setGuest] = useState(false)
 
 
    const {data : live , loading : loading_live} = useQuery(LIVEEVENT ,{
@@ -41,13 +43,9 @@ const Setting = (props) => {
 
    const [updateUser] = useMutation(UPDATEUSER)
 
-
-   
-
-
-
    useEffect(() => {
-       const getUser = async() => {
+         setGuest(global.guest)
+         const getUser = async() => {
          const user = await _retrieveData('user')
          console.log(user)
          setUser(user)
@@ -105,12 +103,22 @@ const Setting = (props) => {
           <SVGS.bell_w_on  
           style = {styles.noti} 
            onPress = {() => { 
-            props.navigation.navigate('notification', {user : user}) 
+               if(guest){
+                   alert('guest')
+               }
+               else{
+                props.navigation.navigate('notification', {user : user}) 
+               }
             }}/>
               :  
           <SVGS.bell_g_on 
           onPress = {() => { 
-            props.navigation.navigate('notification', {user : user}) 
+            if(guest){
+                alert('guest')
+            }
+            else{
+             props.navigation.navigate('notification', {user : user}) 
+            }
             }}
           style = {styles.noti}/>}
           <SVGS.logo_home/>
@@ -138,23 +146,44 @@ const Setting = (props) => {
             <Text style = {[styles.title, {color : DARK? Colors.white : '#19202B'}]}>{lang?.setting_panel}</Text> 
 
             <TouchableOpacity 
-            onPress = { () => props.navigation.navigate('profile', {user : user})}
+            onPress = { () => {
+                if(guest){
+                    alert("guest")
+                }
+                else{
+                    props.navigation.navigate('profile', {user : user})
+                }
+            }}
             style = {[styles.settingOptionContainer, {borderColor : DARK ? '#ffffff05' : '#19202B20'}]}>
                 <Text style = {[styles.settingTitle, {color : DARK? Colors.white : '#19202B'}]}>{lang?.profile}</Text>
                 <Image source = {!DARK? Images.rightg : Images.rightw} style = {styles.right}/>
                 <Text style = {styles.settingStatus}>{user?.username}</Text>
             </TouchableOpacity>
+
             <TouchableOpacity 
-            onPress = { () => { buttonAlert('Notifications', `Are you sure to ${noti ? 'disable' : 'enable'} notifications?`, noti ? false : true , 'noti') }}
+            onPress = { () => { 
+                if(guest){
+                    alert("guest")
+                }
+                else{
+                    buttonAlert('Notifications', `Are you sure to ${noti ? 'disable' : 'enable'} notifications?`, noti ? false : true , 'noti') 
+                }  
+            }}
             style = {[styles.settingOptionContainer, {borderColor : DARK ? '#ffffff05' : '#19202B20'}]}>
                 <Text style = {[styles.settingTitle, {color : DARK? Colors.white : '#19202B'}]}>{lang?.notification}</Text>
                 <Image source = {!DARK? Images.rightg : Images.rightw} style = {styles.right}/>
                 <Text style = {styles.settingStatus}>{noti? lang?.on : lang.off}</Text>
             </TouchableOpacity>
+
             <TouchableOpacity 
             onPress = {() => {
-                setArtist_vol_bar(!artist_vol_bar)
-                setAudience_vol_bar(false)
+                if(guest){
+                    alert("guest")
+                }
+                else{
+                    setArtist_vol_bar(!artist_vol_bar)
+                    setAudience_vol_bar(false)
+                }  
             }}
             style = {[styles.settingOptionContainer, {borderColor : DARK ? '#ffffff05' : '#19202B20', borderBottomWidth : artist_vol_bar? 0 : 1}]}>
                 <Text style = {[styles.settingTitle, {color : DARK? Colors.white : '#19202B'}]}>{lang?.artist_vol}</Text>
@@ -162,6 +191,7 @@ const Setting = (props) => {
                 <Text style = {styles.settingStatus}>{artist_vol < 1 ? lang?.off : lang?.on}</Text>
                 <Text style = {[styles.settingValue, {color : DARK? '#CB65C750' : '#CB65C7'}]}>{artist_vol}</Text>
             </TouchableOpacity>
+
             {artist_vol_bar &&
             <Animatable.View 
             animation = 'flipInY'
@@ -181,10 +211,17 @@ const Setting = (props) => {
                 }}
                 />
             </Animatable.View>}
+
+
             <TouchableOpacity 
             onPress = {() => {
+                if(guest){
+                    alert('guest')
+                }
+                else{
                 setAudience_vol_bar(!audience_vol_bar)
                 setArtist_vol_bar(false)
+                }
             }}
             style = {[styles.settingOptionContainer, {borderColor : DARK ? '#ffffff05' : '#19202B20', borderBottomWidth : audience_vol_bar? 0 : 1}]}>
                 <Text style = {[styles.settingTitle, {color : DARK? Colors.white : '#19202B'}]}>{lang?.audience_vol}</Text>
@@ -211,6 +248,7 @@ const Setting = (props) => {
                 }}
                 />
             </Animatable.View>}
+
             <View style = {[styles.settingOptionContainer, {borderColor : DARK ? '#ffffff05' : '#19202B20'}]}>
                 <Text style = {[styles.settingTitle, {color : DARK? Colors.white : '#19202B'}]}>{lang?.dark_mode}</Text>
                 <Image source = {!DARK? Images.rightg : Images.rightw} style = {styles.right}/>

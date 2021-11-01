@@ -14,9 +14,10 @@ import { push } from './../../Services'
 import { Shadow } from 'react-native-shadow-2';
 import { SVGS } from '../../assets/images/config';
 
-
+global.guest = false
 
 const Login = (props) => {
+    
 
     const { lang, selectedLangVal } = useSelector(state => state.language);
     const { DARK } = useSelector(state => state.dark);
@@ -58,6 +59,7 @@ const Login = (props) => {
     const [user] = useLazyQuery(GETUSERBYID, {
       fetchPolicy : 'network-only',
       onCompleted: res => {
+        global.guest = false
         if(!notFound)
         props.navigation.replace('home')
         else
@@ -74,12 +76,13 @@ const Login = (props) => {
 
 
     const skipLogin = () => {
+        global.guest = true
         if(!notFound)
         props.navigation.replace('home')
         else
         props.navigation.replace('walkThrough')
         const id = 'Guest' + Math.floor(Math.random() * 100)
-        _storeData('user',{id : id,username : 'Guest',group : {id : -1}})
+        _storeData('user',{id : id, username : 'Guest', group : {id : id}})
 
     }
 

@@ -63,7 +63,7 @@ const Notifications = (props) => {
             <FlatList
             data = {notifications}
             ListEmptyComponent = {() => 
-            !loading && <Text style = {styles.notFoundText}>No Notifications Founf Yet!</Text>
+            !loading && <Text style = {styles.notFoundText}>{lang.no_noti}</Text>
             }
             renderItem = {({item , index}) => 
              <View style = {[styles.notificationCard , { borderColor : DARK? Colors.white_light : Colors.base_light}]}>

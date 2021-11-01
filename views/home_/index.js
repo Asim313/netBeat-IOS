@@ -26,6 +26,7 @@ const Home = (props) => {
    const [user, setUser] = useState({})
    const [loader, setLoader] = useState(true)
    const [isKeyboardVisible, setKeyboardVisible] = useState(false);
+   const [guest, setGuest] = useState(false)
 
 
    useEffect(()=>{
@@ -55,6 +56,7 @@ const Home = (props) => {
 
 
    useEffect(()=> {
+      setGuest(global.guest)
       const getUser = async() => {
         const usr = await _retrieveData('user')
         setUser(usr)
@@ -110,12 +112,22 @@ const Home = (props) => {
           <SVGS.bell_w_on  
           style = {styles.noti} 
            onPress = {() => { 
-            props.navigation.navigate('notification', {user : user}) 
+              if(guest){
+                 alert('guest')
+              }
+              else{
+               props.navigation.navigate('notification', {user : user}) 
+              }
             }}/>
               :  
           <SVGS.bell_g_on 
           onPress = {() => { 
-            props.navigation.navigate('notification', {user : user}) 
+               if(guest){
+                  alert('guest')
+               }
+               else{
+               props.navigation.navigate('notification', {user : user}) 
+               }
             }}
           style = {styles.noti}/>}
           <SVGS.logo_home/>

@@ -3512,12 +3512,12 @@
 		7375297608949F88DE604827FD7CEB94 /* FBLazyIterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLazyIterator.h; path = FBLazyVector/FBLazyIterator.h; sourceTree = "<group>"; };
 		737621B0C1D62A68465F83B9FD2EF8FC /* RCTModuleData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTModuleData.h; sourceTree = "<group>"; };
 		73905DB3EC7FCA6353812251D0844A00 /* react-native-safe-area-context-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-safe-area-context-prefix.pch"; sourceTree = "<group>"; };
+		73F2A705018968C5944956B5F9111984 /* SGPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SGPlayer.framework; path = Frameworks/SGPlayer.framework; sourceTree = "<group>"; };
 		73F8A95B79671F501F31EA4F1D04AA8B /* React-RCTActionSheet */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "React-RCTActionSheet"; path = "libReact-RCTActionSheet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F8C9AFED327526A553C2DC6019208B /* SpookyHashV2.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = SpookyHashV2.cpp; path = folly/hash/SpookyHashV2.cpp; sourceTree = "<group>"; };
 		7410C6B41EC8F5761EF1465007A28764 /* decorator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = decorator.h; sourceTree = "<group>"; };
 		7427B909F292B6DE2ADC038275E5EC94 /* REAStyleNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = REAStyleNode.h; sourceTree = "<group>"; };
 		742F56341FDAF85C9CB1907A2572C102 /* RTCVideoDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RTCVideoDecoder.h; sourceTree = "<group>"; };
-		743AE24E7403F649CF2EEC6A19B54B0B /* SGPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SGPlatform.framework; path = Frameworks/arm/SGPlatform.framework; sourceTree = "<group>"; };
 		745DB43A326F1B6E8C0D0805B16C3593 /* RNFBAppModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNFBAppModule.h; path = ios/RNFBApp/RNFBAppModule.h; sourceTree = "<group>"; };
 		746A863EC245943539EBCA45C8A337D8 /* GULLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULLogger.m; path = GoogleUtilities/Logger/GULLogger.m; sourceTree = "<group>"; };
 		746D7714BAAABF8B026E5FD4E4FEA39D /* KCKeepAwake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KCKeepAwake.h; path = ios/KCKeepAwake.h; sourceTree = "<group>"; };
@@ -3691,7 +3691,6 @@
 		8DE3D1198A4E26863396FE7F800138EF /* RCTRequired.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RCTRequired.debug.xcconfig; sourceTree = "<group>"; };
 		8DF63376066E2275FF26820B3A512A9B /* react-native-webview */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "react-native-webview"; path = "libreact-native-webview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1F42476EA7F1BB82FF08066E48A7AC /* RCTSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSlider.h; sourceTree = "<group>"; };
-		8E41C0ADDCFA7C709C9FDF341316757E /* SGPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SGPlayer.framework; path = Frameworks/arm/SGPlayer.framework; sourceTree = "<group>"; };
 		8E7CB11D39145A88B8F42647B391C06A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		8E87F9C12DE3AD0B9EA9E161DBCB4817 /* FIRInstallationsIDController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIDController.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m; sourceTree = "<group>"; };
 		8ED3645FFC07397AFA9D555ABC63E0C0 /* GULReachabilityChecker+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GULReachabilityChecker+Internal.h"; path = "GoogleUtilities/Reachability/GULReachabilityChecker+Internal.h"; sourceTree = "<group>"; };
@@ -3992,6 +3991,7 @@
 		B8F085F4D2568AF7881C40A3A4017313 /* FIRMessagingTokenStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingTokenStore.m; path = FirebaseMessaging/Sources/Token/FIRMessagingTokenStore.m; sourceTree = "<group>"; };
 		B8FC7C191DFA02982F332613C8269852 /* GDTCORRegistrar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORRegistrar.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORRegistrar.h; sourceTree = "<group>"; };
 		B90B076E9F6BF53A3BBE10090E0F90C0 /* RCTNetInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTNetInfo.m; sourceTree = "<group>"; };
+		B928DE223A708EC96D26E828233987E0 /* SGPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SGPlatform.framework; path = Frameworks/SGPlatform.framework; sourceTree = "<group>"; };
 		B95071963331A4555EB40F394F98AED1 /* RNSVGViewBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RNSVGViewBox.m; sourceTree = "<group>"; };
 		B986AF7644EB15EED2A44856704336B7 /* FIRInstallationsStoredItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsStoredItem.h; path = FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredItem.h; sourceTree = "<group>"; };
 		B992DDD62380E9A83D50B0948ED70B97 /* Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Toast.h; path = "Toast-Framework/Toast.h"; sourceTree = "<group>"; };
@@ -4841,6 +4841,15 @@
 			);
 			name = Drivers;
 			path = Libraries/NativeAnimation/Drivers;
+			sourceTree = "<group>";
+		};
+		01EE3D23B2FFAC5CBE7C865199E11486 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B928DE223A708EC96D26E828233987E0 /* SGPlatform.framework */,
+				73F2A705018968C5944956B5F9111984 /* SGPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		03C07807E2922FB06E970185B7C85336 /* Support Files */ = {
@@ -6086,7 +6095,7 @@
 				90127E1D415CB44833E71D5ED1790402 /* PlayerViewController.xib */,
 				4B696F44EC15883D3F479F5F6B9A7E8E /* Video360.h */,
 				B7640D140221C7B8079BB3E59D6CFBDD /* Video360.m */,
-				D3CF41A0A169B66579543E7D0B1B52A4 /* Frameworks */,
+				01EE3D23B2FFAC5CBE7C865199E11486 /* Frameworks */,
 				F4D4A4F028EC5C9B23C3F8A20172548D /* Pod */,
 				6866762253DFA6D60F2E09DA91C4CD43 /* Support Files */,
 			);
@@ -8068,15 +8077,6 @@
 				988358B00314FAF602EA8995158D409A /* GULSwizzler.m */,
 			);
 			name = MethodSwizzler;
-			sourceTree = "<group>";
-		};
-		D3CF41A0A169B66579543E7D0B1B52A4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				743AE24E7403F649CF2EEC6A19B54B0B /* SGPlatform.framework */,
-				8E41C0ADDCFA7C709C9FDF341316757E /* SGPlayer.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D3F3008AFACF0CD38BA5BFD9D148F5A3 /* Pod */ = {

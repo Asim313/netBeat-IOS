@@ -48,6 +48,7 @@ export const languages = {
         no_types: 'No event types found!',
         notifications: 'Notifications', 
         userNameEmpty: 'Username can not be empty',
+        no_noti: "No Notifications Found Yet!",
     },
     franch: {
         hello: 'hello',
@@ -98,5 +99,6 @@ export const languages = {
         no_types: `Aucun type d'événement trouvé !`,
         notifications: 'Avis', 
         userNameEmpty: `Le nom d'utilisateur ne peut pas être vide`,
+        no_noti: "Aucune notification trouvée pour le moment!",
     }
 }

@@ -19,6 +19,8 @@ import vrDark from './vr_dark.svg'
 import vrLite from './vr_lite.svg'
 import videoDark from './video_dark.svg'
 import video from './video-camera.svg'
+import send from './paper-plane.svg'
+import micOn from './mic-on.svg'
 
 export const SVGS = {
     logo_large,
@@ -41,5 +43,7 @@ export const SVGS = {
     vrDark,
     vrLite,
     videoDark,
-    video
+    video,
+    send,
+    micOn
 }

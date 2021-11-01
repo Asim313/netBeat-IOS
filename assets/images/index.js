@@ -53,5 +53,5 @@ export const Images = {
     edit_profile : require('./edit_profile.png'),
     default_dp : require('./default_dp.png'),
     arrow_dark : require('./arrow_dark.png'),
-    comment : require('./comment-white.png'),
+    comment : require('./comment.png'),
 }

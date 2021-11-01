@@ -737,7 +737,7 @@ return (
         <TouchableOpacity
         onPress = {() => {setComments(true)}}
         >
-        <Image source = {Images.comment} style = {{height:hps(18), width:wps(20)}}/>  
+        <Image source = {Images.comment} style = {{height:hps(22), width:wps(22)}}/>  
         </TouchableOpacity>
       </Animatable.View>
       :
@@ -748,7 +748,7 @@ return (
         <TouchableOpacity
         onPress = {() => {setComments(true)}}
         >
-        <Image source = {Images.comment} style = {{height:hps(18), width:wps(20)}}/>  
+        <Image source = {Images.comment} style = {{height:hps(22), width:wps(22)}}/>  
         </TouchableOpacity>
       </Animatable.View>}
 
@@ -775,7 +775,7 @@ return (
         }}
         onPress = {() => {}}
         >
-        <Image source = {Images.clap}/>
+        <SVGS.clap/>
         </TouchableOpacity>
         </Animatable.View>
       </Animatable.View>
@@ -800,7 +800,7 @@ return (
         }}
         onPress = {() => {}}
         >
-        <Image source = {Images.clap}/>
+        <SVGS.clap/>
         </TouchableOpacity>
         </Animatable.View>
       </Animatable.View>}
@@ -814,7 +814,7 @@ return (
       <TouchableOpacity
       onPress = {() => {}}
       >
-      <Image source = {Images.clap}/>
+      <SVGS.clap/>
       </TouchableOpacity>
       </Animatable.View>
       :
@@ -824,7 +824,7 @@ return (
         <TouchableOpacity
         onPress = {() => {}}
         >
-        <Image source = {Images.clap}/>
+        <SVGS.clap/>
         </TouchableOpacity>
       </Animatable.View>}
        </>
@@ -948,7 +948,8 @@ return (
               sendMsg()
             }}
             style = {styles.send}>
-             <Image source = {Images.send} style = {[styles.send, {position:'relative', right:null}]}/>
+             {/* <Image source = {Images.send} style = {[styles.send, {position:'relative', right:null}]}/> */}
+             <SVGS.send style = {[styles.send, {position:'relative', right:null}]}/>
             </TouchableOpacity>
           </View>
 
@@ -967,11 +968,13 @@ return (
           delay = {1500}
           iterationCount="infinite"
           style = {sheight > sWidth ? [styles.clapButton , {backgroundColor:Colors.base1}] : [styles.clapButtonLand, {backgroundColor:Colors.base1}]}>
-            <Image source = {Images.clap} style = {styles.clap}/>
+            {/* <Image source = {Images.clap} style = {styles.clap}/> */}
+            <SVGS.clap style = {styles.clap}/>
           </Animatable.View>}
 
           {!clap && <View style = {sheight > sWidth ? styles.clapButton : styles.clapButtonLand}>
-            <Image source = {Images.clap} style = {styles.clap}/>
+            {/* <Image source = {Images.clap} style = {styles.clap}/> */}
+            <SVGS.clap style = {styles.clap}/>
           </View>}
 
         </View>

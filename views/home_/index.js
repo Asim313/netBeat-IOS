@@ -113,7 +113,7 @@ const Home = (props) => {
           style = {styles.noti} 
            onPress = {() => { 
               if(guest){
-                 alert('guest')
+               alert(lang.guest_alert)
               }
               else{
                props.navigation.navigate('notification', {user : user}) 
@@ -123,7 +123,7 @@ const Home = (props) => {
           <SVGS.bell_g_on 
           onPress = {() => { 
                if(guest){
-                  alert('guest')
+                  alert(lang.guest_alert)
                }
                else{
                props.navigation.navigate('notification', {user : user}) 

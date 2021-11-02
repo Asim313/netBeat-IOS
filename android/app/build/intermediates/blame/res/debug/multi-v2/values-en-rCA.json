@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/asim/Documents/office/netBeat-IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/4a4b5cd198109dc0fd66fa3dec511624/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/f34e97fd81c9fb14e74eee1630e7dcaa/transformed/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/91187bcf7fd80e6d5e28d0ffae6d99d1/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/2ec9e3b225775c31e011caf3e2d5b177/transformed/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

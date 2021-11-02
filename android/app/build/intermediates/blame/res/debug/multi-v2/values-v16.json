@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/asim/Documents/office/netBeat-IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/91187bcf7fd80e6d5e28d0ffae6d99d1/res/values-v16/values-v16.xml",
+                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/2ec9e3b225775c31e011caf3e2d5b177/transformed/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/4a4b5cd198109dc0fd66fa3dec511624/res/values-v16/values-v16.xml",
+                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/f34e97fd81c9fb14e74eee1630e7dcaa/transformed/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

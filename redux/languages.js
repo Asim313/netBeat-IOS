@@ -49,6 +49,7 @@ export const languages = {
         notifications: 'Notifications', 
         userNameEmpty: 'Username can not be empty',
         no_noti: "No Notifications Found Yet!",
+        guest_alert: "To be able to access this feature, you need to sign-in/sign-up."
     },
     franch: {
         hello: 'hello',
@@ -100,5 +101,6 @@ export const languages = {
         notifications: 'Avis', 
         userNameEmpty: `Le nom d'utilisateur ne peut pas être vide`,
         no_noti: "Aucune notification trouvée pour le moment!",
+        guest_alert: "Pour pouvoir accéder à cette fonctionnalité, vous devez vous connecter/s'inscrire."
     }
 }

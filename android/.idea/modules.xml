@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NetbeatLive.iml" filepath="$PROJECT_DIR$/.idea/modules/NetbeatLive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/623013968/NetbeatLive.WebRTCModule.iml" filepath="$PROJECT_DIR$/.idea/modules/623013968/NetbeatLive.WebRTCModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NetbeatLive.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NetbeatLive.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/376179030/NetbeatLive.react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/376179030/NetbeatLive.react-native-community_async-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1565014573/NetbeatLive.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/-1565014573/NetbeatLive.react-native-community_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1142530864/NetbeatLive.react-native-dbb-rtmp.iml" filepath="$PROJECT_DIR$/.idea/modules/-1142530864/NetbeatLive.react-native-dbb-rtmp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-187056082/NetbeatLive.react-native-extra-dimensions-android.iml" filepath="$PROJECT_DIR$/.idea/modules/-187056082/NetbeatLive.react-native-extra-dimensions-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-686627257/NetbeatLive.react-native-firebase_app.iml" filepath="$PROJECT_DIR$/.idea/modules/-686627257/NetbeatLive.react-native-firebase_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1121854378/NetbeatLive.react-native-firebase_messaging.iml" filepath="$PROJECT_DIR$/.idea/modules/1121854378/NetbeatLive.react-native-firebase_messaging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-619669916/NetbeatLive.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-619669916/NetbeatLive.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-312991966/NetbeatLive.react-native-image-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/-312991966/NetbeatLive.react-native-image-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/281206/NetbeatLive.react-native-linear-gradient.iml" filepath="$PROJECT_DIR$/.idea/modules/281206/NetbeatLive.react-native-linear-gradient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1656124014/NetbeatLive.react-native-orientation.iml" filepath="$PROJECT_DIR$/.idea/modules/1656124014/NetbeatLive.react-native-orientation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1954506440/NetbeatLive.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/-1954506440/NetbeatLive.react-native-reanimated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2145933875/NetbeatLive.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-2145933875/NetbeatLive.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1482977829/NetbeatLive.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/1482977829/NetbeatLive.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1797358850/NetbeatLive.react-native-svg.iml" filepath="$PROJECT_DIR$/.idea/modules/1797358850/NetbeatLive.react-native-svg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1345239527/NetbeatLive.react-native-video360plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/1345239527/NetbeatLive.react-native-video360plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/741920407/NetbeatLive.react-native-webview.iml" filepath="$PROJECT_DIR$/.idea/modules/741920407/NetbeatLive.react-native-webview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1882010829/NetbeatLive.sayem314_react-native-keep-awake.iml" filepath="$PROJECT_DIR$/.idea/modules/-1882010829/NetbeatLive.sayem314_react-native-keep-awake.iml" />
+    </modules>
+  </component>
+</project>

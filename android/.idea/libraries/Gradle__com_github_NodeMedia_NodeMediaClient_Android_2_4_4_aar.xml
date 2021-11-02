@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.NodeMedia:NodeMediaClient-Android:2.4.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8035e6ebb914ee20bcca9d48cc631374/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8035e6ebb914ee20bcca9d48cc631374/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8035e6ebb914ee20bcca9d48cc631374/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

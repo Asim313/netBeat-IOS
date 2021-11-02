@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/asim/Documents/office/netBeat-IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/4a4b5cd198109dc0fd66fa3dec511624/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/f34e97fd81c9fb14e74eee1630e7dcaa/transformed/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/asim/.gradle/caches/transforms-2/files-2.1/9fbff816dac6f8689157addece196fd7/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/ad2cba42b5f481cbbc34e72451a293ac/transformed/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

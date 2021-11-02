@@ -104,7 +104,7 @@ const Setting = (props) => {
           style = {styles.noti} 
            onPress = {() => { 
                if(guest){
-                   alert('guest')
+                   alert(lang.guest_alert)
                }
                else{
                 props.navigation.navigate('notification', {user : user}) 
@@ -114,7 +114,7 @@ const Setting = (props) => {
           <SVGS.bell_g_on 
           onPress = {() => { 
             if(guest){
-                alert('guest')
+                alert(lang.guest_alert)
             }
             else{
              props.navigation.navigate('notification', {user : user}) 
@@ -148,7 +148,7 @@ const Setting = (props) => {
             <TouchableOpacity 
             onPress = { () => {
                 if(guest){
-                    alert("guest")
+                    alert(lang.guest_alert)
                 }
                 else{
                     props.navigation.navigate('profile', {user : user})
@@ -163,7 +163,7 @@ const Setting = (props) => {
             <TouchableOpacity 
             onPress = { () => { 
                 if(guest){
-                    alert("guest")
+                    alert(lang.guest_alert)
                 }
                 else{
                     buttonAlert('Notifications', `Are you sure to ${noti ? 'disable' : 'enable'} notifications?`, noti ? false : true , 'noti') 
@@ -178,7 +178,7 @@ const Setting = (props) => {
             <TouchableOpacity 
             onPress = {() => {
                 if(guest){
-                    alert("guest")
+                    alert(lang.guest_alert)
                 }
                 else{
                     setArtist_vol_bar(!artist_vol_bar)

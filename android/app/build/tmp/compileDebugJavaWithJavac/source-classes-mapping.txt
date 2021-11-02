@@ -1,0 +1,762 @@
+androidx/transition/R.java
+ androidx.transition.R
+ androidx.transition.R$attr
+ androidx.transition.R$color
+ androidx.transition.R$dimen
+ androidx.transition.R$drawable
+ androidx.transition.R$id
+ androidx.transition.R$integer
+ androidx.transition.R$layout
+ androidx.transition.R$string
+ androidx.transition.R$style
+ androidx.transition.R$styleable
+androidx/print/R.java
+ androidx.print.R
+androidx/lifecycle/livedata/core/R.java
+ androidx.lifecycle.livedata.core.R
+com/facebook/imagepipeline/R.java
+ com.facebook.imagepipeline.R
+androidx/appcompat/resources/R.java
+ androidx.appcompat.resources.R
+ androidx.appcompat.resources.R$attr
+ androidx.appcompat.resources.R$color
+ androidx.appcompat.resources.R$dimen
+ androidx.appcompat.resources.R$drawable
+ androidx.appcompat.resources.R$id
+ androidx.appcompat.resources.R$integer
+ androidx.appcompat.resources.R$layout
+ androidx.appcompat.resources.R$string
+ androidx.appcompat.resources.R$style
+ androidx.appcompat.resources.R$styleable
+com/facebook/drawee/backends/pipeline/R.java
+ com.facebook.drawee.backends.pipeline.R
+ com.facebook.drawee.backends.pipeline.R$attr
+ com.facebook.drawee.backends.pipeline.R$id
+ com.facebook.drawee.backends.pipeline.R$styleable
+androidx/arch/core/R.java
+ androidx.arch.core.R
+androidx/fragment/R.java
+ androidx.fragment.R
+ androidx.fragment.R$anim
+ androidx.fragment.R$attr
+ androidx.fragment.R$color
+ androidx.fragment.R$dimen
+ androidx.fragment.R$drawable
+ androidx.fragment.R$id
+ androidx.fragment.R$integer
+ androidx.fragment.R$layout
+ androidx.fragment.R$string
+ androidx.fragment.R$style
+ androidx.fragment.R$styleable
+androidx/savedstate/R.java
+ androidx.savedstate.R
+com/google/android/gms/measurement_base/R.java
+ com.google.android.gms.measurement_base.R
+com/facebook/react/R.java
+ com.facebook.react.R
+ com.facebook.react.R$anim
+ com.facebook.react.R$attr
+ com.facebook.react.R$bool
+ com.facebook.react.R$color
+ com.facebook.react.R$dimen
+ com.facebook.react.R$drawable
+ com.facebook.react.R$id
+ com.facebook.react.R$integer
+ com.facebook.react.R$layout
+ com.facebook.react.R$string
+ com.facebook.react.R$style
+ com.facebook.react.R$styleable
+ com.facebook.react.R$xml
+com/google/firebase/R.java
+ com.google.firebase.R
+ com.google.firebase.R$attr
+ com.google.firebase.R$color
+ com.google.firebase.R$dimen
+ com.google.firebase.R$drawable
+ com.google.firebase.R$id
+ com.google.firebase.R$integer
+ com.google.firebase.R$layout
+ com.google.firebase.R$string
+ com.google.firebase.R$style
+ com.google.firebase.R$styleable
+com/oney/WebRTCModule/R.java
+ com.oney.WebRTCModule.R
+ com.oney.WebRTCModule.R$anim
+ com.oney.WebRTCModule.R$attr
+ com.oney.WebRTCModule.R$bool
+ com.oney.WebRTCModule.R$color
+ com.oney.WebRTCModule.R$dimen
+ com.oney.WebRTCModule.R$drawable
+ com.oney.WebRTCModule.R$id
+ com.oney.WebRTCModule.R$integer
+ com.oney.WebRTCModule.R$layout
+ com.oney.WebRTCModule.R$string
+ com.oney.WebRTCModule.R$style
+ com.oney.WebRTCModule.R$styleable
+ com.oney.WebRTCModule.R$xml
+androidx/interpolator/R.java
+ androidx.interpolator.R
+com/google/android/gms/measurement/sdk/api/R.java
+ com.google.android.gms.measurement.sdk.api.R
+androidx/core/R.java
+ androidx.core.R
+ androidx.core.R$attr
+ androidx.core.R$color
+ androidx.core.R$dimen
+ androidx.core.R$drawable
+ androidx.core.R$id
+ androidx.core.R$integer
+ androidx.core.R$layout
+ androidx.core.R$string
+ androidx.core.R$style
+ androidx.core.R$styleable
+com/google/firebase/analytics/connector/R.java
+ com.google.firebase.analytics.connector.R
+com/google/android/gms/common/R.java
+ com.google.android.gms.common.R
+ com.google.android.gms.common.R$integer
+ com.google.android.gms.common.R$string
+com/horcrux/svg/R.java
+ com.horcrux.svg.R
+ com.horcrux.svg.R$anim
+ com.horcrux.svg.R$attr
+ com.horcrux.svg.R$bool
+ com.horcrux.svg.R$color
+ com.horcrux.svg.R$dimen
+ com.horcrux.svg.R$drawable
+ com.horcrux.svg.R$id
+ com.horcrux.svg.R$integer
+ com.horcrux.svg.R$layout
+ com.horcrux.svg.R$string
+ com.horcrux.svg.R$style
+ com.horcrux.svg.R$styleable
+ com.horcrux.svg.R$xml
+com/google/android/gms/base/R.java
+ com.google.android.gms.base.R
+ com.google.android.gms.base.R$attr
+ com.google.android.gms.base.R$color
+ com.google.android.gms.base.R$drawable
+ com.google.android.gms.base.R$id
+ com.google.android.gms.base.R$string
+ com.google.android.gms.base.R$styleable
+cn/nodemedia/R.java
+ cn.nodemedia.R
+ cn.nodemedia.R$anim
+ cn.nodemedia.R$attr
+ cn.nodemedia.R$bool
+ cn.nodemedia.R$color
+ cn.nodemedia.R$dimen
+ cn.nodemedia.R$drawable
+ cn.nodemedia.R$id
+ cn.nodemedia.R$integer
+ cn.nodemedia.R$layout
+ cn.nodemedia.R$string
+ cn.nodemedia.R$style
+ cn.nodemedia.R$styleable
+com/google/firebase/installations/R.java
+ com.google.firebase.installations.R
+ com.google.firebase.installations.R$attr
+ com.google.firebase.installations.R$color
+ com.google.firebase.installations.R$dimen
+ com.google.firebase.installations.R$drawable
+ com.google.firebase.installations.R$id
+ com.google.firebase.installations.R$integer
+ com.google.firebase.installations.R$layout
+ com.google.firebase.installations.R$string
+ com.google.firebase.installations.R$style
+ com.google.firebase.installations.R$styleable
+com/facebook/soloader/R.java
+ com.facebook.soloader.R
+androidx/multidex/R.java
+ androidx.multidex.R
+com/facebook/imagepipeline/backends/okhttp3/R.java
+ com.facebook.imagepipeline.backends.okhttp3.R
+com/google/android/gms/auth/api/phone/R.java
+ com.google.android.gms.auth.api.phone.R
+io/invertase/firebase/messaging/R.java
+ io.invertase.firebase.messaging.R
+ io.invertase.firebase.messaging.R$anim
+ io.invertase.firebase.messaging.R$attr
+ io.invertase.firebase.messaging.R$bool
+ io.invertase.firebase.messaging.R$color
+ io.invertase.firebase.messaging.R$dimen
+ io.invertase.firebase.messaging.R$drawable
+ io.invertase.firebase.messaging.R$id
+ io.invertase.firebase.messaging.R$integer
+ io.invertase.firebase.messaging.R$layout
+ io.invertase.firebase.messaging.R$string
+ io.invertase.firebase.messaging.R$style
+ io.invertase.firebase.messaging.R$styleable
+ io.invertase.firebase.messaging.R$xml
+com/google/firebase/messaging/R.java
+ com.google.firebase.messaging.R
+ com.google.firebase.messaging.R$string
+com/imagepicker/R.java
+ com.imagepicker.R
+ com.imagepicker.R$anim
+ com.imagepicker.R$attr
+ com.imagepicker.R$bool
+ com.imagepicker.R$color
+ com.imagepicker.R$dimen
+ com.imagepicker.R$drawable
+ com.imagepicker.R$id
+ com.imagepicker.R$integer
+ com.imagepicker.R$layout
+ com.imagepicker.R$string
+ com.imagepicker.R$style
+ com.imagepicker.R$styleable
+ com.imagepicker.R$xml
+androidx/swiperefreshlayout/R.java
+ androidx.swiperefreshlayout.R
+ androidx.swiperefreshlayout.R$attr
+ androidx.swiperefreshlayout.R$color
+ androidx.swiperefreshlayout.R$dimen
+ androidx.swiperefreshlayout.R$drawable
+ androidx.swiperefreshlayout.R$id
+ androidx.swiperefreshlayout.R$integer
+ androidx.swiperefreshlayout.R$layout
+ androidx.swiperefreshlayout.R$string
+ androidx.swiperefreshlayout.R$style
+ androidx.swiperefreshlayout.R$styleable
+androidx/appcompat/R.java
+ androidx.appcompat.R
+ androidx.appcompat.R$anim
+ androidx.appcompat.R$attr
+ androidx.appcompat.R$bool
+ androidx.appcompat.R$color
+ androidx.appcompat.R$dimen
+ androidx.appcompat.R$drawable
+ androidx.appcompat.R$id
+ androidx.appcompat.R$integer
+ androidx.appcompat.R$interpolator
+ androidx.appcompat.R$layout
+ androidx.appcompat.R$string
+ androidx.appcompat.R$style
+ androidx.appcompat.R$styleable
+com/google/vr/cardboard/R.java
+ com.google.vr.cardboard.R
+ com.google.vr.cardboard.R$color
+ com.google.vr.cardboard.R$dimen
+ com.google.vr.cardboard.R$drawable
+ com.google.vr.cardboard.R$id
+ com.google.vr.cardboard.R$layout
+ com.google.vr.cardboard.R$string
+ com.google.vr.cardboard.R$style
+androidx/customview/R.java
+ androidx.customview.R
+ androidx.customview.R$attr
+ androidx.customview.R$color
+ androidx.customview.R$dimen
+ androidx.customview.R$drawable
+ androidx.customview.R$id
+ androidx.customview.R$integer
+ androidx.customview.R$layout
+ androidx.customview.R$string
+ androidx.customview.R$style
+ androidx.customview.R$styleable
+org/wonday/live/R.java
+ org.wonday.live.R
+ org.wonday.live.R$anim
+ org.wonday.live.R$attr
+ org.wonday.live.R$bool
+ org.wonday.live.R$color
+ org.wonday.live.R$dimen
+ org.wonday.live.R$drawable
+ org.wonday.live.R$id
+ org.wonday.live.R$integer
+ org.wonday.live.R$layout
+ org.wonday.live.R$string
+ org.wonday.live.R$style
+ org.wonday.live.R$styleable
+ org.wonday.live.R$xml
+androidx/exifinterface/R.java
+ androidx.exifinterface.R
+com/google/android/gms/stats/R.java
+ com.google.android.gms.stats.R
+androidx/legacy/coreutils/R.java
+ androidx.legacy.coreutils.R
+ androidx.legacy.coreutils.R$attr
+ androidx.legacy.coreutils.R$color
+ androidx.legacy.coreutils.R$dimen
+ androidx.legacy.coreutils.R$drawable
+ androidx.legacy.coreutils.R$id
+ androidx.legacy.coreutils.R$integer
+ androidx.legacy.coreutils.R$layout
+ androidx.legacy.coreutils.R$string
+ androidx.legacy.coreutils.R$style
+ androidx.legacy.coreutils.R$styleable
+com/google/android/gms/cloudmessaging/R.java
+ com.google.android.gms.cloudmessaging.R
+com/google/firebase/components/R.java
+ com.google.firebase.components.R
+com/facebook/drawee/R.java
+ com.facebook.drawee.R
+ com.facebook.drawee.R$attr
+ com.facebook.drawee.R$id
+ com.facebook.drawee.R$styleable
+com/google/android/gms/measurement/sdk/R.java
+ com.google.android.gms.measurement.sdk.R
+com/google/vr/widgets/common/R.java
+ com.google.vr.widgets.common.R
+ com.google.vr.widgets.common.R$color
+ com.google.vr.widgets.common.R$dimen
+ com.google.vr.widgets.common.R$drawable
+ com.google.vr.widgets.common.R$id
+ com.google.vr.widgets.common.R$layout
+ com.google.vr.widgets.common.R$string
+ com.google.vr.widgets.common.R$style
+com/google/firebase/iid/internal/R.java
+ com.google.firebase.iid.internal.R
+androidx/localbroadcastmanager/R.java
+ androidx.localbroadcastmanager.R
+com/google/firebase/installations/interop/R.java
+ com.google.firebase.installations.interop.R
+ com.google.firebase.installations.interop.R$attr
+ com.google.firebase.installations.interop.R$color
+ com.google.firebase.installations.interop.R$dimen
+ com.google.firebase.installations.interop.R$drawable
+ com.google.firebase.installations.interop.R$id
+ com.google.firebase.installations.interop.R$integer
+ com.google.firebase.installations.interop.R$layout
+ com.google.firebase.installations.interop.R$string
+ com.google.firebase.installations.interop.R$style
+ com.google.firebase.installations.interop.R$styleable
+androidx/webkit/R.java
+ androidx.webkit.R
+ androidx.webkit.R$attr
+ androidx.webkit.R$color
+ androidx.webkit.R$dimen
+ androidx.webkit.R$drawable
+ androidx.webkit.R$id
+ androidx.webkit.R$integer
+ androidx.webkit.R$layout
+ androidx.webkit.R$string
+ androidx.webkit.R$style
+ androidx.webkit.R$styleable
+com/swmansion/gesturehandler/react/R.java
+ com.swmansion.gesturehandler.react.R
+ com.swmansion.gesturehandler.react.R$anim
+ com.swmansion.gesturehandler.react.R$attr
+ com.swmansion.gesturehandler.react.R$bool
+ com.swmansion.gesturehandler.react.R$color
+ com.swmansion.gesturehandler.react.R$dimen
+ com.swmansion.gesturehandler.react.R$drawable
+ com.swmansion.gesturehandler.react.R$id
+ com.swmansion.gesturehandler.react.R$integer
+ com.swmansion.gesturehandler.react.R$layout
+ com.swmansion.gesturehandler.react.R$string
+ com.swmansion.gesturehandler.react.R$style
+ com.swmansion.gesturehandler.react.R$styleable
+ com.swmansion.gesturehandler.react.R$xml
+androidx/lifecycle/viewmodel/savedstate/R.java
+ androidx.lifecycle.viewmodel.savedstate.R
+com/google/android/gms/ads_identifier/R.java
+ com.google.android.gms.ads_identifier.R
+androidx/viewpager2/R.java
+ androidx.viewpager2.R
+ androidx.viewpager2.R$attr
+ androidx.viewpager2.R$color
+ androidx.viewpager2.R$dimen
+ androidx.viewpager2.R$drawable
+ androidx.viewpager2.R$id
+ androidx.viewpager2.R$integer
+ androidx.viewpager2.R$layout
+ androidx.viewpager2.R$string
+ androidx.viewpager2.R$style
+ androidx.viewpager2.R$styleable
+androidx/vectordrawable/animated/R.java
+ androidx.vectordrawable.animated.R
+ androidx.vectordrawable.animated.R$attr
+ androidx.vectordrawable.animated.R$color
+ androidx.vectordrawable.animated.R$dimen
+ androidx.vectordrawable.animated.R$drawable
+ androidx.vectordrawable.animated.R$id
+ androidx.vectordrawable.animated.R$integer
+ androidx.vectordrawable.animated.R$layout
+ androidx.vectordrawable.animated.R$string
+ androidx.vectordrawable.animated.R$style
+ androidx.vectordrawable.animated.R$styleable
+com/facebook/fbcore/R.java
+ com.facebook.fbcore.R
+com/google/android/datatransport/backend/cct/R.java
+ com.google.android.datatransport.backend.cct.R
+com/facebook/imagepipelinebase/R.java
+ com.facebook.imagepipelinebase.R
+androidx/vectordrawable/R.java
+ androidx.vectordrawable.R
+ androidx.vectordrawable.R$attr
+ androidx.vectordrawable.R$color
+ androidx.vectordrawable.R$dimen
+ androidx.vectordrawable.R$drawable
+ androidx.vectordrawable.R$id
+ androidx.vectordrawable.R$integer
+ androidx.vectordrawable.R$layout
+ androidx.vectordrawable.R$string
+ androidx.vectordrawable.R$style
+ androidx.vectordrawable.R$styleable
+io/invertase/firebase/R.java
+ io.invertase.firebase.R
+ io.invertase.firebase.R$anim
+ io.invertase.firebase.R$attr
+ io.invertase.firebase.R$bool
+ io.invertase.firebase.R$color
+ io.invertase.firebase.R$dimen
+ io.invertase.firebase.R$drawable
+ io.invertase.firebase.R$id
+ io.invertase.firebase.R$integer
+ io.invertase.firebase.R$layout
+ io.invertase.firebase.R$string
+ io.invertase.firebase.R$style
+ io.invertase.firebase.R$styleable
+ io.invertase.firebase.R$xml
+com/google/android/gms/measurement/api/R.java
+ com.google.android.gms.measurement.api.R
+com/th3rdwave/safeareacontext/R.java
+ com.th3rdwave.safeareacontext.R
+ com.th3rdwave.safeareacontext.R$anim
+ com.th3rdwave.safeareacontext.R$attr
+ com.th3rdwave.safeareacontext.R$bool
+ com.th3rdwave.safeareacontext.R$color
+ com.th3rdwave.safeareacontext.R$dimen
+ com.th3rdwave.safeareacontext.R$drawable
+ com.th3rdwave.safeareacontext.R$id
+ com.th3rdwave.safeareacontext.R$integer
+ com.th3rdwave.safeareacontext.R$layout
+ com.th3rdwave.safeareacontext.R$string
+ com.th3rdwave.safeareacontext.R$style
+ com.th3rdwave.safeareacontext.R$styleable
+ com.th3rdwave.safeareacontext.R$xml
+com/facebook/nativefilters/R.java
+ com.facebook.nativefilters.R
+ca/jaysoo/extradimensions/R.java
+ ca.jaysoo.extradimensions.R
+ ca.jaysoo.extradimensions.R$anim
+ ca.jaysoo.extradimensions.R$attr
+ ca.jaysoo.extradimensions.R$bool
+ ca.jaysoo.extradimensions.R$color
+ ca.jaysoo.extradimensions.R$dimen
+ ca.jaysoo.extradimensions.R$drawable
+ ca.jaysoo.extradimensions.R$id
+ ca.jaysoo.extradimensions.R$integer
+ ca.jaysoo.extradimensions.R$layout
+ ca.jaysoo.extradimensions.R$string
+ ca.jaysoo.extradimensions.R$style
+ ca.jaysoo.extradimensions.R$styleable
+ ca.jaysoo.extradimensions.R$xml
+org/reactnative/maskedview/R.java
+ org.reactnative.maskedview.R
+ org.reactnative.maskedview.R$anim
+ org.reactnative.maskedview.R$attr
+ org.reactnative.maskedview.R$bool
+ org.reactnative.maskedview.R$color
+ org.reactnative.maskedview.R$dimen
+ org.reactnative.maskedview.R$drawable
+ org.reactnative.maskedview.R$id
+ org.reactnative.maskedview.R$integer
+ org.reactnative.maskedview.R$layout
+ org.reactnative.maskedview.R$string
+ org.reactnative.maskedview.R$style
+ org.reactnative.maskedview.R$styleable
+ org.reactnative.maskedview.R$xml
+com/google/vr/widgets/video/R.java
+ com.google.vr.widgets.video.R
+ com.google.vr.widgets.video.R$color
+ com.google.vr.widgets.video.R$dimen
+ com.google.vr.widgets.video.R$drawable
+ com.google.vr.widgets.video.R$id
+ com.google.vr.widgets.video.R$layout
+ com.google.vr.widgets.video.R$string
+ com.google.vr.widgets.video.R$style
+com/google/android/gms/auth/R.java
+ com.google.android.gms.auth.R
+androidx/activity/R.java
+ androidx.activity.R
+ androidx.activity.R$attr
+ androidx.activity.R$color
+ androidx.activity.R$dimen
+ androidx.activity.R$drawable
+ androidx.activity.R$id
+ androidx.activity.R$integer
+ androidx.activity.R$layout
+ androidx.activity.R$string
+ androidx.activity.R$style
+ androidx.activity.R$styleable
+androidx/recyclerview/R.java
+ androidx.recyclerview.R
+ androidx.recyclerview.R$attr
+ androidx.recyclerview.R$color
+ androidx.recyclerview.R$dimen
+ androidx.recyclerview.R$drawable
+ androidx.recyclerview.R$id
+ androidx.recyclerview.R$integer
+ androidx.recyclerview.R$layout
+ androidx.recyclerview.R$string
+ androidx.recyclerview.R$style
+ androidx.recyclerview.R$styleable
+com/google/firebase/firebase_analytics/R.java
+ com.google.firebase.firebase_analytics.R
+androidx/drawerlayout/R.java
+ androidx.drawerlayout.R
+ androidx.drawerlayout.R$attr
+ androidx.drawerlayout.R$color
+ androidx.drawerlayout.R$dimen
+ androidx.drawerlayout.R$drawable
+ androidx.drawerlayout.R$id
+ androidx.drawerlayout.R$integer
+ androidx.drawerlayout.R$layout
+ androidx.drawerlayout.R$string
+ androidx.drawerlayout.R$style
+ androidx.drawerlayout.R$styleable
+androidx/versionedparcelable/R.java
+ androidx.versionedparcelable.R
+com/reactlibrary/R.java
+ com.reactlibrary.R
+ com.reactlibrary.R$anim
+ com.reactlibrary.R$attr
+ com.reactlibrary.R$bool
+ com.reactlibrary.R$color
+ com.reactlibrary.R$dimen
+ com.reactlibrary.R$drawable
+ com.reactlibrary.R$id
+ com.reactlibrary.R$integer
+ com.reactlibrary.R$layout
+ com.reactlibrary.R$string
+ com.reactlibrary.R$style
+ com.reactlibrary.R$styleable
+ com.reactlibrary.R$xml
+androidx/lifecycle/viewmodel/R.java
+ androidx.lifecycle.viewmodel.R
+com/github/yamill/orientation/R.java
+ com.github.yamill.orientation.R
+ com.github.yamill.orientation.R$anim
+ com.github.yamill.orientation.R$attr
+ com.github.yamill.orientation.R$bool
+ com.github.yamill.orientation.R$color
+ com.github.yamill.orientation.R$dimen
+ com.github.yamill.orientation.R$drawable
+ com.github.yamill.orientation.R$id
+ com.github.yamill.orientation.R$integer
+ com.github.yamill.orientation.R$layout
+ com.github.yamill.orientation.R$string
+ com.github.yamill.orientation.R$style
+ com.github.yamill.orientation.R$styleable
+ com.github.yamill.orientation.R$xml
+com/swmansion/rnscreens/R.java
+ com.swmansion.rnscreens.R
+ com.swmansion.rnscreens.R$anim
+ com.swmansion.rnscreens.R$animator
+ com.swmansion.rnscreens.R$attr
+ com.swmansion.rnscreens.R$bool
+ com.swmansion.rnscreens.R$color
+ com.swmansion.rnscreens.R$dimen
+ com.swmansion.rnscreens.R$drawable
+ com.swmansion.rnscreens.R$id
+ com.swmansion.rnscreens.R$integer
+ com.swmansion.rnscreens.R$interpolator
+ com.swmansion.rnscreens.R$layout
+ com.swmansion.rnscreens.R$plurals
+ com.swmansion.rnscreens.R$string
+ com.swmansion.rnscreens.R$style
+ com.swmansion.rnscreens.R$styleable
+ com.swmansion.rnscreens.R$xml
+androidx/cursoradapter/R.java
+ androidx.cursoradapter.R
+androidx/cardview/R.java
+ androidx.cardview.R
+ androidx.cardview.R$attr
+ androidx.cardview.R$color
+ androidx.cardview.R$dimen
+ androidx.cardview.R$style
+ androidx.cardview.R$styleable
+androidx/coordinatorlayout/R.java
+ androidx.coordinatorlayout.R
+ androidx.coordinatorlayout.R$attr
+ androidx.coordinatorlayout.R$color
+ androidx.coordinatorlayout.R$dimen
+ androidx.coordinatorlayout.R$drawable
+ androidx.coordinatorlayout.R$id
+ androidx.coordinatorlayout.R$integer
+ androidx.coordinatorlayout.R$layout
+ androidx.coordinatorlayout.R$string
+ androidx.coordinatorlayout.R$style
+ androidx.coordinatorlayout.R$styleable
+androidx/lifecycle/livedata/R.java
+ androidx.lifecycle.livedata.R
+com/reactnativecommunity/asyncstorage/R.java
+ com.reactnativecommunity.asyncstorage.R
+ com.reactnativecommunity.asyncstorage.R$anim
+ com.reactnativecommunity.asyncstorage.R$attr
+ com.reactnativecommunity.asyncstorage.R$bool
+ com.reactnativecommunity.asyncstorage.R$color
+ com.reactnativecommunity.asyncstorage.R$dimen
+ com.reactnativecommunity.asyncstorage.R$drawable
+ com.reactnativecommunity.asyncstorage.R$id
+ com.reactnativecommunity.asyncstorage.R$integer
+ com.reactnativecommunity.asyncstorage.R$layout
+ com.reactnativecommunity.asyncstorage.R$string
+ com.reactnativecommunity.asyncstorage.R$style
+ com.reactnativecommunity.asyncstorage.R$styleable
+ com.reactnativecommunity.asyncstorage.R$xml
+com/google/android/datatransport/R.java
+ com.google.android.datatransport.R
+com/google/android/datatransport/runtime/R.java
+ com.google.android.datatransport.runtime.R
+com/google/firebase/measurement_impl/R.java
+ com.google.firebase.measurement_impl.R
+androidx/lifecycle/R.java
+ androidx.lifecycle.R
+androidx/documentfile/R.java
+ androidx.documentfile.R
+com/google/android/gms/auth/api/R.java
+ com.google.android.gms.auth.api.R
+ com.google.android.gms.auth.api.R$anim
+ com.google.android.gms.auth.api.R$attr
+ com.google.android.gms.auth.api.R$color
+ com.google.android.gms.auth.api.R$dimen
+ com.google.android.gms.auth.api.R$drawable
+ com.google.android.gms.auth.api.R$id
+ com.google.android.gms.auth.api.R$integer
+ com.google.android.gms.auth.api.R$layout
+ com.google.android.gms.auth.api.R$string
+ com.google.android.gms.auth.api.R$style
+ com.google.android.gms.auth.api.R$styleable
+com/swmansion/reanimated/R.java
+ com.swmansion.reanimated.R
+ com.swmansion.reanimated.R$anim
+ com.swmansion.reanimated.R$attr
+ com.swmansion.reanimated.R$bool
+ com.swmansion.reanimated.R$color
+ com.swmansion.reanimated.R$dimen
+ com.swmansion.reanimated.R$drawable
+ com.swmansion.reanimated.R$id
+ com.swmansion.reanimated.R$integer
+ com.swmansion.reanimated.R$layout
+ com.swmansion.reanimated.R$string
+ com.swmansion.reanimated.R$style
+ com.swmansion.reanimated.R$styleable
+ com.swmansion.reanimated.R$xml
+androidx/loader/R.java
+ androidx.loader.R
+ androidx.loader.R$attr
+ androidx.loader.R$color
+ androidx.loader.R$dimen
+ androidx.loader.R$drawable
+ androidx.loader.R$id
+ androidx.loader.R$integer
+ androidx.loader.R$layout
+ androidx.loader.R$string
+ androidx.loader.R$style
+ androidx.loader.R$styleable
+com/google/android/material/R.java
+ com.google.android.material.R
+ com.google.android.material.R$anim
+ com.google.android.material.R$animator
+ com.google.android.material.R$attr
+ com.google.android.material.R$bool
+ com.google.android.material.R$color
+ com.google.android.material.R$dimen
+ com.google.android.material.R$drawable
+ com.google.android.material.R$id
+ com.google.android.material.R$integer
+ com.google.android.material.R$interpolator
+ com.google.android.material.R$layout
+ com.google.android.material.R$plurals
+ com.google.android.material.R$string
+ com.google.android.material.R$style
+ com.google.android.material.R$styleable
+ com.google.android.material.R$xml
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/BV/LinearGradient/R.java
+ com.BV.LinearGradient.R
+org/webkit/androidjsc/R.java
+ org.webkit.androidjsc.R
+com/google/firebase/encoders/json/R.java
+ com.google.firebase.encoders.json.R
+com/facebook/nativeimagetranscoder/R.java
+ com.facebook.nativeimagetranscoder.R
+com/reactnativecommunity/webview/R.java
+ com.reactnativecommunity.webview.R
+ com.reactnativecommunity.webview.R$anim
+ com.reactnativecommunity.webview.R$attr
+ com.reactnativecommunity.webview.R$bool
+ com.reactnativecommunity.webview.R$color
+ com.reactnativecommunity.webview.R$dimen
+ com.reactnativecommunity.webview.R$drawable
+ com.reactnativecommunity.webview.R$id
+ com.reactnativecommunity.webview.R$integer
+ com.reactnativecommunity.webview.R$layout
+ com.reactnativecommunity.webview.R$string
+ com.reactnativecommunity.webview.R$style
+ com.reactnativecommunity.webview.R$styleable
+ com.reactnativecommunity.webview.R$xml
+com/netbeatlive/MainApplication.java
+ com.excelorithm.Netbeat.MainApplication
+ com.excelorithm.Netbeat.MainApplication$1
+com/google/firebase/measurement/R.java
+ com.google.firebase.measurement.R
+com/sayem/keepawake/R.java
+ com.sayem.keepawake.R
+ com.sayem.keepawake.R$anim
+ com.sayem.keepawake.R$attr
+ com.sayem.keepawake.R$bool
+ com.sayem.keepawake.R$color
+ com.sayem.keepawake.R$dimen
+ com.sayem.keepawake.R$drawable
+ com.sayem.keepawake.R$id
+ com.sayem.keepawake.R$integer
+ com.sayem.keepawake.R$layout
+ com.sayem.keepawake.R$string
+ com.sayem.keepawake.R$style
+ com.sayem.keepawake.R$styleable
+ com.sayem.keepawake.R$xml
+androidx/viewpager/R.java
+ androidx.viewpager.R
+ androidx.viewpager.R$attr
+ androidx.viewpager.R$color
+ androidx.viewpager.R$dimen
+ androidx.viewpager.R$drawable
+ androidx.viewpager.R$id
+ androidx.viewpager.R$integer
+ androidx.viewpager.R$layout
+ androidx.viewpager.R$string
+ androidx.viewpager.R$style
+ androidx.viewpager.R$styleable
+com/google/firebase/datatransport/R.java
+ com.google.firebase.datatransport.R
+ com.google.firebase.datatransport.R$attr
+ com.google.firebase.datatransport.R$color
+ com.google.firebase.datatransport.R$dimen
+ com.google.firebase.datatransport.R$drawable
+ com.google.firebase.datatransport.R$id
+ com.google.firebase.datatransport.R$integer
+ com.google.firebase.datatransport.R$layout
+ com.google.firebase.datatransport.R$string
+ com.google.firebase.datatransport.R$style
+ com.google.firebase.datatransport.R$styleable
+com/excelorithm/Netbeat/R.java
+ com.excelorithm.Netbeat.R
+ com.excelorithm.Netbeat.R$anim
+ com.excelorithm.Netbeat.R$animator
+ com.excelorithm.Netbeat.R$attr
+ com.excelorithm.Netbeat.R$bool
+ com.excelorithm.Netbeat.R$color
+ com.excelorithm.Netbeat.R$dimen
+ com.excelorithm.Netbeat.R$drawable
+ com.excelorithm.Netbeat.R$id
+ com.excelorithm.Netbeat.R$integer
+ com.excelorithm.Netbeat.R$interpolator
+ com.excelorithm.Netbeat.R$layout
+ com.excelorithm.Netbeat.R$mipmap
+ com.excelorithm.Netbeat.R$plurals
+ com.excelorithm.Netbeat.R$raw
+ com.excelorithm.Netbeat.R$string
+ com.excelorithm.Netbeat.R$style
+ com.excelorithm.Netbeat.R$styleable
+ com.excelorithm.Netbeat.R$xml
+com/google/android/gms/tasks/R.java
+ com.google.android.gms.tasks.R
+com/excelorithm/Netbeat/BuildConfig.java
+ com.excelorithm.Netbeat.BuildConfig
+com/netbeatlive/MainActivity.java
+ com.excelorithm.Netbeat.MainActivity

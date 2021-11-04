@@ -32,6 +32,8 @@ target 'NetbeatLive' do
   pod 'ReactCommon/jscallinvoker', :path => "../node_modules/react-native/ReactCommon"
   pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
   pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  
+  pod 'ReactNativeIncallManager', :path => '../node_modules/react-native-incall-manager'
 
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
@@ -43,6 +45,8 @@ target 'NetbeatLive' do
   pod 'react-native-simple-toast', :path => '../node_modules/react-native-simple-toast'
 
   pod 'react-native-video360', :path => '../node_modules/react-native-video360plugin'
+
+  pod 'ReactNativeIncallManager', :path => '../node_modules/react-native-incall-manager'
 
   target 'NetbeatLiveTests' do
     inherit! :search_paths

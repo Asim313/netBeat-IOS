@@ -336,6 +336,8 @@ PODS:
     - React-cxxreact (= 0.61.0)
     - React-jsi (= 0.61.0)
     - ReactCommon/jscallinvoker (= 0.61.0)
+  - ReactNativeIncallManager (3.3.0):
+    - React
   - RNCAsyncStorage (1.12.1):
     - React-Core
   - RNCMaskedView (0.1.10):
@@ -396,6 +398,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - ReactNativeIncallManager (from `../node_modules/react-native-incall-manager`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
@@ -489,6 +492,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  ReactNativeIncallManager:
+    :path: "../node_modules/react-native-incall-manager"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-community/async-storage"
   RNCMaskedView:
@@ -541,7 +546,7 @@ SPEC CHECKSUMS:
   react-native-orientation: f1caf84d65f1a4fd4511a18f2b924e634ad7a628
   react-native-safe-area-context: b6e0e284002381d2ff29fa4fff42b4d8282e3c94
   react-native-simple-toast: bf002828cf816775a6809f7a9ec3907509bce11f
-  react-native-video360: e90b34666d4b12de4507972608b12e753d19dfee
+  react-native-video360: 5a88125cf6f63180ccdcf5e8df121dcd4004d521
   react-native-webrtc: 86d841823e66d68cc1f86712db1c2956056bf0c2
   react-native-webview: db22ab831b8c5f7697957a67f7a7ac1cecfed18d
   React-RCTActionSheet: 5f9a1733ec8e380aae8a97877f1166cb058733ae
@@ -554,6 +559,7 @@ SPEC CHECKSUMS:
   React-RCTText: beb19a6c50072a1a2f617490ea967237c98d1dfc
   React-RCTVibration: c8e67f140a83a14a1ad9042950cca08ab29423fd
   ReactCommon: 584ef683c340894c1c82be43ce760390493ae8bf
+  ReactNativeIncallManager: a840ef75640518065742a893e6c6ff98ee820039
   RNCAsyncStorage: b03032fdbdb725bea0bd9e5ec5a7272865ae7398
   RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
   RNFBApp: ece97bfe0a926247591c0aa0bdfe384f06cf46b5
@@ -565,6 +571,6 @@ SPEC CHECKSUMS:
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   Yoga: 3f70bbd9aa01e04eefec36e2a085b2fc0ff1dd98
 
-PODFILE CHECKSUM: 64400de7faac930bf8b681d2af7f46d8ffd6fa55
+PODFILE CHECKSUM: 6e676762577b6274ad1c98623c25318cb3cbc1ee
 
 COCOAPODS: 1.11.2

@@ -256,6 +256,7 @@ export default StyleSheet.create({
         height:hps(26),
         width:hps(26),
         marginTop:hps(6),
+        borderRadius:hps(13)
     },
     text: {
         fontSize:hps(14),

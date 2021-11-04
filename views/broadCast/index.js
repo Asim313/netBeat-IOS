@@ -586,7 +586,7 @@ return (
         <TouchableOpacity
         disabled = {!event?.concert_streams?.some(x => x.type == '360')}
         onPress = {() => {
-          Orientation.lockToLandscapeRight()
+          Orientation.lockToPortrait()
           setMode(1)
         }}
         style = {[ styles.mode, 
@@ -639,7 +639,7 @@ return (
         <TouchableOpacity
         disabled = {!event?.concert_streams?.some(x => x.type == '360')}
         onPress = {() => {
-          Orientation.lockToLandscapeRight()
+          Orientation.lockToPortrait()
           setMode(1)
         }}
         style = {[ styles.mode, 

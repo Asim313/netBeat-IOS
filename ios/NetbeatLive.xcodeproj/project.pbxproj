@@ -12,9 +12,10 @@
 		029AF9923EA74D978EBDB9AC /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1440CA0788354299BA3AFAA2 /* Montserrat-Medium.ttf */; };
 		0F83A362712F47F28C902694 /* Montserrat Regular 400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8783C2B87D0A43C7829F8409 /* Montserrat Regular 400.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		142449A8273294B8005028ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142449A7273294B8005028ED /* LaunchScreen.storyboard */; };
+		142449A9273294B8005028ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142449A7273294B8005028ED /* LaunchScreen.storyboard */; };
 		189E3C0E25A45E5C00F01474 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E3C0D25A45E5C00F01474 /* WebRTC.framework */; };
 		1D06176A3A53416E9E07A861 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70D559C6916B415D99DC60F8 /* Montserrat-Bold.ttf */; };
 		1EE0920CCA524CD497A77B67 /* Montserrat Thin Italic 250.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23AD3E742B1D4552BDC96444 /* Montserrat Thin Italic 250.ttf */; };
@@ -84,10 +85,10 @@
 		13B07F961A680F5B00A75B9A /* NetbeatLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetbeatLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = NetbeatLive/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = NetbeatLive/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NetbeatLive/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NetbeatLive/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NetbeatLive/main.m; sourceTree = "<group>"; };
+		142449A7273294B8005028ED /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1440CA0788354299BA3AFAA2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		189E3C0225A45E2900F01474 /* RCTWebRTC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebRTC.xcodeproj; path = "../node_modules/openvidu-browser/node_modules/react-native-webrtc/ios/RCTWebRTC.xcodeproj"; sourceTree = "<group>"; };
 		189E3C0D25A45E5C00F01474 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = "../node_modules/openvidu-browser/node_modules/react-native-webrtc/ios/WebRTC.framework"; sourceTree = "<group>"; };
@@ -202,11 +203,11 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				643AD767270F0416007909B6 /* File.swift */,
 				643AD765270F0416007909B6 /* NetbeatLive-Bridging-Header.h */,
 				643AD766270F0416007909B6 /* NetbeatLive-tvOS-Bridging-Header.h */,
+				142449A7273294B8005028ED /* LaunchScreen.storyboard */,
 			);
 			name = NetbeatLive;
 			sourceTree = "<group>";
@@ -472,6 +473,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142449A9273294B8005028ED /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,9 +482,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				9834D7CC2DCB4E1499F4A286 /* Montserrat Black 900.ttf in Resources */,
 				D9DD227670C04256A3EF5F81 /* Montserrat Black Italic 900.ttf in Resources */,
+				142449A8273294B8005028ED /* LaunchScreen.storyboard in Resources */,
 				A2441EE6A99C48B98E6EC59A /* Montserrat Bold 700.ttf in Resources */,
 				AF9C952A151E4D5BA4C2AB3F /* Montserrat Bold Italic 700.ttf in Resources */,
 				A2716237CB3C453DBBD33A8F /* Montserrat ExtraBold 800.ttf in Resources */,
@@ -784,18 +786,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13B07FB21A68108700A75B9A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			path = NetbeatLive;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -859,7 +849,7 @@
 				INFOPLIST_FILE = NetbeatLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.09;
+				MARKETING_VERSION = 1.10;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -889,7 +879,7 @@
 				INFOPLIST_FILE = NetbeatLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.09;
+				MARKETING_VERSION = 1.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",

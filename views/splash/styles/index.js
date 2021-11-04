@@ -8,7 +8,9 @@ export default StyleSheet.create ({
 
     mainContainer: {
       flex : 1,
-      backgroundColor: Colors.base
+      backgroundColor: Colors.base,
+      // height : hps(790),
+      // width : wps(375)
     },
     bg: {
       flex: 1,

@@ -191,6 +191,21 @@ io/invertase/firebase/messaging/R.java
 com/google/firebase/messaging/R.java
  com.google.firebase.messaging.R
  com.google.firebase.messaging.R$string
+com/zxcpoiu/incallmanager/R.java
+ com.zxcpoiu.incallmanager.R
+ com.zxcpoiu.incallmanager.R$anim
+ com.zxcpoiu.incallmanager.R$attr
+ com.zxcpoiu.incallmanager.R$bool
+ com.zxcpoiu.incallmanager.R$color
+ com.zxcpoiu.incallmanager.R$dimen
+ com.zxcpoiu.incallmanager.R$drawable
+ com.zxcpoiu.incallmanager.R$id
+ com.zxcpoiu.incallmanager.R$integer
+ com.zxcpoiu.incallmanager.R$layout
+ com.zxcpoiu.incallmanager.R$string
+ com.zxcpoiu.incallmanager.R$style
+ com.zxcpoiu.incallmanager.R$styleable
+ com.zxcpoiu.incallmanager.R$xml
 com/imagepicker/R.java
  com.imagepicker.R
  com.imagepicker.R$anim

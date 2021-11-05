@@ -24,7 +24,13 @@ export default StyleSheet.create ({
       zIndex:1
     },
     arrow: {
-      top:hps(4)
+      top:hps(4),
+      //borderWidth:1,
+      height:hps(40),
+      width:hps(40),
+      justifyContent:'center',
+      //alignItems:'center',
+      borderRadius:hps(40/2)
     },
     logo: {
       

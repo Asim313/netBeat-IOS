@@ -159,7 +159,10 @@ export default StyleSheet.create({
         position:'absolute',
         right:wps(16),
         height:hps(16),
-        width:wps(16)
+        width:wps(16),
+        //borderWidth:1,
+        borderColor:"#fff",
+        //padding : hps(10)
     },
     micButton: {
         height:hps(42),

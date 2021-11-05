@@ -32,6 +32,8 @@ import ca.jaysoo.extradimensions.ExtraDimensionsPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-image-picker
 import com.imagepicker.ImagePickerPackage;
+// react-native-incall-manager
+import com.zxcpoiu.incallmanager.InCallManagerPackage;
 // react-native-linear-gradient
 import com.BV.LinearGradient.LinearGradientPackage;
 // react-native-orientation
@@ -102,6 +104,7 @@ public class PackageList {
       new ExtraDimensionsPackage(),
       new RNGestureHandlerPackage(),
       new ImagePickerPackage(),
+      new InCallManagerPackage(),
       new LinearGradientPackage(),
       new OrientationPackage(),
       new ReanimatedPackage(),

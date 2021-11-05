@@ -5,6 +5,7 @@ INJECTED from /Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/src/m
 INJECTED from /Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:1:1-40:12
 INJECTED from /Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:1:1-40:12
 MERGED from /Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:1:1-40:12
+MERGED from [:react-native-incall-manager] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-incall-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-firebase_messaging] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-45:12
 MERGED from [:react-native-firebase_app] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-29:12
 MERGED from [com.google.firebase:firebase-analytics:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/eaeb657e7944db669e1268acf5f067bc/transformed/AndroidManifest.xml:2:1-9:12
@@ -324,6 +325,8 @@ uses-sdk
 INJECTED from /Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-incall-manager] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-incall-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-incall-manager] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-incall-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase_messaging] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase_messaging] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase_app] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41

@@ -67,7 +67,7 @@ const Event = (props) => {
 
         <View style = {styles.header}>
             <TouchableOpacity style = {styles.arrow} onPress = {() => props.navigation.goBack()}>
-            <Image source = {Images.arrow}/>
+              <Image source = {Images.arrow}/>
             </TouchableOpacity>
             <TouchableOpacity
              style = {styles.user}

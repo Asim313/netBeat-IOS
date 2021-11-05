@@ -241,7 +241,7 @@ const Home = (props) => {
                    <Text style = {styles.live}>{lang?.live}</Text>
                 </View>}
                 <View style = {styles.titleContainer}>
-                 <Text style = {styles.statusTitle}>{lang?.now_on_air}</Text>
+                 <Text style = {styles.statusTitle}>{item.isLive?lang?.now_on_air : ''}</Text>
                  <Text style = {styles.eventTitle}>{item?.ArtistName}</Text>
                 </View>
               </ImageBackground>

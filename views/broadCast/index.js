@@ -35,12 +35,15 @@ import KeepAwake from '@sayem314/react-native-keep-awake';
 import styles from "./styles";
 import { SVGS } from '../../assets/images/config'
 import { BaseUrl } from '../../graphql/baseUrl';
+import { Alert } from 'react-native';
 
 
  
  const OPENVIDU_SERVER_URL = 'https://alessandro.quickver.com';
  const OPENVIDU_SERVER_SECRET = 'Husni123';
 
+
+ import { DeviceEventEmitter } from 'react-native';
 
 
 
@@ -55,7 +58,7 @@ const BroadCast = (props) => {
   let temp = []
   let player = useRef(null);
 
-  let isFocus = useIsFocused() 
+  let isFocus = useIsFocused()
 
   const { lang } = useSelector(state => state.language)
   const [mode, setMode] = useState(3)
@@ -85,7 +88,7 @@ const BroadCast = (props) => {
   const [indicator, setIndicator] =  useState(true)
   const [record, setRecord] = useState(false)
   const [vr, setVr] = useState(false)
-  const [loader, setLoader] =  useState(false)
+  const [loader, setLoader] =  useState(true)
   const [pause, setPause] = useState(false)
   const [loaderState, setLoaderState] = useState(false)
   const [selected, setSelected] = useState(0)
@@ -108,6 +111,9 @@ const BroadCast = (props) => {
 
 
   useEffect(()=>{
+    DeviceEventEmitter.addListener('Proximity', function (data) {
+      // --- do something with events
+  });
     setInterval(() => {
       setVolBar(false)
       setFade(true)
@@ -123,17 +129,8 @@ const BroadCast = (props) => {
 
 
 
-//   useEffect(()=> {
-//     const getUser = async() => {
-//       const usr = await _retrieveData('user')
-//       setUser(usr)
-//       setUsername(usr.username)
-//       setEmail(usr.email)
-//       setImageSource(usr?.profile != null ? { uri: usr?.profile?.url } : { uri: '' })
-//       setLoading(false)
-//     }
-//     getUser()
-//  },[isFocus])
+ 
+
 
 
   useEffect(() => {
@@ -187,27 +184,31 @@ const BroadCast = (props) => {
     return () => {
       BackHandler.removeEventListener("hardwareBackPress", backButtonHandler);
     };
-  }, [backButtonHandler]);
+  }, []);
 
 
   const leaveSession = async(data) => {
     //console.log('disconnected...')
+   // InCallManager.stop()
     const mySession = session;
     //console.log(mySession)
     const res = await  session.disconnect()
+    
     //console.log("res=>", res)
-    setTimeout(() => {
-        OV = null;
-        setSession(undefined);
-        setSubscribers([]);
-        setMySessionId('SessionA');
-        setMyUserName('Participant' + Math.floor(Math.random() * 100));
-        setMainStreamManager(undefined)
-    });
-    if(data)
-    setPly(false)
-    player?.current?.Pause()
-    props.navigation.pop()
+    
+    OV = {};
+    setSession(undefined);
+    setSubscribers([]);
+    setMySessionId('SessionA');
+    setMyUserName('Participant' + Math.floor(Math.random() * 100));
+    setMainStreamManager(undefined)
+// InCallManager.setForceSpeakerphoneOn(false)
+    await InCallManager.stopRingtone();
+    await InCallManager.stopRingback();
+    await InCallManager.stop();
+    if(data){
+    props.navigation.goBack()
+    }
   }
 
   function backButtonHandler(){
@@ -227,7 +228,7 @@ const BroadCast = (props) => {
 
   const _handleAppStateChange = (nextAppState) => {
     //console.log('appState========================================================>>>>>>>>>>>>>>>>>>>>>>>')
-    console.log('here...', nextAppState)
+    alert('here...')
      var a = null;
      var loading = null;
     if (
@@ -236,6 +237,14 @@ const BroadCast = (props) => {
     ) {
         loading = false;
         joinSession();
+        // setInterval(()=>{
+        //   InCallManager.start();
+        //   InCallManager.setForceSpeakerphoneOn(true);
+         
+        // },5000)
+        
+
+        //InCallManager.stop()
         console.log('You have joined the session!');
     }else{
         loading = true;
@@ -244,7 +253,7 @@ const BroadCast = (props) => {
     }
     // // console.log(a,loading)
      setAppState(nextAppState)
-     setLoader(false)
+    // setLoader(false)
   };
 
 
@@ -255,13 +264,19 @@ const BroadCast = (props) => {
     //console.log('here...')
     AppState.addEventListener('change', _handleAppStateChange);
     joinSession()
+    // setInterval(()=>{
+    //   InCallManager.start();
+    //   InCallManager.setForceSpeakerphoneOn(true);
+    // },5000)
     //BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
     //alert(JSON.stringify(selectedURI));
     // console.warn(this.props.route.params.list[0].stream_url)
-      InCallManager.start();
-      InCallManager.setForceSpeakerphoneOn(true)
-      InCallManager.stop()
-   
+     //if(Platform.OS == 'ios'){
+      //  InCallManager.start();
+      //  InCallManager.setForceSpeakerphoneOn(true)
+       //InCallManager.stop()
+      //  InCallManager.stop()
+     //}
   }
 
   const deleteSubscriber = (streamManager) => {
@@ -417,8 +432,7 @@ const BroadCast = (props) => {
     mySession.on('streamDestroyed', (event) => {
         event.preventDefault();
         deleteSubscriber(event.stream.streamManager);
-    });
-      
+    }); 
     getToken()
         .then(async (token) => {
             const a = await _retrieveData('user');
@@ -427,6 +441,8 @@ const BroadCast = (props) => {
             mySession
             .connect(token, { clientData: myUserName,group_id : a?.group?.id })
             .then(() => {
+              
+             
              setSession(mySession)
                let txtFieldRef = ref;
                 if (Platform.OS == 'android') {
@@ -446,6 +462,7 @@ const BroadCast = (props) => {
                 console.log("publisher=>", publisher)
                 setMainStreamManager(publisher)
                 mySession.publish(publisher);
+              
                 mySession.on('signal:my-chat', (event) => {
                   let temp = msgs
                   
@@ -476,6 +493,16 @@ const BroadCast = (props) => {
                   //setClapRender(false)
                   setClap(true)
                 }) 
+
+              //  alert("Openvidu Session Established");
+                  
+                  InCallManager.start({media: 'video'});
+                  InCallManager.setForceSpeakerphoneOn(true);
+                  //InCallManager.setSpeakerphoneOn(true)
+                  InCallManager.setKeepScreenOn(true)
+                  setLoader(false);
+                
+                      
             })
             .catch((error) => {
                 console.warn('There was an error connecting to the session:', error.code, error.message);
@@ -513,14 +540,14 @@ return (
       setFade(false)
     }}
     style = {styles.bgImage}>
-      <KeepAwake/>
+      <KeepAwake />
     {!loader ? 
     <>
-   {(ply && mode == 1) && <LivePlayerr 
-       urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == '360')[0]?.stream_ios} 
-      //urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
+   {(mode == 1) && <LivePlayerr 
+       //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == '360')[0]?.stream_ios} 
+      urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
       modeVideo={1} 
-      //volume={0}
+      volume={1}
       enableInfoButton={false}
       enableFullscreenButton={false}
       enableCardboardButton={false}
@@ -531,11 +558,11 @@ return (
       }}
       style={{ flex: 1}} />}
 
-      {(ply && mode == 2) && <LivePlayerr
-       urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'vr')[0]?.stream_ios} 
-      //urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
+      {(mode == 2) && <LivePlayerr
+       //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'vr')[0]?.stream_ios} 
+      urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
       modeVideo={2} 
-      //volume={0}
+      volume={1}
       displayMode={"cardboard"}
       enableInfoButton={false}
       enableFullscreenButton={false}
@@ -550,8 +577,8 @@ return (
       />}
       {mode == 3 && Platform.OS == 'ios' && <LivePlayerr 
       //urlVideo = {'rtmp://49.12.106.146:1935/live/origin1'}
-      urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
-      //urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
+      //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
+      urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
       modeVideo={3} 
       enableInfoButton={false}
       enableFullscreenButton={false}
@@ -561,8 +588,8 @@ return (
       style={{ flex: 1}} />}
       
       {mode == 3 && Platform.OS == 'android' && <LivePlayer 
-       //source={{uri:"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"}}
-      source={{uri : props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios}}
+       source={{uri:"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"}}
+      //source={{uri : props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios}}
         paused={false}
         style={{flex: 1}}
         muted={false}
@@ -626,8 +653,12 @@ return (
         disabled = {!event?.concert_streams?.some(x => x.type == '360')}
         onPress = {() => {
           Orientation.lockToPortrait()
-          setPly(true)
           setMode(1)
+          setLoader(true)
+          leaveSession(false).then(()=>{
+            joinSession()
+          })
+          
         }}
         style = {[ styles.mode, 
           {backgroundColor : mode == 1 ? Colors.base1 : '#ffffff15',
@@ -643,8 +674,11 @@ return (
         disabled = {!event?.concert_streams?.some(x => x.type == 'vr')}
         onPress = {() => {
           Orientation.lockToLandscapeRight()
-          setPly(true)
           setMode(2)
+          setLoader(true)
+          leaveSession(false).then(()=>{
+            joinSession()
+          })
         }}
         style = {[styles.mode, 
           {backgroundColor : mode == 2 ? Colors.base1 : '#ffffff15',
@@ -660,8 +694,11 @@ return (
         onPress = {() => {
           Orientation.unlockAllOrientations()
           Orientation.lockToPortrait()
-          setPly(false)
           setMode(3)
+          setLoader(true)
+          leaveSession(false).then(()=>{
+            joinSession()
+          })
         }}
         style = {[styles.mode, 
           {backgroundColor : mode == 3 ? Colors.base1 : '#ffffff15',
@@ -682,8 +719,11 @@ return (
         disabled = {!event?.concert_streams?.some(x => x.type == '360')}
         onPress = {() => {
           Orientation.lockToPortrait()
-          setPly(true)
           setMode(1)
+          setLoader(true)
+          leaveSession(false).then(()=>{
+            joinSession()
+          })
         }}
         style = {[ styles.mode, 
           {backgroundColor : mode == 1 ? Colors.base1 : '#ffffff15',
@@ -698,8 +738,11 @@ return (
         disabled = {!event?.concert_streams?.some(x => x.type == 'vr')}
         onPress = {() => {
           Orientation.lockToLandscapeRight()
-          setPly(true)
           setMode(2)
+          setLoader(true)
+          leaveSession(false).then(()=>{
+            joinSession()
+          })
         }}
         style = {[styles.mode, 
           {backgroundColor : mode == 2 ? Colors.base1 : '#ffffff15',
@@ -714,8 +757,11 @@ return (
         onPress = {() => {
           Orientation.unlockAllOrientations()
           Orientation.lockToPortrait()
-          setPly(false)
           setMode(3)
+          setLoader(true)
+          leaveSession(false).then(()=>{
+            joinSession()
+          })
         }}
         style = {[styles.mode, 
           {backgroundColor : mode == 3 ? Colors.base1 : '#ffffff15',
@@ -958,7 +1004,8 @@ return (
             thumbOffStyle = {{backgroundColor:Colors.base1}}
             size="small"
             onToggle={isOn => {
-              setComments(!comments)
+              //setComments(!comments)
+              
             }}
           />
           <Text style = {styles.disableButtonTitle}>{lang?.disable_aud}</Text>
@@ -972,7 +1019,11 @@ return (
           
             <View style = {sheight > sWidth ? styles.comment : styles.commentLand}>
               {console.log("urllll=",BaseUrl + item.split('|$|')[1])}
+             {(item.split('|$|')[1]).includes('/uploads') ?
              <Image style = {styles.user} source = {{uri : `https://api.netbeat.live${item.split('|$|')[1]}`}}/>
+             :
+             <Image style = {styles.user} source = {Images.default_dp}/>
+            }
              <Text style = {styles.text}>{item.split('|$|')[0]}</Text>
            </View>
           }
@@ -994,7 +1045,7 @@ return (
             onPress = {() => {
               sendMsg()
             }}
-            style = {styles.send}>
+            style = {[styles.send, {borderWidth:0, padding:12, justifyContent:'center', alignItems:'center'}]}>
              {/* <Image source = {Images.send} style = {[styles.send, {position:'relative', right:null}]}/> */}
              <SVGS.send style = {[styles.send, {position:'relative', right:null}]}/>
             </TouchableOpacity>

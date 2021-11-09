@@ -11,6 +11,7 @@
 #import <Firebase.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <WebRTC/RTCAudioSessionConfiguration.h>
 
 @implementation AppDelegate
 
@@ -33,6 +34,16 @@
   UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil];
   UIViewController *vc = [sb instantiateInitialViewController];
   rootView.loadingView = vc.view;
+  
+
+  RTCAudioSessionConfiguration *webRTCConfiguration = [RTCAudioSessionConfiguration webRTCConfiguration];
+
+    webRTCConfiguration.categoryOptions = (
+       AVAudioSessionCategoryOptionAllowBluetooth |
+       AVAudioSessionCategoryOptionDefaultToSpeaker
+    );
+
+
   
   return YES;
 }

@@ -29,13 +29,14 @@ import {LivePlayer} from "react-native-dbb-rtmp";
 import { useSelector } from "react-redux"
 import RnVerticalSlider from 'rn-vertical-slider-gradient'
 import ToggleSwitch from 'toggle-switch-react-native'
-import { Colors, hps, Images, wp, wps } from "../../assets"
+import { Colors, hp, hps, Images, wp, wps } from "../../assets"
 import { _retrieveData } from '../../asyncStorage/AsyncFuncs'
 import KeepAwake from '@sayem314/react-native-keep-awake';
 import styles from "./styles";
 import { SVGS } from '../../assets/images/config'
 import { BaseUrl } from '../../graphql/baseUrl';
 import { Alert } from 'react-native';
+import useLayout from './useLayout';
 
 
  
@@ -104,6 +105,7 @@ const BroadCast = (props) => {
   const [clap, setClap] = useState(false)
   const [ply, setPly] = useState(false)
   const [user, setUser] = useState({})
+  const [back, setBack] = useState(false)
 
 
   const fadeAnim = useRef(new Animated.Value(0)).current  // Initial value for opacity: 0
@@ -181,16 +183,33 @@ const BroadCast = (props) => {
   } 
 
   useEffect(()=>{
+    componentDidMount()
+  },[])
+
+  useEffect(()=>{
     getScreenSize()
     Dimensions.addEventListener('change', (e) => {
       const { width, height } = e.window;
       setSWidth(width)
       setSHeight(height) 
     })
-    InCallManager.start({media: 'video'});
-    componentDidMount()
   },[])
 
+
+  const { onLayout, width ,height1} = useLayout();
+  let lastWidth = NaN;
+  React.useEffect(() => {
+  if (width != null && width !== lastWidth) {
+  lastWidth = width;
+  console.log(height1,width)
+   setSWidth(width)
+   setSHeight(height1) 
+  console.log(lastWidth)
+  }
+  }, [width]);
+  const isLarge = width>=500
+
+  console.log(isLarge)
 
   useEffect(() => {
     BackHandler.addEventListener("hardwareBackPress", backButtonHandler);
@@ -221,7 +240,8 @@ const BroadCast = (props) => {
     // await InCallManager.stopRingback();
     // await InCallManager.stop()
     if(data){
-     //setPause(true) 
+     setBack(true) 
+     setPause(true) 
      props.navigation.goBack()
      //await InCallManager.stop()
     //  await InCallManager.stopRingtone();
@@ -444,7 +464,7 @@ const BroadCast = (props) => {
 
 
 
-  const joinSession = () => {
+  const joinSession = async() => {
     //setPause(false)
     OV = new OpenVidu();
     setSession(OV.initSession())
@@ -453,7 +473,7 @@ const BroadCast = (props) => {
         event.preventDefault();
         deleteSubscriber(event.stream.streamManager);
     }); 
-    getToken()
+   await getToken()
         .then(async (token) => {
             const a = await _retrieveData('user');
             setUser(a)
@@ -471,7 +491,7 @@ const BroadCast = (props) => {
                     audioSource: true, // The source of audio. If undefined default microphone
                     videoSource: true, // The source of video. If undefined default webcam
                     publishAudio: true, // Whether you want to start publishing with your audio unmuted or not
-                    publishVideo: false, // Whether you want to start publishing with your video enabled or not
+                    publishVideo: true, // Whether you want to start publishing with your video enabled or not
                     resolution: '640x480', // The resolution of your video
                     frameRate: 30, // The frame rate of your video
                     insertMode: 'APPEND', // How the video is inserted in the target element 'video-container'
@@ -486,6 +506,7 @@ const BroadCast = (props) => {
                   // InCallManager.setForceSpeakerphoneOn(true);
                   // //InCallManager.setSpeakerphoneOn(true)
                   // InCallManager.setKeepScreenOn(true)
+                  setPause(false);
                   setLoader(false);
               
                 mySession.on('signal:my-chat', (event) => {
@@ -530,6 +551,8 @@ const BroadCast = (props) => {
             });
             })
         .catch((error) => console.warn('Error', error));
+        setPause(false);
+                  setLoader(false);
 }
 
 
@@ -548,8 +571,23 @@ const sendMsg = () => {
   ref.clear();
 }
 
+
+
+React.useEffect(()=>{
+if(pause&&!loader&&!back){
+  //alert('ho gya g')
+  //setMode(2);
+  setLoader(true)
+  leaveSession(false).then(()=>{
+    joinSession();
+  })
+  
+}
+},[pause])
+
+
 return (
-  <View style = {styles.mainContainer}>
+  <View onLayout={onLayout} style = {{...styles.mainContainer}}>
     <StatusBar hidden = {sheight > sWidth ? false : true} />
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
@@ -564,9 +602,9 @@ return (
       <KeepAwake />
     {!loader ? 
     <>
-   {(mode == 1) && <LivePlayerr 
-       urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == '360')[0]?.stream_ios} 
-      //urlVideo={pause ? '' : "http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
+   {/* {(mode === 1) && <LivePlayerr 
+       //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == '360')[0]?.stream_ios} 
+      urlVideo={pause ? '' : "https://r3---sn-cvh76ney.googlevideo.com/videoplayback?expire=1636475192&ei=2EyKYZTdBafWxN8PyqmfiAQ&ip=117.197.118.229&id=o-AFpIBpdDkmJnV5NzABtB7SvoObIT5_UM_3dA35LURNBs&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=FXg6vCKB78WPScXp4Sz04BIG&gir=yes&clen=10608291&ratebypass=yes&dur=212.532&lmt=1627495241946421&fexp=24001373,24007246&c=WEB&txp=5530434&n=w3QvNnKxCum_7g&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRQIhAMMjNzGvmv3kImpoLTCwh2_VJ0oDbMmy8BqoZA6-2IUQAiBh_p_4pV3_q6xkcWCIrimX6fo-IK1PNElx8jOD2XqZCg==&rm=sn-cnoa-cive7l,sn-cnoa-h55l7r&req_id=70a9595dd853a3ee&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mh=Hp&mm=30&mn=sn-cvh76ney&ms=nxu&mt=1636458274&mv=m&mvi=3&pl=23&lsparams=ipbypass,mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAL7wwPjbgDQmmbvYoqaz4xGy3QKYFWnyY_SXvIRyFECSAiEAteYlIxQLJ_upKfpfenV5Wucbl_HgBR2r-x-63BAyRBo="} 
       modeVideo={1} 
       volume={1}
       enableInfoButton={false}
@@ -578,43 +616,39 @@ return (
       ref = {(r) => {
         player = r
       }}
-      style={{ flex: 1}} />}
+      style={{ flex: 1}} />} */}
 
-      {(mode == 2) && <LivePlayerr
-       urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'vr')[0]?.stream_ios} 
-      //urlVideo={pause ? '' : "http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
-      modeVideo={2} 
+      {(mode === 2 || mode === 1 || mode === 3) && <LivePlayerr
+       //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'vr')[0]?.stream_ios} 
+      urlVideo={(pause || mode === 3) ? '' : "https://r3---sn-cvh76ney.googlevideo.com/videoplayback?expire=1636475192&ei=2EyKYZTdBafWxN8PyqmfiAQ&ip=117.197.118.229&id=o-AFpIBpdDkmJnV5NzABtB7SvoObIT5_UM_3dA35LURNBs&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=FXg6vCKB78WPScXp4Sz04BIG&gir=yes&clen=10608291&ratebypass=yes&dur=212.532&lmt=1627495241946421&fexp=24001373,24007246&c=WEB&txp=5530434&n=w3QvNnKxCum_7g&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRQIhAMMjNzGvmv3kImpoLTCwh2_VJ0oDbMmy8BqoZA6-2IUQAiBh_p_4pV3_q6xkcWCIrimX6fo-IK1PNElx8jOD2XqZCg==&rm=sn-cnoa-cive7l,sn-cnoa-h55l7r&req_id=70a9595dd853a3ee&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mh=Hp&mm=30&mn=sn-cvh76ney&ms=nxu&mt=1636458274&mv=m&mvi=3&pl=23&lsparams=ipbypass,mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAL7wwPjbgDQmmbvYoqaz4xGy3QKYFWnyY_SXvIRyFECSAiEAteYlIxQLJ_upKfpfenV5Wucbl_HgBR2r-x-63BAyRBo="} 
+      modeVideo={mode} 
       volume={1}
-      displayMode={"cardboard"}
+      displayMode={mode===4?"cardboard":'embedded'}
       enableInfoButton={false}
       paused = {pause}
       enableFullscreenButton={false}
       enableCardboardButton={false}
       enableTouchTracking={false}
       hidesTransitionView={false}
-      style={{ flex: 1}} 
-      ref = {(r) => {
-        player = r
-        console.log("reff=>>",r)
-      }}
+      style={{flex:mode===3?0:1}} 
       />}
       {mode == 3 && Platform.OS == 'ios' && <LivePlayerr 
       //urlVideo = {'rtmp://49.12.106.146:1935/live/origin1'}
-      urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
-      //urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
+      //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
+      urlVideo={"https://r3---sn-cvh76ney.googlevideo.com/videoplayback?expire=1636475192&ei=2EyKYZTdBafWxN8PyqmfiAQ&ip=117.197.118.229&id=o-AFpIBpdDkmJnV5NzABtB7SvoObIT5_UM_3dA35LURNBs&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=FXg6vCKB78WPScXp4Sz04BIG&gir=yes&clen=10608291&ratebypass=yes&dur=212.532&lmt=1627495241946421&fexp=24001373,24007246&c=WEB&txp=5530434&n=w3QvNnKxCum_7g&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRQIhAMMjNzGvmv3kImpoLTCwh2_VJ0oDbMmy8BqoZA6-2IUQAiBh_p_4pV3_q6xkcWCIrimX6fo-IK1PNElx8jOD2XqZCg==&rm=sn-cnoa-cive7l,sn-cnoa-h55l7r&req_id=70a9595dd853a3ee&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mh=Hp&mm=30&mn=sn-cvh76ney&ms=nxu&mt=1636458274&mv=m&mvi=3&pl=23&lsparams=ipbypass,mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAL7wwPjbgDQmmbvYoqaz4xGy3QKYFWnyY_SXvIRyFECSAiEAteYlIxQLJ_upKfpfenV5Wucbl_HgBR2r-x-63BAyRBo="} 
       modeVideo={3} 
       enableInfoButton={false}
       enableFullscreenButton={false}
       enableCardboardButton={false}
       enableTouchTracking={false}
       hidesTransitionView={false}
-      style={{ flex: 1}} />}
+      style={{flex:mode ===3 ? 1 : 0}} />}
       
       {mode == 3 && Platform.OS == 'android' && <LivePlayer 
-      // source={{uri:"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"}}
-      source={{uri : props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios}}
+       source={{uri:"https://r3---sn-cvh76ney.googlevideo.com/videoplayback?expire=1636475192&ei=2EyKYZTdBafWxN8PyqmfiAQ&ip=117.197.118.229&id=o-AFpIBpdDkmJnV5NzABtB7SvoObIT5_UM_3dA35LURNBs&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=FXg6vCKB78WPScXp4Sz04BIG&gir=yes&clen=10608291&ratebypass=yes&dur=212.532&lmt=1627495241946421&fexp=24001373,24007246&c=WEB&txp=5530434&n=w3QvNnKxCum_7g&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRQIhAMMjNzGvmv3kImpoLTCwh2_VJ0oDbMmy8BqoZA6-2IUQAiBh_p_4pV3_q6xkcWCIrimX6fo-IK1PNElx8jOD2XqZCg==&rm=sn-cnoa-cive7l,sn-cnoa-h55l7r&req_id=70a9595dd853a3ee&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mh=Hp&mm=30&mn=sn-cvh76ney&ms=nxu&mt=1636458274&mv=m&mvi=3&pl=23&lsparams=ipbypass,mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAL7wwPjbgDQmmbvYoqaz4xGy3QKYFWnyY_SXvIRyFECSAiEAteYlIxQLJ_upKfpfenV5Wucbl_HgBR2r-x-63BAyRBo="}}
+      //source={{uri : props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios}}
         paused={false}
-        style={{flex: 1}}
+        style={{flex:mode ===3 ? 1 : 0}}
         muted={false}
         bufferTime={300}
         maxBufferTime={1000}
@@ -676,14 +710,15 @@ return (
         disabled = {!event?.concert_streams?.some(x => x.type == '360')}
         onPress = {() => {
           Orientation.lockToPortrait()
+          
+          setPause(true)
           setMode(1)
-         // setPause(true)
-          setLoader(true)
-          leaveSession(false).then(()=>{
-            //  global.mode = '360'
-            //  props.navigation.navigate('loader')
-             joinSession()
-          })
+          // setLoader(true)
+          // leaveSession(false).then(()=>{
+          //   //  global.mode = '360'
+          //   //  props.navigation.navigate('loader')
+          //    joinSession()
+          // })
           
         }}
         style = {[ styles.mode, 
@@ -700,15 +735,17 @@ return (
         disabled = {!event?.concert_streams?.some(x => x.type == 'vr')}
         onPress = {() => {
           Orientation.lockToLandscapeRight()
+
+          setPause(true)
+          //setLoader(true)
           setMode(2)
-          //setPause(true)
-          setLoader(true)
-          leaveSession(false).then(()=>{
-            // global.mode = 'vr'
-            // props.navigation.navigate('loader')
-            setValue(0)
-            joinSession()
-          })
+          // leaveSession(false).then(()=>{
+          //   // global.mode = 'vr'
+          //   // props.navigation.navigate('loader')
+          //   //setValue(0)
+            
+          //   joinSession()
+          // })
         }}
         style = {[styles.mode, 
           {backgroundColor : mode == 2 ? Colors.base1 : '#ffffff15',
@@ -724,14 +761,15 @@ return (
         onPress = {() => {
           Orientation.unlockAllOrientations()
           Orientation.lockToPortrait()
-          setMode(3)
-          setLoader(true)
-          leaveSession(false).then(()=>{
-            //  global.mode = 'flat'
-            //  props.navigation.navigate('loader')
-            setValue(0)
-            joinSession()
-          })
+          
+            setPause(true)
+            setMode(3)
+          // setLoader(true)
+          // leaveSession(false).then(()=>{
+          //   //  global.mode = 'flat'
+          //   //  props.navigation.navigate('loader')
+          //   joinSession()
+          // })
         }}
         style = {[styles.mode, 
           {backgroundColor : mode == 3 ? Colors.base1 : '#ffffff15',
@@ -752,15 +790,16 @@ return (
         disabled = {!event?.concert_streams?.some(x => x.type == '360')}
         onPress = {() => {
           Orientation.lockToPortrait()
+          
+          setPause(true)
           setMode(1)
-          //setPause(true)
-          setLoader(true)
-          leaveSession(false).then(()=>{
-            //  global.mode = '360'
-            //  props.navigation.navigate('loader')
-            setValue(0)
-            joinSession()
-          })
+          // setLoader(true)
+          // leaveSession(false).then(()=>{
+          //   //  global.mode = '360'
+          //   //  props.navigation.navigate('loader')
+          //   //setValue(0)
+          //   joinSession()
+          // })
         }}
         style = {[ styles.mode, 
           {backgroundColor : mode == 1 ? Colors.base1 : '#ffffff15',
@@ -775,15 +814,17 @@ return (
         disabled = {!event?.concert_streams?.some(x => x.type == 'vr')}
         onPress = {() => {
           Orientation.lockToLandscapeRight()
+          
+          setPause(true)
+          // setLoader(true)
           setMode(2)
-          //setPause(true)
-          setLoader(true)
-          leaveSession(false).then(()=>{
-            //  global.mode = 'vr'
-            //  props.navigation.navigate('loader')
-            setValue(0)
-            joinSession()
-          })
+          // leaveSession(false).then(()=>{
+          //   //  global.mode = 'vr'
+          //   //  props.navigation.navigate('loader')
+          //   //setValue(0)
+            
+          //   joinSession()
+          // })
         }}
         style = {[styles.mode, 
           {backgroundColor : mode == 2 ? Colors.base1 : '#ffffff15',
@@ -798,14 +839,15 @@ return (
         onPress = {() => {
           Orientation.unlockAllOrientations()
           Orientation.lockToPortrait()
-          setMode(3)
-          setLoader(true)
-          leaveSession(false).then(()=>{
-            // global.mode = 'flat'
-            //  props.navigation.navigate('loader')
-            setValue(0)
-            joinSession()
-          })
+           setPause(true)
+           setMode(3)
+          // setLoader(true)
+          // leaveSession(false).then(()=>{
+          //   // global.mode = 'flat'
+          //   //  props.navigation.navigate('loader')
+          //   //setValue(0)
+          //   joinSession()
+          // })
         }}
         style = {[styles.mode, 
           {backgroundColor : mode == 3 ? Colors.base1 : '#ffffff15',
@@ -1148,428 +1190,3 @@ return (
 )}
 
 export default BroadCast
-
-
-// import React,{Component ,useEffect,useRef,useState } from "react"
-// import { SafeAreaView , View, ImageBackground, Image, TouchableOpacity, Text, TextInput, Dimensions,StatusBar, AppState, BackHandler, FlatList,Animated, ActivityIndicator, Keyboard, KeyboardAvoidingView} from "react-native"
-// import { Colors, hp, hps, Images, wp, wps } from "../../assets"
-// import styles from "./styles"
-// import LinearGradient from 'react-native-linear-gradient'
-// import { useSelector } from "react-redux"
-// import RnVerticalSlider from 'rn-vertical-slider-gradient'
-// import ToggleSwitch from 'toggle-switch-react-native'
-// import { BaseUrl } from "../../graphql/baseUrl"
-
-// import LivePlayerr from "react-native-video360plugin";
-// import {LivePlayer} from "react-native-dbb-rtmp";
-// import {Platform} from 'react-native';
-
-// import { _retrieveData } from '../../asyncStorage/AsyncFuncs';
-// import { OpenVidu } from 'openvidu-browser';
-//  // import InCallManager from 'react-native-incall-manager';  
-// import axios from 'axios'
-// import Orientation from 'react-native-orientation';
-// import * as Animatable from 'react-native-animatable';
-
- 
-//  const OPENVIDU_SERVER_URL = 'https://alessandro.quickver.com';
-//  const OPENVIDU_SERVER_SECRET = 'Husni123';
-
-
-
-
-
-// const BroadCast = (props) => {
-
-//   let vrheadset = ''
-//   let OV = {}
-//   let txt = useRef(null);
-//   let temp = []
-//   let player = useRef(null)
-
-//   const { lang } = useSelector(state => state.language)
-//   const [mode, setMode] = useState(3)
-//   const [mic, setMic] = useState(true)
-//   const [vol, setVol] = useState(true)
-//   const [peoples, setPeoples] = useState(false)
-//   const [comments, setComments] = useState(true)
-//   const [value, setValue] = useState(10)
-//   const [volBar, setVolBar] = useState(false)
-//   const [sheight, setSHeight] = useState('')
-//   const [sWidth, setSWidth] = useState('')
-//   const [event, setEvent] = useState(props.route.params.event)
-
-//   const [appState, setAppState] = useState(AppState.currentState)
-//   const [mySessionId, setMySessionId] = useState('SessionA')
-//   const [myUserName, setMyUserName] = useState('Participant' + Math.floor(Math.random() * 100))
-//   const [session, setSession] =  useState(undefined)
-//   const [mainStreamManager, setMainStreamManager] = useState(undefined)
-//   const [subscribers, setSubscribers] = useState([])
-//   const [role, setRole] = useState('PUBLISHER')
-//   const [mirror, setMirror] = useState(true)
-//   const [videoSource, setVideoSource] = useState(undefined)
-//   const [video, setVideo] = useState(true)
-//   const [audio, setAudio] = useState(true)
-//   const [mainPublisher, setMAinPublisher] = useState()
-//   const [publisherId, setPublisherId] =  useState('')
-//   const [indicator, setIndicator] =  useState(true)
-//   const [record, setRecord] = useState(false)
-//   const [vr, setVr] = useState(false)
-//   const [loader, setLoader] =  useState(false)
-//   const [pause, setPause] = useState(false)
-//   const [loaderState, setLoaderState] = useState(false)
-//   const [selected, setSelected] = useState(0)
-//   const [selectedURI, setSelectedURI] = useState(props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios)
-//   const [height, setHeight] = useState(new Animated.Value(-wp(8)))
-//   const [topHeaderHeight, setTopHeaderHeight] = useState(new Animated.Value(0))
-//   const [turnedOn, setTurnedOn] = useState(false)
-//   const [msg, setMsg] = useState('')
-//   const [msgs, setMsgs] = useState([])  
-//   const [ref, setRef] = useState(null)  
-//   const [fade, setFade] = useState(false)
-//   const [isKeyboardVisible, setKeyboardVisible] = useState(false);
-//   const [clap, setClap] = useState(false)
-
-
-//   const fadeAnim = useRef(new Animated.Value(0)).current  // Initial value for opacity: 0
-  
-
-
-//   useEffect(()=>{
-//     setInterval(() => {
-//       setVolBar(false)
-//       setFade(true)
-//     },5000)
-//   },[])
-
-//   useEffect(()=>{
-//     setInterval(() => {
-//       setClap(false)
-//     },5000)
-//   },[])
-
-
-//   useEffect(() => {
-//     const keyboardDidShowListener = Keyboard.addListener(
-//       'keyboardDidShow',
-//       () => {
-//         setKeyboardVisible(true); // or some other action
-//       }
-//     );
-//     const keyboardDidHideListener = Keyboard.addListener(
-//       'keyboardDidHide',
-//       () => {
-//         setKeyboardVisible(false); // or some other action
-//       }
-//     );
-
-//     return () => {
-//       keyboardDidHideListener.remove();
-//       keyboardDidShowListener.remove();
-//     };
-//     }, []);
-
-  
-
-
- 
-//   const getScreenSize = () => {  
-//     const screenWidth = Math.round(Dimensions.get('window').width);  
-//     const screenHeight = Math.round(Dimensions.get('window').height);  
-//     setSWidth(screenWidth)
-//     setSHeight(screenHeight) 
-//   } 
-
-//   useEffect(()=>{
-//     getScreenSize()
-//     Dimensions.addEventListener('change', (e) => {
-//       const { width, height } = e.window;
-//       setSWidth(width)
-//       setSHeight(height) 
-//     })
-//     componentDidMount()
-//   },[])
-
-
-//   const leaveSession = async(data) => {
-//     console.log('disconnected...')
-//     const mySession = session;
-//     console.log(mySession)
-//     const res = await  session.disconnect()
-//     console.log("res=>", res)
-//     setTimeout(() => {
-//         OV = null;
-//         setSession(undefined);
-//         setSubscribers([]);
-//         setMySessionId('SessionA');
-//         setMyUserName('Participant' + Math.floor(Math.random() * 100));
-//         setMainStreamManager(undefined)
-//     });
-//     if(data)
-//     props.navigation.pop()
-//   }
-
-//   const handleBackButtonClick = () => {
-//     // Registered function to handle the Back Press
-//     // We are generating an alert to show the back button pressed
-//     // alert('You clicked back. Now Screen will move to ThirdPage');
-//     // We can move to any screen. If we want
-//     leaveSession(true)
-//     // Returning true means we have handled the backpress
-//     // Returning false means we haven't handled the backpress
-//     return true;
-//   }
-
-
-//   const _handleAppStateChange = (nextAppState) => {
-
-//     //console.log('appState========================================================>>>>>>>>>>>>>>>>>>>>>>>')
-//     console.log('here', nextAppState)
-//      var a = null;
-//      var loading = null;
-//     if (
-//       appState.match(/inactive|background/) &&
-//       nextAppState === 'active'
-//     ) {
-//         loading = false;
-//         joinSession();
-//         console.log('You have joined the session!');
-//     }else{
-//         loading = true;
-//         leaveSession(false);
-//         console.log('You left the session!');
-//     }
-//     // // console.log(a,loading)
-//      setAppState(nextAppState)
-//      setLoader(loading)
-//   };
-
-
-
-
-//   const componentDidMount = () => {
-//     vrheadset = (vrheadset == 'yes') ? true : false;
-//     console.log('here...')
-//     AppState.addEventListener('change', _handleAppStateChange);
-//     joinSession()
-//     BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
-//     //alert(JSON.stringify(selectedURI));
-//     // console.warn(this.props.route.params.list[0].stream_url)
-//    //    InCallManager.start();
-//     //    InCallManager.setForceSpeakerphoneOn(true)
-   
-//   }
-
-//   const deleteSubscriber = (streamManager) => {
-//     setTimeout(() => {
-//         const subs = subscribers
-//         const index = subs.indexOf(streamManager, 0);
-//         if (index > -1) {
-//             subs.splice(index, 1);
-//             setSubscribers(subs)
-//         }
-//     });
-//   }
-
-
-//   const createSession = (sessionId) => {
-//     return new Promise((resolve) => {
-//         var data = JSON.stringify({ customSessionId: sessionId });
-//         axios
-//             .post(OPENVIDU_SERVER_URL + '/api/sessions', data, {
-//                 headers: {
-//                     Authorization: 'Basic ' + btoa('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET),
-//                     'Content-Type': 'application/json',
-//                     Accept: 'application/json',
-//                 },
-//             })
-//             .then((response) => {
-//                 console.log('CREATE SESION', response);
-//                 resolve(response.data.id);
-//             })
-//             .catch((response) => {
-//                 console.log(response);
-//                 var error = Object.assign({}, response);
-//                 if (!error.response) {
-//                     console.error("Network error: ", error);
-//                     if( error.request && error.request._response){
-//                         console.error("Response of the request: ", error.request._response);
-//                     }
-//                 }
-//                 else if (error.response && error.response.status && error.response.status === 409) {
-//                     console.log('RESOLVING WITH SESSIONID, 409');
-//                     resolve(sessionId);
-//                 } else {
-//                     console.warn(
-//                         'No connection to OpenVidu Server. This may be a certificate error at ' + OPENVIDU_SERVER_URL,
-//                     );
-
-//                     Alert.alert(
-//                         'No connection to OpenVidu Server.',
-//                         'This may be a certificate error at "' +
-//                             OPENVIDU_SERVER_URL +
-//                             '"\n\nClick OK to navigate and accept it. ' +
-//                             'If no certificate warning is shown, then check that your OpenVidu Server is up and running at "' +
-//                             OPENVIDU_SERVER_URL +
-//                             '"',
-//                         [
-//                             {
-//                                 text: 'Cancel',
-//                                 onPress: () => console.log('Cancel Pressed'),
-//                                 style: 'cancel',
-//                             },
-//                             {
-//                                 text: 'OK',
-//                                 onPress: () =>
-//                                     Linking.openURL(OPENVIDU_SERVER_URL + '/accept-certificate').catch((err) =>
-//                                         console.error('An error occurred', err),
-//                                     ),
-//                             },
-//                         ],
-//                         { cancelable: false },
-//                     );
-//                 }
-//             });
-//     });
-//   }
-
-
-//   const createToken = (sessionId) => {
-//     return new Promise((resolve, reject) => {
-//         var data = JSON.stringify({ session: sessionId });
-//         axios
-//             .post(OPENVIDU_SERVER_URL + '/api/tokens', data, {
-//                 headers: {
-//                     Authorization: 'Basic ' + btoa('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET),
-//                     'Content-Type': 'application/json',
-//                 },
-//             })
-//             .then((response) => {
-//                 console.log('TOKEN', response);
-//                 setIndicator(false)
-//                 resolve(response.data.token);
-//             })
-//             .catch((error) => reject(error));
-//     });
-//   }
-
-
-//   const getToken = () => {
-//     return createSession(mySessionId)
-//       .then((sessionId) => createToken(sessionId))
-//       .catch((error) => console.log(error));
-//   }
-
-
-
-//   const joinSession = () => {
-//     OV = new OpenVidu();
-//     setSession(OV.initSession())
-//     var mySession = OV.initSession()        
-//     mySession.on('streamDestroyed', (event) => {
-//         event.preventDefault();
-//         deleteSubscriber(event.stream.streamManager);
-//     });
-      
-//     getToken()
-//         .then(async (token) => {
-//             const a = await _retrieveData('user');
-//             mySession
-//             .connect(token, { clientData: myUserName,group_id : a?.group?.id })
-//             .then(() => {
-//              setSession(mySession)
-//                let txtFieldRef = ref;
-//                 if (Platform.OS == 'android') {
-//                     //checkAndroidPermissions();
-//                 }
-//                 const properties = {  
-//                     audioSource: true, // The source of audio. If undefined default microphone
-//                     videoSource: true, // The source of video. If undefined default webcam
-//                     publishAudio: true, // Whether you want to start publishing with your audio unmuted or not
-//                     publishVideo: false, // Whether you want to start publishing with your video enabled or not
-//                     resolution: '640x480', // The resolution of your video
-//                     frameRate: 30, // The frame rate of your video
-//                     insertMode: 'APPEND', // How the video is inserted in the target element 'video-container'
-//                 };
-//                 let publisher = OV.initPublisher(undefined, properties);
-//                 //setMAinPublisher(publisher)
-//                 console.log("publisher=>", publisher)
-//                 setMainStreamManager(publisher)
-//                 mySession.publish(publisher);
-//                 mySession.on('signal:my-chat', (event) => {
-//                   let temp = msgs
-                  
-                  
-//                   if(temp.length == 5){
-//                     temp.pop()
-//                     temp.unshift(event.data)
-//                     setMsgs([...temp])
-                    
-//                   }else{
-//                     temp.unshift(event.data)
-//                     setMsgs([...temp])
-//                     // txtFeldRef.clear() 
-//                   }
-//                   //Keyboard.dismiss()
-//                   //console.log('There.......>>>>>>>>>',event.data)
-//                   //console.log('message',event.data); // Message
-//                   //console.log('sender',event?.from?.data?.clientData); // Connection object of the sender
-//                   //console.log('type',event.type); // The type of message ("my-chat")
-//                     // setLoaderState(true)
-//                     // setTimeout(()=>{
-//                     //     setLoaderState(false)
-//                     // },3500)
-//                 })
-//                 mySession.on('signal:clap' , (event) => {
-//                   //alert('clap=>', event.data)
-//                   setFade(false)
-//                   setClap(true)
-//                 }) 
-//             })
-//             .catch((error) => {
-//                 console.warn('There was an error connecting to the session:', error.code, error.message);
-//             });
-//             })
-//         .catch((error) => console.warn('Error', error));
-// }
-
-
-// const sendMsg = () => {
-//   session.signal({
-//     data: msg,  // Any string (optional)
-//     to: [],                     // Array of Connection objects (optional. Broadcast to everyone if empty)
-//     type: 'my-chat'             // The type of message (optional)
-//   })
-//   .then((res) => {
-//       console.log('Message successfully sent',res);
-//   })
-//   .catch(error => {
-//       console.error(error);
-//   });
-//   ref.clear();
-// }
-
-// return (
-//   <View style = {styles.mainContainer}>
-//     <LivePlayerr 
-//       //urlVideo = {'rtmp://49.12.106.146:1935/live/origin1'}
-//       //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
-//       urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
-//       //volume = {0.0} 
-//       modeVideo = {1}
-//       displayMode = "cardboard"
-//       enableInfoButton={false}
-//       enableFullscreenButton={false}
-//       enableCardboardButton={true}
-//       enableTouchTracking={false}
-//       hidesTransitionView={false}
-//       style={{ flex: 1}} 
-//       ref = {(r) => {
-//         player = r
-//         console.log("reff=>>",r)
-//       }}
-//       />
-//   </View>
-// )}
-
-// export default BroadCast

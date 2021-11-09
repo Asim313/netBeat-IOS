@@ -27,7 +27,6 @@ import Notifications from '../views/notifications';
 import Profile from '../views/profile';
 import Privacy from '../views/privacy';
 import Help from '../views/help';
-import Loader from '../views/broadCast/loader';
 
 const client = new ApolloClient({
   uri: `${BaseUrl}/graphql`,
@@ -92,10 +91,10 @@ export default class App extends React.Component {
         name="privacy"
         component={Privacy}
       />
-      <Stack7.Screen
-        name="loader"
+      {/* <Stack7.Screen
+        name="layout"
         component={Loader}
-      />
+      /> */}
       <Stack7.Screen
         name="help"
         component={Help}

@@ -4,7 +4,7 @@
             "outputFile": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml",
             "map": [
                 {
-                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/res/values-sw/values.xml",
+                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/res/values-sw/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -18,23 +18,6 @@
                         "startOffsets": "5551",
                         "endColumns": "77",
                         "endOffsets": "5624"
-                    }
-                },
-                {
-                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/9355651ca1161a5f7f91b54645c76dac/transformed/res/values-sw/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "204",
-                        "endOffsets": "451"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3974",
-                        "endColumns": "204",
-                        "endOffsets": "4174"
                     }
                 },
                 {
@@ -52,6 +35,23 @@
                         "startOffsets": "2801,2907,3095,3222,3333,3555,3682,3831,4179,4403,4511,4696,4825,5034,5223,5321,5426",
                         "endColumns": "105,187,126,110,221,126,148,142,223,107,184,128,208,188,97,104,124",
                         "endOffsets": "2902,3090,3217,3328,3550,3677,3826,3969,4398,4506,4691,4820,5029,5218,5316,5421,5546"
+                    }
+                },
+                {
+                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/eb7385d4eeb1b2a9bf5704d66b6b2c7a/transformed/res/values-sw/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "204",
+                        "endOffsets": "451"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3974",
+                        "endColumns": "204",
+                        "endOffsets": "4174"
                     }
                 },
                 {

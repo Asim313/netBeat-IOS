@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/9355651ca1161a5f7f91b54645c76dac/transformed/res/values-da/values.xml",
+                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/eb7385d4eeb1b2a9bf5704d66b6b2c7a/transformed/res/values-da/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -52,23 +52,6 @@
                         "startOffsets": "4088",
                         "endColumns": "185",
                         "endOffsets": "4269"
-                    }
-                },
-                {
-                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/res/values-da/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "71",
-                        "endOffsets": "278"
-                    },
-                    "to": {
-                        "startLines": "60",
-                        "startColumns": "4",
-                        "startOffsets": "7135",
-                        "endColumns": "75",
-                        "endOffsets": "7206"
                     }
                 },
                 {
@@ -103,6 +86,23 @@
                         "startOffsets": "2757,2854,5626,5708,5807,5998,6137,6219,6338,6455,6573,6660,6914,7211,7310,7424,7540,7669,7910,8018,8199,8284",
                         "endColumns": "96,80,81,98,190,138,81,118,116,117,86,253,220,98,113,115,128,161,107,79,84,99",
                         "endOffsets": "2849,2930,5703,5802,5993,6132,6214,6333,6450,6568,6655,6909,7130,7305,7419,7535,7664,7826,8013,8093,8279,8379"
+                    }
+                },
+                {
+                    "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/res/values-da/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "71",
+                        "endOffsets": "278"
+                    },
+                    "to": {
+                        "startLines": "60",
+                        "startColumns": "4",
+                        "startOffsets": "7135",
+                        "endColumns": "75",
+                        "endOffsets": "7206"
                     }
                 }
             ]

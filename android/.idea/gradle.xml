@@ -22,6 +22,7 @@
             <option value="$PROJECT_DIR$/../node_modules/react-native-extra-dimensions-android/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-image-picker/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-incall-manager/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-linear-gradient/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-orientation/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-reanimated/android" />

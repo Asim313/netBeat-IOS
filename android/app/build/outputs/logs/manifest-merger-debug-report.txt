@@ -24,20 +24,20 @@ MERGED from [:react-native-safe-area-context] /Users/asimkhurshid/Documents/offi
 MERGED from [:react-native-screens] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-svg] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-webview] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
-MERGED from [com.facebook.react:react-native:0.61.0] /Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.react:react-native:0.61.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/AndroidManifest.xml:2:1-13:12
 MERGED from [org.webkit:android-jsc:r245459] /Users/asimkhurshid/.gradle/caches/transforms-3/0895432aa5e6c5bd86b5c2512b5f8248/transformed/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.multidex:multidex:2.0.1] /Users/asimkhurshid/.gradle/caches/transforms-3/78ca1c870b058fcc4e07178dd215b186/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [:react-native-linear-gradient] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:17:1-58:12
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:17:1-58:12
 MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/80983a1934dede3e69ad48d6ad308ddf/transformed/AndroidManifest.xml:15:1-34:12
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/156dd98898baa0ce275b6c2c9eb63898/transformed/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9abc7b466188848fe81460574da291f1/transformed/AndroidManifest.xml:2:1-24:12
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:15:1-40:12
-MERGED from [com.google.vr:sdk-videowidget:1.80.0] /Users/asimkhurshid/.gradle/caches/transforms-3/4440d06f5693051bbd5a504c3947783e/transformed/AndroidManifest.xml:2:1-4:12
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:15:1-41:12
-MERGED from [com.github.NodeMedia:NodeMediaClient-Android:2.4.4] /Users/asimkhurshid/.gradle/caches/transforms-3/c7b8a5b7d536e9f4d920168c2f985c14/transformed/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:15:1-40:12
+MERGED from [com.google.vr:sdk-videowidget:1.80.0] /Users/asimkhurshid/.gradle/caches/transforms-3/c60e5eb58c315ab336953c3cae3cea9e/transformed/AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:15:1-41:12
+MERGED from [com.github.NodeMedia:NodeMediaClient-Android:2.4.4] /Users/asimkhurshid/.gradle/caches/transforms-3/a942940a224e0db5e3372eb049253e69/transformed/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/ad2cba42b5f481cbbc34e72451a293ac/transformed/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/f34e97fd81c9fb14e74eee1630e7dcaa/transformed/AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/62eb3cc8b54481a5e4d3b06016b28b9b/transformed/AndroidManifest.xml:2:1-9:12
@@ -64,7 +64,7 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.2] /U
 MERGED from [com.google.android.gms:play-services-measurement-base:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/4f500180563efb3a456a932f8b01e17c/transformed/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/c9d1246441f8368f7209dd8061e06639/transformed/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asimkhurshid/.gradle/caches/transforms-3/919e3a5e68e858bc2df7b8c3f03633f2/transformed/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9355651ca1161a5f7f91b54645c76dac/transformed/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/eb7385d4eeb1b2a9bf5704d66b6b2c7a/transformed/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/83a592fcabf3f59db369f92abee3caeb/transformed/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.2.1] /Users/asimkhurshid/.gradle/caches/transforms-3/588a4664b3179c1bc0b66ea80df64fad/transformed/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1b8c5465a9c6e64421168d3a6c3e6e0f/transformed/AndroidManifest.xml:17:1-24:12
@@ -84,8 +84,8 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/asimkhurshid/.
 MERGED from [androidx.core:core:1.3.1] /Users/asimkhurshid/.gradle/caches/transforms-3/2ec9e3b225775c31e011caf3e2d5b177/transformed/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.exifinterface:exifinterface:1.3.1] /Users/asimkhurshid/.gradle/caches/transforms-3/9e4d1cc299e459b06f7c4c8de679acab/transformed/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.vr:sdk-commonwidget:1.80.0] /Users/asimkhurshid/.gradle/caches/transforms-3/4f90992461ff3d4a619f1c125112d656/transformed/AndroidManifest.xml:2:1-4:12
-MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/a25cad58183ec7ff57b29f350c7c8fbc/transformed/AndroidManifest.xml:15:1-23:12
-MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/de58334cbad83d76998e81e2ddecfa3d/transformed/AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b5fbd638489693a656671a3c43d8591e/transformed/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/089f6719ac86a9d03f3a8397a66fd660/transformed/AndroidManifest.xml:15:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/011c9f38585210a0a035d9ed248ca812/transformed/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/68dcb3848a9c47582ae5b4d066ac270a/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cf7699c548da3911ad59de9b146a0bda/transformed/AndroidManifest.xml:17:1-24:12
@@ -100,7 +100,7 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/asimkhurshid/.gradle/c
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/247c6c268eaed663be76dbab64a1bd41/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/asimkhurshid/.gradle/caches/transforms-3/68ca7a857d2ccf46d514b5c2f75351c6/transformed/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/fdd71bdd95b70436a389c793509a3687/transformed/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9747d68ac90c64f84d2db278d187e290/transformed/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/71b5b452039c8a0a044a92cd60e45c8b/transformed/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.vr:sdk-common:1.80.0] /Users/asimkhurshid/.gradle/caches/transforms-3/7921d1ed2895769827ad0a606a088d26/transformed/AndroidManifest.xml:2:1-4:12
 INJECTED from /Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -126,8 +126,8 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [:react-native-firebase_messaging] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
 MERGED from [:react-native-firebase_messaging] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:26:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9abc7b466188848fe81460574da291f1/transformed/AndroidManifest.xml:11:5-67
@@ -158,16 +158,16 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:10:5-78
 MERGED from [:react-native-firebase_messaging] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
 MERGED from [:react-native-firebase_messaging] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9abc7b466188848fe81460574da291f1/transformed/AndroidManifest.xml:10:5-79
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9abc7b466188848fe81460574da291f1/transformed/AndroidManifest.xml:10:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/46cf6a39049e10dcd46d5c41c7e50f7b/transformed/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/46cf6a39049e10dcd46d5c41c7e50f7b/transformed/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/f895f07998fccc240e62bc1738f9f563/transformed/AndroidManifest.xml:7:5-79
@@ -190,8 +190,8 @@ uses-permission#android.permission.WAKE_LOCK
 ADDED from /Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/src/main/AndroidManifest.xml:13:5-68
 MERGED from [:react-native-firebase_messaging] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
 MERGED from [:react-native-firebase_messaging] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:23:5-68
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:23:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:23:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:23:5-68
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/46cf6a39049e10dcd46d5c41c7e50f7b/transformed/AndroidManifest.xml:25:5-68
@@ -222,22 +222,22 @@ MERGED from [:react-native-image-picker] /Users/asimkhurshid/Documents/office/ne
 MERGED from [:react-native-image-picker] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-webview] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-webview] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.61.0] /Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.61.0] /Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/AndroidManifest.xml:11:5-20
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:27:5-56:19
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:27:5-56:19
+MERGED from [com.facebook.react:react-native:0.61.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/AndroidManifest.xml:11:5-20
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:27:5-56:19
 MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/80983a1934dede3e69ad48d6ad308ddf/transformed/AndroidManifest.xml:24:5-32:19
 MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/80983a1934dede3e69ad48d6ad308ddf/transformed/AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9abc7b466188848fe81460574da291f1/transformed/AndroidManifest.xml:14:5-22:19
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9abc7b466188848fe81460574da291f1/transformed/AndroidManifest.xml:14:5-22:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:25:5-38:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:25:5-38:19
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:25:5-39:19
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:25:5-39:19
 MERGED from [com.google.android.material:material:1.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/ad2cba42b5f481cbbc34e72451a293ac/transformed/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/ad2cba42b5f481cbbc34e72451a293ac/transformed/AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f09978dc8abdb3498ca0de548acc4b8/transformed/AndroidManifest.xml:11:5-20
@@ -264,8 +264,8 @@ MERGED from [com.google.android.gms:play-services-measurement-base:19.0.2] /User
 MERGED from [com.google.android.gms:play-services-measurement-base:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/4f500180563efb3a456a932f8b01e17c/transformed/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asimkhurshid/.gradle/caches/transforms-3/919e3a5e68e858bc2df7b8c3f03633f2/transformed/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asimkhurshid/.gradle/caches/transforms-3/919e3a5e68e858bc2df7b8c3f03633f2/transformed/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9355651ca1161a5f7f91b54645c76dac/transformed/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9355651ca1161a5f7f91b54645c76dac/transformed/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/eb7385d4eeb1b2a9bf5704d66b6b2c7a/transformed/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/eb7385d4eeb1b2a9bf5704d66b6b2c7a/transformed/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.3.1] /Users/asimkhurshid/.gradle/caches/transforms-3/2ec9e3b225775c31e011caf3e2d5b177/transformed/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.3.1] /Users/asimkhurshid/.gradle/caches/transforms-3/2ec9e3b225775c31e011caf3e2d5b177/transformed/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/011c9f38585210a0a035d9ed248ca812/transformed/AndroidManifest.xml:24:5-25:19
@@ -363,34 +363,34 @@ MERGED from [:react-native-svg] /Users/asimkhurshid/Documents/office/netBeat-IOS
 MERGED from [:react-native-svg] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-webview] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-webview] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.61.0] /Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.61.0] /Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] /Users/asimkhurshid/.gradle/caches/transforms-3/0895432aa5e6c5bd86b5c2512b5f8248/transformed/AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] /Users/asimkhurshid/.gradle/caches/transforms-3/0895432aa5e6c5bd86b5c2512b5f8248/transformed/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.multidex:multidex:2.0.1] /Users/asimkhurshid/.gradle/caches/transforms-3/78ca1c870b058fcc4e07178dd215b186/transformed/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.1] /Users/asimkhurshid/.gradle/caches/transforms-3/78ca1c870b058fcc4e07178dd215b186/transformed/AndroidManifest.xml:20:5-43
 MERGED from [:react-native-linear-gradient] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-linear-gradient] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/80983a1934dede3e69ad48d6ad308ddf/transformed/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/80983a1934dede3e69ad48d6ad308ddf/transformed/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/156dd98898baa0ce275b6c2c9eb63898/transformed/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/156dd98898baa0ce275b6c2c9eb63898/transformed/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9abc7b466188848fe81460574da291f1/transformed/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9abc7b466188848fe81460574da291f1/transformed/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.vr:sdk-videowidget:1.80.0] /Users/asimkhurshid/.gradle/caches/transforms-3/4440d06f5693051bbd5a504c3947783e/transformed/AndroidManifest.xml:3:5-73
-MERGED from [com.google.vr:sdk-videowidget:1.80.0] /Users/asimkhurshid/.gradle/caches/transforms-3/4440d06f5693051bbd5a504c3947783e/transformed/AndroidManifest.xml:3:5-73
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:18:5-20:41
-MERGED from [com.github.NodeMedia:NodeMediaClient-Android:2.4.4] /Users/asimkhurshid/.gradle/caches/transforms-3/c7b8a5b7d536e9f4d920168c2f985c14/transformed/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.NodeMedia:NodeMediaClient-Android:2.4.4] /Users/asimkhurshid/.gradle/caches/transforms-3/c7b8a5b7d536e9f4d920168c2f985c14/transformed/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.vr:sdk-videowidget:1.80.0] /Users/asimkhurshid/.gradle/caches/transforms-3/c60e5eb58c315ab336953c3cae3cea9e/transformed/AndroidManifest.xml:3:5-73
+MERGED from [com.google.vr:sdk-videowidget:1.80.0] /Users/asimkhurshid/.gradle/caches/transforms-3/c60e5eb58c315ab336953c3cae3cea9e/transformed/AndroidManifest.xml:3:5-73
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:18:5-20:41
+MERGED from [com.github.NodeMedia:NodeMediaClient-Android:2.4.4] /Users/asimkhurshid/.gradle/caches/transforms-3/a942940a224e0db5e3372eb049253e69/transformed/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.NodeMedia:NodeMediaClient-Android:2.4.4] /Users/asimkhurshid/.gradle/caches/transforms-3/a942940a224e0db5e3372eb049253e69/transformed/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/ad2cba42b5f481cbbc34e72451a293ac/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/ad2cba42b5f481cbbc34e72451a293ac/transformed/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/f34e97fd81c9fb14e74eee1630e7dcaa/transformed/AndroidManifest.xml:20:5-22:41
@@ -443,8 +443,8 @@ MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/a
 MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/c9d1246441f8368f7209dd8061e06639/transformed/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asimkhurshid/.gradle/caches/transforms-3/919e3a5e68e858bc2df7b8c3f03633f2/transformed/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/asimkhurshid/.gradle/caches/transforms-3/919e3a5e68e858bc2df7b8c3f03633f2/transformed/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9355651ca1161a5f7f91b54645c76dac/transformed/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9355651ca1161a5f7f91b54645c76dac/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/eb7385d4eeb1b2a9bf5704d66b6b2c7a/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/eb7385d4eeb1b2a9bf5704d66b6b2c7a/transformed/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/83a592fcabf3f59db369f92abee3caeb/transformed/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/83a592fcabf3f59db369f92abee3caeb/transformed/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.2.1] /Users/asimkhurshid/.gradle/caches/transforms-3/588a4664b3179c1bc0b66ea80df64fad/transformed/AndroidManifest.xml:20:5-22:41
@@ -483,10 +483,10 @@ MERGED from [androidx.exifinterface:exifinterface:1.3.1] /Users/asimkhurshid/.gr
 MERGED from [androidx.exifinterface:exifinterface:1.3.1] /Users/asimkhurshid/.gradle/caches/transforms-3/9e4d1cc299e459b06f7c4c8de679acab/transformed/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.vr:sdk-commonwidget:1.80.0] /Users/asimkhurshid/.gradle/caches/transforms-3/4f90992461ff3d4a619f1c125112d656/transformed/AndroidManifest.xml:3:5-73
 MERGED from [com.google.vr:sdk-commonwidget:1.80.0] /Users/asimkhurshid/.gradle/caches/transforms-3/4f90992461ff3d4a619f1c125112d656/transformed/AndroidManifest.xml:3:5-73
-MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/a25cad58183ec7ff57b29f350c7c8fbc/transformed/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/a25cad58183ec7ff57b29f350c7c8fbc/transformed/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/de58334cbad83d76998e81e2ddecfa3d/transformed/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/de58334cbad83d76998e81e2ddecfa3d/transformed/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b5fbd638489693a656671a3c43d8591e/transformed/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b5fbd638489693a656671a3c43d8591e/transformed/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/089f6719ac86a9d03f3a8397a66fd660/transformed/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/089f6719ac86a9d03f3a8397a66fd660/transformed/AndroidManifest.xml:18:5-20:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/011c9f38585210a0a035d9ed248ca812/transformed/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/011c9f38585210a0a035d9ed248ca812/transformed/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/68dcb3848a9c47582ae5b4d066ac270a/transformed/AndroidManifest.xml:20:5-44
@@ -515,8 +515,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/asimkhursh
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/asimkhurshid/.gradle/caches/transforms-3/68ca7a857d2ccf46d514b5c2f75351c6/transformed/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/fdd71bdd95b70436a389c793509a3687/transformed/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/asimkhurshid/.gradle/caches/transforms-3/fdd71bdd95b70436a389c793509a3687/transformed/AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9747d68ac90c64f84d2db278d187e290/transformed/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9747d68ac90c64f84d2db278d187e290/transformed/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/71b5b452039c8a0a044a92cd60e45c8b/transformed/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/71b5b452039c8a0a044a92cd60e45c8b/transformed/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.vr:sdk-common:1.80.0] /Users/asimkhurshid/.gradle/caches/transforms-3/7921d1ed2895769827ad0a606a088d26/transformed/AndroidManifest.xml:3:5-73
 MERGED from [com.google.vr:sdk-common:1.80.0] /Users/asimkhurshid/.gradle/caches/transforms-3/7921d1ed2895769827ad0a606a088d26/transformed/AndroidManifest.xml:3:5-73
 INJECTED from /Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/src/debug/AndroidManifest.xml
@@ -587,22 +587,22 @@ ADDED from [:react-native-firebase_app] /Users/asimkhurshid/Documents/office/net
 		ADDED from [:react-native-firebase_app] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:react-native-firebase_app] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:19
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:49:9-55:19
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:49:9-55:19
 MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/80983a1934dede3e69ad48d6ad308ddf/transformed/AndroidManifest.xml:25:9-31:19
 MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/80983a1934dede3e69ad48d6ad308ddf/transformed/AndroidManifest.xml:25:9-31:19
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9abc7b466188848fe81460574da291f1/transformed/AndroidManifest.xml:15:9-21:19
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9abc7b466188848fe81460574da291f1/transformed/AndroidManifest.xml:15:9-21:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:33:9-37:35
-MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:33:9-37:35
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:51:13-37
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:51:13-37
 	tools:targetApi
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:37:13-32
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:37:13-32
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:35:13-43
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:35:13-43
 	android:name
 		ADDED from [:react-native-firebase_app] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-89
 meta-data#com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar
@@ -648,33 +648,33 @@ ADDED from [:react-native-webview] /Users/asimkhurshid/Documents/office/netBeat-
 	android:name
 		ADDED from [:react-native-webview] /Users/asimkhurshid/Documents/office/netBeat-IOS/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:25:5-82
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:25:5-82
 MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/f895f07998fccc240e62bc1738f9f563/transformed/AndroidManifest.xml:11:5-82
 MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/f895f07998fccc240e62bc1738f9f563/transformed/AndroidManifest.xml:11:5-82
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:25:22-79
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:25:22-79
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:28:9-35:20
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:28:9-35:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:30:13-36
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:30:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:31:13-73
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:31:13-73
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:29:13-78
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:29:13-78
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:41:9-48:19
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:41:9-48:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:44:13-37
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:44:13-37
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:43:13-43
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:43:13-43
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:42:13-82
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:42:13-82
 meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:52:13-54:85
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:52:13-54:85
 	android:value
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:54:17-82
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:54:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e24b96aad82a4752d4d1fdd594add2d0/transformed/AndroidManifest.xml:53:17-119
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/108e9d2965748afdf1a8f31450046c80/transformed/AndroidManifest.xml:53:17-119
 meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
 ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/80983a1934dede3e69ad48d6ad308ddf/transformed/AndroidManifest.xml:28:13-30:85
 	android:value
@@ -682,19 +682,19 @@ ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asimkhursh
 	android:name
 		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/80983a1934dede3e69ad48d6ad308ddf/transformed/AndroidManifest.xml:29:17-115
 service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
-ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:36:9-38:40
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:36:9-38:40
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:31:13-37
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:30:13-103
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:30:13-103
 meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
-ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:32:13-34:39
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:32:13-34:39
 	android:value
-		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:34:17-36
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:34:17-36
 	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/cd1996dc1f822189531460e09bda3b14/transformed/AndroidManifest.xml:33:17-94
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/8e1758d0119be1517c00510ef61a5c8e/transformed/AndroidManifest.xml:33:17-94
 meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
 ADDED from [com.google.android.gms:play-services-measurement-api:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/d4c7a81619d83002a3cf0871e69e59df/transformed/AndroidManifest.xml:30:13-32:85
 	android:value
@@ -708,31 +708,31 @@ ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/asimkhursh
 	android:name
 		ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9abc7b466188848fe81460574da291f1/transformed/AndroidManifest.xml:19:17-127
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:26:9-31:39
+ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:26:9-31:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:28:13-72
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:28:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:30:13-37
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:30:13-37
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:29:13-43
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:29:13-43
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:31:13-36
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:31:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/2f5f5b8939ca23a6b50d509c7705da72/transformed/AndroidManifest.xml:27:13-77
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/1ca740ba144355768dff83ce25b9fe98/transformed/AndroidManifest.xml:27:13-77
 service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
-ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:26:9-30:19
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:26:9-30:19
 	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:28:13-37
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:28:13-37
 	android:permission
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:29:13-69
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:29:13-69
 	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:27:13-117
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:27:13-117
 receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
-ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:32:9-34:40
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:32:9-34:40
 	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:34:13-37
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/e9c31ae76f7af7292abad91faed3fd47/transformed/AndroidManifest.xml:33:13-132
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/asimkhurshid/.gradle/caches/transforms-3/b149f1a3d70d16a9959504dd7db80f10/transformed/AndroidManifest.xml:33:13-132
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/asimkhurshid/.gradle/caches/transforms-3/783c718dab9a0e25994776dc238f9ef5/transformed/AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
@@ -794,8 +794,8 @@ ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asim
 	android:name
 		ADDED from [com.google.android.gms:play-services-measurement:19.0.2] /Users/asimkhurshid/.gradle/caches/transforms-3/46cf6a39049e10dcd46d5c41c7e50f7b/transformed/AndroidManifest.xml:40:13-87
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9355651ca1161a5f7f91b54645c76dac/transformed/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/eb7385d4eeb1b2a9bf5704d66b6b2c7a/transformed/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9355651ca1161a5f7f91b54645c76dac/transformed/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/eb7385d4eeb1b2a9bf5704d66b6b2c7a/transformed/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/9355651ca1161a5f7f91b54645c76dac/transformed/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/asimkhurshid/.gradle/caches/transforms-3/eb7385d4eeb1b2a9bf5704d66b6b2c7a/transformed/AndroidManifest.xml:24:13-58

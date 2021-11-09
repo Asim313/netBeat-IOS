@@ -43,7 +43,7 @@ import { Alert } from 'react-native';
  const OPENVIDU_SERVER_SECRET = 'Husni123';
 
 
- import { DeviceEventEmitter } from 'react-native';
+ 
 
 
 
@@ -66,7 +66,7 @@ const BroadCast = (props) => {
   const [vol, setVol] = useState(true)
   const [peoples, setPeoples] = useState(false)
   const [comments, setComments] = useState(true)
-  const [value, setValue] = useState(10)
+  const [value, setValue] = useState(1)
   const [volBar, setVolBar] = useState(false)
   const [sheight, setSHeight] = useState('')
   const [sWidth, setSWidth] = useState('')
@@ -111,10 +111,7 @@ const BroadCast = (props) => {
 
 
   useEffect(()=>{
-    DeviceEventEmitter.addListener('Proximity', function (data) {
-      // --- do something with events
-  });
-    setInterval(() => {
+    setTimeout(() => {
       setVolBar(false)
       setFade(true)
       setClapRender(true)
@@ -122,10 +119,26 @@ const BroadCast = (props) => {
   },[])
 
   useEffect(()=>{
-    setInterval(() => {
+    setTimeout(() => {
       setClap(false)
     },5000)
   },[])
+
+
+  // useEffect(()=>{
+  //   //alert("mode="+ global.mode)
+  //   if(global.mode == '360'){
+  //     setMode(1)
+  //     joinSession()
+  //   }else if(global.mode == 'vr'){
+  //     setMode(2)
+  //     joinSession()
+  //   }else if(global.mode == 'flat'){
+  //     setMode(3)
+  //     joinSession()
+  //   }
+  // },[isFocus])
+
 
 
 
@@ -174,6 +187,7 @@ const BroadCast = (props) => {
       setSWidth(width)
       setSHeight(height) 
     })
+    InCallManager.start({media: 'video'});
     componentDidMount()
   },[])
 
@@ -203,11 +217,16 @@ const BroadCast = (props) => {
     setMyUserName('Participant' + Math.floor(Math.random() * 100));
     setMainStreamManager(undefined)
 // InCallManager.setForceSpeakerphoneOn(false)
-    await InCallManager.stopRingtone();
-    await InCallManager.stopRingback();
-    await InCallManager.stop();
+    // await InCallManager.stopRingtone();
+    // await InCallManager.stopRingback();
+    // await InCallManager.stop()
     if(data){
-    props.navigation.goBack()
+     //setPause(true) 
+     props.navigation.goBack()
+     //await InCallManager.stop()
+    //  await InCallManager.stopRingtone();
+    //  await InCallManager.stopRingback();
+    //  await InCallManager.stop()
     }
   }
 
@@ -426,6 +445,7 @@ const BroadCast = (props) => {
 
 
   const joinSession = () => {
+    //setPause(false)
     OV = new OpenVidu();
     setSession(OV.initSession())
     var mySession = OV.initSession()        
@@ -441,8 +461,7 @@ const BroadCast = (props) => {
             mySession
             .connect(token, { clientData: myUserName,group_id : a?.group?.id })
             .then(() => {
-              
-             
+
              setSession(mySession)
                let txtFieldRef = ref;
                 if (Platform.OS == 'android') {
@@ -462,6 +481,12 @@ const BroadCast = (props) => {
                 console.log("publisher=>", publisher)
                 setMainStreamManager(publisher)
                 mySession.publish(publisher);
+
+                  // InCallManager.start({media: 'video'});
+                  // InCallManager.setForceSpeakerphoneOn(true);
+                  // //InCallManager.setSpeakerphoneOn(true)
+                  // InCallManager.setKeepScreenOn(true)
+                  setLoader(false);
               
                 mySession.on('signal:my-chat', (event) => {
                   let temp = msgs
@@ -496,11 +521,7 @@ const BroadCast = (props) => {
 
               //  alert("Openvidu Session Established");
                   
-                  InCallManager.start({media: 'video'});
-                  InCallManager.setForceSpeakerphoneOn(true);
-                  //InCallManager.setSpeakerphoneOn(true)
-                  InCallManager.setKeepScreenOn(true)
-                  setLoader(false);
+                  
                 
                       
             })
@@ -544,14 +565,15 @@ return (
     {!loader ? 
     <>
    {(mode == 1) && <LivePlayerr 
-       //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == '360')[0]?.stream_ios} 
-      urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
+       urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == '360')[0]?.stream_ios} 
+      //urlVideo={pause ? '' : "http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
       modeVideo={1} 
       volume={1}
       enableInfoButton={false}
       enableFullscreenButton={false}
       enableCardboardButton={false}
       enableTouchTracking={false}
+      paused = {pause}
       hidesTransitionView={false}
       ref = {(r) => {
         player = r
@@ -559,12 +581,13 @@ return (
       style={{ flex: 1}} />}
 
       {(mode == 2) && <LivePlayerr
-       //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'vr')[0]?.stream_ios} 
-      urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
+       urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'vr')[0]?.stream_ios} 
+      //urlVideo={pause ? '' : "http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
       modeVideo={2} 
       volume={1}
       displayMode={"cardboard"}
       enableInfoButton={false}
+      paused = {pause}
       enableFullscreenButton={false}
       enableCardboardButton={false}
       enableTouchTracking={false}
@@ -577,8 +600,8 @@ return (
       />}
       {mode == 3 && Platform.OS == 'ios' && <LivePlayerr 
       //urlVideo = {'rtmp://49.12.106.146:1935/live/origin1'}
-      //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
-      urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
+      urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
+      //urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
       modeVideo={3} 
       enableInfoButton={false}
       enableFullscreenButton={false}
@@ -588,8 +611,8 @@ return (
       style={{ flex: 1}} />}
       
       {mode == 3 && Platform.OS == 'android' && <LivePlayer 
-       source={{uri:"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"}}
-      //source={{uri : props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios}}
+      // source={{uri:"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"}}
+      source={{uri : props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios}}
         paused={false}
         style={{flex: 1}}
         muted={false}
@@ -654,9 +677,12 @@ return (
         onPress = {() => {
           Orientation.lockToPortrait()
           setMode(1)
+         // setPause(true)
           setLoader(true)
           leaveSession(false).then(()=>{
-            joinSession()
+            //  global.mode = '360'
+            //  props.navigation.navigate('loader')
+             joinSession()
           })
           
         }}
@@ -675,8 +701,12 @@ return (
         onPress = {() => {
           Orientation.lockToLandscapeRight()
           setMode(2)
+          //setPause(true)
           setLoader(true)
           leaveSession(false).then(()=>{
+            // global.mode = 'vr'
+            // props.navigation.navigate('loader')
+            setValue(0)
             joinSession()
           })
         }}
@@ -697,6 +727,9 @@ return (
           setMode(3)
           setLoader(true)
           leaveSession(false).then(()=>{
+            //  global.mode = 'flat'
+            //  props.navigation.navigate('loader')
+            setValue(0)
             joinSession()
           })
         }}
@@ -720,8 +753,12 @@ return (
         onPress = {() => {
           Orientation.lockToPortrait()
           setMode(1)
+          //setPause(true)
           setLoader(true)
           leaveSession(false).then(()=>{
+            //  global.mode = '360'
+            //  props.navigation.navigate('loader')
+            setValue(0)
             joinSession()
           })
         }}
@@ -739,8 +776,12 @@ return (
         onPress = {() => {
           Orientation.lockToLandscapeRight()
           setMode(2)
+          //setPause(true)
           setLoader(true)
           leaveSession(false).then(()=>{
+            //  global.mode = 'vr'
+            //  props.navigation.navigate('loader')
+            setValue(0)
             joinSession()
           })
         }}
@@ -760,6 +801,9 @@ return (
           setMode(3)
           setLoader(true)
           leaveSession(false).then(()=>{
+            // global.mode = 'flat'
+            //  props.navigation.navigate('loader')
+            setValue(0)
             joinSession()
           })
         }}
@@ -797,7 +841,7 @@ return (
 
       {!comments &&
       <>
-      {/* {fade?
+      {fade?
       <Animatable.View
       animation = "fadeOutRight"
       style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, { bottom:sheight>sWidth? hps(104) : wps(20), right:sheight>sWidth? wps(16) : hps(16) }]}
@@ -818,7 +862,7 @@ return (
         >
         <Image source = {value !== 0 ? Images.speaker : Images.speaker_off}/>  
         </TouchableOpacity>
-      </Animatable.View>} */}
+      </Animatable.View>}
 
       {fade?
       <Animatable.View
@@ -1004,8 +1048,8 @@ return (
             thumbOffStyle = {{backgroundColor:Colors.base1}}
             size="small"
             onToggle={isOn => {
-              //setComments(!comments)
-              
+              setComments(!comments)
+              //joinSession()  
             }}
           />
           <Text style = {styles.disableButtonTitle}>{lang?.disable_aud}</Text>
@@ -1077,10 +1121,22 @@ return (
 
         </View>
 
-        {/* <TouchableOpacity 
+        <TouchableOpacity 
+          onPress = {()=>{
+            // if( value == 0 ){
+            //   InCallManager.setForceSpeakerphoneOn(true);
+            //   //InCallManager.setSpeakerphoneOn(true)
+            //   InCallManager.setKeepScreenOn(true)
+            //   setValue(1)
+            // }else{
+            //   InCallManager.setForceSpeakerphoneOn(false);
+            //   //InCallManager.stop()
+            //   setValue(0)
+            // }
+          }}
           style = {sheight > sWidth ? styles.volumeButton : styles.volumeButtonLand}>
             <Image source = {Images.speaker} style = {styles.speaker}/>
-          </TouchableOpacity> */}
+          </TouchableOpacity>
       </View>}
       </View>
 

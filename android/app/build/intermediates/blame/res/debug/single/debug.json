@@ -81,7 +81,7 @@
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/anim_catalyst_slide_up.xml.flat",
-        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/res/anim/catalyst_slide_up.xml"
+        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res/anim/catalyst_slide_up.xml"
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/anim_btn_checkbox_to_unchecked_box_inner_merged_animation.xml.flat",
@@ -229,7 +229,7 @@
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/anim_catalyst_slide_down.xml.flat",
-        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/res/anim/catalyst_slide_down.xml"
+        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res/anim/catalyst_slide_down.xml"
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/color-v23_abc_btn_colored_borderless_text_material.xml.flat",
@@ -973,7 +973,7 @@
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/anim_catalyst_fade_in.xml.flat",
-        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/res/anim/catalyst_fade_in.xml"
+        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res/anim/catalyst_fade_in.xml"
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_splash_.png.flat",
@@ -1029,11 +1029,11 @@
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/layout_dev_loading_view.xml.flat",
-        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/res/layout/dev_loading_view.xml"
+        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res/layout/dev_loading_view.xml"
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/anim_catalyst_fade_out.xml.flat",
-        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/res/anim/catalyst_fade_out.xml"
+        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res/anim/catalyst_fade_out.xml"
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1357,7 +1357,7 @@
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/layout_redbox_view.xml.flat",
-        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/res/layout/redbox_view.xml"
+        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res/layout/redbox_view.xml"
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1441,7 +1441,7 @@
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/anim_catalyst_push_up_out.xml.flat",
-        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/res/anim/catalyst_push_up_out.xml"
+        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res/anim/catalyst_push_up_out.xml"
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -1449,7 +1449,7 @@
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/drawable_redbox_top_border_background.xml.flat",
-        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/res/drawable/redbox_top_border_background.xml"
+        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res/drawable/redbox_top_border_background.xml"
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -1521,7 +1521,7 @@
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/anim_catalyst_push_up_in.xml.flat",
-        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/res/anim/catalyst_push_up_in.xml"
+        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res/anim/catalyst_push_up_in.xml"
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_splash_2.png.flat",
@@ -1653,7 +1653,7 @@
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/xml_rn_dev_preferences.xml.flat",
-        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/res/xml/rn_dev_preferences.xml"
+        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res/xml/rn_dev_preferences.xml"
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -2261,7 +2261,7 @@
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/layout_fps_view.xml.flat",
-        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/res/layout/fps_view.xml"
+        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res/layout/fps_view.xml"
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_untitled.png.flat",
@@ -2669,7 +2669,7 @@
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/layout_redbox_item_title.xml.flat",
-        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/res/layout/redbox_item_title.xml"
+        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res/layout/redbox_item_title.xml"
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/layout_design_navigation_item_separator.xml.flat",
@@ -3005,7 +3005,7 @@
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/layout_redbox_item_frame.xml.flat",
-        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/4ba1933990b62c6ba52690c1e8de1315/transformed/res/layout/redbox_item_frame.xml"
+        "source": "/Users/asimkhurshid/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res/layout/redbox_item_frame.xml"
     },
     {
         "merged": "/Users/asimkhurshid/Documents/office/netBeat-IOS/android/app/build/intermediates/res/merged/debug/color-v23_abc_tint_spinner.xml.flat",

@@ -2,11 +2,15 @@
   <library name="Gradle: com.facebook.fresco:fbcore:2.0.0@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8d91c0e40e33e25d583b9a2fa7b8d7e/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/71b5b452039c8a0a044a92cd60e45c8b/transformed/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8d91c0e40e33e25d583b9a2fa7b8d7e/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8d91c0e40e33e25d583b9a2fa7b8d7e/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8d91c0e40e33e25d583b9a2fa7b8d7e/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/71b5b452039c8a0a044a92cd60e45c8b/transformed/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/71b5b452039c8a0a044a92cd60e45c8b/transformed/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/71b5b452039c8a0a044a92cd60e45c8b/transformed/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

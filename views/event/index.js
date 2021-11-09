@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useIsFocused } from '@react-navigation/core';
 import { Image, ImageBackground, ScrollView, StatusBar, Text, TouchableOpacity, View, PermissionsAndroid } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { useSelector } from 'react-redux';
@@ -7,13 +8,22 @@ import { BaseUrl } from '../../graphql/baseUrl';
 import styles from './styles';
 import { SVGS } from '../../assets/images/config';
 
+global.mode = 'flat'
+
 const Event = (props) => {
+
+    let isFocus = useIsFocused()  
 
    const {lang, selectedLangVal} = useSelector(state => state.language)
    const { DARK } = useSelector(state => state.dark)
    const [selected, setSelected] = useState('concert')
    const [event, setEvent] = useState(props.route.params.data)
    const [user , setUser] = useState(props.route.params.user)
+
+
+   useEffect(()=>{
+     global.mode = 'flat'
+   },[isFocus])
 
 
 

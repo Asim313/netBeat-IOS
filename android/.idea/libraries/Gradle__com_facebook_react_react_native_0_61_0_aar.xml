@@ -2,11 +2,15 @@
   <library name="Gradle: com.facebook.react:react-native:0.61.0@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/daa2a0e4920e4379657b46f1ac2bcef6/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/daa2a0e4920e4379657b46f1ac2bcef6/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/daa2a0e4920e4379657b46f1ac2bcef6/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/daa2a0e4920e4379657b46f1ac2bcef6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cee620f4e214d2fc43f2bbdafd031a76/transformed/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

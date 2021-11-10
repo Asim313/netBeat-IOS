@@ -196,22 +196,23 @@ const BroadCast = (props) => {
   },[])
 
 
-  const { onLayout, width ,height1} = useLayout();
-  let lastWidth = NaN;
-  React.useEffect(() => {
-  if (width != null && width !== lastWidth) {
-  lastWidth = width;
-  console.log(height1,width)
-   setSWidth(width)
-   setSHeight(height1) 
-  console.log(lastWidth)
-  }
-  }, [width]);
-  const isLarge = width>=500
+//   const { onLayout, width ,height1} = useLayout();
+//   let lastWidth = NaN;
+//   React.useEffect(() => {
+//   if (width != null && width !== lastWidth) {
+//   lastWidth = width;
+//   console.log(height1,width)
+//   setSWidth(width)
+//    setSHeight(height1) 
+//   console.log(lastWidth)
+//   }
+//   }, [width]);
+//   const isLarge = width>=500
 
-  console.log(isLarge)
+// console.log(isLarge)
+ 
 
-  useEffect(() => {
+useEffect(() => {
     BackHandler.addEventListener("hardwareBackPress", backButtonHandler);
 
     return () => {
@@ -587,12 +588,13 @@ if(pause&&!loader&&!back){
 
 
 return (
-  <View onLayout={onLayout} style = {{...styles.mainContainer}}>
-    <StatusBar hidden = {sheight > sWidth ? false : true} />
+  // <View style = {{...styles.mainContainer}}>
+    
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
-      style={{ flex : 1 }}
+      style={styles.mainContainer}
     >
+    <StatusBar hidden = {sheight > sWidth ? false : true} />
     <TouchableOpacity 
     activeOpacity = {1}
     onPress = {() => {
@@ -604,7 +606,7 @@ return (
     <>
    {/* {(mode === 1) && <LivePlayerr 
        //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == '360')[0]?.stream_ios} 
-      urlVideo={pause ? '' : "https://r3---sn-cvh76ney.googlevideo.com/videoplayback?expire=1636475192&ei=2EyKYZTdBafWxN8PyqmfiAQ&ip=117.197.118.229&id=o-AFpIBpdDkmJnV5NzABtB7SvoObIT5_UM_3dA35LURNBs&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=FXg6vCKB78WPScXp4Sz04BIG&gir=yes&clen=10608291&ratebypass=yes&dur=212.532&lmt=1627495241946421&fexp=24001373,24007246&c=WEB&txp=5530434&n=w3QvNnKxCum_7g&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRQIhAMMjNzGvmv3kImpoLTCwh2_VJ0oDbMmy8BqoZA6-2IUQAiBh_p_4pV3_q6xkcWCIrimX6fo-IK1PNElx8jOD2XqZCg==&rm=sn-cnoa-cive7l,sn-cnoa-h55l7r&req_id=70a9595dd853a3ee&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mh=Hp&mm=30&mn=sn-cvh76ney&ms=nxu&mt=1636458274&mv=m&mvi=3&pl=23&lsparams=ipbypass,mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAL7wwPjbgDQmmbvYoqaz4xGy3QKYFWnyY_SXvIRyFECSAiEAteYlIxQLJ_upKfpfenV5Wucbl_HgBR2r-x-63BAyRBo="} 
+      urlVideo={pause ? '' : "http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
       modeVideo={1} 
       volume={1}
       enableInfoButton={false}
@@ -620,10 +622,11 @@ return (
 
       {(mode === 2 || mode === 1 || mode === 3) && <LivePlayerr
        //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'vr')[0]?.stream_ios} 
-      urlVideo={(pause || mode === 3) ? '' : "https://r3---sn-cvh76ney.googlevideo.com/videoplayback?expire=1636475192&ei=2EyKYZTdBafWxN8PyqmfiAQ&ip=117.197.118.229&id=o-AFpIBpdDkmJnV5NzABtB7SvoObIT5_UM_3dA35LURNBs&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=FXg6vCKB78WPScXp4Sz04BIG&gir=yes&clen=10608291&ratebypass=yes&dur=212.532&lmt=1627495241946421&fexp=24001373,24007246&c=WEB&txp=5530434&n=w3QvNnKxCum_7g&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRQIhAMMjNzGvmv3kImpoLTCwh2_VJ0oDbMmy8BqoZA6-2IUQAiBh_p_4pV3_q6xkcWCIrimX6fo-IK1PNElx8jOD2XqZCg==&rm=sn-cnoa-cive7l,sn-cnoa-h55l7r&req_id=70a9595dd853a3ee&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mh=Hp&mm=30&mn=sn-cvh76ney&ms=nxu&mt=1636458274&mv=m&mvi=3&pl=23&lsparams=ipbypass,mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAL7wwPjbgDQmmbvYoqaz4xGy3QKYFWnyY_SXvIRyFECSAiEAteYlIxQLJ_upKfpfenV5Wucbl_HgBR2r-x-63BAyRBo="} 
-      modeVideo={mode} 
+       urlVideo={(pause || mode === 3) ? '' :  props.route.params.event?.concert_streams?.filter(x => x.type == 'vr')[0]?.stream_ios} 
+      //urlVideo={(pause || mode === 3) ? '' : "http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
+      modeVideo={mode}
       volume={1}
-      displayMode={mode===4?"cardboard":'embedded'}
+      displayMode={mode===2?"cardboard":'embedded'}
       enableInfoButton={false}
       paused = {pause}
       enableFullscreenButton={false}
@@ -634,8 +637,8 @@ return (
       />}
       {mode == 3 && Platform.OS == 'ios' && <LivePlayerr 
       //urlVideo = {'rtmp://49.12.106.146:1935/live/origin1'}
-      //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
-      urlVideo={"https://r3---sn-cvh76ney.googlevideo.com/videoplayback?expire=1636475192&ei=2EyKYZTdBafWxN8PyqmfiAQ&ip=117.197.118.229&id=o-AFpIBpdDkmJnV5NzABtB7SvoObIT5_UM_3dA35LURNBs&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=FXg6vCKB78WPScXp4Sz04BIG&gir=yes&clen=10608291&ratebypass=yes&dur=212.532&lmt=1627495241946421&fexp=24001373,24007246&c=WEB&txp=5530434&n=w3QvNnKxCum_7g&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRQIhAMMjNzGvmv3kImpoLTCwh2_VJ0oDbMmy8BqoZA6-2IUQAiBh_p_4pV3_q6xkcWCIrimX6fo-IK1PNElx8jOD2XqZCg==&rm=sn-cnoa-cive7l,sn-cnoa-h55l7r&req_id=70a9595dd853a3ee&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mh=Hp&mm=30&mn=sn-cvh76ney&ms=nxu&mt=1636458274&mv=m&mvi=3&pl=23&lsparams=ipbypass,mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAL7wwPjbgDQmmbvYoqaz4xGy3QKYFWnyY_SXvIRyFECSAiEAteYlIxQLJ_upKfpfenV5Wucbl_HgBR2r-x-63BAyRBo="} 
+      urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
+      //urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
       modeVideo={3} 
       enableInfoButton={false}
       enableFullscreenButton={false}
@@ -645,8 +648,8 @@ return (
       style={{flex:mode ===3 ? 1 : 0}} />}
       
       {mode == 3 && Platform.OS == 'android' && <LivePlayer 
-       source={{uri:"https://r3---sn-cvh76ney.googlevideo.com/videoplayback?expire=1636475192&ei=2EyKYZTdBafWxN8PyqmfiAQ&ip=117.197.118.229&id=o-AFpIBpdDkmJnV5NzABtB7SvoObIT5_UM_3dA35LURNBs&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=FXg6vCKB78WPScXp4Sz04BIG&gir=yes&clen=10608291&ratebypass=yes&dur=212.532&lmt=1627495241946421&fexp=24001373,24007246&c=WEB&txp=5530434&n=w3QvNnKxCum_7g&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRQIhAMMjNzGvmv3kImpoLTCwh2_VJ0oDbMmy8BqoZA6-2IUQAiBh_p_4pV3_q6xkcWCIrimX6fo-IK1PNElx8jOD2XqZCg==&rm=sn-cnoa-cive7l,sn-cnoa-h55l7r&req_id=70a9595dd853a3ee&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mh=Hp&mm=30&mn=sn-cvh76ney&ms=nxu&mt=1636458274&mv=m&mvi=3&pl=23&lsparams=ipbypass,mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAL7wwPjbgDQmmbvYoqaz4xGy3QKYFWnyY_SXvIRyFECSAiEAteYlIxQLJ_upKfpfenV5Wucbl_HgBR2r-x-63BAyRBo="}}
-      //source={{uri : props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios}}
+       //source={{uri:"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"}}
+      source={{uri : props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios}}
         paused={false}
         style={{flex:mode ===3 ? 1 : 0}}
         muted={false}
@@ -667,7 +670,9 @@ return (
     source = {{uri : BaseUrl + event?.Cover[0]?.url}} 
     style = {styles.bgImage}
     > */}
-    <View style = {styles.bgImage}>
+    <View 
+    style = {[styles.bgImage]}
+    >
 
       {fade ? <Animatable.View
       animation = 'fadeOutLeft'
@@ -759,7 +764,7 @@ return (
         <TouchableOpacity
         disabled = {!event?.concert_streams?.some(x => x.type == 'flat')}
         onPress = {() => {
-          Orientation.unlockAllOrientations()
+         // Orientation.unlockAllOrientations()
           Orientation.lockToPortrait()
           
             setPause(true)
@@ -813,7 +818,8 @@ return (
         <TouchableOpacity
         disabled = {!event?.concert_streams?.some(x => x.type == 'vr')}
         onPress = {() => {
-          Orientation.lockToLandscapeRight()
+          //Orientation.lockToLandscapeRight()
+          Orientation.unlockAllOrientations()
           
           setPause(true)
           // setLoader(true)
@@ -837,7 +843,7 @@ return (
         <TouchableOpacity
         disabled = {!event?.concert_streams?.some(x => x.type == 'flat')}
         onPress = {() => {
-          Orientation.unlockAllOrientations()
+          //Orientation.unlockAllOrientations()
           Orientation.lockToPortrait()
            setPause(true)
            setMode(3)
@@ -1186,7 +1192,7 @@ return (
       {/* </ImageBackground> */}
       </TouchableOpacity>
       </KeyboardAvoidingView>
-  </View>
+  
 )}
 
 export default BroadCast

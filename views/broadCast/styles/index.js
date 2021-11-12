@@ -12,7 +12,10 @@ export default StyleSheet.create({
         width : '100%',
         justifyContent:'center',
         position:'absolute',
-        zIndex:1
+        zIndex:1,
+        // borderWidth:2,
+        // borderColor:'blue'
+        //backgroundColor:'blue'
     },
     back: {
         position:'absolute',

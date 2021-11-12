@@ -35,15 +35,30 @@
   UIViewController *vc = [sb instantiateInitialViewController];
   rootView.loadingView = vc.view;
   
-
+//
   RTCAudioSessionConfiguration *webRTCConfiguration = [RTCAudioSessionConfiguration webRTCConfiguration];
 
     webRTCConfiguration.categoryOptions = (
        AVAudioSessionCategoryOptionAllowBluetooth |
        AVAudioSessionCategoryOptionDefaultToSpeaker
     );
-
-
+  dispatch_async(dispatch_get_main_queue(), ^{
+    
+      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didSessionRouteChange:) name:AVAudioSessionRouteChangeNotification object:nil];
+    
+  });
+//  [[AudioSessionManager sharedInstance] startAndPostNotifications:YES];
+//  NSLog(@"audioRoute is %@", [AudioSessionManager sharedInstance].audioRoute);
+//
+//  if (![[AudioSessionManager sharedInstance] changeMode:kAudioSessionManagerMode_Record]) {
+//      // .... handle error ...
+//  }
+//
+//  if (![[AudioSessionManager sharedInstance] changeMode:kAudioSessionManagerMode_Playback]) {
+//      // .... handle error ...
+//  }
+  
+  //[self.captureSession startRunning];
   
   return YES;
 }
@@ -60,5 +75,64 @@
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
 }
+//- (void)didSessionRouteChange:(NSNotification *)notification
+//{
+//    NSDictionary *interuptionDict = notification.userInfo;
+//    const NSInteger routeChangeReason = [[interuptionDict valueForKey:AVAudioSessionRouteChangeReasonKey] integerValue];
+//
+////    if (routeChangeReason == AVAudioSessionRouteChangeReasonRouteConfigurationChange) {
+//        [self enableLoudspeaker];
+////    }
+//}
+- (void)didSessionRouteChange:(NSNotification *)notification
+{
+  NSDictionary *interuptionDict = notification.userInfo;
+  NSInteger routeChangeReason = [[interuptionDict valueForKey:AVAudioSessionRouteChangeReasonKey] integerValue];
+
+  switch (routeChangeReason) {
+      case AVAudioSessionRouteChangeReasonCategoryChange: {
+        
+          
+          // Set speaker as default route
+            AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+          NSError* error;
+        if (![[[AVAudioSession sharedInstance] category] isEqualToString:AVAudioSessionCategoryPlayAndRecord]) {
+            [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord withOptions:(AVAudioSessionCategoryOptionDefaultToSpeaker | AVAudioSessionCategoryOptionAllowBluetooth) error:&error];
+            NSLog(@"setCategory error = %@", error);
+        [[AVAudioSession sharedInstance] overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:nil];
+
+        
+      
+            [[AVAudioSession sharedInstance] setActive:YES error:&error];
+            NSLog(@"setActive error = %@", error);
+          RTCAudioSessionConfiguration *webRTCConfiguration = [RTCAudioSessionConfiguration webRTCConfiguration];
+//        webRTCConfiguration.
+        }
+        [[AVAudioSession sharedInstance] categoryOptions];
+          
+        
+//          [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions: AVAudioSessionCategoryOptionDefaultToSpeaker  error:nil];
+//        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionModeVideoChat error:nil];
+//        audioSession.accessibilityActivate;
+//        [[AVAudioSession sharedInstance] setActive:Yes withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:nil];
+//        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord withOptions:AVAudioSessionCategoryOptionMixWithOthers error:nil];
+//        [[AVAudioSession sharedInstance] setActive:YES withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:nil];
+        
+      }
+      break;
+
+    default:
+      break;
+  }
+}
+//
+//- (void)enableLoudspeaker {
+//    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+//    AVAudioSessionCategoryOptions options = audioSession.categoryOptions;
+////    if (options & AVAudioSessionCategoryOptionDefaultToSpeaker) return;
+//    options |= AVAudioSessionCategoryOptionDefaultToSpeaker;
+//    [audioSession setActive:YES error:nil];
+//    [audioSession setCategory:AVAudioSessionPortOverrideSpeaker withOptions:options error:nil];
+//}
 
 @end

@@ -25,10 +25,10 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int quantum_ic_close_white_24 = 0x7f0700a3;
-        public static final int quantum_ic_settings_white_24 = 0x7f0700a6;
-        public static final int rippleable = 0x7f0700a8;
-        public static final int transition = 0x7f0700ad;
+        public static final int quantum_ic_close_white_24 = 0x7f0700dc;
+        public static final int quantum_ic_settings_white_24 = 0x7f0700df;
+        public static final int rippleable = 0x7f0700ef;
+        public static final int transition = 0x7f0700f4;
     }
     public static final class id {
         private id() {}

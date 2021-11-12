@@ -112,19 +112,19 @@ const BroadCast = (props) => {
   
 
 
-  useEffect(()=>{
-    setTimeout(() => {
-      setVolBar(false)
-      setFade(true)
-      setClapRender(true)
-    },5000)
-  },[])
+  // useEffect(()=>{
+  //   setInterval(() => {
+  //     setVolBar(false)
+  //     setFade(true)
+  //     setClapRender(true)
+  //   },5000)
+  // },[])
 
-  useEffect(()=>{
-    setTimeout(() => {
-      setClap(false)
-    },5000)
-  },[])
+  // useEffect(()=>{
+  //   setInterval(() => {
+  //     setClap(false)
+  //   },5000)
+  // },[])
 
 
   // useEffect(()=>{
@@ -196,22 +196,23 @@ const BroadCast = (props) => {
   },[])
 
 
-  const { onLayout, width ,height1} = useLayout();
-  let lastWidth = NaN;
-  React.useEffect(() => {
-  if (width != null && width !== lastWidth) {
-  lastWidth = width;
-  console.log(height1,width)
-   setSWidth(width)
-   setSHeight(height1) 
-  console.log(lastWidth)
-  }
-  }, [width]);
-  const isLarge = width>=500
+//   const { onLayout, width ,height1} = useLayout();
+//   let lastWidth = NaN;
+//   React.useEffect(() => {
+//   if (width != null && width !== lastWidth) {
+//   lastWidth = width;
+//   console.log(height1,width)
+//   setSWidth(width)
+//    setSHeight(height1) 
+//   console.log(lastWidth)
+//   }
+//   }, [width]);
+//   const isLarge = width>=500
 
-  console.log(isLarge)
+// console.log(isLarge)
+ 
 
-  useEffect(() => {
+useEffect(() => {
     BackHandler.addEventListener("hardwareBackPress", backButtonHandler);
 
     return () => {
@@ -221,8 +222,11 @@ const BroadCast = (props) => {
 
 
   const leaveSession = async(data) => {
+    // alert("Leaving session");
+    // InCallManager.stop();
+
     //console.log('disconnected...')
-   // InCallManager.stop()
+   
     const mySession = session;
     //console.log(mySession)
     const res = await  session.disconnect()
@@ -243,11 +247,13 @@ const BroadCast = (props) => {
      setBack(true) 
      setPause(true) 
      props.navigation.goBack()
+    //  InCallManager.stop();
      //await InCallManager.stop()
     //  await InCallManager.stopRingtone();
     //  await InCallManager.stopRingback();
     //  await InCallManager.stop()
     }
+
   }
 
   function backButtonHandler(){
@@ -267,7 +273,7 @@ const BroadCast = (props) => {
 
   const _handleAppStateChange = (nextAppState) => {
     //console.log('appState========================================================>>>>>>>>>>>>>>>>>>>>>>>')
-    alert('here...')
+   // alert('here...')
      var a = null;
      var loading = null;
     if (
@@ -298,10 +304,13 @@ const BroadCast = (props) => {
 
 
 
-  const componentDidMount = () => {
+  const componentDidMount = async() => {
     vrheadset = (vrheadset == 'yes') ? true : false;
     //console.log('here...')
     AppState.addEventListener('change', _handleAppStateChange);
+    // await InCallManager.checkRecordPermission();
+    // InCallManager.start({ media: "video" });
+    // InCall
     joinSession()
     // setInterval(()=>{
     //   InCallManager.start();
@@ -461,7 +470,7 @@ const BroadCast = (props) => {
         console.warn(err);
     }
    }
-
+   
 
 
   const joinSession = async() => {
@@ -472,6 +481,7 @@ const BroadCast = (props) => {
     mySession.on('streamDestroyed', (event) => {
         event.preventDefault();
         deleteSubscriber(event.stream.streamManager);
+        
     }); 
    await getToken()
         .then(async (token) => {
@@ -480,7 +490,7 @@ const BroadCast = (props) => {
             //console.log("user=>>", a?.profile?.url)
             mySession
             .connect(token, { clientData: myUserName,group_id : a?.group?.id })
-            .then(() => {
+            .then(async () => {
 
              setSession(mySession)
                let txtFieldRef = ref;
@@ -501,9 +511,10 @@ const BroadCast = (props) => {
                 console.log("publisher=>", publisher)
                 setMainStreamManager(publisher)
                 mySession.publish(publisher);
-
+                // await InCallManager.checkRecordPermission();
+    // InCallManager.start({ media: "video" });
                   // InCallManager.start({media: 'video'});
-                  // InCallManager.setForceSpeakerphoneOn(true);
+                  // InCallManager.setSpeakerphoneOn(true);
                   // //InCallManager.setSpeakerphoneOn(true)
                   // InCallManager.setKeepScreenOn(true)
                   setPause(false);
@@ -557,6 +568,8 @@ const BroadCast = (props) => {
 
 
 const sendMsg = () => {
+  // InCallManager.start({mode: 'video'});
+  // InCallManager.setSpeakerphoneOn(true);
   session.signal({
     data: `${msg}|$|${user?.profile?.url}` ,  // Any string (optional)
     to: [],                     // Array of Connection objects (optional. Broadcast to everyone if empty)
@@ -586,13 +599,20 @@ if(pause&&!loader&&!back){
 },[pause])
 
 
+React.useEffect(() => {
+  if(loader == false){
+    joinSession();
+  }
+}, [loader]);
+
 return (
-  <View onLayout={onLayout} style = {{...styles.mainContainer}}>
-    <StatusBar hidden = {sheight > sWidth ? false : true} />
+  // <View style = {{...styles.mainContainer}}>
+    
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
-      style={{ flex : 1 }}
+      style={styles.mainContainer}
     >
+    <StatusBar hidden = {sheight > sWidth ? false : true} />
     <TouchableOpacity 
     activeOpacity = {1}
     onPress = {() => {
@@ -600,11 +620,13 @@ return (
     }}
     style = {styles.bgImage}>
       <KeepAwake />
-    {!loader ? 
+    {true ? 
+    
     <>
+    {loader == true ? setLoader(false) : null}
    {/* {(mode === 1) && <LivePlayerr 
        //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == '360')[0]?.stream_ios} 
-      urlVideo={pause ? '' : "https://r3---sn-cvh76ney.googlevideo.com/videoplayback?expire=1636475192&ei=2EyKYZTdBafWxN8PyqmfiAQ&ip=117.197.118.229&id=o-AFpIBpdDkmJnV5NzABtB7SvoObIT5_UM_3dA35LURNBs&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=FXg6vCKB78WPScXp4Sz04BIG&gir=yes&clen=10608291&ratebypass=yes&dur=212.532&lmt=1627495241946421&fexp=24001373,24007246&c=WEB&txp=5530434&n=w3QvNnKxCum_7g&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRQIhAMMjNzGvmv3kImpoLTCwh2_VJ0oDbMmy8BqoZA6-2IUQAiBh_p_4pV3_q6xkcWCIrimX6fo-IK1PNElx8jOD2XqZCg==&rm=sn-cnoa-cive7l,sn-cnoa-h55l7r&req_id=70a9595dd853a3ee&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mh=Hp&mm=30&mn=sn-cvh76ney&ms=nxu&mt=1636458274&mv=m&mvi=3&pl=23&lsparams=ipbypass,mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAL7wwPjbgDQmmbvYoqaz4xGy3QKYFWnyY_SXvIRyFECSAiEAteYlIxQLJ_upKfpfenV5Wucbl_HgBR2r-x-63BAyRBo="} 
+      urlVideo={pause ? '' : "http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
       modeVideo={1} 
       volume={1}
       enableInfoButton={false}
@@ -620,10 +642,11 @@ return (
 
       {(mode === 2 || mode === 1 || mode === 3) && <LivePlayerr
        //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'vr')[0]?.stream_ios} 
-      urlVideo={(pause || mode === 3) ? '' : "https://r3---sn-cvh76ney.googlevideo.com/videoplayback?expire=1636475192&ei=2EyKYZTdBafWxN8PyqmfiAQ&ip=117.197.118.229&id=o-AFpIBpdDkmJnV5NzABtB7SvoObIT5_UM_3dA35LURNBs&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=FXg6vCKB78WPScXp4Sz04BIG&gir=yes&clen=10608291&ratebypass=yes&dur=212.532&lmt=1627495241946421&fexp=24001373,24007246&c=WEB&txp=5530434&n=w3QvNnKxCum_7g&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRQIhAMMjNzGvmv3kImpoLTCwh2_VJ0oDbMmy8BqoZA6-2IUQAiBh_p_4pV3_q6xkcWCIrimX6fo-IK1PNElx8jOD2XqZCg==&rm=sn-cnoa-cive7l,sn-cnoa-h55l7r&req_id=70a9595dd853a3ee&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mh=Hp&mm=30&mn=sn-cvh76ney&ms=nxu&mt=1636458274&mv=m&mvi=3&pl=23&lsparams=ipbypass,mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAL7wwPjbgDQmmbvYoqaz4xGy3QKYFWnyY_SXvIRyFECSAiEAteYlIxQLJ_upKfpfenV5Wucbl_HgBR2r-x-63BAyRBo="} 
-      modeVideo={mode} 
+       urlVideo={(pause || mode === 3) ? '' :  props.route.params.event?.concert_streams?.filter(x => x.type == 'vr')[0]?.stream_ios} 
+      //urlVideo={(pause || mode === 3) ? '' : "http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
+      modeVideo={mode}
       volume={1}
-      displayMode={mode===4?"cardboard":'embedded'}
+      displayMode={mode===2?"cardboard":'embedded'}
       enableInfoButton={false}
       paused = {pause}
       enableFullscreenButton={false}
@@ -634,8 +657,8 @@ return (
       />}
       {mode == 3 && Platform.OS == 'ios' && <LivePlayerr 
       //urlVideo = {'rtmp://49.12.106.146:1935/live/origin1'}
-      //urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
-      urlVideo={"https://r3---sn-cvh76ney.googlevideo.com/videoplayback?expire=1636475192&ei=2EyKYZTdBafWxN8PyqmfiAQ&ip=117.197.118.229&id=o-AFpIBpdDkmJnV5NzABtB7SvoObIT5_UM_3dA35LURNBs&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=FXg6vCKB78WPScXp4Sz04BIG&gir=yes&clen=10608291&ratebypass=yes&dur=212.532&lmt=1627495241946421&fexp=24001373,24007246&c=WEB&txp=5530434&n=w3QvNnKxCum_7g&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRQIhAMMjNzGvmv3kImpoLTCwh2_VJ0oDbMmy8BqoZA6-2IUQAiBh_p_4pV3_q6xkcWCIrimX6fo-IK1PNElx8jOD2XqZCg==&rm=sn-cnoa-cive7l,sn-cnoa-h55l7r&req_id=70a9595dd853a3ee&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mh=Hp&mm=30&mn=sn-cvh76ney&ms=nxu&mt=1636458274&mv=m&mvi=3&pl=23&lsparams=ipbypass,mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAL7wwPjbgDQmmbvYoqaz4xGy3QKYFWnyY_SXvIRyFECSAiEAteYlIxQLJ_upKfpfenV5Wucbl_HgBR2r-x-63BAyRBo="} 
+      urlVideo={props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios} 
+      //urlVideo={"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"} 
       modeVideo={3} 
       enableInfoButton={false}
       enableFullscreenButton={false}
@@ -645,8 +668,8 @@ return (
       style={{flex:mode ===3 ? 1 : 0}} />}
       
       {mode == 3 && Platform.OS == 'android' && <LivePlayer 
-       source={{uri:"https://r3---sn-cvh76ney.googlevideo.com/videoplayback?expire=1636475192&ei=2EyKYZTdBafWxN8PyqmfiAQ&ip=117.197.118.229&id=o-AFpIBpdDkmJnV5NzABtB7SvoObIT5_UM_3dA35LURNBs&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=FXg6vCKB78WPScXp4Sz04BIG&gir=yes&clen=10608291&ratebypass=yes&dur=212.532&lmt=1627495241946421&fexp=24001373,24007246&c=WEB&txp=5530434&n=w3QvNnKxCum_7g&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRQIhAMMjNzGvmv3kImpoLTCwh2_VJ0oDbMmy8BqoZA6-2IUQAiBh_p_4pV3_q6xkcWCIrimX6fo-IK1PNElx8jOD2XqZCg==&rm=sn-cnoa-cive7l,sn-cnoa-h55l7r&req_id=70a9595dd853a3ee&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mh=Hp&mm=30&mn=sn-cvh76ney&ms=nxu&mt=1636458274&mv=m&mvi=3&pl=23&lsparams=ipbypass,mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAL7wwPjbgDQmmbvYoqaz4xGy3QKYFWnyY_SXvIRyFECSAiEAteYlIxQLJ_upKfpfenV5Wucbl_HgBR2r-x-63BAyRBo="}}
-      //source={{uri : props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios}}
+       //source={{uri:"http://songmp4.com/files/Bollywood_video_songs/Bollywood_video_songs_2020/Mirchi_Lagi_Toh_Coolie_No.1_VarunDhawan_Sara_Ali_Khan_Alka_Yagnik_Kumar_S.mp4"}}
+      source={{uri : props.route.params.event?.concert_streams?.filter(x => x.type == 'flat')[0]?.stream_ios}}
         paused={false}
         style={{flex:mode ===3 ? 1 : 0}}
         muted={false}
@@ -667,7 +690,9 @@ return (
     source = {{uri : BaseUrl + event?.Cover[0]?.url}} 
     style = {styles.bgImage}
     > */}
-    <View style = {styles.bgImage}>
+    <View 
+    style = {[styles.bgImage]}
+    >
 
       {fade ? <Animatable.View
       animation = 'fadeOutLeft'
@@ -737,6 +762,7 @@ return (
           Orientation.lockToLandscapeRight()
 
           setPause(true)
+          setComments(false)
           //setLoader(true)
           setMode(2)
           // leaveSession(false).then(()=>{
@@ -759,7 +785,7 @@ return (
         <TouchableOpacity
         disabled = {!event?.concert_streams?.some(x => x.type == 'flat')}
         onPress = {() => {
-          Orientation.unlockAllOrientations()
+         // Orientation.unlockAllOrientations()
           Orientation.lockToPortrait()
           
             setPause(true)
@@ -813,10 +839,12 @@ return (
         <TouchableOpacity
         disabled = {!event?.concert_streams?.some(x => x.type == 'vr')}
         onPress = {() => {
-          Orientation.lockToLandscapeRight()
+          //Orientation.lockToLandscapeRight()
+          Orientation.unlockAllOrientations()
           
           setPause(true)
           // setLoader(true)
+          setComments(false)
           setMode(2)
           // leaveSession(false).then(()=>{
           //   //  global.mode = 'vr'
@@ -837,7 +865,7 @@ return (
         <TouchableOpacity
         disabled = {!event?.concert_streams?.some(x => x.type == 'flat')}
         onPress = {() => {
-          Orientation.unlockAllOrientations()
+          //Orientation.unlockAllOrientations()
           Orientation.lockToPortrait()
            setPause(true)
            setMode(3)
@@ -883,7 +911,7 @@ return (
 
       {!comments &&
       <>
-      {fade?
+      {/* {fade?
       <Animatable.View
       animation = "fadeOutRight"
       style = {[sheight>sWidth ? styles.volumeButton : styles.volumeButtonLand, { bottom:sheight>sWidth? hps(104) : wps(20), right:sheight>sWidth? wps(16) : hps(16) }]}
@@ -904,7 +932,7 @@ return (
         >
         <Image source = {value !== 0 ? Images.speaker : Images.speaker_off}/>  
         </TouchableOpacity>
-      </Animatable.View>}
+      </Animatable.View>} */}
 
       {fade?
       <Animatable.View
@@ -913,6 +941,8 @@ return (
       > 
         <TouchableOpacity
         onPress = {() => {setComments(true)}}
+        disabled = {mode == 2}
+        style = {{opacity:mode == 2 ? 0.5 : 1}}
         >
         <Image source = {Images.comment} style = {{height:hps(22), width:wps(22)}}/>  
         </TouchableOpacity>
@@ -924,6 +954,8 @@ return (
       > 
         <TouchableOpacity
         onPress = {() => {setComments(true)}}
+        disabled = {mode == 2}
+        style = {{opacity:mode == 2 ? 0.5 : 1}}
         >
         <Image source = {Images.comment} style = {{height:hps(22), width:wps(22)}}/>  
         </TouchableOpacity>
@@ -1078,7 +1110,7 @@ return (
       </>
       }
 
-      {comments &&
+      {comments && 
        <View style = {sheight > sWidth ? styles.commentsMainContainer : styles.commentsMainContainerLand}>
 
         <View style = {styles.disableButtonContainer}>
@@ -1163,7 +1195,7 @@ return (
 
         </View>
 
-        <TouchableOpacity 
+        {/* <TouchableOpacity 
           onPress = {()=>{
             // if( value == 0 ){
             //   InCallManager.setForceSpeakerphoneOn(true);
@@ -1178,7 +1210,7 @@ return (
           }}
           style = {sheight > sWidth ? styles.volumeButton : styles.volumeButtonLand}>
             <Image source = {Images.speaker} style = {styles.speaker}/>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
       </View>}
       </View>
 
@@ -1186,7 +1218,7 @@ return (
       {/* </ImageBackground> */}
       </TouchableOpacity>
       </KeyboardAvoidingView>
-  </View>
+  
 )}
 
 export default BroadCast

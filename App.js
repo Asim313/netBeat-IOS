@@ -6,7 +6,7 @@
  * @flow
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -23,9 +23,15 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-
+import InCallManager from "react-native-incall-manager"
 const App: () => React$Node = () => {
+  useEffect(() => {
+    InCallManager.start({mode: 'video'});
+    InCallManager.setSpeakerphoneOn(true);
+    alert("Fuck ou");
+  });
   return (
+    
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
